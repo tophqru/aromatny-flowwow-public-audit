@@ -1,0 +1,48 @@
+{
+  "observed_at_date": "2026-10-31",
+  "target_seller_name": "Ароматный букет",
+  "target_shop_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "purpose": "Hold outside reference catalog until exact canonical shop identity and authoritative item completeness reviewed.",
+  "source_type": "indexed public Flowwow product page extracts; direct page blocked for automation",
+  "retail_eligible": false,
+  "confirmed_abandoned_count": 0,
+  "suspected_unfinished_candidates": [
+    {
+      "slug": "avtorskiy-buketik-francuzskaya",
+      "url": "https://flowwow.com/flowers/avtorskiy-buketik-francuzskaya/",
+      "title": "Авторский букетик французская роза, маттиола, альстермерия, роза пионовидная кустовая",
+      "seller_display_name": "Ароматный букет",
+      "exact_canonical_shop_link_verified": false,
+      "source_visible_price_rub": 7108,
+      "source_screenshot_or_html_status": "INDEXED_RESULT_ONLY",
+      "source_observation": "Visible '### Состав' heading with no ingredients in extracted indexed page. No source dimensions or original description visible in indexed text.",
+      "reason": "SUSPECTED_EMPTY_COMPOSITION_AND_MISSING_DETAILS",
+      "known_product_in_baseline_66": false,
+      "retail_include": false,
+      "not_equivalent_to_confirmed_abandoned": true,
+      "source_ref": "turn522565search7"
+    },
+    {
+      "slug": "avtorskiy-buketik-pion-go-1251",
+      "url": "https://flowwow.com/flowers/avtorskiy-buketik-pion-go-1251/",
+      "title": "Авторский букетик пион, гортензия, роза, эустома, маттиола, эвкалипт",
+      "seller_display_name": "Ароматный букет",
+      "exact_canonical_shop_link_verified": false,
+      "source_visible_price_rub": 9400,
+      "source_screenshot_or_html_status": "INDEXED_RESULT_ONLY",
+      "source_observation": "Only 'Гортензия - 1 шт.' visible under composition in indexed extract despite many flowers in product title; original description and dimensions not visible.",
+      "reason": "SUSPECTED_INCOMPLETE_COMPOSITION_AND_MISSING_DETAILS",
+      "known_product_in_baseline_66": false,
+      "retail_include": false,
+      "not_equivalent_to_confirmed_abandoned": true,
+      "source_ref": "turn602355search4"
+    }
+  ],
+  "required_confirmations": [
+    "exact seller canonical link from each product, not display name only",
+    "live source or Seller dashboard proof of source field emptiness",
+    "owner's decision on excluding incomplete item",
+    "preserve evidence; no full gallery download until verified seller+need"
+  ],
+  "special_excluded_owner_4183": "kompoziciya-v-shlyapnoy-k-4183"
+}
