@@ -15,6 +15,7 @@ def main():
     quarantine = read("catalog/discovery/QUARANTINED_INCOMPLETE_PUBLIC_CANDIDATES_2026-10-31.json")
     first = read("catalog/discovery/FLOWWOW_INDEXED_21_NEW_POSSIBLE_PRODUCTS_2026-10-31.json")
     second = read("catalog/discovery/FLOWWOW_INDEXED_6_MORE_POSSIBLE_PRODUCTS_2026-10-31.json")
+    third = read("catalog/discovery/FLOWWOW_INDEXED_25_MORE_POSSIBLE_PRODUCTS_2026-10-31.json")
     known = set(p["slug"] for p in baseline["products"])
     known.update(p["slug"] for p in verified["products"])
     known.update(p["slug"] for p in quarantine["suspected_unfinished_candidates"])
@@ -23,13 +24,18 @@ def main():
     assert first["items_count"] == len(first["items"]) == 21
     assert second["total_new_this_batch"] == len(second["items"]) == 6
     assert second["combined_prior_candidates"] == 27
+    assert third["previous_unverified_leads"] == 27
+    assert third["new_leads"] == len(third["items"]) == 25
+    assert third["total_unverified_leads"] == 52
+    assert third["status"] == "INDEXED_DISPLAY_SELLER_NOT_CANONICALLY_CONFIRMED"
+    assert third["visited_live_source_pages"] == 0 and third["clicked_show_more_count"] == 0
     assert first["status"] == "INDEXED_SELLER_DISPLAY_MATCH_ONLY_CANONICAL_SHOP_NOT_YET_VERIFIED"
     assert second["status"] == "INDEXED_DISPLAY_SELLER_NOT_CANONICALLY_CONFIRMED"
     assert first["source_access"]["direct_shop_open"] == "CACHE_MISS"
     assert first["source_access"]["connected_browser"] == "NOT_AVAILABLE_ORIGINATING_EXTENSION_CONTEXT_REQUIRED"
     assert first["source_access"]["visible_show_more_text"] == "YES_BUT_CANNOT_CLICK_JS_BUTTON_IN_THIS_SESSION"
     newly_seen = set()
-    for p in first["items"] + second["items"]:
+    for p in first["items"] + second["items"] + third["items"]:
         slug = p["slug"]
         assert slug not in known and slug not in newly_seen, f"Duplicate or existing SKU: {slug}"
         assert slug != baseline["excluded_owner_sku"]
@@ -48,7 +54,7 @@ def main():
             assert p["photos_saved"] == 0
         else:
             assert p["photo_originals_saved"] == 0
-    assert len(newly_seen) == 27
+    assert len(newly_seen) == 52
     print(json.dumps({"validation":"PASS_INDEXED_CANDIDATES","source_only":True,
                       "new_unverified_leads":len(newly_seen),
                       "existing_verified_cards":len(baseline["products"]),
