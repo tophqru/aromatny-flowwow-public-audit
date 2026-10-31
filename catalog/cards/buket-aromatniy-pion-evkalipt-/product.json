@@ -1,0 +1,69 @@
+{
+  "slug": "buket-aromatniy-pion-evkalipt-",
+  "name_ru": "Набор пионов с конфетами Raffaello",
+  "flowwow_url": "https://flowwow.com/flowers/buket-aromatniy-pion-evkalipt-/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Наборы с цветами",
+  "price_observed_rub": 26749,
+  "availability_observed": "temporarily_unavailable",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/37/1783410997_72109637.jpg",
+      "sha256": "22fea030d4289a7af85cb7b4437e7dff35b6a36a26716765d63561aaa53e5efd",
+      "bytes": 97568
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1783410999_46491378.jpg",
+      "sha256": "83b6e8c9821b5da3a095a1f0e8f163fb4e78791aa51da8a3944e5262aeae0c99",
+      "bytes": 96464
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/07/1783411000_19395407.jpg",
+      "sha256": "c9d05eeeb989e0182870504e6f50fee52f518ecddaa4209c3fdd74d0c2aab2d8",
+      "bytes": 97345
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/36/1783411001_42883036.jpg",
+      "sha256": "c97d64a2324392bbca83879adece773d11cbd1c27048047cb942e96f61e6cc60",
+      "bytes": 84359
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/71/1783411003_55946971.jpg",
+      "sha256": "fb1903d0dd00042f15d20c2943456406232db0e24ee2422e25d70ba3c39f99ac",
+      "bytes": 93354
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/50/1783411004_63046150.jpg",
+      "sha256": "7864ed5bc659c38f07eb2a2dfbecd123fb49b72fcec28a5ea000bf44554a74f9",
+      "bytes": 94031
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/buket-aromatniy-pion-evkalipt-/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/94/1783411005_19069894.jpg",
+      "sha256": "0cae2a5cf96fb3fe6b3fd8e63f16d016567b9b8a5c43dd2d5907edc6638abd73",
+      "bytes": 99887
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "avtorskiy-buketik-dlya-tebya-r",
+  "name_ru": "Авторский букетик роза, гортензия, роза кустовая, альстромерия",
+  "flowwow_url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 11885,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/avtorskiy-buketik-dlya-tebya-r/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/31/1764406261_21706731.jpg",
+      "sha256": "502bf097260a7eb6438d4bd614590cbf47aa5f3bb5adc75570a2ef3d4b581108",
+      "bytes": 137167
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/avtorskiy-buketik-dlya-tebya-r/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/01/1764406261_32384801.jpg",
+      "sha256": "f0937c9e0ca0d46f81647e20e0a7903ea490a282d0e6bdf74a9c1915028a488b",
+      "bytes": 105865
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/avtorskiy-buketik-dlya-tebya-r/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/42/1764406261_93413342.jpg",
+      "sha256": "a46a8cd869a4e6a073666b00012136b98af0fa91b7777ff9f8c12e61d5e6c79b",
+      "bytes": 112834
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/avtorskiy-buketik-dlya-tebya-r/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/89/1764406262_59853989.jpg",
+      "sha256": "f1dfb493fb311008f6e71a7b802c53b8265aea012b66f984b4c19bf33c60c3ff",
+      "bytes": 100398
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/avtorskiy-buketik-dlya-tebya-r/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/74/1764406262_33182374.jpg",
+      "sha256": "56ca1e08604abf9b5b4e2f070d15b11440a056b7d2bbe0dfa3ae0e62e4840a25",
+      "bytes": 104840
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/avtorskiy-buketik-dlya-tebya-r/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/46/1764406262_64171346.jpg",
+      "sha256": "1ee536b640462fe5251eaae65c1ad1357151d58c1b8304436ab9ebd3c2c958a8",
+      "bytes": 92246
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

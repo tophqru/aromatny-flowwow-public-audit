@@ -1,0 +1,76 @@
+{
+  "slug": "buket-rozy-pionovidnoy-kustovo",
+  "name_ru": "Композиция в шляпной коробочке роза пионовидная кустовая, эустома, эвкалипт 00002324234",
+  "flowwow_url": "https://flowwow.com/flowers/buket-rozy-pionovidnoy-kustovo/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в коробке",
+  "price_observed_rub": 12290,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/40/1793198980_72145040.jpg",
+      "sha256": "ede3a4725f2d7b3f41eeabf3962fe1d4eca744dce0bf4772480d2d1b56d73889",
+      "bytes": 139347
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/08/1793198984_74539108.jpg",
+      "sha256": "621813afdd69733a4f6f6989052fcdfaf5bcc4a7582d386168654a5762ef51c6",
+      "bytes": 143649
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/08/1793198989_50388908.jpg",
+      "sha256": "9af5fee8da34a14881d0609a2921e03cf62ba876c6809c5b9fb55fe5420ff95a",
+      "bytes": 175886
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/56/1793198992_33524056.jpg",
+      "sha256": "290a2cc9f2aa8ecae60e3d4bfd7f0123ff7850a7fee4e1f87d6811ec673a0c7f",
+      "bytes": 147762
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/38/1793198995_55967938.jpg",
+      "sha256": "c28d84720e69f509f80012da5d3c79491a1526afcc32fcc5c8a5e0db4928c01e",
+      "bytes": 132315
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/48/1793198998_72407648.jpg",
+      "sha256": "e22afc2e2dd5911c59807508281f2a200976953fc3be52d7381bbb849a174834",
+      "bytes": 134262
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/44/1793199002_56355144.jpg",
+      "sha256": "f69ed221699ac661b121e0e2d0c39366c4de03d2b71bc8429975056e92079095",
+      "bytes": 131429
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/buket-rozy-pionovidnoy-kustovo/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/83/1793199005_46323483.jpg",
+      "sha256": "f59e260df4107470c81bab725c30fdb43fa6c106f0a10ad1839c94dc80431d45",
+      "bytes": 133168
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

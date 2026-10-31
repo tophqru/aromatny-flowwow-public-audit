@@ -1,0 +1,101 @@
+{
+  "slug": "buket-lavandovye-grezy-roza-ma",
+  "name_ru": "Букет «Лавандовые грезы»",
+  "flowwow_url": "https://flowwow.com/flowers/buket-lavandovye-grezy-roza-ma/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 5502,
+  "availability_observed": "temporarily_unavailable",
+  "composition_items": [
+    {
+      "component": "Лимониум",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эрингиум",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 4,
+      "unit": "шт"
+    },
+    {
+      "component": "Лагурус",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Маттиола кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 28,
+    "height": 50
+  },
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-lavandovye-grezy-roza-ma/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/27/1763540222_86677727.jpg",
+      "sha256": "f46f8e3a96aa2272c68ef42495e54ae3ac3e50fff66fbbc25f9fcfbe3f98b9a0",
+      "bytes": 125173
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-lavandovye-grezy-roza-ma/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/97/1763220573_12321897.jpg",
+      "sha256": "fa5287fefdc2e2a190bea2a3827f631ad0ad9cf5169534dded8e0b293f9a866d",
+      "bytes": 118582
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-lavandovye-grezy-roza-ma/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/08/1763220574_98397208.jpg",
+      "sha256": "7c982407bcc9228f8e8b8ae542d9cea718ceeb3873c5cbe2874f59956d2cb718",
+      "bytes": 98983
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-lavandovye-grezy-roza-ma/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1763540222_60615778.jpg",
+      "sha256": "ae852355b44d3d6881ac9a806ad1170a378b4027a6d44f40ed8670dd63a57220",
+      "bytes": 126971
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-lavandovye-grezy-roza-ma/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/77/1763540222_19476377.jpg",
+      "sha256": "46ff79c3391a7fa7306e58bbaefc91b68f13a449112adbabd427655bda5858e8",
+      "bytes": 125389
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-lavandovye-grezy-roza-ma/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/21/1763540223_57971221.jpg",
+      "sha256": "5713f588388eafca956adcc4e0afb0237ea9deeec2419b7692e46f9a956a6212",
+      "bytes": 143767
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "buket-gortenzii-mattiola--1218",
+  "name_ru": "Букет гортензии, маттиола, диантус, роза пионовидная кустовая 0008",
+  "flowwow_url": "https://flowwow.com/flowers/buket-gortenzii-mattiola--1218/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 6335,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/41/1755881011_53485241.jpg",
+      "sha256": "556e80f936dbfb4747042c1677da52ff37217939f72dee1eaf6486f6b3bf9803",
+      "bytes": 107474
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/45/1755881011_93796945.jpg",
+      "sha256": "5d229b06c791c142d2324d96aba3129675de082ba75ad365afb36d4c11955310",
+      "bytes": 109140
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1755881012_28288505.jpg",
+      "sha256": "8c7401f12e9501d1f290a0713617a299b82b05b997539305560a0692a0e727a8",
+      "bytes": 92343
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/93/1755881012_79119293.jpg",
+      "sha256": "5ad008ee3820f0bb3ad7d90b6ec77b1fbb51fc5133b5323d4026498699540868",
+      "bytes": 86833
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/85/1755881012_45281585.jpg",
+      "sha256": "10427ee065083988f341371e72f5c047998e96fedc03c7c52bff62d108d2883c",
+      "bytes": 87171
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/69/1755881013_94835169.jpg",
+      "sha256": "8c7401f12e9501d1f290a0713617a299b82b05b997539305560a0692a0e727a8",
+      "bytes": 92343
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

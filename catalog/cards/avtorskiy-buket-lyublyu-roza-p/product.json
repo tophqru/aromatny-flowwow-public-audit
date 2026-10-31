@@ -1,0 +1,62 @@
+{
+  "slug": "avtorskiy-buket-lyublyu-roza-p",
+  "name_ru": "Акция! Авторский букет Люблю роза пионовидная кустовая маттиола диантус эустома",
+  "flowwow_url": "https://flowwow.com/flowers/avtorskiy-buket-lyublyu-roza-p/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 8005,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/avtorskiy-buket-lyublyu-roza-p/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/65/1769163752_20127265.jpg",
+      "sha256": "f79f3c3b074b49b84a464891e659672260d3691538e1794d0a79101fc838f09b",
+      "bytes": 108530
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/avtorskiy-buket-lyublyu-roza-p/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1769163752_16828178.jpg",
+      "sha256": "c3e4bda3011e74bedaf79bf015d4114918c1b2036e073a67871912034aa6cd1f",
+      "bytes": 108986
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/avtorskiy-buket-lyublyu-roza-p/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/30/1769163752_67086830.jpg",
+      "sha256": "f7f72768ff783d0aadab68cd240d7677b090a1cd90a4621534a6910449e1db2c",
+      "bytes": 109285
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/avtorskiy-buket-lyublyu-roza-p/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/32/1769163753_57343532.jpg",
+      "sha256": "49ba29f2a5245fd9256e6e7f3a0ce31fc875ff95f28034aa3a86261f9a92613e",
+      "bytes": 117919
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/avtorskiy-buket-lyublyu-roza-p/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/46/1769163753_75787846.jpg",
+      "sha256": "ba39e6376dbda363824f319f5ab7a4f262c2a44848029d3e97f0b3dfd3bb4934",
+      "bytes": 95705
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/avtorskiy-buket-lyublyu-roza-p/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/39/1769163753_49046239.jpg",
+      "sha256": "b07217a9b869746913517aeb062b2d473463e8b83ddbb0db64a404b0e0a1f039",
+      "bytes": 127373
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

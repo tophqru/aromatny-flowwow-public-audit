@@ -1,0 +1,62 @@
+{
+  "slug": "buket-iz-gortenzii-kustov-7019",
+  "name_ru": "Букет гортензии, кустовой пионовидной розы, диантуса, пионов, эвкалипта",
+  "flowwow_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 10892,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-iz-gortenzii-kustov-7019/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/21/1748161343_74408321.jpg",
+      "sha256": "26d657db87ec0b5e07f1019e0f6087ef269b6e1c7740f90b75a026cce4e75b8e",
+      "bytes": 81781
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-iz-gortenzii-kustov-7019/photos/02.jpg",
+      "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/41/1748161343_5026641.jpg",
+      "sha256": "041e8f1266809918a7891fc11c17240b1b5e95a3140766b4e0290b24fbe731e7",
+      "bytes": 108336
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-iz-gortenzii-kustov-7019/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/72/1748161343_36719972.jpg",
+      "sha256": "f97ed14d7d186e44f768f5d905f724e83ec6c32008b9a1bf0b4a5885767a4593",
+      "bytes": 83582
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-iz-gortenzii-kustov-7019/photos/04.jpg",
+      "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/57/1748161343_1215557.jpg",
+      "sha256": "6b44b9d128c244199709ce25abc4f67565820e9bcbf20791f33ccd9bd9c4a8e9",
+      "bytes": 99722
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-iz-gortenzii-kustov-7019/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/18/1748161343_74729918.jpg",
+      "sha256": "de771d9fc36e225ea0e4bd9441b0749222623a0fff787f0b65571a50b76ccefa",
+      "bytes": 87373
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-iz-gortenzii-kustov-7019/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/75/1748161343_80269875.jpg",
+      "sha256": "70ce4fafa791700b231f342e4dcb2e801c478300f2ea87329927b5d0c01e5ce0",
+      "bytes": 78725
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

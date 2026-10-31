@@ -1,0 +1,69 @@
+{
+  "slug": "komp-2289",
+  "name_ru": "Композиция в сумочке с цветами 04567",
+  "flowwow_url": "https://flowwow.com/flowers/komp-2289/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в коробке",
+  "price_observed_rub": null,
+  "availability_observed": "available_observed_at_scan",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/komp-2289/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/39/1787846643_10315339.jpg",
+      "sha256": "d3df398a039200c76b7fb9fc0d72963ba94080f0d1aa27c94086430d582b9274",
+      "bytes": 134144
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/komp-2289/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1787846646_24005059.jpg",
+      "sha256": "0e094515a03806798470ef72e5675c4c445c275c3e16f0baf59d8f0d9f124b9c",
+      "bytes": 125779
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/komp-2289/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/19/1787846648_93820219.jpg",
+      "sha256": "d7efe7d514ad02905e3cf2e8a7057589df49f8e05882d16b5318f0dea1b2b978",
+      "bytes": 119425
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/komp-2289/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/07/1787846651_96646407.jpg",
+      "sha256": "7b3746ef8e9cdbafd4d1337deabb16caf73d8008d1cbccfc1ddde141500cc5dc",
+      "bytes": 127447
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/komp-2289/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/00/1787846654_24584300.jpg",
+      "sha256": "d484df5b0ae5449f7cfa316e3d9288fcdc12d1cab429132a7fbc96d4ad7ffa3a",
+      "bytes": 115506
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/komp-2289/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/55/1787846657_53994555.jpg",
+      "sha256": "335be0cc844618c75ebaefa07ee3340cdce8e7477a1d8008edaf71b32a54e51a",
+      "bytes": 122942
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/komp-2289/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/06/1787906449_21815706.jpg",
+      "sha256": "d484df5b0ae5449f7cfa316e3d9288fcdc12d1cab429132a7fbc96d4ad7ffa3a",
+      "bytes": 115506
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "buket-iz-diantusa-gvozdik-6944",
+  "name_ru": "Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке",
+  "flowwow_url": "https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 8663,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1759923368_10731805.jpg",
+      "sha256": "191a678a47435010038983fc3654cac62f33918695c851b70a3d3e249413cf0f",
+      "bytes": 129593
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/32/1759923368_51242732.jpg",
+      "sha256": "a6fde93102dc337abaf0abf5f83d6ad57c5c91a15e9924f25ea2d31c3fd65cbd",
+      "bytes": 135185
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/72/1759923369_74547872.jpg",
+      "sha256": "7f14ffcf724fdea0a26e0eed21f2b912ce67fb9e97f0570a9a1b3fb895a63f4c",
+      "bytes": 149283
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1759923369_82445405.jpg",
+      "sha256": "972ce5fee67b84afaea4e9914b9841617b0381b36ea40ee32b14a17fd849ebab",
+      "bytes": 128244
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/48/1759923369_23636648.jpg",
+      "sha256": "2db5ce448ddf833745dd274b6b57e55fbc5d2e580d229fbad4e1ccd9ad8c4a5c",
+      "bytes": 116006
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/11/1759923369_70208011.jpg",
+      "sha256": "4c878d5aa94ef5acd62aa51d38f5a93c8557cad9cfba47b7415d04e5ca922189",
+      "bytes": 130729
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

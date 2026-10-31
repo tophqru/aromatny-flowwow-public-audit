@@ -1,0 +1,76 @@
+{
+  "slug": "kompoziciya-v-korzine-rom-4151",
+  "name_ru": "Акция! Композиция в корзине ромашка кустовая, маттиола, эустома, эвкалипт",
+  "flowwow_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в корзине",
+  "price_observed_rub": 9027,
+  "availability_observed": "sold_out",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/84/1787470504_61180484.jpg",
+      "sha256": "66cb6c4f94cf53efcee83053c80f6c7fa4edd17cef44935447ce1d026bf6559c",
+      "bytes": 139636
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1787470435_45963359.jpg",
+      "sha256": "73644783422cc7979618698ac0a5ea331548551cb89b36a83b40c379bc0c4c6e",
+      "bytes": 139717
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/07/1787470444_99923707.jpg",
+      "sha256": "40c0078441c50ee9124aff87bb7fc820f20ba40e6f1767878b4ca6c33bb53918",
+      "bytes": 119568
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/73/1787470447_36773873.jpg",
+      "sha256": "425cac977770a50600be45d15c457985d663eaa4dff3c9ffdfb296eb517dd908",
+      "bytes": 148912
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/79/1787470451_34516979.jpg",
+      "sha256": "2efbc83cc1dc5338444b55c4cc45d480587bcd86a13d2a6150c895d28ba19c9b",
+      "bytes": 136095
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1787470436_42335105.jpg",
+      "sha256": "6fee44435495ca75160be60239ba9353fa8bc1ba200668fd4adf477e5cb9225c",
+      "bytes": 141416
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1787470437_94234259.jpg",
+      "sha256": "aeaf8c6d8a1fca27811d5e999f50b0a8ae50abab208b67b9dea0d3bdbd86ba1d",
+      "bytes": 144183
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-rom-4151/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/99/1787470438_95962899.jpg",
+      "sha256": "06debc1c84dfcd8c9e00d7869662d6e428260f189ca8af6524f170cb26d7c773",
+      "bytes": 135634
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

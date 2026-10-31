@@ -1,0 +1,76 @@
+{
+  "slug": "premium-kompoziciya-v-kor-2521",
+  "name_ru": "Премиум композиция в корзине Осень",
+  "flowwow_url": "https://flowwow.com/flowers/premium-kompoziciya-v-kor-2521/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в корзине",
+  "price_observed_rub": null,
+  "availability_observed": "available_observed_at_scan",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/39/1793198951_41039639.jpg",
+      "sha256": "82c8db53bc9b47696334b86a9a74509d673441084d54bb8601ab4d475904f611",
+      "bytes": 102842
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/69/1793198505_70805069.jpg",
+      "sha256": "993bb8fe58a866512d714da88307e681c80b8db22695bc125bc896898b8cd6d2",
+      "bytes": 109379
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1793431132_71638578.jpg",
+      "sha256": "ce8dbd744e1d62dba64685dc3b251964d062dcb2a63fe111386b90c5e94d7821",
+      "bytes": 107421
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/76/1793198546_31396676.jpg",
+      "sha256": "54c4444428282e2a26611bfa38c10832474d7ca5d4768ae97e4fd8e694ccb3dd",
+      "bytes": 222333
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/79/1793431165_61470579.jpg",
+      "sha256": "304d3592a12104cc51af83bc0fdade978764fa6d29c77afc517b08d8a2439621",
+      "bytes": 107652
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/07/1793198580_66553007.jpg",
+      "sha256": "385f94562fc11d5167797b7d9d7fc52cad3c8bbef0ca06d05b9ed7c8528813d5",
+      "bytes": 159431
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/73/1793431197_26194373.jpg",
+      "sha256": "3b79cfd74e64fe92e6a1f6de514c53b40b60a66b5fda2b0f4d24e7b34da9a8c6",
+      "bytes": 195359
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/95/1793431200_81172995.jpg",
+      "sha256": "ed2ccc618bbe4c05eaafe0ee3b77b8b991c57c659de6fa21aacf909b24e3cdd4",
+      "bytes": 149402
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

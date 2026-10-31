@@ -1,0 +1,76 @@
+{
+  "slug": "avtorskiy-buket-roza-alst-8286",
+  "name_ru": "Авторский букет роза, альстромерии, маттиола, роза пионовидная кустовая, эвкалипт 5778",
+  "flowwow_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 4960,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/26/1792930136_63762326.jpg",
+      "sha256": "268de15feedd59fb40ecd9fe4d592e6b972784539ba539a3059173752f129e29",
+      "bytes": 87183
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/29/1792930141_72252529.jpg",
+      "sha256": "ad7505da18589ba76ab141d348becea33116f1deca18b6026084642dc1071fb5",
+      "bytes": 92779
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/54/1792930146_82267554.jpg",
+      "sha256": "7cb1f4bd8521feed02167e8263a9c2bc5cde21f8c579628702645605d08d19c2",
+      "bytes": 86032
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/90/1792930151_62671190.jpg",
+      "sha256": "2ba51c6953474b9a8f49b8c91ec2d92f8070e14cfcbf347c92c87079e1f6b548",
+      "bytes": 114792
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/77/1792930131_54761477.jpg",
+      "sha256": "d94cae51cd5eab324978e51a8e9de8b5ed4ae54f69ff6344263d9b80f94238c0",
+      "bytes": 112723
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/75/1792930156_89454975.jpg",
+      "sha256": "d9e360a35de743339c6645e52ceebba6e0d09caefb96dc6369d6036b87ccb529",
+      "bytes": 104358
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/40/1792930133_55202640.jpg",
+      "sha256": "96a3311f7f02ba79a255935a1ffceda8541a1b8d8f29355e2ce4a90e3d3e8f97",
+      "bytes": 103090
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/avtorskiy-buket-roza-alst-8286/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1792930161_52244159.jpg",
+      "sha256": "93a3165152d3ba393cdadb9cdb9c643f158194ad094a1d49eb91e2a6ff3884b1",
+      "bytes": 81487
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

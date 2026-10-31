@@ -1,0 +1,76 @@
+{
+  "slug": "avtorskiy-buket-24579",
+  "name_ru": "Авторский букет Осенний 24579",
+  "flowwow_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 7600,
+  "availability_observed": "sold_out",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/53/1791117376_97202253.jpg",
+      "sha256": "30df3d38a88d050ca86be92a0bc8640d56c1bbf81a4faa79bb0599268eb279ca",
+      "bytes": 132092
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/61/1791117378_97134561.jpg",
+      "sha256": "e153f9202f389a37e698fe1f7c2d824f4dc3cb29fe52bb3ab83162048bc8e78a",
+      "bytes": 123090
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/80/1791117380_73597480.jpg",
+      "sha256": "1516df125789e13df35770a03b62f4db0468233a0c662351811daacd0ffe0c21",
+      "bytes": 115888
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/38/1791117382_13640338.jpg",
+      "sha256": "66776c08e751ba8146010b74676e81d51ece4c6efcba505f9b15796015747147",
+      "bytes": 172840
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/47/1791117384_62938647.jpg",
+      "sha256": "3bf1d0fd9206b04e14a587b36e01392afefec70aad376e58c0b30900e87b644f",
+      "bytes": 115023
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/52/1791117386_12578452.jpg",
+      "sha256": "9c087c379a05f7204a4f03fe933852ff6684f7a8cf02bd84086372281fd5f99d",
+      "bytes": 119272
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/41/1791117387_20262341.jpg",
+      "sha256": "5a677f6d5c84cf8a6d49a7b48f20b054f5f485d656018d27007b1040bfeafdc0",
+      "bytes": 124329
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/avtorskiy-buket-24579/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/53/1791117391_54061953.jpg",
+      "sha256": "778ba8f2f47f8d90f7c949388af682876b1c466df52a648c57d6a7748c2b43a5",
+      "bytes": 127105
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

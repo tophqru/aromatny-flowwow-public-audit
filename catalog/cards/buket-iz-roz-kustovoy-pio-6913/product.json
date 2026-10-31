@@ -1,0 +1,55 @@
+{
+  "slug": "buket-iz-roz-kustovoy-pio-6913",
+  "name_ru": "Букет из роз, кустовой пионовидной розы, диантуса, маттиолы, эвкалипта",
+  "flowwow_url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 6914,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-iz-roz-kustovoy-pio-6913/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1782303416_85433178.jpg",
+      "sha256": "b02d54977ea0c8fb055ed4bf0551f096bf80c5d2b1e4ede83a1e6d3868382189",
+      "bytes": 111231
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-iz-roz-kustovoy-pio-6913/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/46/1782303418_72773846.jpg",
+      "sha256": "3a774ed72f349a1ca5c13486fc517b2b5145e16c1e730db97b1ec6b43b054d55",
+      "bytes": 130397
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-iz-roz-kustovoy-pio-6913/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/87/1782303412_32347587.jpg",
+      "sha256": "e46a680fd255d5e0813c6b6a26b68e9cc2ced4e6a3cee551d0b81216f493b21d",
+      "bytes": 105180
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-iz-roz-kustovoy-pio-6913/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/31/1782303413_17163931.jpg",
+      "sha256": "89cce74c21a5325543e9a5600e3e1519d0dca21458b438df7e9040731b6fb738",
+      "bytes": 113856
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-iz-roz-kustovoy-pio-6913/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1782303414_34537678.jpg",
+      "sha256": "c603ad4a5ae64b036c4f1a41a99287b0c10e95cb621e814505abb05e628fb85d",
+      "bytes": 130713
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

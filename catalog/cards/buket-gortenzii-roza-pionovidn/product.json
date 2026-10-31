@@ -1,0 +1,62 @@
+{
+  "slug": "buket-gortenzii-roza-pionovidn",
+  "name_ru": "Букет гортензии, роза пионовидная кустовая, диантус, маттиола, эвкалипт",
+  "flowwow_url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 6767,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-gortenzii-roza-pionovidn/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/56/1747229471_71612656.jpg",
+      "sha256": "91ad844d582dfc75cee82032bdf0d77704d02fe70ee72512692433de585cb805",
+      "bytes": 118092
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-gortenzii-roza-pionovidn/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/16/1747229472_27660016.jpg",
+      "sha256": "f7b1589ec1e87c6fae5ec841f315e9b1707b5c13d549b318be2714186fc7de1e",
+      "bytes": 130043
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-gortenzii-roza-pionovidn/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/62/1747229472_46112862.jpg",
+      "sha256": "692582c558ec958beed286346574ec2e8a6be9acb920bebcdf4e8ca9010edd90",
+      "bytes": 96003
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-gortenzii-roza-pionovidn/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1747229472_94843405.jpg",
+      "sha256": "82fffdb6cc3b83485e1ed82702b2cbb00c6f7833bb165dbcf9e624e3a77feb65",
+      "bytes": 98432
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-gortenzii-roza-pionovidn/photos/05.jpg",
+      "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/18/1747229472_5065418.jpg",
+      "sha256": "b2ddcca183ca247ea1eec3d919dd1206c7b4538f1343d88e2dc85357fbde6e85",
+      "bytes": 90742
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-gortenzii-roza-pionovidn/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/80/1747229473_39112780.jpg",
+      "sha256": "8dff5fd21837925a1416e98cb96366e8450a1af57b419f9cb1e8be38ef3c0777",
+      "bytes": 141078
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

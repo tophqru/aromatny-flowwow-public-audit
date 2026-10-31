@@ -1,0 +1,76 @@
+{
+  "slug": "kompoziciya-v-shlyapnoy-k-7637",
+  "name_ru": "Композиция в шляпной коробочке 24688",
+  "flowwow_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7637/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в коробке",
+  "price_observed_rub": null,
+  "availability_observed": "sold_out",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/56/1789721065_44154456.jpg",
+      "sha256": "e3b4ea37d944fb18bd355c6c6026ace41852e019bbc5ce5de7b8ae947a5abc29",
+      "bytes": 85839
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/25/1789721070_70788325.jpg",
+      "sha256": "75cf625d3cbf0875cc5e02b34be20e95a24f40bffa1aef57f069c4c0e44b50e3",
+      "bytes": 95472
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/62/1789721074_50907562.jpg",
+      "sha256": "847f2d055bc9af3af8d14903d03984eb6750a8428060ce6aeb88d7d3dc496e2f",
+      "bytes": 99619
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/63/1789721078_17040663.jpg",
+      "sha256": "add9c4757f319770d7ee0f323861c4c3056287c499e4fdf787b855a28930ef3c",
+      "bytes": 88522
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/60/1789721081_20619560.jpg",
+      "sha256": "f3aa8f33294a856ba5ce5b6df3108c4c5b58088c8e8aecabad8499af248a8cc1",
+      "bytes": 92756
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/38/1789721085_14589638.jpg",
+      "sha256": "f2e2fa02667076477c5cb88d0f75556e2057c693b71324628e24a479af5421d2",
+      "bytes": 101715
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/25/1789721088_88626525.jpg",
+      "sha256": "12f533434d352765440d79df249abb860417f827ba41e7d9fad3605cd319816a",
+      "bytes": 89107
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7637/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/41/1789721093_63965341.jpg",
+      "sha256": "597dae6ce7782a1b6fd31f5d7c7744207e7f795b4a549171c1e2a5b8068e64c7",
+      "bytes": 99788
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

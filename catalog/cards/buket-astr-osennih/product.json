@@ -1,0 +1,76 @@
+{
+  "slug": "buket-astr-osennih",
+  "name_ru": "Букет астр осенних",
+  "flowwow_url": "https://flowwow.com/flowers/buket-astr-osennih/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Монобукеты",
+  "price_observed_rub": 6550,
+  "availability_observed": "temporarily_unavailable",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/71/1788673992_29701471.jpg",
+      "sha256": "ffad0fcef56cd50a2a521c1e91bd5f25dab0c793560f49a89af49bb689f08bc3",
+      "bytes": 110555
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1788673996_85085459.jpg",
+      "sha256": "fd307de4c635f1c9f3d7d7e92b5c41299d4df48acf6f85e83178458e43e68938",
+      "bytes": 104293
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/87/1788674001_87791087.jpg",
+      "sha256": "b2285557b18200a176e1540d101ea597a6b77ebba3acb228bf2e202c2c020e2d",
+      "bytes": 104739
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/95/1788674005_23701995.jpg",
+      "sha256": "d756f85c4f8e90b852518b6bbc267d37b3490c74e9bad951f3cda789361d422d",
+      "bytes": 104836
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/92/1788674009_23430192.jpg",
+      "sha256": "5997ed5b2bf60f92769e1b0dd1b658d9472d08a684aa2b635ea30aaf64a19ee2",
+      "bytes": 86949
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1788674014_88921459.jpg",
+      "sha256": "76100c1b8e10342aadafa679742305788e6854de75e451456ff61cb0eb86a469",
+      "bytes": 113547
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/40/1788674019_18536340.jpg",
+      "sha256": "17fd9ee70592213222f9380054dd566350e8d98faab8d5d1eb5648462b0bf11b",
+      "bytes": 144785
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/buket-astr-osennih/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/43/1788674025_85251043.jpg",
+      "sha256": "8565a4af7e0574b7219370b7d974dffc4c4477a66611c60fd538fa38696447ce",
+      "bytes": 122800
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

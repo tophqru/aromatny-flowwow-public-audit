@@ -1,0 +1,62 @@
+{
+  "slug": "buket-s-pionovidnoy-kusto-4643",
+  "name_ru": "Акция! Букет с пионовидной кустовой розой и альстромерией",
+  "flowwow_url": "https://flowwow.com/flowers/buket-s-pionovidnoy-kusto-4643/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 18775,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/15/1733994218_70506115.jpg",
+      "sha256": "2516dadb976103a840fd3cdcbc9d4ce1c87666f10de7937539f6ca2825f19dc0",
+      "bytes": 125162
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1733994122_62722078.jpg",
+      "sha256": "4c79feaab9fa519044abd3794037f10ceae0fa78e5c5cf706ac0b061ba2be9fb",
+      "bytes": 127271
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/16/1733994219_44779816.jpg",
+      "sha256": "b40d7679698d1ad8b7f221ab720a34222ca81ba9af167774a852bd78d8e1a277",
+      "bytes": 135991
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/04.jpg",
+      "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/32/1733994219_3420732.jpg",
+      "sha256": "2516dadb976103a840fd3cdcbc9d4ce1c87666f10de7937539f6ca2825f19dc0",
+      "bytes": 125162
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/77/1733994219_10894477.jpg",
+      "sha256": "b40d7679698d1ad8b7f221ab720a34222ca81ba9af167774a852bd78d8e1a277",
+      "bytes": 135991
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/57/1733994220_35671357.jpg",
+      "sha256": "2516dadb976103a840fd3cdcbc9d4ce1c87666f10de7937539f6ca2825f19dc0",
+      "bytes": 125162
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

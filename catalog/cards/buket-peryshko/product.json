@@ -1,0 +1,106 @@
+{
+  "slug": "buket-peryshko",
+  "name_ru": "Букет «Перышко»",
+  "flowwow_url": "https://flowwow.com/flowers/buket-peryshko/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 6727,
+  "availability_observed": "available_observed",
+  "composition_items": [
+    {
+      "component": "Лимониум",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Озотамнус",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 6,
+      "unit": "шт"
+    },
+    {
+      "component": "Лагурус",
+      "quantity": 6,
+      "unit": "шт"
+    },
+    {
+      "component": "Кустовая роза пионовидная",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Помпон",
+      "quantity": 3,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 34,
+    "height": 50
+  },
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-peryshko/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/76/1758182967_34549476.jpg",
+      "sha256": "e06432899dd1503159f63c04f24d3703148ecb07fc3fbb10fe161f788455537a",
+      "bytes": 104546
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-peryshko/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/36/1758182967_91715636.jpg",
+      "sha256": "6291d58298b7e49deffd7db388f3341a30dcaf709b1c84dd4c9589f609583ae1",
+      "bytes": 100563
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-peryshko/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/61/1758182968_31133261.jpg",
+      "sha256": "b072a5d3b6319a2b7d4c5bcaa25ebe7f4fcfaff80eef74e05dfc778c9bc6b1dc",
+      "bytes": 112524
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-peryshko/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/43/1758182968_13532243.jpg",
+      "sha256": "3ef27e89f5fcf176e4fd1a7dde54f6f8c6f0a303307684e100ad7002aae063f1",
+      "bytes": 85169
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-peryshko/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/51/1758182968_75476651.jpg",
+      "sha256": "f9f1f138e306cc8b55afcb35061aadb36a6671953ba8188045079610283e52e7",
+      "bytes": 105242
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-peryshko/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/89/1758182969_50381789.jpg",
+      "sha256": "b2ad45765448a72b38c620d82c9a6596b7c7bbea6b61969f975ea5d720d293ae",
+      "bytes": 82768
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

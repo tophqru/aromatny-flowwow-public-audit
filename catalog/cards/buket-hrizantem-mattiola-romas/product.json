@@ -1,0 +1,62 @@
+{
+  "slug": "buket-hrizantem-mattiola-romas",
+  "name_ru": "Букет хризантем, маттиола, ромашка, роза пионовидная кустовая",
+  "flowwow_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 7499,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-hrizantem-mattiola-romas/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/17/1763224736_13240417.jpg",
+      "sha256": "67cc06fe217fdc9ffc8deae3edf2032b95c3b0507af684198d466e25ad2a8f85",
+      "bytes": 134947
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-hrizantem-mattiola-romas/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/43/1763224736_46352543.jpg",
+      "sha256": "5d6b63ac31b7d7a8623ea7513cc7b3cc9436154577c74988513b997a6775e46a",
+      "bytes": 124459
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-hrizantem-mattiola-romas/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/08/1763224736_97253608.jpg",
+      "sha256": "ccaaee7dea0aae5d1c4d77455f73d6b04c10b2285a1722090bdf78a71a61688c",
+      "bytes": 110142
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-hrizantem-mattiola-romas/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/19/1763224737_56084319.jpg",
+      "sha256": "cf912c10ad8f2f22b42d9888aa82f567e697730ae3ab9c66bdd3f9056cd7e5d3",
+      "bytes": 118863
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-hrizantem-mattiola-romas/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/30/1763224737_14103030.jpg",
+      "sha256": "079b3237dcc876600bc28d5fe40056602a17cf54e5e21e9b4d12ce03e67fdfd9",
+      "bytes": 133109
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-hrizantem-mattiola-romas/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/98/1763224738_71602098.jpg",
+      "sha256": "4e85028e0b2766a5a843316aa1fc12f6e9fc030f3cea6ec2b51b5255da31b5f9",
+      "bytes": 114073
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

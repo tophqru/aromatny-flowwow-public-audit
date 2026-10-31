@@ -1,0 +1,69 @@
+{
+  "slug": "kompoziciya-v-korzine-astra-po",
+  "name_ru": "Акция! Композиция в корзине астра, подсолнух, хризантема, гринтрик, эустома, маттиола, диантус, ромашка кустовая",
+  "flowwow_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в корзине",
+  "price_observed_rub": 6878,
+  "availability_observed": "sold_out",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/44/1787230781_25133044.jpg",
+      "sha256": "9020b98411a56af8365fea53d547c6a995fab70326c3dd4b2093cd6fcfb3421e",
+      "bytes": 114157
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/67/1787230786_88127167.jpg",
+      "sha256": "06adac264d658efe6c600cbf70b667abfb07840d7683c267d0829c97d3952507",
+      "bytes": 128055
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/23/1787230791_69976823.jpg",
+      "sha256": "df8950ff65c2bdb72a6b22c6f6d624b214152fb23eb25bfbf64908329d88f2aa",
+      "bytes": 100009
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/40/1787230799_93965340.jpg",
+      "sha256": "6d05b8f59e4b7b2a5400cff012ca49d2147d2994ba7ea091549bd19ec1d80f49",
+      "bytes": 122358
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/31/1787230806_13296631.jpg",
+      "sha256": "050a3cac9023435be81856e11d46ea3924a3309378a190ef5fcd95ef188e621a",
+      "bytes": 107390
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/00/1787230813_50211000.jpg",
+      "sha256": "42afea5e6cc09d0f36b292fb30d33ca747f4f6dbe90548f822af00a5d9e5d896",
+      "bytes": 102230
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/55/1787230820_59485855.jpg",
+      "sha256": "f98b0fa5034eef5e141edf3617e44f495e2276ac98640df04e13895973b57742",
+      "bytes": 118559
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

@@ -1,0 +1,101 @@
+{
+  "slug": "buket-siciliya-6909",
+  "name_ru": "Авторский букет Сицилия, гортензия и розы",
+  "flowwow_url": "https://flowwow.com/flowers/buket-siciliya-6909/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 15378,
+  "availability_observed": "available_observed",
+  "composition_items": [
+    {
+      "component": "Гортензия",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза кустовая",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 7,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная ароматная",
+      "quantity": 5,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 42,
+    "height": 50
+  },
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-siciliya-6909/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/34/1728217342_60092234.jpg",
+      "sha256": "a08b2f0fb7b3babe018a4b13c09fbbf5a7b136b0f6b5730f749c87e4e297a2de",
+      "bytes": 113865
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-siciliya-6909/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/16/1728138305_79935016.jpg",
+      "sha256": "be4a7ec746482e721a6d6b910f561c66facbc90004958a10534fa8520915f3eb",
+      "bytes": 141751
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-siciliya-6909/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/67/1728138305_10689067.jpg",
+      "sha256": "a08b2f0fb7b3babe018a4b13c09fbbf5a7b136b0f6b5730f749c87e4e297a2de",
+      "bytes": 113865
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-siciliya-6909/photos/04.jpg",
+      "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/42/1728138306_5247742.jpg",
+      "sha256": "390a8262266c77df8ce5213d26a4a72135b96efd9dd6c2fe0d611f8cdea70f4f",
+      "bytes": 124208
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-siciliya-6909/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/78/1728138306_28935978.jpg",
+      "sha256": "1dd3d11704c5e908146555500a6ef964fae0bebf39e2f2dabebd1afbee9d2e13",
+      "bytes": 122374
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-siciliya-6909/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/55/1728138306_73589155.jpg",
+      "sha256": "6909ea7e59df0ecba076b0351eb5b2122cbeb99e5c92bba3656d16af6c48921e",
+      "bytes": 157009
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "buketik-premium-v-korzine",
+  "name_ru": "Премиум композиция в корзине ароматный пион, роза пионовидная кустовая, орхидея, роза, эвкалипт",
+  "flowwow_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в корзине",
+  "price_observed_rub": 69525,
+  "availability_observed": "temporarily_unavailable",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buketik-premium-v-korzine/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/93/1750693276_26446493.jpg",
+      "sha256": "f198aec437f054709e5b7a62ff3ff3ba7534cc4e37f287314b2a50ce9b916bcc",
+      "bytes": 131663
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buketik-premium-v-korzine/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/39/1750693276_81681439.jpg",
+      "sha256": "4db39e9b8f9698bf2603e2af411905bd009c00f93c9a5a170e453ff2edb77e23",
+      "bytes": 129273
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buketik-premium-v-korzine/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/32/1750693276_29487732.jpg",
+      "sha256": "3b086b3a9b6ecd1321956cd0fd25a80935c371aff5fde604ab4623437cb912f6",
+      "bytes": 123533
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buketik-premium-v-korzine/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/38/1750693276_94614238.jpg",
+      "sha256": "520f7fddf782af8f9af8b42b2f93cb3ada59b501b7b25bcfa2f51523aac623f3",
+      "bytes": 136606
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buketik-premium-v-korzine/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/45/1750693276_62543045.jpg",
+      "sha256": "34fee376c3faf5d205a09fd38843cf3d687c2f1413265d1491ee988de3c194cd",
+      "bytes": 131462
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buketik-premium-v-korzine/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/32/1750693277_66107132.jpg",
+      "sha256": "e2e47bc74a9b1486a52a893ecf303775124f43819b3887cd4c4401a36a5abc08",
+      "bytes": 135156
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "kompoziciya-roza-pionovidnaya-",
+  "name_ru": "Композиция роза пионовидная кустовая, эрингиум, маттиола, озотамнус, эвкалипт",
+  "flowwow_url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Цветы в коробке",
+  "price_observed_rub": 2500,
+  "availability_observed": "sold_out",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/45/1790586189_33738745.jpg",
+      "sha256": "ecb5e4d6eb746ed691471dfc7b9b68cdcf25b35b7e7d38646e2de35979d2c595",
+      "bytes": 123114
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/57/1790586191_24734557.jpg",
+      "sha256": "f3af1f540141779d05df9e98b50ebb2c3f1471ecbb81d04a6e9e9420b00a57b8",
+      "bytes": 118054
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/23/1790586193_74207023.jpg",
+      "sha256": "d21563f4986781fa39539ddb9c55e532e82e3c800b4745fcb290d809662f2c84",
+      "bytes": 127655
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/66/1790586195_66842966.jpg",
+      "sha256": "4640c224285f65e328a580a2b913fdcc6c1d028b4def795c1ebf764668a59a3d",
+      "bytes": 114543
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/14/1790586197_52608814.jpg",
+      "sha256": "afdfd0615a4acf1d494b5eeaa0e624bab18d30852edbaa674a9640ec37cba878",
+      "bytes": 112757
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/29/1790586198_49540229.jpg",
+      "sha256": "9bc71da72cb8bdd4fe0d575b374b99a48e4660a2060c21014c364152c5f445ea",
+      "bytes": 120713
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/74/1790586200_78195174.jpg",
+      "sha256": "c18ea64749bce0a7fa62983b4c7b02b9101afdbff3bbd8e70154ea3cf2253681",
+      "bytes": 110405
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/kompoziciya-roza-pionovidnaya-/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/28/1790586202_68654728.jpg",
+      "sha256": "da53c51fc04289a46b113b92c6dd0b7497e4f5806778476318b70cbbd41113bd",
+      "bytes": 141843
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

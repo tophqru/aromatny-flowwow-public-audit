@@ -1,0 +1,62 @@
+{
+  "slug": "buket-vozdushniy-puding-roza-k",
+  "name_ru": "Букет воздушный пудинг роза кустовая, маттиола, диантус",
+  "flowwow_url": "https://flowwow.com/flowers/buket-vozdushniy-puding-roza-k/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 6893,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-vozdushniy-puding-roza-k/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/79/1768238428_85875079.jpg",
+      "sha256": "81e12612447b10f49c4c151fd907200e68ae76e3d5493a93934ab99807a33ce3",
+      "bytes": 117287
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-vozdushniy-puding-roza-k/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/16/1768238428_15515416.jpg",
+      "sha256": "53449df8129893dd182acaab6ee39ed58db3f0e319f48eb2081f952fc8a9800a",
+      "bytes": 107042
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-vozdushniy-puding-roza-k/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/40/1768238429_21085240.jpg",
+      "sha256": "122e62c3680abe45a71ae668048bf033d68f4db949fa20b698921d400562e070",
+      "bytes": 97909
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-vozdushniy-puding-roza-k/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/12/1768238429_31953912.jpg",
+      "sha256": "4967c8cf756923ebd6597d493f51f634145a386be89cead71a0691edfcc885ee",
+      "bytes": 98395
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-vozdushniy-puding-roza-k/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/75/1768238429_76228075.jpg",
+      "sha256": "507c66e3c491196d08fe565fc69b5eca47258271218764fa41247d8501254915",
+      "bytes": 99261
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-vozdushniy-puding-roza-k/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/83/1768238429_24622083.jpg",
+      "sha256": "093dc91d2828c5927a55ba344f44ecd71c1eed6496927b3ef488d54806ef7d47",
+      "bytes": 104784
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

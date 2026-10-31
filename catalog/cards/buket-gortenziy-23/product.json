@@ -1,0 +1,62 @@
+{
+  "slug": "buket-gortenziy-23",
+  "name_ru": "Букет гортензий 23",
+  "flowwow_url": "https://flowwow.com/flowers/buket-gortenziy-23/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Монобукеты",
+  "price_observed_rub": 6488,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/buket-gortenziy-23/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/77/1743102015_88367777.jpg",
+      "sha256": "cb39d7a5bc13953c7bbcfe1ca6828eee44e6a5b24ddcdb55dc0c6cff17d2d1e6",
+      "bytes": 95208
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/buket-gortenziy-23/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/17/1743102015_48636317.jpg",
+      "sha256": "6949a54bf2166dcf9eed048d554d735a57833909b0d043fb9d1c2428513dcd17",
+      "bytes": 105313
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/buket-gortenziy-23/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/53/1743102015_48749853.jpg",
+      "sha256": "4911c40b4240697e9261a4290bbfb2726a92511e88c756f966f744cf48f79587",
+      "bytes": 90803
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/buket-gortenziy-23/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/41/1743102015_97427041.jpg",
+      "sha256": "a452aa417c2c0ba3a1be0ba7a55022b0046972fc006ef7fa0da9ce6d00352d14",
+      "bytes": 94661
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/buket-gortenziy-23/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/50/1743102015_31904850.jpg",
+      "sha256": "888388815e9b83354724319b1c03e5393d4ea0f45c4cd73f71f364ddda28a396",
+      "bytes": 95154
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/buket-gortenziy-23/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/74/1743102015_95846374.jpg",
+      "sha256": "2cfd4ac2c91d55aef260126c59488c062aa51e81b2f9a337498ba48ae787097a",
+      "bytes": 104774
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

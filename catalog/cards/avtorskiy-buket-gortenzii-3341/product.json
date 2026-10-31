@@ -1,0 +1,120 @@
+{
+  "slug": "avtorskiy-buket-gortenzii-3341",
+  "name_ru": "Букет с гортензией, розой, эустомой, маттиолой и орхидеей",
+  "flowwow_url": "https://flowwow.com/flowers/avtorskiy-buket-gortenzii-3341/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Авторские букеты",
+  "price_observed_rub": 9766,
+  "availability_observed": "available_observed",
+  "composition_items": [
+    {
+      "component": "Гортензия",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Маттиола",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Орхидея",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 5,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 35,
+    "height": 50
+  },
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/56/1787236918_59849156.jpg",
+      "sha256": "ba178ac2c7cd98eab34457d1b197789fffcbe067f7740295d73478508e4efe6f",
+      "bytes": 90774
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/27/1787236928_21241927.jpg",
+      "sha256": "5da63750678da7a5444478494b8ce5b1c8591d03af7b129febb43e4be484dd64",
+      "bytes": 91226
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/26/1787236920_30156326.jpg",
+      "sha256": "1eb80e0a7ea0a1c11c902d2c124186b2d776a70d72dfa58297db4df74397dfd0",
+      "bytes": 89977
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/37/1787236921_31893337.jpg",
+      "sha256": "9689eb8eaef748a5e30a3f12d3cf5cd5a648288afdc65be9ab8dd23404fa64de",
+      "bytes": 93210
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/08/1787236922_83016208.jpg",
+      "sha256": "0537800f0aad315272812e89dc702c815b176ae26d4772e1c359ca761d091944",
+      "bytes": 83092
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/12/1787236923_58369012.jpg",
+      "sha256": "5c1545d588105b815c234786a4f783c161c382d4eaae5970cdd85788c56cc3aa",
+      "bytes": 89535
+    },
+    {
+      "order": 7,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/07.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/94/1787236924_19436294.jpg",
+      "sha256": "d3f37bece4ad0925ead62157e2aae0c954516097bc73cdcc7132e686dc3fc1ca",
+      "bytes": 82894
+    },
+    {
+      "order": 8,
+      "path": "data/flowwow/items/avtorskiy-buket-gortenzii-3341/photos/08.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/92/1787236925_62178792.jpg",
+      "sha256": "a13a67c009e1bf97b00d28dddc9b4ec2fc1e605839aa72bb58983da7e39308fd",
+      "bytes": 81784
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}

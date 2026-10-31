@@ -1,0 +1,62 @@
+{
+  "slug": "francuzskie-rozy-pod-lentu-21-",
+  "name_ru": "Букет роз французских под ленту 21 штука",
+  "flowwow_url": "https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/",
+  "seller_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_category": "Монобукеты",
+  "price_observed_rub": 11355,
+  "availability_observed": "UNKNOWN_NOT_REVERIFIED",
+  "composition_items": [],
+  "dimensions_cm": null,
+  "description_raw_ru": null,
+  "description_status": "NOT_CAPTURED",
+  "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
+  "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+  "gallery": [
+    {
+      "order": 1,
+      "path": "data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/01.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/67/1769973883_55760467.jpg",
+      "sha256": "9738fbaedbd98029da5020a351fbece12bd046b64013f95a92b78c41a011978d",
+      "bytes": 107005
+    },
+    {
+      "order": 2,
+      "path": "data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/02.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/19/1769973883_36432919.jpg",
+      "sha256": "44decdc6c1a66226dffc65ceb7d2b74aff9dba4aa48d151d83bc768fd2148e76",
+      "bytes": 114840
+    },
+    {
+      "order": 3,
+      "path": "data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/03.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/97/1769973883_35324397.jpg",
+      "sha256": "b126bbdea7d6f5d3e5f912f4c29e364cd5f71371bff335e2f05f63c7723941c5",
+      "bytes": 96004
+    },
+    {
+      "order": 4,
+      "path": "data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/04.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/50/1769973884_58300050.jpg",
+      "sha256": "d062b51ae1fce0105c8fe3acab4ed16b0d3898d9b2cfc51147a13468c93112bf",
+      "bytes": 100934
+    },
+    {
+      "order": 5,
+      "path": "data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/05.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1769973884_91436205.jpg",
+      "sha256": "68d8e8047c047908eed486e833362e4cc46ea95e641c8f4abd74ab3110866ce3",
+      "bytes": 98163
+    },
+    {
+      "order": 6,
+      "path": "data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/06.jpg",
+      "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/11/1769973884_25147111.jpg",
+      "sha256": "0a45ce36f46554cb805fde4c15d6a6bc212128a9d7fc65731db5fed0fae5b93c",
+      "bytes": 96050
+    }
+  ],
+  "owner_approved": false,
+  "may_order": false,
+  "may_show_publicly": false
+}
