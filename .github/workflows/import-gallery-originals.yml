@@ -1,0 +1,81 @@
+name: Import verified Flowwow public source JPEGs
+on:
+  push:
+    branches: [main]
+    paths:
+      - catalog/public-snapshot.json
+      - scripts/verify_catalog.py
+      - scripts/download_shard.py
+      - .github/workflows/import-gallery-originals.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: flowwow-public-gallery-import
+  cancel-in-progress: false
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/verify_catalog.py --metadata-only
+  download:
+    needs: metadata
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check --quiet 'Pillow>=10,<12'
+      - name: Download original JPEG shard
+        run: python scripts/download_shard.py --shard ${{ matrix.shard }} --parts 4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: flowwow-gallery-${{ matrix.shard }}
+          path: artifact/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 1
+  assemble:
+    needs: download
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check --quiet 'Pillow>=10,<12'
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: flowwow-gallery-*
+          path: artifact/
+          merge-multiple: true
+      - name: Assemble and independently check all original SHA hashes
+        shell: bash
+        run: |
+          mkdir -p data/flowwow
+          cp -a artifact/data/flowwow/items data/flowwow/items
+          python scripts/verify_catalog.py --check-media
+      - name: Commit verified gallery images to public main
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/flowwow/items/
+          if ! git diff --cached --quiet; then
+            git commit -m 'catalog(media): publish 435 SHA-verified Flowwow originals'
+            git push origin HEAD:main
+          fi
