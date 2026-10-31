@@ -1,12 +1,5 @@
 name: Import verified Flowwow public source JPEGs
 on:
-  push:
-    branches: [main]
-    paths:
-      - catalog/public-snapshot.json
-      - scripts/verify_catalog.py
-      - scripts/download_shard.py
-      - .github/workflows/import-gallery-originals.yml
   workflow_dispatch:
 permissions:
   contents: write
