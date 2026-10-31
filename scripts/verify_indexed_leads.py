@@ -16,6 +16,7 @@ def main():
     first = read("catalog/discovery/FLOWWOW_INDEXED_21_NEW_POSSIBLE_PRODUCTS_2026-10-31.json")
     second = read("catalog/discovery/FLOWWOW_INDEXED_6_MORE_POSSIBLE_PRODUCTS_2026-10-31.json")
     third = read("catalog/discovery/FLOWWOW_INDEXED_25_MORE_POSSIBLE_PRODUCTS_2026-10-31.json")
+    fourth = read("catalog/discovery/FLOWWOW_INDEXED_3_MORE_WITH_SOURCE_DETAILS_2026-10-31.json")
     known = set(p["slug"] for p in baseline["products"])
     known.update(p["slug"] for p in verified["products"])
     known.update(p["slug"] for p in quarantine["suspected_unfinished_candidates"])
@@ -29,13 +30,16 @@ def main():
     assert third["total_unverified_leads"] == 52
     assert third["status"] == "INDEXED_DISPLAY_SELLER_NOT_CANONICALLY_CONFIRMED"
     assert third["visited_live_source_pages"] == 0 and third["clicked_show_more_count"] == 0
+    assert fourth["previous_indexed_unverified"] == 52
+    assert fourth["added_indexed_unverified"] == len(fourth["items"]) == 3
+    assert fourth["known_total_unverified_indexed"] == 55
     assert first["status"] == "INDEXED_SELLER_DISPLAY_MATCH_ONLY_CANONICAL_SHOP_NOT_YET_VERIFIED"
     assert second["status"] == "INDEXED_DISPLAY_SELLER_NOT_CANONICALLY_CONFIRMED"
     assert first["source_access"]["direct_shop_open"] == "CACHE_MISS"
     assert first["source_access"]["connected_browser"] == "NOT_AVAILABLE_ORIGINATING_EXTENSION_CONTEXT_REQUIRED"
     assert first["source_access"]["visible_show_more_text"] == "YES_BUT_CANNOT_CLICK_JS_BUTTON_IN_THIS_SESSION"
     newly_seen = set()
-    for p in first["items"] + second["items"] + third["items"]:
+    for p in first["items"] + second["items"] + third["items"] + fourth["items"]:
         slug = p["slug"]
         assert slug not in known and slug not in newly_seen, f"Duplicate or existing SKU: {slug}"
         assert slug != baseline["excluded_owner_sku"]
@@ -47,6 +51,15 @@ def main():
         assert p["displayed_seller"] == "Ароматный букет"
         assert p["seller_city_in_search_title"] == "Москва"
         assert p["source_ref"].startswith("turn") and "search" in p["source_ref"]
+        if "composition_items_indexed" in p:
+            assert p["canonical_seller_verified"] is False and p["visited_live_page"] is False
+            assert p["clicked_show_more"] is False and p["clicked_pereti_v_magazin"] is False
+            assert len(p["composition_items_indexed"]) > 0
+            assert all(type(v["quantity"]) is int and v["quantity"] > 0 and v["unit"] == "шт" for v in p["composition_items_indexed"])
+            assert p["full_gallery_verified"] is False and p["photos_saved"] == 0
+            assert p["may_order"] is False and p["may_show_publicly"] is False and p["owner_approved"] is False
+            assert p["indexed_price_rub"] > 0
+            continue
         assert p["observed_price_rub"] > 0
         assert p["may_order"] is False if "may_order" in p else p["do_not_add_to_retail"] is True
         assert p["exact_seller_identity_verified"] is False
@@ -54,7 +67,7 @@ def main():
             assert p["photos_saved"] == 0
         else:
             assert p["photo_originals_saved"] == 0
-    assert len(newly_seen) == 52
+    assert len(newly_seen) == 55
     print(json.dumps({"validation":"PASS_INDEXED_CANDIDATES","source_only":True,
                       "new_unverified_leads":len(newly_seen),
                       "existing_verified_cards":len(baseline["products"]),
