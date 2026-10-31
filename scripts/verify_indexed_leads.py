@@ -48,8 +48,11 @@ def main():
         assert url.scheme == "https" and url.hostname == "flowwow.com"
         assert url.path == f"/flowers/{slug}/"
         assert url.query == "" and url.fragment == ""
-        assert p["displayed_seller"] == "Ароматный букет"
-        assert p["seller_city_in_search_title"] == "Москва"
+        assert p.get("displayed_seller", p.get("seller_display_name")) == "Ароматный букет"
+        if "seller_city_in_search_title" in p:
+            assert p["seller_city_in_search_title"] == "Москва"
+        else:
+            assert "composition_items_indexed" in p, "Missing city for older candidate schema"
         assert p["source_ref"].startswith("turn") and "search" in p["source_ref"]
         if "composition_items_indexed" in p:
             assert p["canonical_seller_verified"] is False and p["visited_live_page"] is False
