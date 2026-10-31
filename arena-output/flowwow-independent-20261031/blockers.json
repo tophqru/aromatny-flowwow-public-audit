@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "status": "PARTIAL",
+  "blockers": [
+    {
+      "id": "B001",
+      "type": "INTERACTIVE_BROWSER_UNAVAILABLE",
+      "scope": "Live Flowwow storefront, categories, product pages and seller links",
+      "effect": "No live page opens, scrolling, Show more clicks, canonical seller clicks, current price/stock or live gallery checks.",
+      "attempted_live_requests_this_run": 0,
+      "resolution": "One permitted interactive browser session, sequential navigation, no protection bypass."
+    },
+    {
+      "id": "B002",
+      "type": "OFFICIAL_GITHUB_CONNECTOR_UNSUPPORTED",
+      "scope": "Arena GitHub Connector",
+      "effect": "Connector cannot be used; preconfigured git/gh access is checked separately and used for public delivery if available.",
+      "resolution": "Use the already authenticated git/gh environment; no token requested in chat."
+    },
+    {
+      "id": "B003",
+      "type": "SOURCE_FIELD_GAPS",
+      "scope": "Baseline 66 SKU",
+      "missing_compositions": [
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-roza-alst-8286",
+        "buket-gortenziy-23",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "avtorskiy-buketik-dlya-tebya-r"
+      ],
+      "missing_descriptions": [
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-roza-alst-8286",
+        "buket-gortenziy-23",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "avtorskiy-buketik-dlya-tebya-r",
+        "kompoziciya-v-korzine-astra-po",
+        "buketik-premium-v-korzine",
+        "cve-7264",
+        "buket-astr-osennih",
+        "kompoziciya-v-korzine-rom-4151",
+        "buket-aromatniy-pion-evkalipt-",
+        "kompoziciya-v-shlyapnoy-k-7428",
+        "kompoziciya-v-shlyapnoy-k-6842",
+        "kompoziciya-v-shlyapnoy-k-7637",
+        "kompoziciya-v-shlyapnoy-k-8804",
+        "kompoziciya-roza-pionovidnaya-",
+        "buket-hrizantem-mattiola-romas",
+        "avtorskiy-buket-9444",
+        "buket-sezon-6869",
+        "buket-astr-67892",
+        "avtorskiy-buket-24579",
+        "avtorskiy-buketik-roza-go-1029",
+        "buket-siciliya-6909",
+        "avtorskiy-buket-7186",
+        "avtorskiy-buket-gortenzii-3341",
+        "avtorskiy-buket-roza-mattiola-",
+        "avtorskiy-buket-67899",
+        "buket-peryshko"
+      ],
+      "missing_or_unusable_dimensions": [
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-roza-alst-8286",
+        "buket-gortenziy-23",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "avtorskiy-buketik-dlya-tebya-r",
+        "kompoziciya-v-shlyapnoy-k-6842",
+        "kompoziciya-v-shlyapnoy-k-7637",
+        "kompoziciya-roza-pionovidnaya-",
+        "buket-sezon-6869",
+        "avtorskiy-buket-67899"
+      ],
+      "total_missing_field_values": 49,
+      "resolution": "Exact source page or permitted seller export; do not infer from titles/photos."
+    },
+    {
+      "id": "B004",
+      "type": "UNRESOLVED_COMPOSITION_CONFLICT",
+      "scope": "kompoziciya-aromatnyh-ogromnyh",
+      "stored_quantity": 35,
+      "indexed_quantity": 23,
+      "resolution": "Seller/live-source confirmation of current recipe and observation period."
+    },
+    {
+      "id": "B005",
+      "type": "UNVERIFIED_CANDIDATES_AND_PENDING_GALLERIES",
+      "scope": "55 indexed leads + 4 prior metadata-only products + 2 quarantine links",
+      "resolution": "Exact seller link, complete original gallery and authoritative state before any promotion."
+    },
+    {
+      "id": "B006",
+      "type": "PREVIOUS_ZIP_NOT_PRESENT",
+      "scope": "Current workspace",
+      "observed_zip_files_before_audit": 0,
+      "resolution": "No previous ZIP content was available to compare; no prior result claimed as verified."
+    }
+  ],
+  "historical_source_access_note": "Existing repository evidence records HTTP 403 for three exact Flowwow URLs. Those are prior observations, not requests made in this run.",
+  "not_confirmed_abandoned": [
+    "avtorskiy-buket-roza-alst-8286",
+    "avtorskiy-buket-s-gortenz-3168",
+    "avtorskiy-buketik-dlya-tebya-r",
+    "avtorskiy-buketik-francuzskaya",
+    "avtorskiy-buketik-pion-go-1251",
+    "buket-gortenzii-roza-pionovidn",
+    "buket-gortenziy-23",
+    "buket-iz-kustovoy-pionovi-3287",
+    "buket-iz-roz-kustovoy-pio-6913"
+  ]
+}

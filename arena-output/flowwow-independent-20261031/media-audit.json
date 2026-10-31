@@ -1,0 +1,856 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "summary": {
+    "manifest_photos": 435,
+    "git_tree_photos": 435,
+    "physical_photos": 435,
+    "bytes": 49614983,
+    "unique_sha256": 426,
+    "unique_source_urls": 435,
+    "sha256_mismatches": 0,
+    "byte_size_mismatches": 0,
+    "git_blob_mismatches": 0,
+    "missing_files": 0,
+    "extra_unmanifested_files": 0,
+    "jpeg_decode_failures": 0,
+    "jpeg_sizes": {
+      "1000x1000": 435
+    },
+    "jpeg_modes": {
+      "RGB": 435
+    },
+    "exif_present_count": 0,
+    "icc_profile_count": 105,
+    "jpeg_comment_count": 0,
+    "duplicate_hash_groups": 8,
+    "cross_sku_duplicate_hash_groups": 0,
+    "redundant_duplicate_occurrences": 9,
+    "ordered_media_manifest_sha256": "311b81746be498a7e825cbb3843ed67eb651304b70718a6cc59a1f670727e9d9",
+    "image_bytes_downloaded_from_flowwow": 0
+  },
+  "remote_github_tree_check": {
+    "checked_at_utc": "2026-10-31T22:37:23.600423+00:00",
+    "command": [
+      "gh",
+      "api",
+      "repos/tophqru/aromatny-flowwow-public-audit/git/trees/f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048?recursive=1"
+    ],
+    "repository": "tophqru/aromatny-flowwow-public-audit",
+    "requested_tree_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+    "remote_tree_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+    "remote_tree_truncated": false,
+    "remote_media_blob_count": 435,
+    "local_source_media_blob_count": 435,
+    "path_sets_equal": true,
+    "all_media_blob_oids_equal": true,
+    "image_bytes_downloaded": 0,
+    "mismatched_paths": []
+  },
+  "random_three_sku_checkpoint": [
+    {
+      "slug": "avtorskiy-buket-7186",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-7186/",
+      "photo_path": "data/flowwow/items/avtorskiy-buket-7186/photos/01.jpg",
+      "github_blob_url": "https://github.com/tophqru/aromatny-flowwow-public-audit/blob/f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048/data/flowwow/items/avtorskiy-buket-7186/photos/01.jpg",
+      "git_blob_oid": "8ef1c08fb4bd0d2185fd034404409c97fccebac5",
+      "sha256": "5d8a2651621d0341f869653aa5f60d94cd353d340060a40ff8abea10e32d5137",
+      "manifest_sha256": "5d8a2651621d0341f869653aa5f60d94cd353d340060a40ff8abea10e32d5137",
+      "bytes": 126092,
+      "jpeg_width_height": [
+        1000,
+        1000
+      ],
+      "local_equals_manifest": true,
+      "local_equals_source_git_blob": true
+    },
+    {
+      "slug": "komp-2289",
+      "source_url": "https://flowwow.com/flowers/komp-2289/",
+      "photo_path": "data/flowwow/items/komp-2289/photos/01.jpg",
+      "github_blob_url": "https://github.com/tophqru/aromatny-flowwow-public-audit/blob/f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048/data/flowwow/items/komp-2289/photos/01.jpg",
+      "git_blob_oid": "547b995298d7b74822adc41fa7f318cbeb0d60ad",
+      "sha256": "d3df398a039200c76b7fb9fc0d72963ba94080f0d1aa27c94086430d582b9274",
+      "manifest_sha256": "d3df398a039200c76b7fb9fc0d72963ba94080f0d1aa27c94086430d582b9274",
+      "bytes": 134144,
+      "jpeg_width_height": [
+        1000,
+        1000
+      ],
+      "local_equals_manifest": true,
+      "local_equals_source_git_blob": true
+    },
+    {
+      "slug": "kompoziciya-v-korzine-astra-po",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+      "photo_path": "data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/01.jpg",
+      "github_blob_url": "https://github.com/tophqru/aromatny-flowwow-public-audit/blob/f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048/data/flowwow/items/kompoziciya-v-korzine-astra-po/photos/01.jpg",
+      "git_blob_oid": "11d2d103823f7a6a00c0e175f3071e7614bb6785",
+      "sha256": "9020b98411a56af8365fea53d547c6a995fab70326c3dd4b2093cd6fcfb3421e",
+      "manifest_sha256": "9020b98411a56af8365fea53d547c6a995fab70326c3dd4b2093cd6fcfb3421e",
+      "bytes": 114157,
+      "jpeg_width_height": [
+        1000,
+        1000
+      ],
+      "local_equals_manifest": true,
+      "local_equals_source_git_blob": true
+    }
+  ],
+  "sample_method": "random.Random(seed=source_sha).sample(sorted(slugs), 3); first gallery image per sampled SKU",
+  "duplicate_hash_groups": [
+    {
+      "sha256": "8c7401f12e9501d1f290a0713617a299b82b05b997539305560a0692a0e727a8",
+      "occurrences": [
+        {
+          "slug": "buket-gortenzii-mattiola--1218",
+          "order": 3,
+          "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/03.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1755881012_28288505.jpg"
+        },
+        {
+          "slug": "buket-gortenzii-mattiola--1218",
+          "order": 6,
+          "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/06.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/69/1755881013_94835169.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "2516dadb976103a840fd3cdcbc9d4ce1c87666f10de7937539f6ca2825f19dc0",
+      "occurrences": [
+        {
+          "slug": "buket-s-pionovidnoy-kusto-4643",
+          "order": 1,
+          "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/01.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/15/1733994218_70506115.jpg"
+        },
+        {
+          "slug": "buket-s-pionovidnoy-kusto-4643",
+          "order": 4,
+          "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/04.jpg",
+          "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/32/1733994219_3420732.jpg"
+        },
+        {
+          "slug": "buket-s-pionovidnoy-kusto-4643",
+          "order": 6,
+          "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/06.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/57/1733994220_35671357.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "b40d7679698d1ad8b7f221ab720a34222ca81ba9af167774a852bd78d8e1a277",
+      "occurrences": [
+        {
+          "slug": "buket-s-pionovidnoy-kusto-4643",
+          "order": 3,
+          "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/03.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/16/1733994219_44779816.jpg"
+        },
+        {
+          "slug": "buket-s-pionovidnoy-kusto-4643",
+          "order": 5,
+          "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/05.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/77/1733994219_10894477.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "c76309304bd501724ac9ed3810aa27ff3827658de8a4a969d2783fe5968ac297",
+      "occurrences": [
+        {
+          "slug": "kompoziciya-v-shlyapnoy-k-7428",
+          "order": 4,
+          "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7428/photos/04.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/41/1783596179_97730641.jpg"
+        },
+        {
+          "slug": "kompoziciya-v-shlyapnoy-k-7428",
+          "order": 8,
+          "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7428/photos/08.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/13/1783596181_44648713.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "d484df5b0ae5449f7cfa316e3d9288fcdc12d1cab429132a7fbc96d4ad7ffa3a",
+      "occurrences": [
+        {
+          "slug": "komp-2289",
+          "order": 5,
+          "path": "data/flowwow/items/komp-2289/photos/05.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/00/1787846654_24584300.jpg"
+        },
+        {
+          "slug": "komp-2289",
+          "order": 7,
+          "path": "data/flowwow/items/komp-2289/photos/07.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/06/1787906449_21815706.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "73119cabe6b2cac2eedb8b39ea667437c070943a13183ca0e1f20d765c7f3fee",
+      "occurrences": [
+        {
+          "slug": "kompoziciya-v-shlyapnoy-k-8804",
+          "order": 1,
+          "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-8804/photos/01.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/88/1781426757_50926588.jpg"
+        },
+        {
+          "slug": "kompoziciya-v-shlyapnoy-k-8804",
+          "order": 6,
+          "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-8804/photos/06.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/63/1781426758_39594163.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "a08b2f0fb7b3babe018a4b13c09fbbf5a7b136b0f6b5730f749c87e4e297a2de",
+      "occurrences": [
+        {
+          "slug": "buket-siciliya-6909",
+          "order": 1,
+          "path": "data/flowwow/items/buket-siciliya-6909/photos/01.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/34/1728217342_60092234.jpg"
+        },
+        {
+          "slug": "buket-siciliya-6909",
+          "order": 3,
+          "path": "data/flowwow/items/buket-siciliya-6909/photos/03.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/67/1728138305_10689067.jpg"
+        }
+      ]
+    },
+    {
+      "sha256": "3a0f523c1392479d4849fa070ddeec5be969cf12c15bcef5d1065f0f5aeb1e26",
+      "occurrences": [
+        {
+          "slug": "avtorskiy-buketik-francuz-9106",
+          "order": 4,
+          "path": "data/flowwow/items/avtorskiy-buketik-francuz-9106/photos/04.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/52/1773816624_74501152.jpg"
+        },
+        {
+          "slug": "avtorskiy-buketik-francuz-9106",
+          "order": 6,
+          "path": "data/flowwow/items/avtorskiy-buketik-francuz-9106/photos/06.jpg",
+          "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1773816624_95708059.jpg"
+        }
+      ]
+    }
+  ],
+  "duplicate_source_url_groups": [],
+  "galleries": [
+    {
+      "slug": "buket-vozdushniy-puding-roza-k",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "d1e5d52eba693db0630d1711457ad2cd070d3e79e1182338e994da78c2edcd89",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-s-gortenz-3168",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "7f88795ab9a4778875a8fad2e6ae0241c4665e1e71c0d4561997165f8d35bf1a",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-roza-alst-8286",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "16a97f3b916b31fa96d9b0c04c428bac05733ab09fa596eefbaa9eaee5917877",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-gortenziy-23",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "729571b931410b320134349bd93750f370c9813ceaa6b07677555c6315b3531b",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-s-mattioloy-rozoy-k-9188",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "06f7197b71cb43c6f726cf164e352446638f1015c131757d80c5481c841c7a6f",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-gortenzii-mattiola--1218",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "a3316b882afbb7b48dba58084baedfb63364a008f82842f45f383a03301f387f",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-iz-kustovoy-pionovi-3287",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "b1b7badacdb8eb22c4939570c4512da2bb0a658a390f087a61e149d8adeb7c7b",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-gortenzii-roza-pionovidn",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "dd1ccd0a4dee6d8b3d98c1c6cbc8ce4c3544964654ef3ee5e38d95112810f9a6",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-mattiola-roza-piono-5396",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "fd98e794f8d22ebefae8001c2f2d07f1594dcd93ec027b02a29f4094cd1ba108",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-iz-roz-kustovoy-pio-6913",
+      "gallery_records": 5,
+      "physical_files_checked": 5,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "25c2db2d8c89d39a2d6555213a7e6f675b254726e160ab214046199c209b63ea",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-iz-diantusa-gvozdik-6944",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "245ba70d45af1c3415789a27a05c869714aef560744c9faefbadb900c899d8d8",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-lyublyu-roza-p",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "fb5278fdce690bd39f232e0c79e01f2927ead8039aea9c88474f6a3f040b802e",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-rozy-pionovidnoy-kustovo",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "2fc8f12026cdc7788fac0eb718f9aabb97fb4a21b6b2028fce5414fccbd9c588",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-s-pionovidnoy-kusto-4643",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "95f53a89fd443dc84622bc5c3e4b36352bc60b6f68a1e64d97dd0d82202a5b0a",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-iz-gortenzii-kustov-7019",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "4681e67521a175ec907cf1f6ddbe35b0df1c96cc97b72a7035939ce23aa0e076",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-tebya-r",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "7ac4970fd8fe25ed504c81ebb1e0d6c04af8eb939b36f70252c429de70c34ebd",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "francuzskie-rozy-pod-lentu-21-",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "df02c6613f58457af415a5f7b76d9e03f0f2d60f122e3c071fb23b1abdfdcf6d",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-roza-pion-7064",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "4af4a9e58a4e6f5927895e7d34d65b9631e3f56694962072f1fe6cf49235241d",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-nevesty-3482",
+      "gallery_records": 2,
+      "physical_files_checked": 2,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "0fb92e7354b28293447883b58dd6ec7bd1e31765bf5cf4eafcc9e8593abb17d6",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-nevesty-1149",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "d465c37708a2dcb5a164fdbe8fb40f648a631738ad3be5bdb90024b62a479c49",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-premium-v-korzine-",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "4b809897bc61f6862d9b5dfe76b041e7c1d40857c552630979fcccb4e8b12704",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-korzine-astra-po",
+      "gallery_records": 7,
+      "physical_files_checked": 7,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "db6eaecb42efe5f902d1ac80be90e1edac22227f98ccd74bf17295f9015a8746",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buketik-premium-v-korzine",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "bd1227a31f4b1817c836d38d9f1df8470d2f3184b9a4f41d880e94c2ae08a5da",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "cve-7264",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "0c9789fe6b12e9c3b9627d897910ccbe87b33376ea157101abe7bbba2d35dbc0",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-astr-osennih",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "960a1726fe5dc73168661de73ed02525bfcc8a3fb5b8be362c5a7da1ffd2820d",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buketik-cvetov-v-korzine",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "3874e60df4a6b84594ed2e6e68ca50ec13fc05ab222ca3679a0ea12658891a21",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-aromatnyh-mattiol-kustov",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "01bd6832953032c2fc610081799d10d697ecb24c5331d46ff0baee3b7adf30a1",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-v-korzine-exclusive",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "3a0aaffcf1a92fefa2a140fe33221709886c7c6662150b476906c3923af55fb0",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "mono-9992",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "c762d150376887330a536394479f6d47a773ec4cf7f6e3caa43a32c5ec007b2b",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-korzine-rom-4151",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "ef46dce0769d7707691d9b472f0ac4f144ba866822e95018ba79b4ead0855bbc",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-aromatniy-pion-evkalipt-",
+      "gallery_records": 7,
+      "physical_files_checked": 7,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "161d7a8e092ddf1ea4de0a93f43a1395343c93ca10ad13b66a860a422255e084",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "nabor-konfety-merci-c-buketom-",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "0d8d252c1bfd347659467fd0a5db2e3197de1e84ae030d11dfd2668cb0ea07d3",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-korobochke-eusto",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "6ff0d3cb173198de8c6833e7e415e37a0cc927d3738dc1fff6be848b1b3213e0",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7428",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "697b6f390af96310199c3124b702f8f3940f7aef6fd88b3a4cacad8819193482",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-3035",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "b7617a7952304c961b39a6863bdefb2289311ca9a9a083288207737d63c60bb7",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-v-shlyapnoy-korobke-8250",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "de562905ef81869c77b1876b12115b32286efdab28490c88cfbddd2333fd8a6a",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "premium-kompoziciya-v-kor-2521",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "efff3e6e1b6e5934de6020597b013f38ef92da9b22aad48beb77c1b47fe420fe",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "ab3f9c355ce498c14d3d899868055c2965ab1c27fc754e9bfd5df6806cb37094",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-6842",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "dbeea33ea391da04104ba50f3be4fefa01fed76b0514e7b940cdcb0f564d9366",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7637",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "af34917b48fbd4c894b99204c1f7d2446a0b88f57820b6a51fa9e6547e8dca79",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "komp-2289",
+      "gallery_records": 7,
+      "physical_files_checked": 7,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "7cad2dd89135fdd3febf0ffd4f02ad142f92e016b2bb653068fa16f773b22aaf",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-8804",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "80c071671352d23eedf6382a3569e37e183bfa8a071ff52d7fc57f7c6591ebb2",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-roza-pionovidnaya-",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "88ed351cc15e863eeb0f3b01b09c8f47721c5c7de06e1ed2c6a60d7e37fc352c",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-hrizantem-mattiola-romas",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "1bac08d59e1fa7e702756a728f68a83d2cbd7701be39af68d555078ad73168b3",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buketik-23",
+      "gallery_records": 5,
+      "physical_files_checked": 5,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "ef8eeca716e63fb4ae87207088f8e435e83ab8650b2280a3dec2ac79b892a31a",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buketik-gortenzii-ra",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "6fd5654547b3515a7c26ad40515a3a8afe8aed13d600d51914a412dd495f6c71",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-9444",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "48d5f7ec4ebaf9322bb8e180635648b59183d3edd1c6918adf4a1055ae31e7be",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-vas-1541",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "2e7983368ac0f146987156fd798d3d81f232ac01e23313b508e24bb698133f8b",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-sezon-6869",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "a4e97f06b70688fdb6b160d2f122204d1213b5c52d9bcb3646d204c75cbcfba9",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-astr-67892",
+      "gallery_records": 7,
+      "physical_files_checked": 7,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "c62c9ce5df3c6df9c0896e795b615434412211402e9de9be778c5da0e02e6185",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-24579",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "b72d80ab7b43b052c95b11474d34135edf612c5dd0a0d1add79786ae9c303614",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-3448",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "3533a118f938fe64b0ba843a78e05bb89a17ab1e08a3acf42bae295bfefb8135",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-vozdushnoe-bez",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "114036342278276638310dc937a1753969840e953eecd647918fc5feb10cb0d7",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buketik-roza-go-1029",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "cbc662037886f0550a251a82c23ef940990f435377df9f82302e88483a02e25f",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-siciliya-6909",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "25003ad395c2befe30977772cbb908950d34da865f00ccd6c7eb28d23e6e1294",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buketik-francuz-9106",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "adb83fb737cf9b9c15c3d2db85937cb78f4efdd1046b1c28e0bf062c838d67ee",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-7186",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "24c372dd0eb7639725062c59e551fb78e71335353c6383bc9cf83faa14f539d1",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-pion-gort-6904",
+      "gallery_records": 7,
+      "physical_files_checked": 7,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "aa0a422bfeaedfbeb81455c8529de38bc3bea7a83b6ec2a8cb5cf92f57acdecf",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-gortenzii-3341",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "ea055849fdd8675f2d3f886ac69e9ddb7dc086c754c6dae1f122ea2d5f2d25a5",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-roza-mattiola-",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "06c3145378a7b3c44ddc17bb0e95f83b8bf899643d2a20773b35673fafd95185",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-67899",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "a906f84b922eee3b13060b29ea23bcc8922b41cab49b91d687bb5895a84b1bac",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "avtorskiy-buket-mattiol-roza-g",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "3eb78ab1b5a533c16badc14a998c50c15c506abdf76549a111da1f93729db017",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-lavandovye-grezy-roza-ma",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "15741e9c847cb197bcec487f6288186e14adb4f1aeb7752653c047449a0688d4",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-peryshko",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "d6ff9c44e9d365a969d243d3931eea4a52e1f07dfa63393337f004806ea312c7",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "kompoziciya-v-sumochke-s--9069",
+      "gallery_records": 8,
+      "physical_files_checked": 8,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "b02cb5c5f00c0dada55c40618cb3b80db6e3a0548d60194062a3e4ea08ea4440",
+      "live_source_gallery_compared": false
+    },
+    {
+      "slug": "buket-zvezda",
+      "gallery_records": 6,
+      "physical_files_checked": 6,
+      "all_binary_checks_pass": true,
+      "readme_image_order_matches": true,
+      "gallery_manifest_sha256": "95a443d10c68862f0317118b89e4a028acefbb0eecf92479cbd4cf5ae7976284",
+      "live_source_gallery_compared": false
+    }
+  ],
+  "not_verified": [
+    "Live gallery frame count/order",
+    "Visual subject-to-SKU matching against the current source",
+    "Whether repeated frames are intentional seller content",
+    "Completeness of hidden/archived inventory"
+  ]
+}

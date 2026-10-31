@@ -1,0 +1,245 @@
+{
+  "validation": "PASS_SOURCE_STRUCTURE",
+  "catalog_completion": "INCOMPLETE",
+  "caveat": "Source-field presence alone does not verify exact live Flowwow wording, seller inventory or gallery completeness.",
+  "counts": {
+    "products": 66,
+    "composition_complete": 59,
+    "description_complete": 36,
+    "dimensions_complete": 54
+  },
+  "missing": {
+    "composition": [
+      {
+        "slug": "avtorskiy-buket-s-gortenz-3168",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/"
+      },
+      {
+        "slug": "avtorskiy-buket-roza-alst-8286",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/"
+      },
+      {
+        "slug": "buket-gortenziy-23",
+        "url": "https://flowwow.com/flowers/buket-gortenziy-23/"
+      },
+      {
+        "slug": "buket-iz-kustovoy-pionovi-3287",
+        "url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/"
+      },
+      {
+        "slug": "buket-gortenzii-roza-pionovidn",
+        "url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/"
+      },
+      {
+        "slug": "buket-iz-roz-kustovoy-pio-6913",
+        "url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/"
+      },
+      {
+        "slug": "avtorskiy-buketik-dlya-tebya-r",
+        "url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/"
+      }
+    ],
+    "description": [
+      {
+        "slug": "avtorskiy-buket-s-gortenz-3168",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-roza-alst-8286",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-gortenziy-23",
+        "url": "https://flowwow.com/flowers/buket-gortenziy-23/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-iz-kustovoy-pionovi-3287",
+        "url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-gortenzii-roza-pionovidn",
+        "url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-iz-roz-kustovoy-pio-6913",
+        "url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buketik-dlya-tebya-r",
+        "url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-v-korzine-astra-po",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buketik-premium-v-korzine",
+        "url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "cve-7264",
+        "url": "https://flowwow.com/flowers/cve-7264/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-astr-osennih",
+        "url": "https://flowwow.com/flowers/buket-astr-osennih/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-v-korzine-rom-4151",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-aromatniy-pion-evkalipt-",
+        "url": "https://flowwow.com/flowers/buket-aromatniy-pion-evkalipt-/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-v-shlyapnoy-k-7428",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-v-shlyapnoy-k-6842",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-6842/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-v-shlyapnoy-k-7637",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7637/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-v-shlyapnoy-k-8804",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-8804/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "kompoziciya-roza-pionovidnaya-",
+        "url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-hrizantem-mattiola-romas",
+        "url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-9444",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-9444/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-sezon-6869",
+        "url": "https://flowwow.com/flowers/buket-sezon-6869/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-astr-67892",
+        "url": "https://flowwow.com/flowers/buket-astr-67892/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-24579",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buketik-roza-go-1029",
+        "url": "https://flowwow.com/flowers/avtorskiy-buketik-roza-go-1029/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-siciliya-6909",
+        "url": "https://flowwow.com/flowers/buket-siciliya-6909/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-7186",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-7186/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-gortenzii-3341",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-gortenzii-3341/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-roza-mattiola-",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-roza-mattiola-/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "avtorskiy-buket-67899",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-67899/",
+        "source_status": "NOT_CAPTURED"
+      },
+      {
+        "slug": "buket-peryshko",
+        "url": "https://flowwow.com/flowers/buket-peryshko/",
+        "source_status": "NOT_CAPTURED"
+      }
+    ],
+    "dimensions": [
+      {
+        "slug": "avtorskiy-buket-s-gortenz-3168",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/"
+      },
+      {
+        "slug": "avtorskiy-buket-roza-alst-8286",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/"
+      },
+      {
+        "slug": "buket-gortenziy-23",
+        "url": "https://flowwow.com/flowers/buket-gortenziy-23/"
+      },
+      {
+        "slug": "buket-iz-kustovoy-pionovi-3287",
+        "url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/"
+      },
+      {
+        "slug": "buket-gortenzii-roza-pionovidn",
+        "url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/"
+      },
+      {
+        "slug": "buket-iz-roz-kustovoy-pio-6913",
+        "url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/"
+      },
+      {
+        "slug": "avtorskiy-buketik-dlya-tebya-r",
+        "url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/"
+      },
+      {
+        "slug": "kompoziciya-v-shlyapnoy-k-6842",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-6842/"
+      },
+      {
+        "slug": "kompoziciya-v-shlyapnoy-k-7637",
+        "url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7637/"
+      },
+      {
+        "slug": "kompoziciya-roza-pionovidnaya-",
+        "url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/"
+      },
+      {
+        "slug": "buket-sezon-6869",
+        "url": "https://flowwow.com/flowers/buket-sezon-6869/"
+      },
+      {
+        "slug": "avtorskiy-buket-67899",
+        "url": "https://flowwow.com/flowers/avtorskiy-buket-67899/"
+      }
+    ]
+  }
+}

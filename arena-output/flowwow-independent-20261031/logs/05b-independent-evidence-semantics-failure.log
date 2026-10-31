@@ -1,0 +1,13 @@
+utc=2026-10-31T22:41:50.959666+00:00
+command=["/home/user/.arena-audit-venv/bin/python", "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py"]
+--- output ---
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py", line 811, in <module>
+    main()
+  File "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py", line 448, in main
+    assert not evidence_mismatches, evidence_mismatches
+AssertionError: [{'slug': 'nabor-konfety-merci-c-buketom-', 'field': 'description_raw_ru', 'reason': 'BATCH5 claims equality with preexisting text'}, {'slug': 'buket-iz-gortenzii-kustov-7019', 'field': 'dimensions_cm', 'evidence': {'file': 'catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json', 'json_pointer': '/items/8/dimensions_cm'}}, {'slug': 'kompoziciya-v-korzine-astra-po', 'field': 'dimensions_cm', 'evidence': {'file': 'catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json', 'json_pointer': '/items/14/dimensions_cm'}}, {'slug': 'buketik-premium-v-korzine', 'field': 'dimensions_cm', 'evidence': {'file': 'catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json', 'json_pointer': '/items/15/dimensions_cm'}}, {'slug': 'buketik-cvetov-v-korzine', 'field': 'dimensions_cm', 'evidence': {'file': 'catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json', 'json_pointer': '/items/18/dimensions_cm'}}, {'slug': 'kompoziciya-v-korzine-rom-4151', 'field': 'dimensions_cm', 'evidence': {'file': 'catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json', 'json_pointer': '/items/22/dimensions_cm'}}, {'slug': 'avtorskiy-buket-24579', 'field': 'dimensions_cm', 'evidence': {'file': 'catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json', 'json_pointer': '/items/18/dimensions_cm'}}]
+
+--- exit_code=1 ---
+
+Follow-up: two audit-script assumptions were corrected after inspecting the evidence. BATCH5 explicitly matched the Merci paragraph to preexisting text for another owner SKU (avtorskiy-buket-roza-pion-7064), not to an already-filled Merci field. Six older batch1/batch2 observations had null dimensions that were later filled by dedicated exact-URL evidence; these are historical gaps, not conflicting non-null measurements. No source data was changed.

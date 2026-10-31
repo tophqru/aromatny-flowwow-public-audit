@@ -1,0 +1,14 @@
+utc=2026-10-31T22:42:30.008353+00:00
+command=["/home/user/.arena-audit-venv/bin/python", "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py"]
+--- output ---
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py", line 824, in <module>
+    main()
+  File "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py", line 472, in main
+    assert set(dimension_provenance) == valid_dim_slugs
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+--- exit_code=1 ---
+
+Follow-up: eight valid dimension pairs and ten valid compositions are inherited unchanged from main and are not repeated in the later dedicated observation batches. The provenance map now labels these explicitly as baseline continuity, not as new live verification.

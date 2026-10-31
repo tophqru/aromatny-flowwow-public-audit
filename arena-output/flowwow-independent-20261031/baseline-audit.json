@@ -1,0 +1,4306 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "summary": {
+    "baseline_sku": 66,
+    "baseline_sku_checked_offline": 66,
+    "live_flowwow_product_pages_opened": 0,
+    "existing_jpeg_checked": 435,
+    "existing_jpeg_bytes": 49614983,
+    "valid_compositions": 59,
+    "valid_original_descriptions": 36,
+    "valid_dimension_pairs": 54,
+    "missing_compositions": 7,
+    "missing_descriptions": 30,
+    "missing_or_unusable_dimension_pairs": 12,
+    "unique_skus_with_any_field_gap": 30,
+    "total_missing_field_values": 49,
+    "newly_recovered_fields": 0,
+    "new_photos": 0,
+    "new_confirmed_skus": 0,
+    "indexed_candidates_reviewed": 55,
+    "indexed_candidates_independently_seller_confirmed": 0,
+    "indexed_candidates_other_seller_confirmed": 0,
+    "indexed_candidates_unverified": 55,
+    "prior_seller_verified_metadata_only": 4,
+    "prior_verified_galleries_completed": 0,
+    "quarantined_candidates": 2,
+    "confirmed_abandoned_drafts": 0,
+    "baseline_categories_inventoried_offline": 7,
+    "categories_fully_traversed_live": 0,
+    "show_more_clicks": 0,
+    "exact_seller_link_clicks_this_run": 0,
+    "sale_permissions_enabled": 0,
+    "excluded_sku_reintroduced": false
+  },
+  "coverage_counts": {
+    "composition": 59,
+    "description": 36,
+    "dimensions": 54
+  },
+  "source_gaps": {
+    "composition": [
+      "avtorskiy-buket-s-gortenz-3168",
+      "avtorskiy-buket-roza-alst-8286",
+      "buket-gortenziy-23",
+      "buket-iz-kustovoy-pionovi-3287",
+      "buket-gortenzii-roza-pionovidn",
+      "buket-iz-roz-kustovoy-pio-6913",
+      "avtorskiy-buketik-dlya-tebya-r"
+    ],
+    "description": [
+      "avtorskiy-buket-s-gortenz-3168",
+      "avtorskiy-buket-roza-alst-8286",
+      "buket-gortenziy-23",
+      "buket-iz-kustovoy-pionovi-3287",
+      "buket-gortenzii-roza-pionovidn",
+      "buket-iz-roz-kustovoy-pio-6913",
+      "avtorskiy-buketik-dlya-tebya-r",
+      "kompoziciya-v-korzine-astra-po",
+      "buketik-premium-v-korzine",
+      "cve-7264",
+      "buket-astr-osennih",
+      "kompoziciya-v-korzine-rom-4151",
+      "buket-aromatniy-pion-evkalipt-",
+      "kompoziciya-v-shlyapnoy-k-7428",
+      "kompoziciya-v-shlyapnoy-k-6842",
+      "kompoziciya-v-shlyapnoy-k-7637",
+      "kompoziciya-v-shlyapnoy-k-8804",
+      "kompoziciya-roza-pionovidnaya-",
+      "buket-hrizantem-mattiola-romas",
+      "avtorskiy-buket-9444",
+      "buket-sezon-6869",
+      "buket-astr-67892",
+      "avtorskiy-buket-24579",
+      "avtorskiy-buketik-roza-go-1029",
+      "buket-siciliya-6909",
+      "avtorskiy-buket-7186",
+      "avtorskiy-buket-gortenzii-3341",
+      "avtorskiy-buket-roza-mattiola-",
+      "avtorskiy-buket-67899",
+      "buket-peryshko"
+    ],
+    "dimensions": [
+      "avtorskiy-buket-s-gortenz-3168",
+      "avtorskiy-buket-roza-alst-8286",
+      "buket-gortenziy-23",
+      "buket-iz-kustovoy-pionovi-3287",
+      "buket-gortenzii-roza-pionovidn",
+      "buket-iz-roz-kustovoy-pio-6913",
+      "avtorskiy-buketik-dlya-tebya-r",
+      "kompoziciya-v-shlyapnoy-k-6842",
+      "kompoziciya-v-shlyapnoy-k-7637",
+      "kompoziciya-roza-pionovidnaya-",
+      "buket-sezon-6869",
+      "avtorskiy-buket-67899"
+    ],
+    "invalid_dimension_objects": [
+      {
+        "slug": "avtorskiy-buket-67899",
+        "value": {
+          "width": null,
+          "height": null
+        }
+      }
+    ],
+    "unique_slugs": [
+      "avtorskiy-buket-24579",
+      "avtorskiy-buket-67899",
+      "avtorskiy-buket-7186",
+      "avtorskiy-buket-9444",
+      "avtorskiy-buket-gortenzii-3341",
+      "avtorskiy-buket-roza-alst-8286",
+      "avtorskiy-buket-roza-mattiola-",
+      "avtorskiy-buket-s-gortenz-3168",
+      "avtorskiy-buketik-dlya-tebya-r",
+      "avtorskiy-buketik-roza-go-1029",
+      "buket-aromatniy-pion-evkalipt-",
+      "buket-astr-67892",
+      "buket-astr-osennih",
+      "buket-gortenzii-roza-pionovidn",
+      "buket-gortenziy-23",
+      "buket-hrizantem-mattiola-romas",
+      "buket-iz-kustovoy-pionovi-3287",
+      "buket-iz-roz-kustovoy-pio-6913",
+      "buket-peryshko",
+      "buket-sezon-6869",
+      "buket-siciliya-6909",
+      "buketik-premium-v-korzine",
+      "cve-7264",
+      "kompoziciya-roza-pionovidnaya-",
+      "kompoziciya-v-korzine-astra-po",
+      "kompoziciya-v-korzine-rom-4151",
+      "kompoziciya-v-shlyapnoy-k-6842",
+      "kompoziciya-v-shlyapnoy-k-7428",
+      "kompoziciya-v-shlyapnoy-k-7637",
+      "kompoziciya-v-shlyapnoy-k-8804"
+    ]
+  },
+  "products": [
+    {
+      "slug": "buket-vozdushniy-puding-roza-k",
+      "name_ru": "Букет воздушный пудинг роза кустовая, маттиола, диантус",
+      "source_url": "https://flowwow.com/flowers/buket-vozdushniy-puding-roza-k/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-s-gortenz-3168",
+      "name_ru": "Акция! Авторский букет с гортензией, матиолла кустовая, роза пионовидная кустовая 46788",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "avtorskiy-buket-roza-alst-8286",
+      "name_ru": "Авторский букет роза, альстромерии, маттиола, роза пионовидная кустовая, эвкалипт 5778",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "buket-gortenziy-23",
+      "name_ru": "Букет гортензий 23",
+      "source_url": "https://flowwow.com/flowers/buket-gortenziy-23/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "buket-s-mattioloy-rozoy-k-9188",
+      "name_ru": "Букет с маттиолой розой кустовой диантусами эвкалиптом",
+      "source_url": "https://flowwow.com/flowers/buket-s-mattioloy-rozoy-k-9188/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 30,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-gortenzii-mattiola--1218",
+      "name_ru": "Букет гортензии, маттиола, диантус, роза пионовидная кустовая 0008",
+      "source_url": "https://flowwow.com/flowers/buket-gortenzii-mattiola--1218/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-iz-kustovoy-pionovi-3287",
+      "name_ru": "Акция! Премиум букет кустовой пионовидной розы, альстромерии",
+      "source_url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "buket-gortenzii-roza-pionovidn",
+      "name_ru": "Букет гортензии, роза пионовидная кустовая, диантус, маттиола, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "buket-mattiola-roza-piono-5396",
+      "name_ru": "Акция! Букет маттиола, роза пионовидная кустовая, диантус, гортензия 007",
+      "source_url": "https://flowwow.com/flowers/buket-mattiola-roza-piono-5396/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 38,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-iz-roz-kustovoy-pio-6913",
+      "name_ru": "Букет из роз, кустовой пионовидной розы, диантуса, маттиолы, эвкалипта",
+      "source_url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 5,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "buket-iz-diantusa-gvozdik-6944",
+      "name_ru": "Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке",
+      "source_url": "https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 31,
+        "height": 60
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-lyublyu-roza-p",
+      "name_ru": "Акция! Авторский букет Люблю роза пионовидная кустовая маттиола диантус эустома",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-lyublyu-roza-p/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-rozy-pionovidnoy-kustovo",
+      "name_ru": "Композиция в шляпной коробочке роза пионовидная кустовая, эустома, эвкалипт 00002324234",
+      "source_url": "https://flowwow.com/flowers/buket-rozy-pionovidnoy-kustovo/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 30,
+        "height": 30
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-s-pionovidnoy-kusto-4643",
+      "name_ru": "Акция! Букет с пионовидной кустовой розой и альстромерией",
+      "source_url": "https://flowwow.com/flowers/buket-s-pionovidnoy-kusto-4643/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 45,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-iz-gortenzii-kustov-7019",
+      "name_ru": "Букет гортензии, кустовой пионовидной розы, диантуса, пионов, эвкалипта",
+      "source_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 31,
+        "height": 47
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-tebya-r",
+      "name_ru": "Авторский букетик роза, гортензия, роза кустовая, альстромерия",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "composition_items",
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": false,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": true
+    },
+    {
+      "slug": "francuzskie-rozy-pod-lentu-21-",
+      "name_ru": "Букет роз французских под ленту 21 штука",
+      "source_url": "https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 43,
+        "height": 55
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-roza-pion-7064",
+      "name_ru": "Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-pion-7064/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 36,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-nevesty-3482",
+      "name_ru": "Букет невесты, дофаминовый",
+      "source_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+      "source_category": "Букеты невесты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 28,
+        "height": 45
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 2,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-nevesty-1149",
+      "name_ru": "Букет невесты",
+      "source_url": "https://flowwow.com/flowers/buket-nevesty-1149/",
+      "source_category": "Букеты невесты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 18,
+        "height": 20
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-premium-v-korzine-",
+      "name_ru": "Композиция премиум в корзине с цветами",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 45,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-korzine-astra-po",
+      "name_ru": "Акция! Композиция в корзине астра, подсолнух, хризантема, гринтрик, эустома, маттиола, диантус, ромашка кустовая",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 35,
+        "height": 33
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 7,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buketik-premium-v-korzine",
+      "name_ru": "Премиум композиция в корзине ароматный пион, роза пионовидная кустовая, орхидея, роза, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 71,
+        "height": 47
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "cve-7264",
+      "name_ru": "Акция! Букет гладиолус под ленту",
+      "source_url": "https://flowwow.com/flowers/cve-7264/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 30,
+        "height": 70
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-astr-osennih",
+      "name_ru": "Букет астр осенних",
+      "source_url": "https://flowwow.com/flowers/buket-astr-osennih/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 30,
+        "height": 40
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buketik-cvetov-v-korzine",
+      "name_ru": "Композиция в корзине",
+      "source_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 45,
+        "height": 45
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-aromatnyh-mattiol-kustov",
+      "name_ru": "Букет ароматных маттиол кустовых",
+      "source_url": "https://flowwow.com/flowers/buket-aromatnyh-mattiol-kustov/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-v-korzine-exclusive",
+      "name_ru": "Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 75,
+        "height": 60
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "mono-9992",
+      "name_ru": "Букетик из 13 веточек пионовидных кустовых роз в упаковке",
+      "source_url": "https://flowwow.com/flowers/mono-9992/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 30,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-korzine-rom-4151",
+      "name_ru": "Акция! Композиция в корзине ромашка кустовая, маттиола, эустома, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 40,
+        "height": 37
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-aromatniy-pion-evkalipt-",
+      "name_ru": "Набор пионов с конфетами Raffaello",
+      "source_url": "https://flowwow.com/flowers/buket-aromatniy-pion-evkalipt-/",
+      "source_category": "Наборы с цветами",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 50,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 7,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "nabor-konfety-merci-c-buketom-",
+      "name_ru": "Набор конфеты Merci c букетом пионов",
+      "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+      "source_category": "Наборы с цветами",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 45,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-korobochke-eusto",
+      "name_ru": "Композиция в коробочке эустома и роза пионовидная кустовая",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korobochke-eusto/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 31,
+        "height": 35
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7428",
+      "name_ru": "Композиция в шляпной коробочке пионы с эвкалиптом",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 45,
+        "height": 35
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-3035",
+      "name_ru": "Композиция в шляпной коробочке 014",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-3035/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 35,
+        "height": 35
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-v-shlyapnoy-korobke-8250",
+      "name_ru": "Букет в шляпной коробке",
+      "source_url": "https://flowwow.com/flowers/buket-v-shlyapnoy-korobke-8250/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 35,
+        "height": 37
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "premium-kompoziciya-v-kor-2521",
+      "name_ru": "Премиум композиция в корзине Осень",
+      "source_url": "https://flowwow.com/flowers/premium-kompoziciya-v-kor-2521/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 50,
+        "height": 45
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "name_ru": "Композиция ароматных огромных пионов в корзине с эвкалиптом",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+      "source_category": "Цветы в корзине",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 37,
+        "height": 31
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-6842",
+      "name_ru": "Композиция в шляпной коробочке астра, гортензия, маттиола, эустома, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-6842/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7637",
+      "name_ru": "Композиция в шляпной коробочке 24688",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7637/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "komp-2289",
+      "name_ru": "Композиция в сумочке с цветами 04567",
+      "source_url": "https://flowwow.com/flowers/komp-2289/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 30,
+        "height": 33
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 7,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-8804",
+      "name_ru": "Композиция в шляпной коробочке, эустома, орхидея, роза кустовая, гипсофила, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-8804/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 28,
+        "height": 31
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-roza-pionovidnaya-",
+      "name_ru": "Композиция роза пионовидная кустовая, эрингиум, маттиола, озотамнус, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/",
+      "source_category": "Цветы в коробке",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-hrizantem-mattiola-romas",
+      "name_ru": "Букет хризантем, маттиола, ромашка, роза пионовидная кустовая",
+      "source_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 28,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buketik-23",
+      "name_ru": "Авторский букетик гортензии, маттиолы кустовые, роза кустовая, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-23/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 30,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 5,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buketik-gortenzii-ra",
+      "name_ru": "Авторский букетик гортензии, маттиола, роза, эустома, эвкалипт",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-gortenzii-ra/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 32,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-9444",
+      "name_ru": "Авторский букет26",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-9444/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-vas-1541",
+      "name_ru": "Акция!!! Авторский букетик «Для Вас»",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-vas-1541/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 35,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-sezon-6869",
+      "name_ru": "Яркий букет Сезон",
+      "source_url": "https://flowwow.com/flowers/buket-sezon-6869/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": null,
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-astr-67892",
+      "name_ru": "Букет астр 67892",
+      "source_url": "https://flowwow.com/flowers/buket-astr-67892/",
+      "source_category": "Монобукеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 28,
+        "height": 40
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 7,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-24579",
+      "name_ru": "Авторский букет Осенний 24579",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 31,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-3448",
+      "name_ru": "Авторский букет гортензия роза эустома маттиола",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-3448/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 32,
+        "height": 53
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-vozdushnoe-bez",
+      "name_ru": "Авторский букет Воздушное безе 23578",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buketik-roza-go-1029",
+      "name_ru": "Авторский букетик с розой, гортензией, диантусом, эустомой, маттиолой и ромашкой",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-roza-go-1029/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 35,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-siciliya-6909",
+      "name_ru": "Авторский букет Сицилия, гортензия и розы",
+      "source_url": "https://flowwow.com/flowers/buket-siciliya-6909/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 42,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buketik-francuz-9106",
+      "name_ru": "Букетик с французской розой, гортензией, маттиолой, ромашкой и диантусом",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-francuz-9106/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 30,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-7186",
+      "name_ru": "Букет с орхидеей, эустомой и гортензией",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-7186/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-pion-gort-6904",
+      "name_ru": "Дофаминовый букет с пионами и гортензией",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 50,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 7,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-gortenzii-3341",
+      "name_ru": "Букет с гортензией, розой, эустомой, маттиолой и орхидеей",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-gortenzii-3341/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 35,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-roza-mattiola-",
+      "name_ru": "Дофаминовый букет с розой, маттиолой и орхидеей",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-mattiola-/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 35,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-67899",
+      "name_ru": "Авторский букет 67899",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-67899/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru",
+        "dimensions_cm"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": null,
+        "height": null
+      },
+      "dimensions_valid": false,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "avtorskiy-buket-mattiol-roza-g",
+      "name_ru": "Букет с маттиолой, розой, гортензией и эустомой",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-mattiol-roza-g/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 33,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-lavandovye-grezy-roza-ma",
+      "name_ru": "Букет «Лавандовые грезы»",
+      "source_url": "https://flowwow.com/flowers/buket-lavandovye-grezy-roza-ma/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 28,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-peryshko",
+      "name_ru": "Букет «Перышко»",
+      "source_url": "https://flowwow.com/flowers/buket-peryshko/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [
+        "description_raw_ru"
+      ],
+      "composition_valid": true,
+      "description_valid": false,
+      "dimensions_value": {
+        "width": 34,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "kompoziciya-v-sumochke-s--9069",
+      "name_ru": "Композиция в сумочке с цветами 678899",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+      "source_category": "Цветы в ящиках",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 21,
+        "height": 23
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 8,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    },
+    {
+      "slug": "buket-zvezda",
+      "name_ru": "Букет «Звезда»",
+      "source_url": "https://flowwow.com/flowers/buket-zvezda/",
+      "source_category": "Авторские букеты",
+      "offline_audit_status": "CHECKED_PUBLIC_FILES",
+      "live_flowwow_status": "NOT_PERFORMED_NO_INTERACTIVE_BROWSER",
+      "seller_url_in_source": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+      "seller_evidence_in_source": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+      "canonical_seller_reverified_this_run": false,
+      "missing_or_unusable_fields": [],
+      "composition_valid": true,
+      "description_valid": true,
+      "dimensions_value": {
+        "width": 31,
+        "height": 50
+      },
+      "dimensions_valid": true,
+      "card_equals_snapshot": true,
+      "gallery_binary_integrity_pass": true,
+      "gallery_count": 6,
+      "sale_flags": {
+        "owner_approved": false,
+        "may_order": false,
+        "may_show_publicly": false
+      },
+      "priority_seven": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "F001",
+      "code": "MISSING_QUANTITATIVE_COMPOSITION",
+      "severity": "HIGH",
+      "title_ru": "Семь исходных количественных составов не сохранены",
+      "slugs": [
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-roza-alst-8286",
+        "buket-gortenziy-23",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "avtorskiy-buketik-dlya-tebya-r"
+      ],
+      "details": {
+        "count": 7,
+        "current_value": []
+      },
+      "recommendation_ru": "Получить точный состав с исходной страницы или разрешённого экспорта; не выводить количества из названия или фото.",
+      "evidence": [
+        {
+          "file": "catalog/review/POTENTIALLY_UNFINISHED_PRODUCTS_2026-10-31.json",
+          "json_pointer": "/current_review_pending"
+        }
+      ],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F002",
+      "code": "MISSING_ORIGINAL_DESCRIPTION",
+      "severity": "HIGH",
+      "title_ru": "Тридцать исходных описаний не сохранены",
+      "slugs": [
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-roza-alst-8286",
+        "buket-gortenziy-23",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "avtorskiy-buketik-dlya-tebya-r",
+        "kompoziciya-v-korzine-astra-po",
+        "buketik-premium-v-korzine",
+        "cve-7264",
+        "buket-astr-osennih",
+        "kompoziciya-v-korzine-rom-4151",
+        "buket-aromatniy-pion-evkalipt-",
+        "kompoziciya-v-shlyapnoy-k-7428",
+        "kompoziciya-v-shlyapnoy-k-6842",
+        "kompoziciya-v-shlyapnoy-k-7637",
+        "kompoziciya-v-shlyapnoy-k-8804",
+        "kompoziciya-roza-pionovidnaya-",
+        "buket-hrizantem-mattiola-romas",
+        "avtorskiy-buket-9444",
+        "buket-sezon-6869",
+        "buket-astr-67892",
+        "avtorskiy-buket-24579",
+        "avtorskiy-buketik-roza-go-1029",
+        "buket-siciliya-6909",
+        "avtorskiy-buket-7186",
+        "avtorskiy-buket-gortenzii-3341",
+        "avtorskiy-buket-roza-mattiola-",
+        "avtorskiy-buket-67899",
+        "buket-peryshko"
+      ],
+      "details": {
+        "count": 30,
+        "current_status": "NOT_CAPTURED"
+      },
+      "recommendation_ru": "Не считать индексное отсутствие текста доказательством пустого поля; нужен точный источник.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F003",
+      "code": "MISSING_DIMENSIONS",
+      "severity": "HIGH",
+      "title_ru": "Двенадцать пар размеров недоступны или непригодны",
+      "slugs": [
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-roza-alst-8286",
+        "buket-gortenziy-23",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "avtorskiy-buketik-dlya-tebya-r",
+        "kompoziciya-v-shlyapnoy-k-6842",
+        "kompoziciya-v-shlyapnoy-k-7637",
+        "kompoziciya-roza-pionovidnaya-",
+        "buket-sezon-6869",
+        "avtorskiy-buket-67899"
+      ],
+      "details": {
+        "count": 12,
+        "null_objects": 11,
+        "objects_with_null_width_and_height": 1,
+        "valid_pairs": 54,
+        "non_null_dimension_objects": 55
+      },
+      "recommendation_ru": "Считать валидными только положительные числовые width/height; восстановить 12 пар из точного источника.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F004",
+      "code": "AMBIGUOUS_MISSING_DIMENSION_REPRESENTATION",
+      "severity": "MEDIUM",
+      "title_ru": "Пропуск размеров закодирован двумя разными способами",
+      "slugs": [
+        "avtorskiy-buket-67899"
+      ],
+      "details": {
+        "current_value": {
+          "width": null,
+          "height": null
+        },
+        "other_missing_products_use": null,
+        "proposed_normalization_not_applied": null
+      },
+      "recommendation_ru": "При будущем согласованном изменении схемы нормализовать непригодную пару к null; в этом аудите исходник не изменён.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F005",
+      "code": "COMPOSITION_SOURCE_CONFLICT",
+      "severity": "HIGH",
+      "title_ru": "Количество пионов: 35 в каталоге против 23 в индексированном источнике",
+      "slugs": [
+        "kompoziciya-aromatnyh-ogromnyh"
+      ],
+      "details": {
+        "slug": "kompoziciya-aromatnyh-ogromnyh",
+        "component": "Пион",
+        "stored_quantity": 35,
+        "indexed_source_quantity": 23,
+        "unit": "шт",
+        "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+        "evidence": [
+          {
+            "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+            "json_pointer": "/products"
+          },
+          {
+            "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+            "json_pointer": "/detected_conflict"
+          }
+        ]
+      },
+      "recommendation_ru": "Не перезаписывать автоматически; подтвердить актуальный рецепт у продавца/в живой карточке и сохранить период действия.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F006",
+      "code": "TITLE_COMPOSITION_DISCREPANCY",
+      "severity": "MEDIUM",
+      "title_ru": "Маттиола есть в названии, но отсутствует в сохранённом составе",
+      "slugs": [
+        "buket-hrizantem-mattiola-romas"
+      ],
+      "details": {
+        "title": "Букет хризантем, маттиола, ромашка, роза пионовидная кустовая",
+        "stored_components": [
+          "Лента атласная",
+          "Роза пионовидная кустовая",
+          "Ромашка кустовая",
+          "Хризантема одноголовая",
+          "Упаковка дизайнерская"
+        ],
+        "indexed_source_also_omits_component": true
+      },
+      "recommendation_ru": "Проверить название и рецепт у источника; не добавлять компонент и количество по одному названию.",
+      "evidence": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+          "json_pointer": "/products"
+        }
+      ],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F007",
+      "code": "EXACT_DUPLICATE_JPEG_WITHIN_GALLERIES",
+      "severity": "MEDIUM",
+      "title_ru": "Повторяющиеся байты JPEG внутри исходных галерей",
+      "slugs": [
+        "avtorskiy-buketik-francuz-9106",
+        "buket-gortenzii-mattiola--1218",
+        "buket-s-pionovidnoy-kusto-4643",
+        "buket-siciliya-6909",
+        "komp-2289",
+        "kompoziciya-v-shlyapnoy-k-7428",
+        "kompoziciya-v-shlyapnoy-k-8804"
+      ],
+      "details": {
+        "duplicate_hash_groups": 8,
+        "redundant_occurrences": 9,
+        "groups": [
+          {
+            "sha256": "8c7401f12e9501d1f290a0713617a299b82b05b997539305560a0692a0e727a8",
+            "occurrences": [
+              {
+                "slug": "buket-gortenzii-mattiola--1218",
+                "order": 3,
+                "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/03.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/05/1755881012_28288505.jpg"
+              },
+              {
+                "slug": "buket-gortenzii-mattiola--1218",
+                "order": 6,
+                "path": "data/flowwow/items/buket-gortenzii-mattiola--1218/photos/06.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/69/1755881013_94835169.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "2516dadb976103a840fd3cdcbc9d4ce1c87666f10de7937539f6ca2825f19dc0",
+            "occurrences": [
+              {
+                "slug": "buket-s-pionovidnoy-kusto-4643",
+                "order": 1,
+                "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/01.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/15/1733994218_70506115.jpg"
+              },
+              {
+                "slug": "buket-s-pionovidnoy-kusto-4643",
+                "order": 4,
+                "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/04.jpg",
+                "source_url": "https://content3.flowwow-images.com/data/flowers/1000x1000/32/1733994219_3420732.jpg"
+              },
+              {
+                "slug": "buket-s-pionovidnoy-kusto-4643",
+                "order": 6,
+                "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/06.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/57/1733994220_35671357.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "b40d7679698d1ad8b7f221ab720a34222ca81ba9af167774a852bd78d8e1a277",
+            "occurrences": [
+              {
+                "slug": "buket-s-pionovidnoy-kusto-4643",
+                "order": 3,
+                "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/03.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/16/1733994219_44779816.jpg"
+              },
+              {
+                "slug": "buket-s-pionovidnoy-kusto-4643",
+                "order": 5,
+                "path": "data/flowwow/items/buket-s-pionovidnoy-kusto-4643/photos/05.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/77/1733994219_10894477.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "c76309304bd501724ac9ed3810aa27ff3827658de8a4a969d2783fe5968ac297",
+            "occurrences": [
+              {
+                "slug": "kompoziciya-v-shlyapnoy-k-7428",
+                "order": 4,
+                "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7428/photos/04.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/41/1783596179_97730641.jpg"
+              },
+              {
+                "slug": "kompoziciya-v-shlyapnoy-k-7428",
+                "order": 8,
+                "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-7428/photos/08.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/13/1783596181_44648713.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "d484df5b0ae5449f7cfa316e3d9288fcdc12d1cab429132a7fbc96d4ad7ffa3a",
+            "occurrences": [
+              {
+                "slug": "komp-2289",
+                "order": 5,
+                "path": "data/flowwow/items/komp-2289/photos/05.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/00/1787846654_24584300.jpg"
+              },
+              {
+                "slug": "komp-2289",
+                "order": 7,
+                "path": "data/flowwow/items/komp-2289/photos/07.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/06/1787906449_21815706.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "73119cabe6b2cac2eedb8b39ea667437c070943a13183ca0e1f20d765c7f3fee",
+            "occurrences": [
+              {
+                "slug": "kompoziciya-v-shlyapnoy-k-8804",
+                "order": 1,
+                "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-8804/photos/01.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/88/1781426757_50926588.jpg"
+              },
+              {
+                "slug": "kompoziciya-v-shlyapnoy-k-8804",
+                "order": 6,
+                "path": "data/flowwow/items/kompoziciya-v-shlyapnoy-k-8804/photos/06.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/63/1781426758_39594163.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "a08b2f0fb7b3babe018a4b13c09fbbf5a7b136b0f6b5730f749c87e4e297a2de",
+            "occurrences": [
+              {
+                "slug": "buket-siciliya-6909",
+                "order": 1,
+                "path": "data/flowwow/items/buket-siciliya-6909/photos/01.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/34/1728217342_60092234.jpg"
+              },
+              {
+                "slug": "buket-siciliya-6909",
+                "order": 3,
+                "path": "data/flowwow/items/buket-siciliya-6909/photos/03.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/67/1728138305_10689067.jpg"
+              }
+            ]
+          },
+          {
+            "sha256": "3a0f523c1392479d4849fa070ddeec5be969cf12c15bcef5d1065f0f5aeb1e26",
+            "occurrences": [
+              {
+                "slug": "avtorskiy-buketik-francuz-9106",
+                "order": 4,
+                "path": "data/flowwow/items/avtorskiy-buketik-francuz-9106/photos/04.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/52/1773816624_74501152.jpg"
+              },
+              {
+                "slug": "avtorskiy-buketik-francuz-9106",
+                "order": 6,
+                "path": "data/flowwow/items/avtorskiy-buketik-francuz-9106/photos/06.jpg",
+                "source_url": "https://content2.flowwow-images.com/data/flowers/1000x1000/59/1773816624_95708059.jpg"
+              }
+            ]
+          }
+        ],
+        "distinct_source_urls": true,
+        "interpretation": "Exact byte duplicates are confirmed; whether the live seller gallery intentionally repeats them is not verified."
+      },
+      "recommendation_ru": "Сверить порядок и состав живой галереи; не удалять исходные кадры только по факту совпадения SHA256.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F008",
+      "code": "LEGACY_AND_SAVED_BUY_BLOCK_PRICE_DIFFERENCES",
+      "severity": "MEDIUM",
+      "title_ru": "Сохранённые исторические цены отличаются от более поздних записей наблюдения",
+      "slugs": [
+        "avtorskiy-buket-3448",
+        "buket-aromatnyh-mattiol-kustov",
+        "buket-hrizantem-mattiola-romas",
+        "buket-nevesty-1149",
+        "buket-s-mattioloy-rozoy-k-9188",
+        "buket-v-shlyapnoy-korobke-8250",
+        "buketik-cvetov-v-korzine",
+        "komp-2289",
+        "kompoziciya-v-korobochke-eusto",
+        "kompoziciya-v-shlyapnoy-k-3035",
+        "mono-9992",
+        "premium-kompoziciya-v-kor-2521"
+      ],
+      "details": {
+        "numeric_to_numeric_differences": [
+          {
+            "slug": "buket-s-mattioloy-rozoy-k-9188",
+            "legacy_top_level_rub": 6233,
+            "saved_buy_block_rub": 6355,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/buket-s-mattioloy-rozoy-k-9188/"
+          },
+          {
+            "slug": "buket-nevesty-1149",
+            "legacy_top_level_rub": 11009,
+            "saved_buy_block_rub": 11866,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/buket-nevesty-1149/"
+          },
+          {
+            "slug": "buketik-cvetov-v-korzine",
+            "legacy_top_level_rub": 29266,
+            "saved_buy_block_rub": 38746,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/"
+          },
+          {
+            "slug": "buket-aromatnyh-mattiol-kustov",
+            "legacy_top_level_rub": 8675,
+            "saved_buy_block_rub": 8762,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/buket-aromatnyh-mattiol-kustov/"
+          },
+          {
+            "slug": "mono-9992",
+            "legacy_top_level_rub": 8641,
+            "saved_buy_block_rub": 9507,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/mono-9992/"
+          },
+          {
+            "slug": "kompoziciya-v-korobochke-eusto",
+            "legacy_top_level_rub": 8877,
+            "saved_buy_block_rub": 9663,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/kompoziciya-v-korobochke-eusto/"
+          },
+          {
+            "slug": "buket-hrizantem-mattiola-romas",
+            "legacy_top_level_rub": 7499,
+            "saved_buy_block_rub": 8251,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/"
+          },
+          {
+            "slug": "avtorskiy-buket-3448",
+            "legacy_top_level_rub": 12539,
+            "saved_buy_block_rub": 13633,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/avtorskiy-buket-3448/"
+          }
+        ],
+        "legacy_null_new_numeric": [
+          {
+            "slug": "kompoziciya-v-shlyapnoy-k-3035",
+            "legacy_top_level_rub": null,
+            "saved_buy_block_rub": 16974,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-3035/"
+          },
+          {
+            "slug": "buket-v-shlyapnoy-korobke-8250",
+            "legacy_top_level_rub": null,
+            "saved_buy_block_rub": 7881,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/buket-v-shlyapnoy-korobke-8250/"
+          },
+          {
+            "slug": "premium-kompoziciya-v-kor-2521",
+            "legacy_top_level_rub": null,
+            "saved_buy_block_rub": 55013,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/premium-kompoziciya-v-kor-2521/"
+          },
+          {
+            "slug": "komp-2289",
+            "legacy_top_level_rub": null,
+            "saved_buy_block_rub": 5335,
+            "observation_date": "2026-10-31",
+            "source_url": "https://flowwow.com/flowers/komp-2289/"
+          }
+        ],
+        "current_live_price_verified": false
+      },
+      "recommendation_ru": "Хранить цену как датированное наблюдение; не объявлять текущую цену и не менять коммерческие поля без живой проверки.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F009",
+      "code": "INDEXED_PRICE_DIFFERENCES_NOT_CURRENT_PRICE_PROOF",
+      "severity": "MEDIUM",
+      "title_ru": "Индексные цены отличаются от сохранённых исторических цен",
+      "slugs": [
+        "avtorskiy-buket-24579",
+        "avtorskiy-buket-67899",
+        "buket-astr-67892",
+        "buket-hrizantem-mattiola-romas",
+        "buket-peryshko",
+        "kompoziciya-aromatnyh-ogromnyh",
+        "kompoziciya-v-sumochke-s--9069"
+      ],
+      "details": {
+        "numeric_differences": [
+          {
+            "slug": "buket-astr-67892",
+            "legacy_top_level_rub": 5929,
+            "indexed_rub": 6000,
+            "source_url": "https://flowwow.com/flowers/buket-astr-67892/",
+            "evidence": {
+              "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+              "json_pointer": "/products"
+            }
+          },
+          {
+            "slug": "buket-peryshko",
+            "legacy_top_level_rub": 6727,
+            "indexed_rub": 6036,
+            "source_url": "https://flowwow.com/flowers/buket-peryshko/",
+            "evidence": {
+              "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+              "json_pointer": "/products"
+            }
+          },
+          {
+            "slug": "buket-hrizantem-mattiola-romas",
+            "legacy_top_level_rub": 7499,
+            "indexed_rub": 7500,
+            "source_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+            "evidence": {
+              "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+              "json_pointer": "/products"
+            }
+          },
+          {
+            "slug": "avtorskiy-buket-24579",
+            "legacy_top_level_rub": 7600,
+            "indexed_rub": 8100,
+            "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+            "evidence": {
+              "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+              "json_pointer": "/products"
+            }
+          },
+          {
+            "slug": "kompoziciya-v-sumochke-s--9069",
+            "legacy_top_level_rub": 4200,
+            "indexed_rub": 4119,
+            "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+            "evidence": {
+              "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH7.json",
+              "json_pointer": "/source_price_indexed_rub"
+            }
+          }
+        ],
+        "legacy_null_indexed_numeric": [
+          {
+            "slug": "avtorskiy-buket-67899",
+            "indexed_rub": 6300,
+            "source_url": "https://flowwow.com/flowers/avtorskiy-buket-67899/"
+          },
+          {
+            "slug": "kompoziciya-aromatnyh-ogromnyh",
+            "indexed_rub": 37992,
+            "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/"
+          }
+        ],
+        "index_may_be_stale": true
+      },
+      "recommendation_ru": "Не использовать индексную цену как актуальную без проверки страницы, даты, города и варианта товара.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F010",
+      "code": "INDEXED_AVAILABILITY_DIFFERENCE",
+      "severity": "MEDIUM",
+      "title_ru": "Индексный статус ready-to-deliver отличается от сохранённого sold_out",
+      "slugs": [
+        "avtorskiy-buket-24579"
+      ],
+      "details": {
+        "observations": [
+          {
+            "slug": "avtorskiy-buket-24579",
+            "legacy_availability": "sold_out",
+            "indexed_status": "READY_TO_DELIVER_ON_INDEXED_VIEW",
+            "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/"
+          }
+        ]
+      },
+      "recommendation_ru": "Не трактовать ни один исторический статус как текущий остаток и не включать продажи.",
+      "evidence": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH6.json",
+          "json_pointer": "/products"
+        }
+      ],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F011",
+      "code": "FOUR_PRIOR_VERIFIED_GALLERIES_PENDING",
+      "severity": "HIGH",
+      "title_ru": "Четыре ранее подтверждённых продавца товара всё ещё без оригинальных галерей",
+      "slugs": [
+        "buket-gortenziy-pionov-roz-eus",
+        "buket-makdak",
+        "avtorskiy-buketik-roza-pionovi",
+        "avtorskiy-buket-limonium-roza-"
+      ],
+      "details": {
+        "count": 4,
+        "observed_thumbnails_total": 26,
+        "original_photos_added": 0,
+        "raw_descriptions_available": 0
+      },
+      "recommendation_ru": "Подтвердить продавца и полную галерею в разрешённой сессии; сохранить только отсутствующие оригиналы с SHA256.",
+      "evidence": [
+        {
+          "file": "catalog/discovery/new-verified-seller-candidates-20261031-4.json",
+          "json_pointer": "/products"
+        }
+      ],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F012",
+      "code": "FIFTY_FIVE_INDEXED_LEADS_UNVERIFIED",
+      "severity": "HIGH",
+      "title_ru": "55 индексных кандидатов не подтверждены точным переходом к продавцу",
+      "slugs": [
+        "avtorskiy-buket-gortenzii-5906",
+        "avtorskiy-buket-gortenzii-8256",
+        "avtorskiy-buket-gortenziy-4749",
+        "avtorskiy-buket-mattiola-diant",
+        "avtorskiy-buket-roza-roza-4721",
+        "avtorskiy-buket-roza-roza-pion",
+        "avtorskiy-buketik-anturium-mat",
+        "avtorskiy-buketik-radost",
+        "avtorskiy-buketik-roza-alstrom",
+        "avtorskiy-buketik-roza-eustoma",
+        "avtorskiy-buketik-roza-i-roza-",
+        "avtorskiy-buketik-roza-ro-6280",
+        "avtorskiy-buketik-roza-roza-ku",
+        "buket-aromatnaya-mattiola-roza",
+        "buket-aromatnoy-mattioly-kusto",
+        "buket-aromatnyh-mattiol-p-5659",
+        "buket-aromatnyh-mattiol-pod-le",
+        "buket-astr-46789",
+        "buket-astr-kustovyh",
+        "buket-astra-eustoma-mattioly",
+        "buket-astra-podsolnuh-eustoma-",
+        "buket-gortenzii-diantus-eustom",
+        "buket-gortenzii-i-alstrom-8217",
+        "buket-gortenzii-roza-pion-9719",
+        "buket-gortenzii-rozy-orhidei-r",
+        "buket-gortenziya-4694",
+        "buket-gortenziya-mattiola-9487",
+        "buket-iz-eustomy-evkalipta-pio",
+        "buket-iz-kustovoy-pionovi-6281",
+        "buket-iz-piona-gerbery-kamilly",
+        "buket-lazurniy-astra-eustoma-m",
+        "buket-lyublyu-tebya-5773",
+        "buket-lyubov-008",
+        "buket-osen-001",
+        "buket-pionov-s-evkaliptom-6605",
+        "buket-simpatyashka",
+        "buket-v-shlyapnoy-korobke-eust",
+        "buket-v-shlyapnoy-koroboc-6459",
+        "kompoziciya-s-cvetami-pion-eus",
+        "kompoziciya-v-korzine-gor-8207",
+        "kompoziciya-v-korzine-rom-6472",
+        "kompoziciya-v-korzine-roza-roz",
+        "kompoziciya-v-shlyapnoy-k-2585",
+        "kompoziciya-v-shlyapnoy-k-3948",
+        "kompoziciya-v-shlyapnoy-k-7360",
+        "kompoziciya-v-shlyapnoy-k-8295",
+        "kompoziciya-v-shlyapnoy-k-9205",
+        "kompoziciya-v-shlyapnoy-korobo",
+        "kompoziciya-v-sumochke-ne-9491",
+        "mono-buketik-iz-kustovoy-matio",
+        "monobuket-mattioly-kustovoy",
+        "nabor-pionov-s-konfetami-ferra",
+        "premium-avtorskiy-buket-gorten",
+        "premium-avtorskiy-buket-roza-p",
+        "premium-kompoziciya-v-korzine"
+      ],
+      "details": {
+        "count": 55,
+        "display_name_matches": 55,
+        "independent_canonical_seller_confirmations": 0
+      },
+      "recommendation_ru": "Оставить UNVERIFIED; отображаемое имя магазина не является доказательством canonical seller.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F013",
+      "code": "TWO_QUARANTINED_NOT_ABANDONED",
+      "severity": "MEDIUM",
+      "title_ru": "Две карантинные ссылки не доказаны заброшенными черновиками",
+      "slugs": [
+        "avtorskiy-buketik-francuzskaya",
+        "avtorskiy-buketik-pion-go-1251"
+      ],
+      "details": {
+        "count": 2,
+        "confirmed_abandoned": 0
+      },
+      "recommendation_ru": "Сохранить карантин до проверки точного продавца и авторитетного состояния записи.",
+      "evidence": [
+        {
+          "file": "catalog/discovery/QUARANTINED_INCOMPLETE_PUBLIC_CANDIDATES_2026-10-31.json",
+          "json_pointer": ""
+        }
+      ],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F014",
+      "code": "SELLER_IDENTITY_INHERITED_NOT_LIVE_REVERIFIED",
+      "severity": "HIGH",
+      "title_ru": "Принадлежность всех 66 базовых SKU продавцу унаследована из прежней проверки",
+      "slugs": [
+        "avtorskiy-buket-24579",
+        "avtorskiy-buket-3448",
+        "avtorskiy-buket-67899",
+        "avtorskiy-buket-7186",
+        "avtorskiy-buket-9444",
+        "avtorskiy-buket-gortenzii-3341",
+        "avtorskiy-buket-lyublyu-roza-p",
+        "avtorskiy-buket-mattiol-roza-g",
+        "avtorskiy-buket-pion-gort-6904",
+        "avtorskiy-buket-roza-alst-8286",
+        "avtorskiy-buket-roza-mattiola-",
+        "avtorskiy-buket-roza-pion-7064",
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-vozdushnoe-bez",
+        "avtorskiy-buketik-23",
+        "avtorskiy-buketik-dlya-tebya-r",
+        "avtorskiy-buketik-dlya-vas-1541",
+        "avtorskiy-buketik-francuz-9106",
+        "avtorskiy-buketik-gortenzii-ra",
+        "avtorskiy-buketik-roza-go-1029",
+        "buket-aromatniy-pion-evkalipt-",
+        "buket-aromatnyh-mattiol-kustov",
+        "buket-astr-67892",
+        "buket-astr-osennih",
+        "buket-gortenzii-mattiola--1218",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-gortenziy-23",
+        "buket-hrizantem-mattiola-romas",
+        "buket-iz-diantusa-gvozdik-6944",
+        "buket-iz-gortenzii-kustov-7019",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "buket-lavandovye-grezy-roza-ma",
+        "buket-mattiola-roza-piono-5396",
+        "buket-nevesty-1149",
+        "buket-nevesty-3482",
+        "buket-peryshko",
+        "buket-rozy-pionovidnoy-kustovo",
+        "buket-s-mattioloy-rozoy-k-9188",
+        "buket-s-pionovidnoy-kusto-4643",
+        "buket-sezon-6869",
+        "buket-siciliya-6909",
+        "buket-v-korzine-exclusive",
+        "buket-v-shlyapnoy-korobke-8250",
+        "buket-vozdushniy-puding-roza-k",
+        "buket-zvezda",
+        "buketik-cvetov-v-korzine",
+        "buketik-premium-v-korzine",
+        "cve-7264",
+        "francuzskie-rozy-pod-lentu-21-",
+        "komp-2289",
+        "kompoziciya-aromatnyh-ogromnyh",
+        "kompoziciya-premium-v-korzine-",
+        "kompoziciya-roza-pionovidnaya-",
+        "kompoziciya-v-korobochke-eusto",
+        "kompoziciya-v-korzine-astra-po",
+        "kompoziciya-v-korzine-rom-4151",
+        "kompoziciya-v-shlyapnoy-k-3035",
+        "kompoziciya-v-shlyapnoy-k-6842",
+        "kompoziciya-v-shlyapnoy-k-7428",
+        "kompoziciya-v-shlyapnoy-k-7637",
+        "kompoziciya-v-shlyapnoy-k-8804",
+        "kompoziciya-v-sumochke-s--9069",
+        "mono-9992",
+        "nabor-konfety-merci-c-buketom-",
+        "premium-kompoziciya-v-kor-2521"
+      ],
+      "details": {
+        "count": 66,
+        "stored_seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
+        "live_canonical_seller_reverified_this_run": 0
+      },
+      "recommendation_ru": "Не выдавать офлайн-совпадение seller_url за новый переход «Перейти в магазин».",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F015",
+      "code": "LIVE_SOURCE_AND_GALLERY_ORDER_NOT_VERIFIED",
+      "severity": "HIGH",
+      "title_ru": "Живые страницы, полнота галерей и порядок кадров не сверены",
+      "slugs": [
+        "avtorskiy-buket-24579",
+        "avtorskiy-buket-3448",
+        "avtorskiy-buket-67899",
+        "avtorskiy-buket-7186",
+        "avtorskiy-buket-9444",
+        "avtorskiy-buket-gortenzii-3341",
+        "avtorskiy-buket-lyublyu-roza-p",
+        "avtorskiy-buket-mattiol-roza-g",
+        "avtorskiy-buket-pion-gort-6904",
+        "avtorskiy-buket-roza-alst-8286",
+        "avtorskiy-buket-roza-mattiola-",
+        "avtorskiy-buket-roza-pion-7064",
+        "avtorskiy-buket-s-gortenz-3168",
+        "avtorskiy-buket-vozdushnoe-bez",
+        "avtorskiy-buketik-23",
+        "avtorskiy-buketik-dlya-tebya-r",
+        "avtorskiy-buketik-dlya-vas-1541",
+        "avtorskiy-buketik-francuz-9106",
+        "avtorskiy-buketik-gortenzii-ra",
+        "avtorskiy-buketik-roza-go-1029",
+        "buket-aromatniy-pion-evkalipt-",
+        "buket-aromatnyh-mattiol-kustov",
+        "buket-astr-67892",
+        "buket-astr-osennih",
+        "buket-gortenzii-mattiola--1218",
+        "buket-gortenzii-roza-pionovidn",
+        "buket-gortenziy-23",
+        "buket-hrizantem-mattiola-romas",
+        "buket-iz-diantusa-gvozdik-6944",
+        "buket-iz-gortenzii-kustov-7019",
+        "buket-iz-kustovoy-pionovi-3287",
+        "buket-iz-roz-kustovoy-pio-6913",
+        "buket-lavandovye-grezy-roza-ma",
+        "buket-mattiola-roza-piono-5396",
+        "buket-nevesty-1149",
+        "buket-nevesty-3482",
+        "buket-peryshko",
+        "buket-rozy-pionovidnoy-kustovo",
+        "buket-s-mattioloy-rozoy-k-9188",
+        "buket-s-pionovidnoy-kusto-4643",
+        "buket-sezon-6869",
+        "buket-siciliya-6909",
+        "buket-v-korzine-exclusive",
+        "buket-v-shlyapnoy-korobke-8250",
+        "buket-vozdushniy-puding-roza-k",
+        "buket-zvezda",
+        "buketik-cvetov-v-korzine",
+        "buketik-premium-v-korzine",
+        "cve-7264",
+        "francuzskie-rozy-pod-lentu-21-",
+        "komp-2289",
+        "kompoziciya-aromatnyh-ogromnyh",
+        "kompoziciya-premium-v-korzine-",
+        "kompoziciya-roza-pionovidnaya-",
+        "kompoziciya-v-korobochke-eusto",
+        "kompoziciya-v-korzine-astra-po",
+        "kompoziciya-v-korzine-rom-4151",
+        "kompoziciya-v-shlyapnoy-k-3035",
+        "kompoziciya-v-shlyapnoy-k-6842",
+        "kompoziciya-v-shlyapnoy-k-7428",
+        "kompoziciya-v-shlyapnoy-k-7637",
+        "kompoziciya-v-shlyapnoy-k-8804",
+        "kompoziciya-v-sumochke-s--9069",
+        "mono-9992",
+        "nabor-konfety-merci-c-buketom-",
+        "premium-kompoziciya-v-kor-2521"
+      ],
+      "details": {
+        "baseline_cards_checked_offline": 66,
+        "live_product_pages_opened": 0,
+        "categories_fully_traversed": 0,
+        "show_more_clicks": 0
+      },
+      "recommendation_ru": "Для COMPLETE нужен разрешённый интерактивный просмотр всех категорий и карточек; данный результат только PARTIAL.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    },
+    {
+      "id": "F016",
+      "code": "ROOT_README_DESCRIBES_OLDER_MAIN_BASELINE",
+      "severity": "LOW",
+      "title_ru": "Корневой README в рабочей ветке начинается с показателей старого main",
+      "slugs": [],
+      "details": {
+        "file": "README.md",
+        "advertised_descriptions": 26,
+        "advertised_dimensions": 46,
+        "actual_source_branch_descriptions": 36,
+        "actual_source_branch_valid_dimensions": 54
+      },
+      "recommendation_ru": "Считать актуальными snapshot и верхний блок catalog/INDEX.md; при отдельном согласовании обновить баннер README.",
+      "evidence": [],
+      "confirmed_by": "OFFLINE_PUBLIC_GITHUB_FILES",
+      "live_flowwow_reverified": false
+    }
+  ],
+  "checks": {
+    "duplicate_sku_count": 0,
+    "duplicate_canonical_product_url_count": 0,
+    "stored_other_seller_urls": 0,
+    "card_snapshot_mismatches": 0,
+    "catalog_json_files_strictly_parsed": 83,
+    "catalog_json_parse_errors": [],
+    "catalog_markdown_files_checked": 75,
+    "broken_catalog_markdown_links": [],
+    "card_readme_gallery_mismatches": [],
+    "card_readme_without_explicit_seller_link_informational": [
+      "buket-vozdushniy-puding-roza-k",
+      "buket-s-mattioloy-rozoy-k-9188",
+      "buket-gortenzii-mattiola--1218",
+      "buket-mattiola-roza-piono-5396",
+      "buket-iz-diantusa-gvozdik-6944",
+      "avtorskiy-buket-lyublyu-roza-p",
+      "buket-rozy-pionovidnoy-kustovo",
+      "buket-s-pionovidnoy-kusto-4643",
+      "buket-iz-gortenzii-kustov-7019",
+      "francuzskie-rozy-pod-lentu-21-",
+      "avtorskiy-buket-roza-pion-7064",
+      "buket-nevesty-3482",
+      "buket-nevesty-1149",
+      "kompoziciya-premium-v-korzine-",
+      "kompoziciya-v-korzine-astra-po",
+      "buketik-premium-v-korzine",
+      "cve-7264",
+      "buket-astr-osennih",
+      "buketik-cvetov-v-korzine",
+      "buket-aromatnyh-mattiol-kustov",
+      "buket-v-korzine-exclusive",
+      "mono-9992",
+      "kompoziciya-v-korzine-rom-4151",
+      "buket-aromatniy-pion-evkalipt-",
+      "nabor-konfety-merci-c-buketom-",
+      "kompoziciya-v-korobochke-eusto",
+      "kompoziciya-v-shlyapnoy-k-7428",
+      "kompoziciya-v-shlyapnoy-k-3035",
+      "buket-v-shlyapnoy-korobke-8250",
+      "premium-kompoziciya-v-kor-2521",
+      "kompoziciya-aromatnyh-ogromnyh",
+      "kompoziciya-v-shlyapnoy-k-6842",
+      "kompoziciya-v-shlyapnoy-k-7637",
+      "komp-2289",
+      "kompoziciya-v-shlyapnoy-k-8804",
+      "kompoziciya-roza-pionovidnaya-",
+      "buket-hrizantem-mattiola-romas",
+      "avtorskiy-buketik-23",
+      "avtorskiy-buketik-gortenzii-ra",
+      "avtorskiy-buket-9444",
+      "avtorskiy-buketik-dlya-vas-1541",
+      "buket-sezon-6869",
+      "buket-astr-67892",
+      "avtorskiy-buket-24579",
+      "avtorskiy-buket-3448",
+      "buket-lavandovye-grezy-roza-ma",
+      "buket-peryshko",
+      "buket-zvezda"
+    ],
+    "saved_raw_composition_mismatches": [],
+    "saved_observation_dimension_mismatches": [],
+    "saved_observation_description_mismatches": [],
+    "dedicated_evidence_field_mismatches": [],
+    "batch5_preexisting_exact_text_match_slugs": [
+      "avtorskiy-buket-roza-pion-7064"
+    ],
+    "historical_observation_dimension_gaps_later_filled": [
+      {
+        "slug": "buket-iz-gortenzii-kustov-7019",
+        "older_observation": {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/8/dimensions_cm"
+        },
+        "later_evidence": [
+          {
+            "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+            "json_pointer": "/five_recovered_dimension_pairs/4"
+          }
+        ]
+      },
+      {
+        "slug": "kompoziciya-v-korzine-astra-po",
+        "older_observation": {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/14/dimensions_cm"
+        },
+        "later_evidence": [
+          {
+            "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+            "json_pointer": "/five_recovered_dimension_pairs/0"
+          }
+        ]
+      },
+      {
+        "slug": "buketik-premium-v-korzine",
+        "older_observation": {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/15/dimensions_cm"
+        },
+        "later_evidence": [
+          {
+            "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+            "json_pointer": "/five_recovered_dimension_pairs/1"
+          }
+        ]
+      },
+      {
+        "slug": "buketik-cvetov-v-korzine",
+        "older_observation": {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/18/dimensions_cm"
+        },
+        "later_evidence": [
+          {
+            "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+            "json_pointer": "/five_recovered_dimension_pairs/3"
+          }
+        ]
+      },
+      {
+        "slug": "kompoziciya-v-korzine-rom-4151",
+        "older_observation": {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/22/dimensions_cm"
+        },
+        "later_evidence": [
+          {
+            "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+            "json_pointer": "/five_recovered_dimension_pairs/2"
+          }
+        ]
+      },
+      {
+        "slug": "avtorskiy-buket-24579",
+        "older_observation": {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/18/dimensions_cm"
+        },
+        "later_evidence": [
+          {
+            "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+            "json_pointer": "/dimension_updates/1"
+          }
+        ]
+      }
+    ],
+    "duplicate_component_names_within_sku": [],
+    "description_provenance_covered": 36,
+    "dimension_provenance_covered": 54,
+    "saved_public_composition_observations_matched": 48,
+    "dimension_values_inherited_unchanged_from_main": [
+      "avtorskiy-buket-7186",
+      "avtorskiy-buket-gortenzii-3341",
+      "avtorskiy-buket-mattiol-roza-g",
+      "avtorskiy-buket-roza-mattiola-",
+      "avtorskiy-buket-vozdushnoe-bez",
+      "avtorskiy-buketik-francuz-9106",
+      "avtorskiy-buketik-roza-go-1029",
+      "buket-siciliya-6909"
+    ],
+    "composition_values_inherited_unchanged_from_main": [
+      "avtorskiy-buket-67899",
+      "avtorskiy-buket-7186",
+      "avtorskiy-buket-gortenzii-3341",
+      "avtorskiy-buket-mattiol-roza-g",
+      "avtorskiy-buket-pion-gort-6904",
+      "avtorskiy-buket-roza-mattiola-",
+      "avtorskiy-buket-vozdushnoe-bez",
+      "avtorskiy-buketik-francuz-9106",
+      "avtorskiy-buketik-roza-go-1029",
+      "buket-siciliya-6909",
+      "kompoziciya-v-sumochke-s--9069"
+    ],
+    "duplicate_descriptions_are_source_generic_not_auto_error": true
+  },
+  "field_provenance_map": {
+    "description": {
+      "buket-mattiola-roza-piono-5396": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/0/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/8/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-iz-diantusa-gvozdik-6944": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/1/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/10/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buket-lyublyu-roza-p": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/2/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/11/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-rozy-pionovidnoy-kustovo": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/3/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/12/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-s-pionovidnoy-kusto-4643": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/4/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/13/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-iz-gortenzii-kustov-7019": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/5/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/14/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "francuzskie-rozy-pod-lentu-21-": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/6/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/16/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-nevesty-1149": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/7/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/19/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "kompoziciya-v-korobochke-eusto": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/8/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/32/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-3035": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/9/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/34/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buketik-23": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/10/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/44/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buketik-gortenzii-ra": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/11/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/45/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buket-3448": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/12/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/51/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-aromatnyh-mattiol-kustov": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/13/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/26/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buketik-dlya-vas-1541": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/14/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/47/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-zvezda": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/15/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/65/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-v-shlyapnoy-korobke-8250": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/16/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/35/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "mono-9992": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/17/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/28/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "premium-kompoziciya-v-kor-2521": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/18/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/36/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "komp-2289": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/19/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/40/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buketik-cvetov-v-korzine": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/20/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/25/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buket-roza-pion-7064": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/21/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/17/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-lavandovye-grezy-roza-ma": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_AUDIT_2026-10-31.json",
+          "json_pointer": "/items/22/raw_description"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/62/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "avtorskiy-buket-mattiol-roza-g": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH3.json",
+          "json_pointer": "/captured_original_descriptions/0/source_text_ru"
+        }
+      ],
+      "buket-nevesty-3482": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/0/raw"
+        }
+      ],
+      "kompoziciya-premium-v-korzine-": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/1/raw"
+        }
+      ],
+      "kompoziciya-aromatnyh-ogromnyh": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/2/raw"
+        }
+      ],
+      "avtorskiy-buket-pion-gort-6904": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/3/raw"
+        }
+      ],
+      "avtorskiy-buketik-francuz-9106": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/4/raw"
+        }
+      ],
+      "avtorskiy-buket-vozdushnoe-bez": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/5/raw"
+        }
+      ],
+      "buket-v-korzine-exclusive": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/description_updates/6/raw"
+        }
+      ],
+      "nabor-konfety-merci-c-buketom-": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH5.json",
+          "json_pointer": "/description_verification"
+        }
+      ],
+      "kompoziciya-v-sumochke-s--9069": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH7.json",
+          "json_pointer": "/source_description_raw_ru"
+        }
+      ],
+      "buket-vozdushniy-puding-roza-k": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/0/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-s-mattioloy-rozoy-k-9188": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/4/latest_source_observation/raw_description_ru"
+        }
+      ],
+      "buket-gortenzii-mattiola--1218": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/5/latest_source_observation/raw_description_ru"
+        }
+      ]
+    },
+    "dimensions": {
+      "avtorskiy-buket-pion-gort-6904": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/dimension_updates/0"
+        }
+      ],
+      "avtorskiy-buket-24579": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH4.json",
+          "json_pointer": "/dimension_updates/1"
+        }
+      ],
+      "kompoziciya-v-korzine-astra-po": [
+        {
+          "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+          "json_pointer": "/five_recovered_dimension_pairs/0"
+        }
+      ],
+      "buketik-premium-v-korzine": [
+        {
+          "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+          "json_pointer": "/five_recovered_dimension_pairs/1"
+        }
+      ],
+      "kompoziciya-v-korzine-rom-4151": [
+        {
+          "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+          "json_pointer": "/five_recovered_dimension_pairs/2"
+        }
+      ],
+      "buketik-cvetov-v-korzine": [
+        {
+          "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+          "json_pointer": "/five_recovered_dimension_pairs/3"
+        }
+      ],
+      "buket-iz-gortenzii-kustov-7019": [
+        {
+          "file": "catalog/evidence/FLOWWOW_FIVE_DIMENSION_PAIRS_2026-10-31.json",
+          "json_pointer": "/five_recovered_dimension_pairs/4"
+        }
+      ],
+      "kompoziciya-v-sumochke-s--9069": [
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH7.json",
+          "json_pointer": "/source_dimensions_cm"
+        }
+      ],
+      "buket-vozdushniy-puding-roza-k": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/0/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/0/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-s-mattioloy-rozoy-k-9188": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/1/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/4/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-gortenzii-mattiola--1218": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/2/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/5/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-mattiola-roza-piono-5396": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/3/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/8/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-iz-diantusa-gvozdik-6944": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/4/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/10/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buket-lyublyu-roza-p": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/5/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/11/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-rozy-pionovidnoy-kustovo": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/6/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/12/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-s-pionovidnoy-kusto-4643": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/7/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/13/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "francuzskie-rozy-pod-lentu-21-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/9/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/16/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buket-roza-pion-7064": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/10/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/17/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-nevesty-3482": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/11/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/18/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-nevesty-1149": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/12/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/19/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "kompoziciya-premium-v-korzine-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/13/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/20/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "cve-7264": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/16/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/23/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-astr-osennih": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/17/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/24/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-aromatnyh-mattiol-kustov": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/19/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/26/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-v-korzine-exclusive": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/20/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/27/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "mono-9992": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/21/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/28/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-aromatniy-pion-evkalipt-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/23/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/30/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "nabor-konfety-merci-c-buketom-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/24/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/31/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "kompoziciya-v-korobochke-eusto": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/0/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/32/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-7428": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/1/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/33/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-3035": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/2/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/34/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-v-shlyapnoy-korobke-8250": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/3/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/35/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "premium-kompoziciya-v-kor-2521": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/4/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/36/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "kompoziciya-aromatnyh-ogromnyh": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/5/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/37/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "komp-2289": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/8/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/40/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-8804": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/9/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/41/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-hrizantem-mattiola-romas": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/11/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/43/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buketik-23": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/12/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/44/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buketik-gortenzii-ra": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/13/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/45/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buket-9444": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/14/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/46/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buketik-dlya-vas-1541": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/15/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/47/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-astr-67892": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/17/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/49/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buket-3448": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/19/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/51/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-peryshko": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/20/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/63/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-lavandovye-grezy-roza-ma": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/21/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/62/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "buket-zvezda": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/22/dimensions_cm"
+        },
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/65/latest_source_observation/dimensions_cm"
+        }
+      ],
+      "avtorskiy-buket-7186": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/56/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-gortenzii-3341": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/58/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-mattiol-roza-g": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/61/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-roza-mattiola-": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/59/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-vozdushnoe-bez": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/52/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buketik-francuz-9106": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/55/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buketik-roza-go-1029": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/53/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "buket-siciliya-6909": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/54/dimensions_cm",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ]
+    },
+    "composition_dedicated_observations": {
+      "buket-vozdushniy-puding-roza-k": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/0/composition_items"
+        }
+      ],
+      "buket-s-mattioloy-rozoy-k-9188": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/1/composition_items"
+        }
+      ],
+      "buket-gortenzii-mattiola--1218": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/2/composition_items"
+        }
+      ],
+      "buket-mattiola-roza-piono-5396": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/3/composition_items"
+        }
+      ],
+      "buket-iz-diantusa-gvozdik-6944": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/4/composition_items"
+        }
+      ],
+      "avtorskiy-buket-lyublyu-roza-p": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/5/composition_items"
+        }
+      ],
+      "buket-rozy-pionovidnoy-kustovo": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/6/composition_items"
+        }
+      ],
+      "buket-s-pionovidnoy-kusto-4643": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/7/composition_items"
+        }
+      ],
+      "buket-iz-gortenzii-kustov-7019": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/8/composition_items"
+        }
+      ],
+      "francuzskie-rozy-pod-lentu-21-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/9/composition_items"
+        }
+      ],
+      "avtorskiy-buket-roza-pion-7064": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/10/composition_items"
+        }
+      ],
+      "buket-nevesty-3482": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/11/composition_items"
+        }
+      ],
+      "buket-nevesty-1149": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/12/composition_items"
+        }
+      ],
+      "kompoziciya-premium-v-korzine-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/13/composition_items"
+        }
+      ],
+      "kompoziciya-v-korzine-astra-po": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/14/composition_items"
+        }
+      ],
+      "buketik-premium-v-korzine": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/15/composition_items"
+        }
+      ],
+      "cve-7264": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/16/composition_items"
+        }
+      ],
+      "buket-astr-osennih": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/17/composition_items"
+        }
+      ],
+      "buketik-cvetov-v-korzine": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/18/composition_items"
+        }
+      ],
+      "buket-aromatnyh-mattiol-kustov": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/19/composition_items"
+        }
+      ],
+      "buket-v-korzine-exclusive": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/20/composition_items"
+        }
+      ],
+      "mono-9992": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/21/composition_items"
+        }
+      ],
+      "kompoziciya-v-korzine-rom-4151": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/22/composition_items"
+        }
+      ],
+      "buket-aromatniy-pion-evkalipt-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/23/composition_items"
+        }
+      ],
+      "nabor-konfety-merci-c-buketom-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH1.json",
+          "json_pointer": "/items/24/composition_items"
+        },
+        {
+          "file": "catalog/evidence/SOURCE_DESCRIPTION_RECOVERY_2026-10-31_BATCH5.json",
+          "json_pointer": "/source_comp_index"
+        }
+      ],
+      "kompoziciya-v-korobochke-eusto": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/0/composition_items"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-7428": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/1/composition_items"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-3035": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/2/composition_items"
+        }
+      ],
+      "buket-v-shlyapnoy-korobke-8250": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/3/composition_items"
+        }
+      ],
+      "premium-kompoziciya-v-kor-2521": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/4/composition_items"
+        }
+      ],
+      "kompoziciya-aromatnyh-ogromnyh": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/5/composition_items"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-6842": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/6/composition_items"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-7637": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/7/composition_items"
+        }
+      ],
+      "komp-2289": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/8/composition_items"
+        }
+      ],
+      "kompoziciya-v-shlyapnoy-k-8804": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/9/composition_items"
+        }
+      ],
+      "kompoziciya-roza-pionovidnaya-": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/10/composition_items"
+        }
+      ],
+      "buket-hrizantem-mattiola-romas": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/11/composition_items"
+        }
+      ],
+      "avtorskiy-buketik-23": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/12/composition_items"
+        }
+      ],
+      "avtorskiy-buketik-gortenzii-ra": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/13/composition_items"
+        }
+      ],
+      "avtorskiy-buket-9444": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/14/composition_items"
+        }
+      ],
+      "avtorskiy-buketik-dlya-vas-1541": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/15/composition_items"
+        }
+      ],
+      "buket-sezon-6869": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/16/composition_items"
+        }
+      ],
+      "buket-astr-67892": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/17/composition_items"
+        }
+      ],
+      "avtorskiy-buket-24579": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/18/composition_items"
+        }
+      ],
+      "avtorskiy-buket-3448": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/19/composition_items"
+        }
+      ],
+      "buket-peryshko": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/20/composition_items"
+        }
+      ],
+      "buket-lavandovye-grezy-roza-ma": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/21/composition_items"
+        }
+      ],
+      "buket-zvezda": [
+        {
+          "file": "catalog/evidence/SOURCE_OBSERVATIONS_2026-10-31_BATCH2.json",
+          "json_pointer": "/items/22/composition_items"
+        }
+      ],
+      "avtorskiy-buket-67899": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/60/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-7186": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/56/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-gortenzii-3341": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/58/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-mattiol-roza-g": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/61/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-pion-gort-6904": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/57/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-roza-mattiola-": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/59/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buket-vozdushnoe-bez": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/52/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buketik-francuz-9106": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/55/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "avtorskiy-buketik-roza-go-1029": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/53/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "buket-siciliya-6909": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/54/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ],
+      "kompoziciya-v-sumochke-s--9069": [
+        {
+          "file": "catalog/public-snapshot.json",
+          "json_pointer": "/products/64/composition_items",
+          "basis": "UNCHANGED_FROM_MAIN_BASELINE_NOT_NEW_LIVE_VERIFICATION",
+          "baseline_sha": "3c35d693a2b128580beaa5f754450a38d7276d4b"
+        }
+      ]
+    }
+  },
+  "interpretation_limits": [
+    "Public GitHub consistency is not a new live Flowwow observation.",
+    "Existing seller verification is inherited, not re-performed.",
+    "A generic description repeated by the seller is not automatically a wrong description.",
+    "Exact duplicate image bytes are not proof of a wrong seller or an incorrect live gallery."
+  ]
+}

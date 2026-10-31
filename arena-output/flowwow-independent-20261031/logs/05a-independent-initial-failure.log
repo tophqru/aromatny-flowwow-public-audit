@@ -1,0 +1,13 @@
+utc=2026-10-31T22:41:04.874957+00:00
+command=["/home/user/.arena-audit-venv/bin/python", "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py"]
+--- output ---
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py", line 807, in <module>
+    main()
+  File "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py", line 368, in main
+    assert not media_errors and not readme_errors
+AssertionError
+
+--- exit_code=1 ---
+
+Follow-up: the first independent-script assertion was too strict: it required an explicit seller URL in every README. 48 updated README cards link the exact product but omit the shop URL; their product.json still contains the exact seller_url. The check was corrected to validate README image order and product URL, and report missing README shop links as informational. No source card was changed.

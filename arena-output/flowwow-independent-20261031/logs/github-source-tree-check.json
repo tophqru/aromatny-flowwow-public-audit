@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-31T22:37:23.600423+00:00",
+  "command": [
+    "gh",
+    "api",
+    "repos/tophqru/aromatny-flowwow-public-audit/git/trees/f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048?recursive=1"
+  ],
+  "repository": "tophqru/aromatny-flowwow-public-audit",
+  "requested_tree_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "remote_tree_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "remote_tree_truncated": false,
+  "remote_media_blob_count": 435,
+  "local_source_media_blob_count": 435,
+  "path_sets_equal": true,
+  "all_media_blob_oids_equal": true,
+  "image_bytes_downloaded": 0,
+  "mismatched_paths": []
+}
