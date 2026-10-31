@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "observation_date": "2026-10-31",
+  "scope": "Additional independent indexed Flowwow links, NOT source-verified Seller items.",
+  "baseline_sku": 66,
+  "previous_four_exact_shop_verified_pending": 4,
+  "previous_indexed_unverified": 52,
+  "added_indexed_unverified": 3,
+  "known_total_unverified_indexed": 55,
+  "shop_expected": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "status": "UNVERIFIED_EXACT_CANONICAL_SELLER",
+  "user_method_requested": "One page at a time, normal site navigation; site could not be opened through web tool and browser connector unavailable.",
+  "access_actual": "Search engine indexed product snippets only; no active DOM, scroll, show more or checkout.",
+  "never_reimport": "kompoziciya-v-shlyapnoy-k-4183",
+  "items": [
+    {
+      "slug": "premium-avtorskiy-buket-gorten",
+      "source_url": "https://flowwow.com/flowers/premium-avtorskiy-buket-gorten/",
+      "name_ru": "Премиум авторский букет гортензии с эустомой",
+      "source_category": "Авторские букеты",
+      "indexed_price_rub": 15046,
+      "description_raw_ru_indexed": null,
+      "composition_items_indexed": [
+        {
+          "component": "Гортензия",
+          "quantity": 9,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 10,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 8,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm_indexed": null,
+      "source_ref": "turn698727search0",
+      "source_observed": "EXACT_URL_PUBLIC_SEARCH_INDEX_SNAPSHOT",
+      "seller_display_name": "Ароматный букет",
+      "canonical_seller_verified": false,
+      "clicked_pereti_v_magazin": false,
+      "clicked_show_more": false,
+      "visited_live_page": false,
+      "full_gallery_verified": false,
+      "photos_saved": 0,
+      "may_show_publicly": false,
+      "may_order": false,
+      "owner_approved": false,
+      "status": "PENDING_EXACT_SELLER_CANONICAL_LINK_AND_GALLERY_BINARY_VERIFICATION"
+    },
+    {
+      "slug": "buket-gortenzii-diantus-eustom",
+      "source_url": "https://flowwow.com/flowers/buket-gortenzii-diantus-eustom/",
+      "name_ru": "Букет гортензии, диантус, эустома, эвкалипт 6789",
+      "source_category": "Авторские букеты",
+      "indexed_price_rub": 8000,
+      "description_raw_ru_indexed": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "composition_items_indexed": [
+        {
+          "component": "Гортензия",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 6,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm_indexed": {
+        "width": 35,
+        "height": 45
+      },
+      "source_ref": "turn407027search2",
+      "source_observed": "EXACT_URL_PUBLIC_SEARCH_INDEX_SNAPSHOT",
+      "seller_display_name": "Ароматный букет",
+      "canonical_seller_verified": false,
+      "clicked_pereti_v_magazin": false,
+      "clicked_show_more": false,
+      "visited_live_page": false,
+      "full_gallery_verified": false,
+      "photos_saved": 0,
+      "may_show_publicly": false,
+      "may_order": false,
+      "owner_approved": false,
+      "status": "PENDING_EXACT_SELLER_CANONICAL_LINK_AND_GALLERY_BINARY_VERIFICATION"
+    },
+    {
+      "slug": "buket-lazurniy-astra-eustoma-m",
+      "source_url": "https://flowwow.com/flowers/buket-lazurniy-astra-eustoma-m/",
+      "name_ru": "Букет Лазурный астра, эустома, маттиола",
+      "source_category": "Авторские букеты",
+      "indexed_price_rub": 5821,
+      "description_raw_ru_indexed": null,
+      "composition_items_indexed": [
+        {
+          "component": "Астра",
+          "quantity": 11,
+          "unit": "шт"
+        },
+        {
+          "component": "Маттиола",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm_indexed": {
+        "width": 31,
+        "height": 45
+      },
+      "source_ref": "turn712850search8",
+      "source_observed": "EXACT_URL_PUBLIC_SEARCH_INDEX_SNAPSHOT",
+      "seller_display_name": "Ароматный букет",
+      "canonical_seller_verified": false,
+      "clicked_pereti_v_magazin": false,
+      "clicked_show_more": false,
+      "visited_live_page": false,
+      "full_gallery_verified": false,
+      "photos_saved": 0,
+      "may_show_publicly": false,
+      "may_order": false,
+      "owner_approved": false,
+      "status": "PENDING_EXACT_SELLER_CANONICAL_LINK_AND_GALLERY_BINARY_VERIFICATION"
+    }
+  ]
+}
