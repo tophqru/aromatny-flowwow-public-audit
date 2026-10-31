@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-31",
+  "basis_ref": "audit/chatgpt-description-recovery-20261031",
+  "baseline_products": 66,
+  "total_photo_records": 435,
+  "rule": "Exclude from future retail catalog only after authoritative confirmation that seller product is draft/abandoned/empty. Do not confuse inaccessible source with abandoned record.",
+  "current_verified_abandoned": [],
+  "current_review_pending": [
+    {
+      "slug": "avtorskiy-buket-s-gortenz-3168",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/",
+      "name": "Акция! Авторский букет с гортензией, матиолла кустовая, роза пионовидная кустовая 46788",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 6,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    },
+    {
+      "slug": "avtorskiy-buket-roza-alst-8286",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/",
+      "name": "Авторский букет роза, альстромерии, маттиола, роза пионовидная кустовая, эвкалипт 5778",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 8,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    },
+    {
+      "slug": "buket-gortenziy-23",
+      "source_url": "https://flowwow.com/flowers/buket-gortenziy-23/",
+      "name": "Букет гортензий 23",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 6,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    },
+    {
+      "slug": "buket-iz-kustovoy-pionovi-3287",
+      "source_url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/",
+      "name": "Акция! Премиум букет кустовой пионовидной розы, альстромерии",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 6,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    },
+    {
+      "slug": "buket-gortenzii-roza-pionovidn",
+      "source_url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/",
+      "name": "Букет гортензии, роза пионовидная кустовая, диантус, маттиола, эвкалипт",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 6,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    },
+    {
+      "slug": "buket-iz-roz-kustovoy-pio-6913",
+      "source_url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/",
+      "name": "Букет из роз, кустовой пионовидной розы, диантуса, маттиолы, эвкалипта",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 5,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-tebya-r",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/",
+      "name": "Авторский букетик роза, гортензия, роза кустовая, альстромерия",
+      "observation": "FULL_SOURCE_CONTENT_NOT_VERIFIED",
+      "definite_abandoned": false,
+      "source_existence_status": "INACCESSIBLE_OR_NOT_RECONFIRMED",
+      "lacks_composition_in_our_snapshot": true,
+      "lacks_original_description_in_our_snapshot": true,
+      "lacks_dimensions_in_our_snapshot": true,
+      "photos_physical_previous_import_count": 6,
+      "retail_catalog_policy": "HOLD_UNTIL_SOURCE_AND_OWNER_VERIFICATION",
+      "media_policy": "retain_existing_verified_originals_in_audit_archive",
+      "discard_without_review": false
+    }
+  ],
+  "other_description_gaps": [
+    {
+      "slug": "buket-nevesty-3482",
+      "source_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-premium-v-korzine-",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-korzine-astra-po",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buketik-premium-v-korzine",
+      "source_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "cve-7264",
+      "source_url": "https://flowwow.com/flowers/cve-7264/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-astr-osennih",
+      "source_url": "https://flowwow.com/flowers/buket-astr-osennih/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-v-korzine-exclusive",
+      "source_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-korzine-rom-4151",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-aromatniy-pion-evkalipt-",
+      "source_url": "https://flowwow.com/flowers/buket-aromatniy-pion-evkalipt-/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "nabor-konfety-merci-c-buketom-",
+      "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7428",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-6842",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-6842/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7637",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7637/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-8804",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-8804/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-roza-pionovidnaya-",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-hrizantem-mattiola-romas",
+      "source_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-9444",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-9444/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-sezon-6869",
+      "source_url": "https://flowwow.com/flowers/buket-sezon-6869/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-astr-67892",
+      "source_url": "https://flowwow.com/flowers/buket-astr-67892/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-24579",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-vozdushnoe-bez",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buketik-roza-go-1029",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-roza-go-1029/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-siciliya-6909",
+      "source_url": "https://flowwow.com/flowers/buket-siciliya-6909/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buketik-francuz-9106",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-francuz-9106/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-7186",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-7186/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-pion-gort-6904",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-gortenzii-3341",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-gortenzii-3341/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-roza-mattiola-",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-mattiola-/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "avtorskiy-buket-67899",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-67899/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "buket-peryshko",
+      "source_url": "https://flowwow.com/flowers/buket-peryshko/",
+      "not_evidence_of_unfinished_product": true
+    },
+    {
+      "slug": "kompoziciya-v-sumochke-s--9069",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+      "not_evidence_of_unfinished_product": true
+    }
+  ],
+  "draft_review_requirements": [
+    "Access authorized Flowwow seller dashboard or publicly visible exact product page; record actual fields and authoritative seller state.",
+    "Confirm exact seller canonical path /shop/lyubov-eto-699e0e4519/ and item slug/ID.",
+    "If the source item is an abandoned draft or wholly unfilled seller record: omit from future retail catalog; keep private evidence; do not discard existing validated pictures without owner approval.",
+    "If source is actually complete but inaccessible to automated client, do not call it blank; recover true raw fields using permitted seller export or authorized browser."
+  ],
+  "source_access_limitations": [
+    "All seven exact public product URLs were inaccessible to web viewer (Internal Error).",
+    "GitHub Actions public direct HTTP probe on two of seven gave 403; 403 is not evidence of an empty draft.",
+    "External search for seven exact slugs gave no trustworthy exact-page content; similar other-seller products are excluded."
+  ],
+  "confirmed_blank_count": 0,
+  "owner_excluded_4183": "kompoziciya-v-shlyapnoy-k-4183"
+}
