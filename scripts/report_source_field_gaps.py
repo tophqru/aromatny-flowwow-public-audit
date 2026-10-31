@@ -34,7 +34,7 @@ def main():
             if any(not isinstance(e.get("quantity"), (int, float)) or isinstance(e.get("quantity"), bool) or e["quantity"] <= 0 or not e.get("component") or not e.get("unit") for e in comp):
                 raise SystemExit("Invalid structured composition: " + slug)
         desc = item.get("description_raw_ru")
-        if not isinstance(desc, str) or not desc.strip() or item.get("description_status") not in ("OBSERVED_SOURCE_TEXT", "OBSERVED_GENERIC_SOURCE_TEXT"):
+        if not isinstance(desc, str) or not desc.strip() or item.get("description_status") not in ("OBSERVED_SOURCE_TEXT", "SOURCE_TEXT_VERIFIED_2026-10-31"):
             missing_description.append({"slug": slug, "url": item["flowwow_url"], "source_status": item.get("description_status")})
         dims = item.get("dimensions_cm")
         if not isinstance(dims, dict) or any(not isinstance(dims.get(k), (int, float)) or dims[k] <= 0 for k in ("width", "height")):
