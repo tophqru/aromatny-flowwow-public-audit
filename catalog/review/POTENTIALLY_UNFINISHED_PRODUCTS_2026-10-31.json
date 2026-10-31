@@ -115,16 +115,6 @@
   ],
   "other_description_gaps": [
     {
-      "slug": "buket-nevesty-3482",
-      "source_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
-      "slug": "kompoziciya-premium-v-korzine-",
-      "source_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
       "slug": "kompoziciya-v-korzine-astra-po",
       "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
       "not_evidence_of_unfinished_product": true
@@ -145,11 +135,6 @@
       "not_evidence_of_unfinished_product": true
     },
     {
-      "slug": "buket-v-korzine-exclusive",
-      "source_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
       "slug": "kompoziciya-v-korzine-rom-4151",
       "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
       "not_evidence_of_unfinished_product": true
@@ -167,11 +152,6 @@
     {
       "slug": "kompoziciya-v-shlyapnoy-k-7428",
       "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
-      "slug": "kompoziciya-aromatnyh-ogromnyh",
-      "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
       "not_evidence_of_unfinished_product": true
     },
     {
@@ -220,11 +200,6 @@
       "not_evidence_of_unfinished_product": true
     },
     {
-      "slug": "avtorskiy-buket-vozdushnoe-bez",
-      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
       "slug": "avtorskiy-buketik-roza-go-1029",
       "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-roza-go-1029/",
       "not_evidence_of_unfinished_product": true
@@ -235,18 +210,8 @@
       "not_evidence_of_unfinished_product": true
     },
     {
-      "slug": "avtorskiy-buketik-francuz-9106",
-      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-francuz-9106/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
       "slug": "avtorskiy-buket-7186",
       "source_url": "https://flowwow.com/flowers/avtorskiy-buket-7186/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
-      "slug": "avtorskiy-buket-pion-gort-6904",
-      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
       "not_evidence_of_unfinished_product": true
     },
     {
@@ -287,5 +252,16 @@
     "External search for seven exact slugs gave no trustworthy exact-page content; similar other-seller products are excluded."
   ],
   "confirmed_blank_count": 0,
-  "owner_excluded_4183": "kompoziciya-v-shlyapnoy-k-4183"
+  "owner_excluded_4183": "kompoziciya-v-shlyapnoy-k-4183",
+  "latest_working_checkpoint": {
+    "branch": "audit/chatgpt-description-recovery-20261031",
+    "updated_on": "2026-10-31",
+    "products": 66,
+    "photos": 435,
+    "compositions": 59,
+    "descriptions": 34,
+    "dimensions": 48,
+    "confirmed_abandoned": 0,
+    "other_description_gaps": 25
+  }
 }
