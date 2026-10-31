@@ -54,8 +54,8 @@
     }
   ],
   "dimensions_cm": null,
-  "description_raw_ru": null,
-  "description_status": "NOT_CAPTURED",
+  "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+  "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
   "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
   "gallery": [
@@ -113,8 +113,13 @@
     "price_visible_in_buy_block_rub": 38746,
     "composition_raw_ru": "Гортензия - 1 шт. Озотамнус - 5 шт. Роза - 7 шт. Эустома - 21 шт. Лента атласная - 2 шт. Диантус - 5 шт. Корзина плетеная - 1 шт. Оазис флористический - 2 шт. Эвкалипт Цинерея - 10 шт.",
     "dimensions_cm": null,
-    "raw_description_ru": null,
-    "raw_description_status": "NOT_YET_CAPTURED"
+    "raw_description_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+    "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
   },
-  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+  "description_evidence": {
+    "source_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
+    "observed_on": "2026-10-31",
+    "duplicate_source_display_deduplicated": true
+  }
 }

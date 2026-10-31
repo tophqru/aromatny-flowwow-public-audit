@@ -1623,8 +1623,8 @@
         "width": 36,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1699,10 +1699,15 @@
           "width": 36,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-pion-7064/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-nevesty-3482",
@@ -2551,8 +2556,8 @@
         }
       ],
       "dimensions_cm": null,
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -2610,10 +2615,15 @@
         "price_visible_in_buy_block_rub": 38746,
         "composition_raw_ru": "Гортензия - 1 шт. Озотамнус - 5 шт. Роза - 7 шт. Эустома - 21 шт. Лента атласная - 2 шт. Диантус - 5 шт. Корзина плетеная - 1 шт. Оазис флористический - 2 шт. Эвкалипт Цинерея - 10 шт.",
         "dimensions_cm": null,
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-aromatnyh-mattiol-kustov",
@@ -3827,8 +3837,8 @@
         "width": 50,
         "height": 45
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -3903,10 +3913,15 @@
           "width": 50,
           "height": 45
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/premium-kompoziciya-v-kor-2521/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "kompoziciya-aromatnyh-ogromnyh",
@@ -4311,8 +4326,8 @@
         "width": 30,
         "height": 33
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -4380,10 +4395,15 @@
           "width": 30,
           "height": 33
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/komp-2289/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "kompoziciya-v-shlyapnoy-k-8804",
@@ -6827,8 +6847,8 @@
         "width": 28,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -6889,10 +6909,15 @@
           "width": 28,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-lavandovye-grezy-roza-ma/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-peryshko",
