@@ -1,0 +1,248 @@
+{
+  "status": "SELLER_EXACT_CANONICAL_SHOP_LINK_VERIFIED_METADATA_ONLY",
+  "observed_at_date": "2026-10-31",
+  "seller_canonical_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "evidence_method": "Public Flowwow product page, clicked `Перейти в магазин` and received exact canonical seller URL. This does not prove complete Seller inventory.",
+  "record_count": 4,
+  "photos_saved": 0,
+  "owner_excluded_sku": "kompoziciya-v-shlyapnoy-k-4183",
+  "products": [
+    {
+      "slug": "buket-gortenziy-pionov-roz-eus",
+      "name_ru": "Букет гортензий, пионов, роз, эустом",
+      "source_url": "https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/",
+      "price_observed_rub": 11877,
+      "availability": "temporarily_unavailable",
+      "dimensions_cm": {
+        "width": 33,
+        "height": 50
+      },
+      "observed_gallery_thumbnail_count": 6,
+      "description": "NOT_CAPTURED",
+      "seller_identity_verified": true,
+      "source_category": "Авторские букеты",
+      "composition_observed": [
+        {
+          "component": "Пион",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "source_description_raw_ru": null,
+      "photo_gallery_status": "NOT_IMPORTED_NEEDS_ORIGINAL_URL_AND_HASH_CHECK",
+      "original_urls_verified": 0,
+      "may_order": false,
+      "may_show_publicly": false,
+      "owner_approved": false
+    },
+    {
+      "slug": "buket-makdak",
+      "name_ru": "Букет пионовидные кустовые розы гортензии розы",
+      "source_url": "https://flowwow.com/flowers/buket-makdak/",
+      "price_observed_rub": 9413,
+      "availability": "available_observed",
+      "dimensions_cm": {
+        "width": 35,
+        "height": 50
+      },
+      "observed_gallery_thumbnail_count": 6,
+      "description": "GENERIC_SOURCE_TEXT_PRESENT",
+      "seller_identity_verified": true,
+      "source_category": "Авторские букеты",
+      "composition_observed": [
+        {
+          "component": "Гортензия",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Озотамнус",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Орхидея Цимбидиум",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "source_description_raw_ru": null,
+      "photo_gallery_status": "NOT_IMPORTED_NEEDS_ORIGINAL_URL_AND_HASH_CHECK",
+      "original_urls_verified": 0,
+      "may_order": false,
+      "may_show_publicly": false,
+      "owner_approved": false
+    },
+    {
+      "slug": "avtorskiy-buketik-roza-pionovi",
+      "name_ru": "Авторский букетик роза пионовидная кустовая, гортензия, роза, диантус",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-roza-pionovi/",
+      "price_observed_rub": 13741,
+      "availability": "available_observed",
+      "dimensions_cm": {
+        "width": 45,
+        "height": 50
+      },
+      "observed_gallery_thumbnail_count": 6,
+      "description": "GENERIC_SOURCE_TEXT_PRESENT",
+      "seller_identity_verified": true,
+      "source_category": "Авторские букеты",
+      "composition_observed": [
+        {
+          "component": "Гортензия",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 4,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 8,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт Цинерея",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "source_description_raw_ru": null,
+      "photo_gallery_status": "NOT_IMPORTED_NEEDS_ORIGINAL_URL_AND_HASH_CHECK",
+      "original_urls_verified": 0,
+      "may_order": false,
+      "may_show_publicly": false,
+      "owner_approved": false
+    },
+    {
+      "slug": "avtorskiy-buket-limonium-roza-",
+      "name_ru": "Авторский букет лимониум, роза, эустома, маттиола 5555555",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-limonium-roza-/",
+      "price_observed_rub": 10599,
+      "availability": "ready_to_deliver_observed",
+      "dimensions_cm": {
+        "width": 34,
+        "height": 50
+      },
+      "observed_gallery_thumbnail_count": 8,
+      "description": "SOURCE_TEXT_PRESENT",
+      "seller_identity_verified": true,
+      "source_category": "Авторские букеты",
+      "composition_observed": [
+        {
+          "component": "Лимониум",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Маттиола",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 9,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "source_description_raw_ru": null,
+      "photo_gallery_status": "NOT_IMPORTED_NEEDS_ORIGINAL_URL_AND_HASH_CHECK",
+      "original_urls_verified": 0,
+      "may_order": false,
+      "may_show_publicly": false,
+      "owner_approved": false
+    }
+  ]
+}
