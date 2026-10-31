@@ -57,8 +57,8 @@
     "width": 75,
     "height": 60
   },
-  "description_raw_ru": null,
-  "description_status": "NOT_CAPTURED",
+  "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+  "description_status": "OBSERVED_SOURCE_TEXT",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
   "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
   "gallery": [
@@ -122,5 +122,12 @@
     "raw_description_ru": null,
     "raw_description_status": "NOT_YET_CAPTURED"
   },
-  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+  "description_provenance": {
+    "source_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+    "observed_on": "2026-10-31",
+    "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+    "ref": "turn522565search4",
+    "not_live": true
+  }
 }

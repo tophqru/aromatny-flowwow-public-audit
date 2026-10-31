@@ -1763,8 +1763,8 @@
         "width": 28,
         "height": 45
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "\" Букет, который превратит любой обычный день, в особенный праздник\" . Уважаемые клиенты, все точные размеры указаны во вкладке ширина и высота.",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1800,7 +1800,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn196815search0",
+        "not_live": true
+      }
     },
     {
       "slug": "buket-nevesty-1149",
@@ -1961,8 +1968,8 @@
         "width": 45,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -2026,7 +2033,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn196815search5",
+        "not_live": true
+      }
     },
     {
       "slug": "kompoziciya-v-korzine-astra-po",
@@ -2785,8 +2799,8 @@
         "width": 75,
         "height": 60
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -2850,7 +2864,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn522565search4",
+        "not_live": true
+      }
     },
     {
       "slug": "mono-9992",
@@ -3957,8 +3978,8 @@
         "width": 37,
         "height": 31
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -4022,7 +4043,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn196815search3",
+        "not_live": true
+      }
     },
     {
       "slug": "kompoziciya-v-shlyapnoy-k-6842",
@@ -5485,7 +5513,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 31,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -5562,7 +5593,13 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn522565search1"
+      }
     },
     {
       "slug": "avtorskiy-buket-3448",
@@ -5734,8 +5771,8 @@
         "width": 33,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -5798,7 +5835,14 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn522565search3",
+        "not_live": true
+      }
     },
     {
       "slug": "avtorskiy-buketik-roza-go-1029",
@@ -6071,8 +6115,8 @@
         "width": 30,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -6121,7 +6165,14 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-francuz-9106/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn522565search2",
+        "not_live": true
+      }
     },
     {
       "slug": "avtorskiy-buket-7186",
@@ -6290,11 +6341,11 @@
         }
       ],
       "dimensions_cm": {
-        "width": null,
-        "height": null
+        "width": 50,
+        "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -6350,7 +6401,20 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn522565search0",
+        "not_live": true
+      },
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+        "ref": "turn522565search0"
+      }
     },
     {
       "slug": "avtorskiy-buket-gortenzii-3341",

@@ -37,8 +37,8 @@
     "width": 33,
     "height": 50
   },
-  "description_raw_ru": null,
-  "description_status": "NOT_CAPTURED",
+  "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+  "description_status": "OBSERVED_SOURCE_TEXT",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
   "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
   "gallery": [
@@ -101,5 +101,12 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "description_provenance": {
+    "source_url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
+    "observed_on": "2026-10-31",
+    "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+    "ref": "turn522565search3",
+    "not_live": true
+  }
 }

@@ -1,0 +1,71 @@
+{
+  "observed_on": "2026-10-31",
+  "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+  "description_updates": [
+    {
+      "slug": "buket-nevesty-3482",
+      "url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+      "raw": "\" Букет, который превратит любой обычный день, в особенный праздник\" . Уважаемые клиенты, все точные размеры указаны во вкладке ширина и высота.",
+      "web_result_ref": "turn196815search0"
+    },
+    {
+      "slug": "kompoziciya-premium-v-korzine-",
+      "url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+      "raw": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "web_result_ref": "turn196815search5"
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+      "raw": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "web_result_ref": "turn196815search3"
+    },
+    {
+      "slug": "avtorskiy-buket-pion-gort-6904",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+      "raw": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах",
+      "web_result_ref": "turn522565search0"
+    },
+    {
+      "slug": "avtorskiy-buketik-francuz-9106",
+      "url": "https://flowwow.com/flowers/avtorskiy-buketik-francuz-9106/",
+      "raw": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "web_result_ref": "turn522565search2"
+    },
+    {
+      "slug": "avtorskiy-buket-vozdushnoe-bez",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
+      "raw": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "web_result_ref": "turn522565search3"
+    },
+    {
+      "slug": "buket-v-korzine-exclusive",
+      "url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+      "raw": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "web_result_ref": "turn522565search4"
+    }
+  ],
+  "dimension_updates": [
+    {
+      "slug": "avtorskiy-buket-pion-gort-6904",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+      "width": 50,
+      "height": 50,
+      "web_result_ref": "turn522565search0"
+    },
+    {
+      "slug": "avtorskiy-buket-24579",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+      "width": 31,
+      "height": 50,
+      "web_result_ref": "turn522565search1"
+    }
+  ],
+  "detected_conflict": {
+    "slug": "kompoziciya-aromatnyh-ogromnyh",
+    "git_recorded_pion": 35,
+    "observed_pion_from_index": 23,
+    "action": "REVIEW_NOT_OVERWRITE"
+  },
+  "constraints": "Not live Seller verification; no changes to approved retail status, prices, inventory, or gallery"
+}

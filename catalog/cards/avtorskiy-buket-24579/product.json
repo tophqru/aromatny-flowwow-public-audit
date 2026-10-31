@@ -33,7 +33,10 @@
       "unit": "шт"
     }
   ],
-  "dimensions_cm": null,
+  "dimensions_cm": {
+    "width": 31,
+    "height": 50
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -110,5 +113,11 @@
     "raw_description_ru": null,
     "raw_description_status": "NOT_YET_CAPTURED"
   },
-  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+  "dimensions_provenance": {
+    "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+    "observed_on": "2026-10-31",
+    "method": "EXACT_INDEXED_FLOWWOW_PRODUCT_PAGE",
+    "ref": "turn522565search1"
+  }
 }
