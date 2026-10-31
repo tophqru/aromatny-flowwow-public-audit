@@ -7179,9 +7179,12 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "dimensions_cm": {
+        "width": 21,
+        "height": 23
+      },
+      "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -7244,7 +7247,23 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_SLUG_INDEXED_FLOWWOW_PAGE",
+        "source_ref": "turn108529search7",
+        "source_snapshot_crawled": "4 days ago",
+        "verification_limit": "Search indexed exact original page, not real-time seller dashboard; original price and sold-out flags unchanged"
+      },
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_SLUG_INDEXED_FLOWWOW_PAGE",
+        "source_ref": "turn108529search7",
+        "source_snapshot_crawled": "4 days ago",
+        "verification_limit": "Search indexed exact original page, not real-time seller dashboard; original price and sold-out flags unchanged"
+      }
     },
     {
       "slug": "buket-zvezda",

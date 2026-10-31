@@ -1,0 +1,27 @@
+{
+  "case": "recovered exact product original description and dimensions",
+  "slug": "kompoziciya-v-sumochke-s--9069",
+  "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+  "source_ref": "turn108529search7",
+  "observation_date": "2026-10-31",
+  "source_title": "Композиция в сумочке с цветами 678899",
+  "source_description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+  "source_dimensions_cm": {
+    "width": 21,
+    "height": 23
+  },
+  "source_composition_items_count": 10,
+  "recorded_composition_items_count": 10,
+  "source_price_indexed_rub": 4119,
+  "legacy_price_retained_rub": 4200,
+  "source_status": "Indexed page does not prove live owner-approved availability",
+  "retail_policy": "ADMIN_ONLY_NOT_APPROVED",
+  "not_publication_permission": true,
+  "counts_expected": {
+    "total": 66,
+    "photos": 435,
+    "compositions": 59,
+    "descriptions": 36,
+    "dimensions": 49
+  }
+}
