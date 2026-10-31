@@ -1336,7 +1336,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 31,
+        "height": 47
+      },
       "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
       "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1404,6 +1407,13 @@
         "source_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
         "observed_on": "2026-10-31",
         "duplicate_source_display_deduplicated": true
+      },
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_URL_INDEXED_FLOWWOW_PAGE_SIZE_PAIR",
+        "web_result_ref": "turn372849search0",
+        "not_live_seller_ui": true
       }
     },
     {
@@ -2107,7 +2117,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 35,
+        "height": 33
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -2177,7 +2190,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_URL_INDEXED_FLOWWOW_PAGE_SIZE_PAIR",
+        "web_result_ref": "turn712850search0",
+        "not_live_seller_ui": true
+      }
     },
     {
       "slug": "buketik-premium-v-korzine",
@@ -2234,7 +2254,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 71,
+        "height": 47
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -2297,7 +2320,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_URL_INDEXED_FLOWWOW_PAGE_SIZE_PAIR",
+        "web_result_ref": "turn368963search1",
+        "not_live_seller_ui": true
+      }
     },
     {
       "slug": "cve-7264",
@@ -2569,7 +2599,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 45,
+        "height": 45
+      },
       "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
       "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -2637,6 +2670,13 @@
         "source_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
         "observed_on": "2026-10-31",
         "duplicate_source_display_deduplicated": true
+      },
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_URL_INDEXED_FLOWWOW_PAGE_SIZE_PAIR",
+        "web_result_ref": "turn368963search0",
+        "not_live_seller_ui": true
       }
     },
     {
@@ -3019,7 +3059,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 40,
+        "height": 37
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -3096,7 +3139,14 @@
         "raw_description_ru": null,
         "raw_description_status": "NOT_YET_CAPTURED"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "dimensions_provenance": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+        "observed_on": "2026-10-31",
+        "method": "EXACT_URL_INDEXED_FLOWWOW_PAGE_SIZE_PAIR",
+        "web_result_ref": "turn676413search0",
+        "not_live_seller_ui": true
+      }
     },
     {
       "slug": "buket-aromatniy-pion-evkalipt-",

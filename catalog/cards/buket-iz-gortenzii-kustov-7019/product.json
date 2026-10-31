@@ -43,7 +43,10 @@
       "unit": "шт"
     }
   ],
-  "dimensions_cm": null,
+  "dimensions_cm": {
+    "width": 31,
+    "height": 47
+  },
   "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
   "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -111,5 +114,12 @@
     "source_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
     "observed_on": "2026-10-31",
     "duplicate_source_display_deduplicated": true
+  },
+  "dimensions_provenance": {
+    "source_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+    "observed_on": "2026-10-31",
+    "method": "EXACT_URL_INDEXED_FLOWWOW_PAGE_SIZE_PAIR",
+    "web_result_ref": "turn372849search0",
+    "not_live_seller_ui": true
   }
 }
