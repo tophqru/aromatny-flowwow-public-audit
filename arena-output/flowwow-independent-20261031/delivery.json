@@ -1,5 +1,5 @@
 {
-  "recorded_at_utc": "2026-10-31T22:50:00+00:00",
+  "recorded_at_utc": "2026-10-31T22:50:52+00:00",
   "delivery_status": "DRAFT_PR_CREATED",
   "repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
   "repository_public": true,
@@ -19,7 +19,17 @@
   "push_status": "SUCCESS",
   "mergeable_state_at_pr_creation": "clean",
   "final_head_note": "The final branch head includes the commit that adds this delivery record and final checksums; use the PR head SHA / final response for the exact final commit.",
-  "github_actions": "Existing catalog-qa.yml filters do not automatically target this base/path. A manual workflow_dispatch result, if run, is recorded in the PR verification comment.",
+  "github_actions": {
+    "automatic_trigger_expected_for_this_pr": false,
+    "reason": "Existing catalog-qa.yml push branches are main/review/chatgpt-reference/audit/arena-independent; pull_request base is main only; this PR changes only arena-output/** and targets the audit source branch.",
+    "manual_workflow_dispatch_attempted": true,
+    "manual_workflow_dispatch_result": "HTTP_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+    "workflow": "catalog-qa.yml",
+    "run_id": null,
+    "conclusion": "NOT_RUN",
+    "bypass_attempted": false,
+    "local_checks_used_instead": true
+  },
   "zip_fallback": "NOT_USED_PUBLIC_DRAFT_PR_DELIVERED",
   "source_catalog_modified": false,
   "existing_435_jpeg_modified_or_redownloaded": false,

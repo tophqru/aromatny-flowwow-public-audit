@@ -108,6 +108,14 @@
       "scope": "Current workspace",
       "observed_zip_files_before_audit": 0,
       "resolution": "No previous ZIP content was available to compare; no prior result claimed as verified."
+    },
+    {
+      "id": "B007",
+      "type": "GITHUB_ACTIONS_WORKFLOW_DISPATCH_FORBIDDEN",
+      "scope": "Remote CI for the isolated Draft PR",
+      "effect": "Manual catalog-qa.yml dispatch returned HTTP 403 Resource not accessible by integration; no remote run was created. Existing workflow filters also do not automatically target this PR base/path.",
+      "attempted_bypass": false,
+      "resolution": "Use the recorded local QA results, or have a maintainer with Actions dispatch permission run the existing workflow on the PR head. Do not treat local PASS as GitHub Actions SUCCESS."
     }
   ],
   "historical_source_access_note": "Existing repository evidence records HTTP 403 for three exact Flowwow URLs. Those are prior observations, not requests made in this run.",

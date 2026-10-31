@@ -22,5 +22,7 @@
   "previous_zip_comparison": "NOT_PERFORMED_NO_ZIP_PRESENT",
   "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
   "branch_note": "Arena session branch is fixed by the environment. The full task permits an Agent Mode-created branch; no additional branch was created or renamed.",
-  "intended_delivery": "One Draft PR in the public repository, base audit/chatgpt-description-recovery-20261031, changes only under arena-output/flowwow-independent-20261031/. No auto-merge."
+  "intended_delivery": "One Draft PR in the public repository, base audit/chatgpt-description-recovery-20261031, changes only under arena-output/flowwow-independent-20261031/. No auto-merge.",
+  "github_actions_workflow_dispatch": "HTTP_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+  "github_actions_workflow_dispatch_bypass_attempted": false
 }

@@ -61,7 +61,9 @@
 - На момент создания: 33 changed files, только `arena-output/flowwow-independent-20261031/**`, draft=true, auto_merge=null, mergeable_state=clean.
 - Финальный head включает коммит с `delivery.json` и `SHA256SUMS`; точный финальный SHA указан в PR и итоговом ответе.
 
-Существующий `catalog-qa.yml` автоматически запускается на push только для `main`, `review/chatgpt-reference`, `audit/arena-independent`, а на pull_request — только в `main`. Поэтому данный Draft PR в рабочую audit-ветку и изменения только в `arena-output/**` не обязаны автоматически запускать этот workflow. Фактический ручной запуск/результат, если выполнен, фиксируется в комментарии к PR; отсутствие автозапуска не объявляется успешным тестом.
+Существующий `catalog-qa.yml` автоматически запускается на push только для `main`, `review/chatgpt-reference`, `audit/arena-independent`, а на pull_request — только в `main`. Поэтому данный Draft PR в рабочую audit-ветку и изменения только в `arena-output/**` не обязаны автоматически запускать этот workflow.
+
+Ручной запуск был фактически попробован: `gh workflow run catalog-qa.yml --ref arena/ccb3137a-aromatny-flowwow-public-audit` вернул `HTTP 403: Resource not accessible by integration`. Run ID не создан, conclusion `NOT_RUN`. Обход ограничения не предпринимался. Вместо удалённого CI использованы локальные штатные и независимые проверки; их успешный результат не выдаётся за GitHub Actions SUCCESS.
 
 ## Неисполненные тесты — явно NOT_PERFORMED
 
