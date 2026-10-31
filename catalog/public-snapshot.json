@@ -6732,8 +6732,8 @@
         "width": 33,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "«Букет, который превратит любой обычный день в особенный праздник». Уважаемые клиенты, все точные размеры указаны во вкладке ширина и высота.",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -6796,7 +6796,13 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "description_provenance": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-mattiol-roza-g/",
+        "verified_on": "2026-10-31",
+        "method": "INDEXED_FLOWWOW_PAGE_TEXT_NOT_LIVE_BROWSER",
+        "disclaimer": "Search-indexed page snapshot; not a live browser verification. Exact product slug and shop display matched."
+      }
     },
     {
       "slug": "buket-lavandovye-grezy-roza-ma",
