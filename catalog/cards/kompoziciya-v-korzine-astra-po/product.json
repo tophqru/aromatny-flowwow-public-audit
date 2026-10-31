@@ -6,7 +6,63 @@
   "source_category": "Цветы в корзине",
   "price_observed_rub": 6878,
   "availability_observed": "sold_out",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Астра",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Маттиола",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 7,
+      "unit": "шт"
+    },
+    {
+      "component": "Хризантема",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Диантус",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Подсолнух",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Корзина плетеная",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "гринтрик",
+      "quantity": 5,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -65,5 +121,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+    "public_source_card_opened": true,
+    "availability": "sold_out",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Астра - 3 шт. Маттиола - 1 шт. Эвкалипт - 7 шт. Хризантема - 1 шт. Эустома - 2 шт. Диантус - 2 шт. Роза пионовидная кустовая - 1 шт. Подсолнух - 1 шт. Корзина плетеная - 1 шт. Оазис флористический - 1 шт. гринтрик - 5 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

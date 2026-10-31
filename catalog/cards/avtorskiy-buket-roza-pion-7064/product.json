@@ -6,7 +6,53 @@
   "source_category": "Авторские букеты",
   "price_observed_rub": 10800,
   "availability_observed": "observed_status_not_reverified",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Озотамнус",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Диантус",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "маттиола кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "упаковка дизайнерская пленка",
+      "quantity": 5,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -72,5 +118,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-pion-7064/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 10800,
+    "composition_raw_ru": "Озотамнус - 1 шт. Эвкалипт - 5 шт. Эустома - 1 шт. Лента атласная - 1 шт. Диантус - 5 шт. Роза пионовидная кустовая - 3 шт. Роза пионовидная - 5 шт. маттиола кустовая - 3 шт. упаковка дизайнерская пленка - 5 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

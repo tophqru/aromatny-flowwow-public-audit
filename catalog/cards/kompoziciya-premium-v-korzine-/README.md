@@ -1,64 +1,71 @@
 # Композиция премиум в корзине с цветами
 
-**Оригинальная карточка:** https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/
+**Источник:** https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Цветы в корзине
-**Цена, наблюдавшаяся на Flowwow:** 44000 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `temporarily_unavailable`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 44000 ₽
+**Цена при последней проверке:** не отображалась из-за отсутствия товара
+**Наблюдавшееся наличие на 31.10.2026:** temporarily_unavailable
+**Размеры:** 45 × 50 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Оригинальное описание не сохранено. Требуется проверка Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+Источник: https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/
 
-## Фотографии товара
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Пион | 7 | шт |
+| Эвкалипт | 15 | шт |
+| Роза | 9 | шт |
+| Эустома | 11 | шт |
+| Роза пионовидная кустовая | 11 | шт |
+| Корзина плетеная | 1 | шт |
+| Оазис флористический | 3 | шт |
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
+## Все фотографии товара
 
+6 оригинальных фото, порядок и SHA256 в [product.json](product.json).
 
 ### Фото 1
 
-![Композиция премиум в корзине с цветами, фото 1](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/01.jpg)
+![Композиция премиум в корзине с цветами фото 1](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/01.jpg)
+[Открыть JPEG](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/01.jpg)
 
 ### Фото 2
 
-![Композиция премиум в корзине с цветами, фото 2](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/02.jpg)
+![Композиция премиум в корзине с цветами фото 2](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/02.jpg)
+[Открыть JPEG](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/02.jpg)
 
 ### Фото 3
 
-![Композиция премиум в корзине с цветами, фото 3](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/03.jpg)
+![Композиция премиум в корзине с цветами фото 3](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/03.jpg)
+[Открыть JPEG](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/03.jpg)
 
 ### Фото 4
 
-![Композиция премиум в корзине с цветами, фото 4](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/04.jpg)
+![Композиция премиум в корзине с цветами фото 4](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/04.jpg)
+[Открыть JPEG](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/04.jpg)
 
 ### Фото 5
 
-![Композиция премиум в корзине с цветами, фото 5](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/05.jpg)
+![Композиция премиум в корзине с цветами фото 5](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/05.jpg)
+[Открыть JPEG](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/05.jpg)
 
 ### Фото 6
 
-![Композиция премиум в корзине с цветами, фото 6](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/06.jpg)
+![Композиция премиум в корзине с цветами фото 6](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/06.jpg)
+[Открыть JPEG](../../../data/flowwow/items/kompoziciya-premium-v-korzine-/photos/06.jpg)
 
----
+**Сведения Flowwow не являются подтверждённой ценой или остатками нашего магазина.**
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
-
-[Назад ко всему каталогу](../../INDEX.md)
+[Весь каталог](../../INDEX.md)

@@ -6,8 +6,47 @@
   "source_category": "Цветы в корзине",
   "price_observed_rub": 44000,
   "availability_observed": "temporarily_unavailable",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Пион",
+      "quantity": 7,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 15,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 9,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 11,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 11,
+      "unit": "шт"
+    },
+    {
+      "component": "Корзина плетеная",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 3,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 45,
+    "height": 50
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +97,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Пион - 7 шт. Эвкалипт - 15 шт. Роза - 9 шт. Эустома - 11 шт. Роза пионовидная кустовая - 11 шт. Корзина плетеная - 1 шт. Оазис флористический - 3 шт.",
+    "dimensions_cm": {
+      "width": 45,
+      "height": 50
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

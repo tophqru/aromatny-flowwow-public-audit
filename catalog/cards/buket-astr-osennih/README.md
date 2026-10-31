@@ -1,76 +1,78 @@
 # Букет астр осенних
 
-**Оригинальная карточка:** https://flowwow.com/flowers/buket-astr-osennih/
+**Источник:** https://flowwow.com/flowers/buket-astr-osennih/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Монобукеты
-**Цена, наблюдавшаяся на Flowwow:** 6550 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `temporarily_unavailable`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 6550 ₽
+**Цена при последней проверке:** не отображалась из-за отсутствия товара
+**Наблюдавшееся наличие на 31.10.2026:** temporarily_unavailable
+**Размеры:** 30 × 40 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Оригинальное описание не сохранено. Требуется проверка Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+Источник: https://flowwow.com/flowers/buket-astr-osennih/
 
-## Фотографии товара
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Астра | 29 | шт |
+| упаковка дизайнерская с лентами | 5 | шт |
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
+## Все фотографии товара
 
+8 оригинальных фото, порядок и SHA256 в [product.json](product.json).
 
 ### Фото 1
 
-![Букет астр осенних, фото 1](../../../data/flowwow/items/buket-astr-osennih/photos/01.jpg)
+![Букет астр осенних фото 1](../../../data/flowwow/items/buket-astr-osennih/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/01.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/01.jpg)
 
 ### Фото 2
 
-![Букет астр осенних, фото 2](../../../data/flowwow/items/buket-astr-osennih/photos/02.jpg)
+![Букет астр осенних фото 2](../../../data/flowwow/items/buket-astr-osennih/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/02.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/02.jpg)
 
 ### Фото 3
 
-![Букет астр осенних, фото 3](../../../data/flowwow/items/buket-astr-osennih/photos/03.jpg)
+![Букет астр осенних фото 3](../../../data/flowwow/items/buket-astr-osennih/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/03.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/03.jpg)
 
 ### Фото 4
 
-![Букет астр осенних, фото 4](../../../data/flowwow/items/buket-astr-osennih/photos/04.jpg)
+![Букет астр осенних фото 4](../../../data/flowwow/items/buket-astr-osennih/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/04.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/04.jpg)
 
 ### Фото 5
 
-![Букет астр осенних, фото 5](../../../data/flowwow/items/buket-astr-osennih/photos/05.jpg)
+![Букет астр осенних фото 5](../../../data/flowwow/items/buket-astr-osennih/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/05.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/05.jpg)
 
 ### Фото 6
 
-![Букет астр осенних, фото 6](../../../data/flowwow/items/buket-astr-osennih/photos/06.jpg)
+![Букет астр осенних фото 6](../../../data/flowwow/items/buket-astr-osennih/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/06.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/06.jpg)
 
 ### Фото 7
 
-![Букет астр осенних, фото 7](../../../data/flowwow/items/buket-astr-osennih/photos/07.jpg)
+![Букет астр осенних фото 7](../../../data/flowwow/items/buket-astr-osennih/photos/07.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/07.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/07.jpg)
 
 ### Фото 8
 
-![Букет астр осенних, фото 8](../../../data/flowwow/items/buket-astr-osennih/photos/08.jpg)
+![Букет астр осенних фото 8](../../../data/flowwow/items/buket-astr-osennih/photos/08.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-osennih/photos/08.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-astr-osennih/photos/08.jpg)
 
----
+**Сведения Flowwow не являются подтверждённой ценой или остатками нашего магазина.**
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
-
-[Назад ко всему каталогу](../../INDEX.md)
+[Весь каталог](../../INDEX.md)

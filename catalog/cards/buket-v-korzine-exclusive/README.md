@@ -1,64 +1,73 @@
 # Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт
 
-**Оригинальная карточка:** https://flowwow.com/flowers/buket-v-korzine-exclusive/
+**Источник:** https://flowwow.com/flowers/buket-v-korzine-exclusive/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Цветы в корзине
-**Цена, наблюдавшаяся на Flowwow:** 38996 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `temporarily_unavailable`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 38996 ₽
+**Цена при последней проверке:** не отображалась из-за отсутствия товара
+**Наблюдавшееся наличие на 31.10.2026:** temporarily_unavailable
+**Размеры:** 75 × 60 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Оригинальное описание не сохранено. Требуется проверка Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+Источник: https://flowwow.com/flowers/buket-v-korzine-exclusive/
 
-## Фотографии товара
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Гортензия | 8 | шт |
+| Озотамнус | 5 | шт |
+| Пион | 6 | шт |
+| Эвкалипт | 15 | шт |
+| Роза | 15 | шт |
+| Диантус | 6 | шт |
+| Роза пионовидная кустовая | 20 | шт |
+| Корзина плетеная | 1 | шт |
+| Оазис флористический | 4 | шт |
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
+## Все фотографии товара
 
+6 оригинальных фото, порядок и SHA256 в [product.json](product.json).
 
 ### Фото 1
 
-![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт, фото 1](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/01.jpg)
+![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт фото 1](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/01.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/01.jpg)
 
 ### Фото 2
 
-![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт, фото 2](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/02.jpg)
+![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт фото 2](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/02.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/02.jpg)
 
 ### Фото 3
 
-![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт, фото 3](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/03.jpg)
+![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт фото 3](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/03.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/03.jpg)
 
 ### Фото 4
 
-![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт, фото 4](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/04.jpg)
+![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт фото 4](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/04.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/04.jpg)
 
 ### Фото 5
 
-![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт, фото 5](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/05.jpg)
+![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт фото 5](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/05.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/05.jpg)
 
 ### Фото 6
 
-![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт, фото 6](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/06.jpg)
+![Композиция в корзине гортензия, роза, роза пионовидная кустовая, пион, эвкалипт фото 6](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/06.jpg)
+[Открыть JPEG](../../../data/flowwow/items/buket-v-korzine-exclusive/photos/06.jpg)
 
----
+**Сведения Flowwow не являются подтверждённой ценой или остатками нашего магазина.**
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
-
-[Назад ко всему каталогу](../../INDEX.md)
+[Весь каталог](../../INDEX.md)

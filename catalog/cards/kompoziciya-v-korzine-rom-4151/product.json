@@ -6,7 +6,43 @@
   "source_category": "Цветы в корзине",
   "price_observed_rub": 9027,
   "availability_observed": "sold_out",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Маттиола",
+      "quantity": 4,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Ромашка кустовая",
+      "quantity": 10,
+      "unit": "шт"
+    },
+    {
+      "component": "Корзина плетеная",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 1,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -72,5 +108,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+    "public_source_card_opened": true,
+    "availability": "sold_out",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Маттиола - 4 шт. Эвкалипт - 5 шт. Эустома - 5 шт. Лента атласная - 2 шт. Ромашка кустовая - 10 шт. Корзина плетеная - 1 шт. Оазис флористический - 1 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

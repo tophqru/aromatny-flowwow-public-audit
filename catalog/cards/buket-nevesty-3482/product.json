@@ -6,8 +6,52 @@
   "source_category": "Букеты невесты",
   "price_observed_rub": 5434,
   "availability_observed": "temporarily_unavailable",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Гортензия",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Ромашка кустовая",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Маттиола Лавандовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "альстромерии",
+      "quantity": 2,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 28,
+    "height": 45
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -30,5 +74,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Гортензия - 1 шт. Эвкалипт - 5 шт. Роза - 3 шт. Лента атласная - 2 шт. Роза пионовидная кустовая - 1 шт. Ромашка кустовая - 1 шт. Маттиола Лавандовая - 3 шт. альстромерии - 2 шт.",
+    "dimensions_cm": {
+      "width": 28,
+      "height": 45
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

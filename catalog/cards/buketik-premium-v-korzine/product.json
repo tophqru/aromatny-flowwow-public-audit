@@ -6,7 +6,53 @@
   "source_category": "Цветы в корзине",
   "price_observed_rub": 69525,
   "availability_observed": "temporarily_unavailable",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Маттиола",
+      "quantity": 9,
+      "unit": "шт"
+    },
+    {
+      "component": "Орхидея Цимбидиум",
+      "quantity": 11,
+      "unit": "шт"
+    },
+    {
+      "component": "Пион",
+      "quantity": 19,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 15,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза",
+      "quantity": 21,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 15,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 11,
+      "unit": "шт"
+    },
+    {
+      "component": "Корзина плетеная",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 3,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -58,5 +104,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Маттиола - 9 шт. Орхидея Цимбидиум - 11 шт. Пион - 19 шт. Эвкалипт - 15 шт. Роза - 21 шт. Эустома - 15 шт. Роза пионовидная кустовая - 11 шт. Корзина плетеная - 1 шт. Оазис флористический - 3 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

@@ -6,8 +6,42 @@
   "source_category": "Авторские букеты",
   "price_observed_rub": 8005,
   "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Эустома",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Диантус",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 4,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "маттиола кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 33,
+    "height": 50
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +92,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/avtorskiy-buket-lyublyu-roza-p/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 8005,
+    "composition_raw_ru": "Эустома - 3 шт. Лента атласная - 2 шт. Диантус - 3 шт. Роза пионовидная кустовая - 4 шт. Упаковка дизайнерская - 5 шт. маттиола кустовая - 3 шт.",
+    "dimensions_cm": {
+      "width": 33,
+      "height": 50
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

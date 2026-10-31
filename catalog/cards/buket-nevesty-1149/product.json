@@ -6,8 +6,22 @@
   "source_category": "Букеты невесты",
   "price_observed_rub": 11009,
   "availability_observed": "observed_status_not_reverified",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Эустома",
+      "quantity": 15,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 18,
+    "height": 20
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -72,5 +86,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buket-nevesty-1149/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 11866,
+    "composition_raw_ru": "Эустома - 15 шт. Лента атласная - 2 шт.",
+    "dimensions_cm": {
+      "width": 18,
+      "height": 20
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

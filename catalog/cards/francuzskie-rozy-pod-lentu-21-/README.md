@@ -1,64 +1,66 @@
 # Букет роз французских под ленту 21 штука
 
-**Оригинальная карточка:** https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/
+**Источник:** https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Монобукеты
-**Цена, наблюдавшаяся на Flowwow:** 11355 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `UNKNOWN_NOT_REVERIFIED`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 11355 ₽
+**Цена при последней проверке:** 11355 ₽
+**Наблюдавшееся наличие на 31.10.2026:** available
+**Размеры:** 43 × 55 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Оригинальное описание не сохранено. Требуется проверка Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+Источник: https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/
 
-## Фотографии товара
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Лента атласная | 2 | шт |
+| Французская роза | 21 | шт |
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
+## Все фотографии товара
 
+6 оригинальных фото, порядок и SHA256 в [product.json](product.json).
 
 ### Фото 1
 
-![Букет роз французских под ленту 21 штука, фото 1](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/01.jpg)
+![Букет роз французских под ленту 21 штука фото 1](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/01.jpg)
+[Открыть JPEG](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/01.jpg)
 
 ### Фото 2
 
-![Букет роз французских под ленту 21 штука, фото 2](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/02.jpg)
+![Букет роз французских под ленту 21 штука фото 2](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/02.jpg)
+[Открыть JPEG](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/02.jpg)
 
 ### Фото 3
 
-![Букет роз французских под ленту 21 штука, фото 3](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/03.jpg)
+![Букет роз французских под ленту 21 штука фото 3](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/03.jpg)
+[Открыть JPEG](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/03.jpg)
 
 ### Фото 4
 
-![Букет роз французских под ленту 21 штука, фото 4](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/04.jpg)
+![Букет роз французских под ленту 21 штука фото 4](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/04.jpg)
+[Открыть JPEG](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/04.jpg)
 
 ### Фото 5
 
-![Букет роз французских под ленту 21 штука, фото 5](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/05.jpg)
+![Букет роз французских под ленту 21 штука фото 5](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/05.jpg)
+[Открыть JPEG](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/05.jpg)
 
 ### Фото 6
 
-![Букет роз французских под ленту 21 штука, фото 6](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/06.jpg)
+![Букет роз французских под ленту 21 штука фото 6](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/06.jpg)
+[Открыть JPEG](../../../data/flowwow/items/francuzskie-rozy-pod-lentu-21-/photos/06.jpg)
 
----
+**Сведения Flowwow не являются подтверждённой ценой или остатками нашего магазина.**
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
-
-[Назад ко всему каталогу](../../INDEX.md)
+[Весь каталог](../../INDEX.md)

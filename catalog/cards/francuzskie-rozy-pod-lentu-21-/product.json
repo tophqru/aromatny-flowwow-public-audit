@@ -6,8 +6,22 @@
   "source_category": "Монобукеты",
   "price_observed_rub": 11355,
   "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Французская роза",
+      "quantity": 21,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 43,
+    "height": 55
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +72,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 11355,
+    "composition_raw_ru": "Лента атласная - 2 шт. Французская роза - 21 шт.",
+    "dimensions_cm": {
+      "width": 43,
+      "height": 55
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

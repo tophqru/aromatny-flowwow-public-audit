@@ -6,8 +6,22 @@
   "source_category": "Монобукеты",
   "price_observed_rub": 6550,
   "availability_observed": "temporarily_unavailable",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Астра",
+      "quantity": 29,
+      "unit": "шт"
+    },
+    {
+      "component": "упаковка дизайнерская с лентами",
+      "quantity": 5,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 30,
+    "height": 40
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -72,5 +86,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buket-astr-osennih/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Астра - 29 шт. упаковка дизайнерская с лентами - 5 шт.",
+    "dimensions_cm": {
+      "width": 30,
+      "height": 40
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

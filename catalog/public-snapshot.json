@@ -18,10 +18,39 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 6893,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "composition_items": [
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "маттиола кустовая",
+          "quantity": 4,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 33,
+        "height": 50
+      },
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -70,7 +99,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-vozdushniy-puding-roza-k/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 6893,
+        "composition_raw_ru": "Лента атласная - 2 шт. Диантус - 5 шт. Роза пионовидная кустовая - 5 шт. Упаковка дизайнерская - 5 шт. маттиола кустовая - 4 шт.",
+        "dimensions_cm": {
+          "width": 33,
+          "height": 50
+        },
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "OBSERVED_GENERIC_DUPLICATED_ON_SOURCE"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "avtorskiy-buket-s-gortenz-3168",
@@ -280,10 +324,44 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 6233,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "composition_items": [
+        {
+          "component": "Маттиола",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза кустовая",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 30,
+        "height": 50
+      },
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -332,7 +410,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-s-mattioloy-rozoy-k-9188/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 6355,
+        "composition_raw_ru": "Маттиола - 3 шт. Роза кустовая - 3 шт. Эвкалипт - 7 шт. Лента атласная - 2 шт. Диантус - 3 шт. Упаковка дизайнерская - 5 шт.",
+        "dimensions_cm": {
+          "width": 30,
+          "height": 50
+        },
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "OBSERVED_GENERIC_DUPLICATED_ON_SOURCE"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-gortenzii-mattiola--1218",
@@ -342,10 +435,44 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 6335,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "composition_items": [
+        {
+          "component": "Гортензия",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "маттиола кустовая",
+          "quantity": 3,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 33,
+        "height": 50
+      },
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "OBSERVED_SOURCE_TEXT",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -394,7 +521,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-gortenzii-mattiola--1218/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 6335,
+        "composition_raw_ru": "Гортензия - 1 шт. Лента атласная - 2 шт. Диантус - 3 шт. Роза пионовидная кустовая - 3 шт. Упаковка дизайнерская - 5 шт. маттиола кустовая - 3 шт.",
+        "dimensions_cm": {
+          "width": 33,
+          "height": 50
+        },
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "OBSERVED_GENERIC_DUPLICATED_ON_SOURCE"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-iz-kustovoy-pionovi-3287",
@@ -528,8 +670,47 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 7986,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Гортензия",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Лагурус",
+          "quantity": 4,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт Цинерея",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "маттиола кустовая",
+          "quantity": 4,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 38,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -580,7 +761,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-mattiola-roza-piono-5396/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 7986,
+        "composition_raw_ru": "Гортензия - 1 шт. Лента атласная - 2 шт. Роза пионовидная кустовая - 5 шт. Упаковка дизайнерская - 5 шт. Лагурус - 4 шт. Эвкалипт Цинерея - 5 шт. маттиола кустовая - 4 шт.",
+        "dimensions_cm": {
+          "width": 38,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-iz-roz-kustovoy-pio-6913",
@@ -645,8 +841,32 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 8663,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Маттиола",
+          "quantity": 10,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка",
+          "quantity": 6,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "диантус гвоздика",
+          "quantity": 15,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 31,
+        "height": 60
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -697,7 +917,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 8663,
+        "composition_raw_ru": "Маттиола - 10 шт. Упаковка - 6 шт. Лента атласная - 2 шт. диантус гвоздика - 15 шт.",
+        "dimensions_cm": {
+          "width": 31,
+          "height": 60
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "avtorskiy-buket-lyublyu-roza-p",
@@ -707,8 +942,42 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 8005,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Эустома",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 4,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "маттиола кустовая",
+          "quantity": 3,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 33,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -759,7 +1028,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/avtorskiy-buket-lyublyu-roza-p/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 8005,
+        "composition_raw_ru": "Эустома - 3 шт. Лента атласная - 2 шт. Диантус - 3 шт. Роза пионовидная кустовая - 4 шт. Упаковка дизайнерская - 5 шт. маттиола кустовая - 3 шт.",
+        "dimensions_cm": {
+          "width": 33,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-rozy-pionovidnoy-kustovo",
@@ -769,8 +1053,37 @@
       "source_category": "Цветы в коробке",
       "price_observed_rub": 12290,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 9,
+          "unit": "шт"
+        },
+        {
+          "component": "Шляпная коробка",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 1,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 30,
+        "height": 30
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -835,7 +1148,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-rozy-pionovidnoy-kustovo/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 12290,
+        "composition_raw_ru": "Эвкалипт - 5 шт. Эустома - 7 шт. Роза пионовидная кустовая - 9 шт. Шляпная коробка - 1 шт. Оазис флористический - 1 шт.",
+        "dimensions_cm": {
+          "width": 30,
+          "height": 30
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-s-pionovidnoy-kusto-4643",
@@ -845,8 +1173,32 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 18775,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Альстромерия",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 16,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 6,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 45,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -897,7 +1249,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-s-pionovidnoy-kusto-4643/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 18775,
+        "composition_raw_ru": "Альстромерия - 15 шт. Лента атласная - 2 шт. Роза пионовидная кустовая - 16 шт. Упаковка дизайнерская - 6 шт.",
+        "dimensions_cm": {
+          "width": 45,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-iz-gortenzii-kustov-7019",
@@ -907,7 +1274,43 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 10892,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Гортензия",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Пион",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка",
+          "quantity": 6,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Кустовая роза пионовидная",
+          "quantity": 4,
+          "unit": "шт"
+        },
+        {
+          "component": "диантус гвоздика",
+          "quantity": 3,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -959,7 +1362,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 10892,
+        "composition_raw_ru": "Гортензия - 1 шт. Пион - 2 шт. Эвкалипт - 5 шт. Упаковка - 6 шт. Лента атласная - 2 шт. Кустовая роза пионовидная - 4 шт. диантус гвоздика - 3 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "avtorskiy-buketik-dlya-tebya-r",
@@ -1031,8 +1446,22 @@
       "source_category": "Монобукеты",
       "price_observed_rub": 11355,
       "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Французская роза",
+          "quantity": 21,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 43,
+        "height": 55
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1083,7 +1512,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 11355,
+        "composition_raw_ru": "Лента атласная - 2 шт. Французская роза - 21 шт.",
+        "dimensions_cm": {
+          "width": 43,
+          "height": 55
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "avtorskiy-buket-roza-pion-7064",
@@ -1093,7 +1537,53 @@
       "source_category": "Авторские букеты",
       "price_observed_rub": 10800,
       "availability_observed": "observed_status_not_reverified",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Озотамнус",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "маттиола кустовая",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "упаковка дизайнерская пленка",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -1159,7 +1649,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-pion-7064/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 10800,
+        "composition_raw_ru": "Озотамнус - 1 шт. Эвкалипт - 5 шт. Эустома - 1 шт. Лента атласная - 1 шт. Диантус - 5 шт. Роза пионовидная кустовая - 3 шт. Роза пионовидная - 5 шт. маттиола кустовая - 3 шт. упаковка дизайнерская пленка - 5 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-nevesty-3482",
@@ -1169,8 +1671,52 @@
       "source_category": "Букеты невесты",
       "price_observed_rub": 5434,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Гортензия",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Ромашка кустовая",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Маттиола Лавандовая",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "альстромерии",
+          "quantity": 2,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 28,
+        "height": 45
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1193,7 +1739,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Гортензия - 1 шт. Эвкалипт - 5 шт. Роза - 3 шт. Лента атласная - 2 шт. Роза пионовидная кустовая - 1 шт. Ромашка кустовая - 1 шт. Маттиола Лавандовая - 3 шт. альстромерии - 2 шт.",
+        "dimensions_cm": {
+          "width": 28,
+          "height": 45
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-nevesty-1149",
@@ -1203,8 +1764,22 @@
       "source_category": "Букеты невесты",
       "price_observed_rub": 11009,
       "availability_observed": "observed_status_not_reverified",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Эустома",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 18,
+        "height": 20
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1269,7 +1844,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-nevesty-1149/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 11866,
+        "composition_raw_ru": "Эустома - 15 шт. Лента атласная - 2 шт.",
+        "dimensions_cm": {
+          "width": 18,
+          "height": 20
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "kompoziciya-premium-v-korzine-",
@@ -1279,8 +1869,47 @@
       "source_category": "Цветы в корзине",
       "price_observed_rub": 44000,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Пион",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 9,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 11,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 11,
+          "unit": "шт"
+        },
+        {
+          "component": "Корзина плетеная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 3,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 45,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1331,7 +1960,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Пион - 7 шт. Эвкалипт - 15 шт. Роза - 9 шт. Эустома - 11 шт. Роза пионовидная кустовая - 11 шт. Корзина плетеная - 1 шт. Оазис флористический - 3 шт.",
+        "dimensions_cm": {
+          "width": 45,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "kompoziciya-v-korzine-astra-po",
@@ -1341,7 +1985,63 @@
       "source_category": "Цветы в корзине",
       "price_observed_rub": 6878,
       "availability_observed": "sold_out",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Астра",
+          "quantity": 3,
+          "unit": "шт"
+        },
+        {
+          "component": "Маттиола",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Хризантема",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Подсолнух",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Корзина плетеная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "гринтрик",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -1400,7 +2100,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+        "public_source_card_opened": true,
+        "availability": "sold_out",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Астра - 3 шт. Маттиола - 1 шт. Эвкалипт - 7 шт. Хризантема - 1 шт. Эустома - 2 шт. Диантус - 2 шт. Роза пионовидная кустовая - 1 шт. Подсолнух - 1 шт. Корзина плетеная - 1 шт. Оазис флористический - 1 шт. гринтрик - 5 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buketik-premium-v-korzine",
@@ -1410,7 +2122,53 @@
       "source_category": "Цветы в корзине",
       "price_observed_rub": 69525,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Маттиола",
+          "quantity": 9,
+          "unit": "шт"
+        },
+        {
+          "component": "Орхидея Цимбидиум",
+          "quantity": 11,
+          "unit": "шт"
+        },
+        {
+          "component": "Пион",
+          "quantity": 19,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 21,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 11,
+          "unit": "шт"
+        },
+        {
+          "component": "Корзина плетеная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 3,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -1462,7 +2220,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Маттиола - 9 шт. Орхидея Цимбидиум - 11 шт. Пион - 19 шт. Эвкалипт - 15 шт. Роза - 21 шт. Эустома - 15 шт. Роза пионовидная кустовая - 11 шт. Корзина плетеная - 1 шт. Оазис флористический - 3 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "cve-7264",
@@ -1472,8 +2242,27 @@
       "source_category": "Монобукеты",
       "price_observed_rub": 3860,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Лента",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "транспортировочная упаковка",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "гладиолусы",
+          "quantity": 9,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 30,
+        "height": 70
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1538,7 +2327,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/cve-7264/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Лента - 2 шт. транспортировочная упаковка - 1 шт. гладиолусы - 9 шт.",
+        "dimensions_cm": {
+          "width": 30,
+          "height": 70
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-astr-osennih",
@@ -1548,8 +2352,22 @@
       "source_category": "Монобукеты",
       "price_observed_rub": 6550,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Астра",
+          "quantity": 29,
+          "unit": "шт"
+        },
+        {
+          "component": "упаковка дизайнерская с лентами",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 30,
+        "height": 40
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1614,7 +2432,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-astr-osennih/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Астра - 29 шт. упаковка дизайнерская с лентами - 5 шт.",
+        "dimensions_cm": {
+          "width": 30,
+          "height": 40
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buketik-cvetov-v-korzine",
@@ -1624,7 +2457,53 @@
       "source_category": "Цветы в корзине",
       "price_observed_rub": 29266,
       "availability_observed": "available_observed",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Гортензия",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Озотамнус",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 21,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Корзина плетеная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт Цинерея",
+          "quantity": 10,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -1676,7 +2555,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 38746,
+        "composition_raw_ru": "Гортензия - 1 шт. Озотамнус - 5 шт. Роза - 7 шт. Эустома - 21 шт. Лента атласная - 2 шт. Диантус - 5 шт. Корзина плетеная - 1 шт. Оазис флористический - 2 шт. Эвкалипт Цинерея - 10 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-aromatnyh-mattiol-kustov",
@@ -1686,8 +2577,27 @@
       "source_category": "Монобукеты",
       "price_observed_rub": 8675,
       "availability_observed": "available_observed",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "маттиола кустовая",
+          "quantity": 15,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 33,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1738,7 +2648,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-aromatnyh-mattiol-kustov/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 8762,
+        "composition_raw_ru": "Лента атласная - 2 шт. Упаковка дизайнерская - 5 шт. маттиола кустовая - 15 шт.",
+        "dimensions_cm": {
+          "width": 33,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-v-korzine-exclusive",
@@ -1748,8 +2673,57 @@
       "source_category": "Цветы в корзине",
       "price_observed_rub": 38996,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Гортензия",
+          "quantity": 8,
+          "unit": "шт"
+        },
+        {
+          "component": "Озотамнус",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Пион",
+          "quantity": 6,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза",
+          "quantity": 15,
+          "unit": "шт"
+        },
+        {
+          "component": "Диантус",
+          "quantity": 6,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 20,
+          "unit": "шт"
+        },
+        {
+          "component": "Корзина плетеная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 4,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 75,
+        "height": 60
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -1800,7 +2774,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Гортензия - 8 шт. Озотамнус - 5 шт. Пион - 6 шт. Эвкалипт - 15 шт. Роза - 15 шт. Диантус - 6 шт. Роза пионовидная кустовая - 20 шт. Корзина плетеная - 1 шт. Оазис флористический - 4 шт.",
+        "dimensions_cm": {
+          "width": 75,
+          "height": 60
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "mono-9992",
@@ -1810,7 +2799,23 @@
       "source_category": "Монобукеты",
       "price_observed_rub": 8641,
       "availability_observed": "available_observed",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Эвкалипт",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Роза пионовидная кустовая",
+          "quantity": 13,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -1862,7 +2867,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/mono-9992/",
+        "public_source_card_opened": true,
+        "availability": "available",
+        "price_visible_in_buy_block_rub": 9507,
+        "composition_raw_ru": "Эвкалипт - 7 шт. Роза пионовидная кустовая - 13 шт. Упаковка дизайнерская - 5 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "kompoziciya-v-korzine-rom-4151",
@@ -1872,7 +2889,43 @@
       "source_category": "Цветы в корзине",
       "price_observed_rub": 9027,
       "availability_observed": "sold_out",
-      "composition_items": [],
+      "composition_items": [
+        {
+          "component": "Маттиола",
+          "quantity": 4,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Эустома",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Ромашка кустовая",
+          "quantity": 10,
+          "unit": "шт"
+        },
+        {
+          "component": "Корзина плетеная",
+          "quantity": 1,
+          "unit": "шт"
+        },
+        {
+          "component": "Оазис флористический",
+          "quantity": 1,
+          "unit": "шт"
+        }
+      ],
       "dimensions_cm": null,
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
@@ -1938,7 +2991,19 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+        "public_source_card_opened": true,
+        "availability": "sold_out",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Маттиола - 4 шт. Эвкалипт - 5 шт. Эустома - 5 шт. Лента атласная - 2 шт. Ромашка кустовая - 10 шт. Корзина плетеная - 1 шт. Оазис флористический - 1 шт.",
+        "dimensions_cm": null,
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "buket-aromatniy-pion-evkalipt-",
@@ -1948,8 +3013,32 @@
       "source_category": "Наборы с цветами",
       "price_observed_rub": 26749,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Пион",
+          "quantity": 21,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "Raffaello конфеты",
+          "quantity": 1,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 50,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -2007,7 +3096,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/buket-aromatniy-pion-evkalipt-/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Пион - 21 шт. Лента атласная - 2 шт. Упаковка дизайнерская - 5 шт. Raffaello конфеты - 1 шт.",
+        "dimensions_cm": {
+          "width": 50,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "nabor-konfety-merci-c-buketom-",
@@ -2017,8 +3121,37 @@
       "source_category": "Наборы с цветами",
       "price_observed_rub": 26600,
       "availability_observed": "temporarily_unavailable",
-      "composition_items": [],
-      "dimensions_cm": null,
+      "composition_items": [
+        {
+          "component": "Пион",
+          "quantity": 21,
+          "unit": "шт"
+        },
+        {
+          "component": "Эвкалипт",
+          "quantity": 7,
+          "unit": "шт"
+        },
+        {
+          "component": "Лента атласная",
+          "quantity": 2,
+          "unit": "шт"
+        },
+        {
+          "component": "Упаковка дизайнерская",
+          "quantity": 5,
+          "unit": "шт"
+        },
+        {
+          "component": "конфеты Merci",
+          "quantity": 1,
+          "unit": "шт"
+        }
+      ],
+      "dimensions_cm": {
+        "width": 45,
+        "height": 50
+      },
       "description_raw_ru": null,
       "description_status": "NOT_CAPTURED",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -2083,7 +3216,22 @@
       ],
       "owner_approved": false,
       "may_order": false,
-      "may_show_publicly": false
+      "may_show_publicly": false,
+      "latest_source_observation": {
+        "observed_on": "2026-10-31",
+        "page_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+        "public_source_card_opened": true,
+        "availability": "temporarily_unavailable",
+        "price_visible_in_buy_block_rub": null,
+        "composition_raw_ru": "Пион - 21 шт. Эвкалипт - 7 шт. Лента атласная - 2 шт. Упаковка дизайнерская - 5 шт. конфеты Merci - 1 шт.",
+        "dimensions_cm": {
+          "width": 45,
+          "height": 50
+        },
+        "raw_description_ru": null,
+        "raw_description_status": "NOT_YET_CAPTURED"
+      },
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
     },
     {
       "slug": "kompoziciya-v-korobochke-eusto",

@@ -6,7 +6,23 @@
   "source_category": "Монобукеты",
   "price_observed_rub": 8641,
   "availability_observed": "available_observed",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Эвкалипт",
+      "quantity": 7,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 13,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 5,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -58,5 +74,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/mono-9992/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 9507,
+    "composition_raw_ru": "Эвкалипт - 7 шт. Роза пионовидная кустовая - 13 шт. Упаковка дизайнерская - 5 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }
