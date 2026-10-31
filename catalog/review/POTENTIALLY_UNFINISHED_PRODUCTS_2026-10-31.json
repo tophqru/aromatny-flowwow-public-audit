@@ -145,11 +145,6 @@
       "not_evidence_of_unfinished_product": true
     },
     {
-      "slug": "nabor-konfety-merci-c-buketom-",
-      "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
-      "not_evidence_of_unfinished_product": true
-    },
-    {
       "slug": "kompoziciya-v-shlyapnoy-k-7428",
       "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
       "not_evidence_of_unfinished_product": true
@@ -233,11 +228,6 @@
       "slug": "buket-peryshko",
       "source_url": "https://flowwow.com/flowers/buket-peryshko/",
       "not_evidence_of_unfinished_product": true
-    },
-    {
-      "slug": "kompoziciya-v-sumochke-s--9069",
-      "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
-      "not_evidence_of_unfinished_product": true
     }
   ],
   "draft_review_requirements": [
@@ -259,9 +249,9 @@
     "products": 66,
     "photos": 435,
     "compositions": 59,
-    "descriptions": 34,
-    "dimensions": 48,
+    "descriptions": 36,
+    "dimensions": 49,
     "confirmed_abandoned": 0,
-    "other_description_gaps": 25
+    "other_description_gaps": 23
   }
 }
