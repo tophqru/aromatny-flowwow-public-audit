@@ -6,8 +6,37 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": null,
   "availability_observed": "available_observed_at_scan",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Диантус",
+      "quantity": 9,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 11,
+      "unit": "шт"
+    },
+    {
+      "component": "Шляпная коробка",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "эустома белая",
+      "quantity": 8,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 35,
+    "height": 35
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +87,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-3035/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 16974,
+    "composition_raw_ru": "Диантус - 9 шт. Роза пионовидная кустовая - 11 шт. Шляпная коробка - 1 шт. Оазис флористический - 1 шт. эустома белая - 8 шт.",
+    "dimensions_cm": {
+      "width": 35,
+      "height": 35
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

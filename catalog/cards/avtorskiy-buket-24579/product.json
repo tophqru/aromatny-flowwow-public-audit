@@ -6,7 +6,33 @@
   "source_category": "Авторские букеты",
   "price_observed_rub": 7600,
   "availability_observed": "sold_out",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Антуриум",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Астра",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Хризантема",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -72,5 +98,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+    "public_source_card_opened": true,
+    "availability": "sold_out",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Антуриум - 1 шт. Астра - 2 шт. Эвкалипт - 3 шт. Хризантема - 3 шт. Роза пионовидная кустовая - 3 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

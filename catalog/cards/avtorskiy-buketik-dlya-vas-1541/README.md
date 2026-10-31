@@ -1,64 +1,70 @@
 # Акция!!! Авторский букетик «Для Вас»
 
-**Оригинальная карточка:** https://flowwow.com/flowers/avtorskiy-buketik-dlya-vas-1541/
+**Источник:** https://flowwow.com/flowers/avtorskiy-buketik-dlya-vas-1541/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Авторские букеты
-**Цена, наблюдавшаяся на Flowwow:** 8546 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `UNKNOWN_NOT_REVERIFIED`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 8546 ₽
+**Цена при проверке 31.10.2026:** 8546 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 35 × 50 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Гортензия | 1 | шт |
+| Лента атласная | 2 | шт |
+| Диантус | 3 | шт |
+| Роза пионовидная кустовая | 4 | шт |
+| Упаковка дизайнерская | 5 | шт |
+| Эвкалипт Цинерея | 5 | шт |
+| маттиола кустовая | 4 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Акция!!! Авторский букетик «Для Вас», фото 1](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/01.jpg)
+![Акция!!! Авторский букетик «Для Вас» №1](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/01.jpg)
 
 ### Фото 2
 
-![Акция!!! Авторский букетик «Для Вас», фото 2](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/02.jpg)
+![Акция!!! Авторский букетик «Для Вас» №2](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/02.jpg)
 
 ### Фото 3
 
-![Акция!!! Авторский букетик «Для Вас», фото 3](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/03.jpg)
+![Акция!!! Авторский букетик «Для Вас» №3](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/03.jpg)
 
 ### Фото 4
 
-![Акция!!! Авторский букетик «Для Вас», фото 4](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/04.jpg)
+![Акция!!! Авторский букетик «Для Вас» №4](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/04.jpg)
 
 ### Фото 5
 
-![Акция!!! Авторский букетик «Для Вас», фото 5](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/05.jpg)
+![Акция!!! Авторский букетик «Для Вас» №5](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/05.jpg)
 
 ### Фото 6
 
-![Акция!!! Авторский букетик «Для Вас», фото 6](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/06.jpg)
+![Акция!!! Авторский букетик «Для Вас» №6](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buketik-dlya-vas-1541/photos/06.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

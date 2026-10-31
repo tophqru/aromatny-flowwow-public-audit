@@ -4,17 +4,15 @@
 
 **Категория:** Авторские букеты
 **Цена при первоначальном сохранении:** 10800 ₽
-**Цена при последней проверке:** 10800 ₽
-**Наблюдавшееся наличие на 31.10.2026:** available
-**Размеры:** не подтверждены
+**Цена при проверке 31.10.2026:** 10800 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 36 × 50 см
 
 ## Исходное описание
 
-*Оригинальное описание не сохранено. Требуется проверка Flowwow.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
-
-Источник: https://flowwow.com/flowers/avtorskiy-buket-roza-pion-7064/
 
 | Компонент | Количество | Единица |
 |---|---:|---|
@@ -30,56 +28,57 @@
 
 ## Все фотографии товара
 
-8 оригинальных фото, порядок и SHA256 в [product.json](product.json).
+**8 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 1](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/01.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №1](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/01.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/01.jpg)
 
 ### Фото 2
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 2](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/02.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №2](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/02.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/02.jpg)
 
 ### Фото 3
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 3](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/03.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №3](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/03.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/03.jpg)
 
 ### Фото 4
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 4](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/04.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №4](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/04.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/04.jpg)
 
 ### Фото 5
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 5](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/05.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №5](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/05.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/05.jpg)
 
 ### Фото 6
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 6](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/06.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №6](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/06.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/06.jpg)
 
 ### Фото 7
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 7](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/07.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №7](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/07.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/07.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/07.jpg)
 
 ### Фото 8
 
-![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый фото 8](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/08.jpg)
+![Авторский букет роза пионовидная, роза пионовидная кустовая, маттиола, озотамнус, диантус, дофаминовый №8](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/08.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/08.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-roza-pion-7064/photos/08.jpg)
 
-**Сведения Flowwow не являются подтверждённой ценой или остатками нашего магазина.**
 
-[Весь каталог](../../INDEX.md)
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
+
+[Все товары](../../INDEX.md)

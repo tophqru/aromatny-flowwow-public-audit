@@ -1,64 +1,68 @@
 # Букет хризантем, маттиола, ромашка, роза пионовидная кустовая
 
-**Оригинальная карточка:** https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/
+**Источник:** https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Авторские букеты
-**Цена, наблюдавшаяся на Flowwow:** 7499 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `UNKNOWN_NOT_REVERIFIED`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 7499 ₽
+**Цена при проверке 31.10.2026:** 8251 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 28 × 50 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Лента атласная | 2 | шт |
+| Роза пионовидная кустовая | 3 | шт |
+| Ромашка кустовая | 3 | шт |
+| Хризантема одноголовая | 3 | шт |
+| Упаковка дизайнерская | 4 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая, фото 1](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/01.jpg)
+![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая №1](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/01.jpg)
 
 ### Фото 2
 
-![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая, фото 2](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/02.jpg)
+![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая №2](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/02.jpg)
 
 ### Фото 3
 
-![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая, фото 3](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/03.jpg)
+![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая №3](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/03.jpg)
 
 ### Фото 4
 
-![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая, фото 4](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/04.jpg)
+![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая №4](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/04.jpg)
 
 ### Фото 5
 
-![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая, фото 5](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/05.jpg)
+![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая №5](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/05.jpg)
 
 ### Фото 6
 
-![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая, фото 6](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/06.jpg)
+![Букет хризантем, маттиола, ромашка, роза пионовидная кустовая №6](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-hrizantem-mattiola-romas/photos/06.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

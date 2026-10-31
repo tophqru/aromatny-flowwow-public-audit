@@ -1,64 +1,68 @@
 # Композиция в коробочке эустома и роза пионовидная кустовая
 
-**Оригинальная карточка:** https://flowwow.com/flowers/kompoziciya-v-korobochke-eusto/
+**Источник:** https://flowwow.com/flowers/kompoziciya-v-korobochke-eusto/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Цветы в коробке
-**Цена, наблюдавшаяся на Flowwow:** 8877 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `available_observed`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 8877 ₽
+**Цена при проверке 31.10.2026:** 9663 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 31 × 35 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Эустома | 5 | шт |
+| Роза пионовидная кустовая | 7 | шт |
+| Шляпная коробка | 1 | шт |
+| Оазис флористический | 1 | шт |
+| Эвкалипт Цинерея | 7 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Композиция в коробочке эустома и роза пионовидная кустовая, фото 1](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/01.jpg)
+![Композиция в коробочке эустома и роза пионовидная кустовая №1](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/01.jpg)
 
 ### Фото 2
 
-![Композиция в коробочке эустома и роза пионовидная кустовая, фото 2](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/02.jpg)
+![Композиция в коробочке эустома и роза пионовидная кустовая №2](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/02.jpg)
 
 ### Фото 3
 
-![Композиция в коробочке эустома и роза пионовидная кустовая, фото 3](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/03.jpg)
+![Композиция в коробочке эустома и роза пионовидная кустовая №3](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/03.jpg)
 
 ### Фото 4
 
-![Композиция в коробочке эустома и роза пионовидная кустовая, фото 4](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/04.jpg)
+![Композиция в коробочке эустома и роза пионовидная кустовая №4](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/04.jpg)
 
 ### Фото 5
 
-![Композиция в коробочке эустома и роза пионовидная кустовая, фото 5](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/05.jpg)
+![Композиция в коробочке эустома и роза пионовидная кустовая №5](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/05.jpg)
 
 ### Фото 6
 
-![Композиция в коробочке эустома и роза пионовидная кустовая, фото 6](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/06.jpg)
+![Композиция в коробочке эустома и роза пионовидная кустовая №6](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-korobochke-eusto/photos/06.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

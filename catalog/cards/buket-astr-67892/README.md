@@ -1,70 +1,72 @@
 # Букет астр 67892
 
-**Оригинальная карточка:** https://flowwow.com/flowers/buket-astr-67892/
+**Источник:** https://flowwow.com/flowers/buket-astr-67892/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Монобукеты
-**Цена, наблюдавшаяся на Flowwow:** 5929 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `temporarily_unavailable`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 5929 ₽
+**Цена при проверке 31.10.2026:** не отображалась в блоке покупки
+**Наблюдавшееся наличие:** temporarily_unavailable
+**Размеры:** 28 × 40 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Астра | 27 | шт |
+| Лента атласная | 2 | шт |
+| Упаковка дизайнерская | 5 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**7 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Букет астр 67892, фото 1](../../../data/flowwow/items/buket-astr-67892/photos/01.jpg)
+![Букет астр 67892 №1](../../../data/flowwow/items/buket-astr-67892/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/01.jpg)
 
 ### Фото 2
 
-![Букет астр 67892, фото 2](../../../data/flowwow/items/buket-astr-67892/photos/02.jpg)
+![Букет астр 67892 №2](../../../data/flowwow/items/buket-astr-67892/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/02.jpg)
 
 ### Фото 3
 
-![Букет астр 67892, фото 3](../../../data/flowwow/items/buket-astr-67892/photos/03.jpg)
+![Букет астр 67892 №3](../../../data/flowwow/items/buket-astr-67892/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/03.jpg)
 
 ### Фото 4
 
-![Букет астр 67892, фото 4](../../../data/flowwow/items/buket-astr-67892/photos/04.jpg)
+![Букет астр 67892 №4](../../../data/flowwow/items/buket-astr-67892/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/04.jpg)
 
 ### Фото 5
 
-![Букет астр 67892, фото 5](../../../data/flowwow/items/buket-astr-67892/photos/05.jpg)
+![Букет астр 67892 №5](../../../data/flowwow/items/buket-astr-67892/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/05.jpg)
 
 ### Фото 6
 
-![Букет астр 67892, фото 6](../../../data/flowwow/items/buket-astr-67892/photos/06.jpg)
+![Букет астр 67892 №6](../../../data/flowwow/items/buket-astr-67892/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/06.jpg)
 
 ### Фото 7
 
-![Букет астр 67892, фото 7](../../../data/flowwow/items/buket-astr-67892/photos/07.jpg)
+![Букет астр 67892 №7](../../../data/flowwow/items/buket-astr-67892/photos/07.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-astr-67892/photos/07.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-astr-67892/photos/07.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

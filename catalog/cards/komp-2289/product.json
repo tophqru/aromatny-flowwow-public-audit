@@ -6,8 +6,42 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": null,
   "availability_observed": "available_observed_at_scan",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Альстромерия",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Гипсофила",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Сумочка картонная",
+      "quantity": 1,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 30,
+    "height": 33
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -65,5 +99,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/komp-2289/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 5335,
+    "composition_raw_ru": "Альстромерия - 2 шт. Гипсофила - 2 шт. Эустома - 3 шт. Лента атласная - 2 шт. Оазис - 1 шт. Сумочка картонная - 1 шт.",
+    "dimensions_cm": {
+      "width": 30,
+      "height": 33
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

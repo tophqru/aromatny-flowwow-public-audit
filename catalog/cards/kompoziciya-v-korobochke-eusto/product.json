@@ -6,8 +6,37 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": 8877,
   "availability_observed": "available_observed",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Эустома",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 7,
+      "unit": "шт"
+    },
+    {
+      "component": "Шляпная коробка",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт Цинерея",
+      "quantity": 7,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 31,
+    "height": 35
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +87,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-korobochke-eusto/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 9663,
+    "composition_raw_ru": "Эустома - 5 шт. Роза пионовидная кустовая - 7 шт. Шляпная коробка - 1 шт. Оазис флористический - 1 шт. Эвкалипт Цинерея - 7 шт.",
+    "dimensions_cm": {
+      "width": 31,
+      "height": 35
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

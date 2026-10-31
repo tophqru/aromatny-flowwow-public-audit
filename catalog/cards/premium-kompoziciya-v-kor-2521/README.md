@@ -1,76 +1,84 @@
 # Премиум композиция в корзине Осень
 
-**Оригинальная карточка:** https://flowwow.com/flowers/premium-kompoziciya-v-kor-2521/
+**Источник:** https://flowwow.com/flowers/premium-kompoziciya-v-kor-2521/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Цветы в корзине
-**Цена, наблюдавшаяся на Flowwow:** нет записи
-**Наличие, наблюдалось ранее:** `available_observed_at_scan`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** нет записи
+**Цена при проверке 31.10.2026:** 55013 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 50 × 45 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Озотамнус | 1 | шт |
+| Эвкалипт | 15 | шт |
+| Хризантема | 3 | шт |
+| Лента атласная | 2 | шт |
+| Роза пионовидная кустовая | 15 | шт |
+| Оазис | 3 | шт |
+| Роза пионовидная | 15 | шт |
+| Корзина плетеная | 1 | шт |
+| маттиола кустовая | 5 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**8 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Премиум композиция в корзине Осень, фото 1](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/01.jpg)
+![Премиум композиция в корзине Осень №1](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/01.jpg)
 
 ### Фото 2
 
-![Премиум композиция в корзине Осень, фото 2](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/02.jpg)
+![Премиум композиция в корзине Осень №2](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/02.jpg)
 
 ### Фото 3
 
-![Премиум композиция в корзине Осень, фото 3](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/03.jpg)
+![Премиум композиция в корзине Осень №3](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/03.jpg)
 
 ### Фото 4
 
-![Премиум композиция в корзине Осень, фото 4](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/04.jpg)
+![Премиум композиция в корзине Осень №4](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/04.jpg)
 
 ### Фото 5
 
-![Премиум композиция в корзине Осень, фото 5](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/05.jpg)
+![Премиум композиция в корзине Осень №5](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/05.jpg)
 
 ### Фото 6
 
-![Премиум композиция в корзине Осень, фото 6](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/06.jpg)
+![Премиум композиция в корзине Осень №6](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/06.jpg)
 
 ### Фото 7
 
-![Премиум композиция в корзине Осень, фото 7](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/07.jpg)
+![Премиум композиция в корзине Осень №7](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/07.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/07.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/07.jpg)
 
 ### Фото 8
 
-![Премиум композиция в корзине Осень, фото 8](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/08.jpg)
+![Премиум композиция в корзине Осень №8](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/08.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/08.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/premium-kompoziciya-v-kor-2521/photos/08.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

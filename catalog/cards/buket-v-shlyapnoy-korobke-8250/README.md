@@ -1,64 +1,73 @@
 # Букет в шляпной коробке
 
-**Оригинальная карточка:** https://flowwow.com/flowers/buket-v-shlyapnoy-korobke-8250/
+**Источник:** https://flowwow.com/flowers/buket-v-shlyapnoy-korobke-8250/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Цветы в коробке
-**Цена, наблюдавшаяся на Flowwow:** нет записи
-**Наличие, наблюдалось ранее:** `available_observed_at_scan`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** нет записи
+**Цена при проверке 31.10.2026:** 7881 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 35 × 37 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Альстромерия | 2 | шт |
+| Гортензия | 1 | шт |
+| Эвкалипт | 5 | шт |
+| Эустома | 1 | шт |
+| Лента атласная | 2 | шт |
+| Диантус | 2 | шт |
+| Роза пионовидная кустовая | 1 | шт |
+| Ромашка кустовая | 3 | шт |
+| Шляпная коробка | 1 | шт |
+| Оазис флористический | 1 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Букет в шляпной коробке, фото 1](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/01.jpg)
+![Букет в шляпной коробке №1](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/01.jpg)
 
 ### Фото 2
 
-![Букет в шляпной коробке, фото 2](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/02.jpg)
+![Букет в шляпной коробке №2](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/02.jpg)
 
 ### Фото 3
 
-![Букет в шляпной коробке, фото 3](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/03.jpg)
+![Букет в шляпной коробке №3](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/03.jpg)
 
 ### Фото 4
 
-![Букет в шляпной коробке, фото 4](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/04.jpg)
+![Букет в шляпной коробке №4](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/04.jpg)
 
 ### Фото 5
 
-![Букет в шляпной коробке, фото 5](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/05.jpg)
+![Букет в шляпной коробке №5](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/05.jpg)
 
 ### Фото 6
 
-![Букет в шляпной коробке, фото 6](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/06.jpg)
+![Букет в шляпной коробке №6](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-v-shlyapnoy-korobke-8250/photos/06.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

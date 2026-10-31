@@ -6,8 +6,32 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": null,
   "availability_observed": "temporarily_unavailable",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Пион",
+      "quantity": 51,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 10,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "шляпная коробочка",
+      "quantity": 1,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 45,
+    "height": 35
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -72,5 +96,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Пион - 51 шт. Эвкалипт - 10 шт. Оазис флористический - 3 шт. шляпная коробочка - 1 шт.",
+    "dimensions_cm": {
+      "width": 45,
+      "height": 35
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

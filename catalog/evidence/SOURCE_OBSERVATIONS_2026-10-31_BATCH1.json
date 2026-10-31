@@ -441,7 +441,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 36,
+        "height": 50
+      },
       "price_visible_in_buy_block_rub": 10800,
       "source_availability": "available"
     },
@@ -902,7 +905,10 @@
           "unit": "шт"
         }
       ],
-      "dimensions_cm": null,
+      "dimensions_cm": {
+        "width": 30,
+        "height": 50
+      },
       "price_visible_in_buy_block_rub": 9507,
       "source_availability": "available"
     },

@@ -1,64 +1,68 @@
 # Композиция в шляпной коробочке 014
 
-**Оригинальная карточка:** https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-3035/
+**Источник:** https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-3035/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Цветы в коробке
-**Цена, наблюдавшаяся на Flowwow:** нет записи
-**Наличие, наблюдалось ранее:** `available_observed_at_scan`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** нет записи
+**Цена при проверке 31.10.2026:** 16974 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 35 × 35 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Диантус | 9 | шт |
+| Роза пионовидная кустовая | 11 | шт |
+| Шляпная коробка | 1 | шт |
+| Оазис флористический | 1 | шт |
+| эустома белая | 8 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Композиция в шляпной коробочке 014, фото 1](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/01.jpg)
+![Композиция в шляпной коробочке 014 №1](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/01.jpg)
 
 ### Фото 2
 
-![Композиция в шляпной коробочке 014, фото 2](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/02.jpg)
+![Композиция в шляпной коробочке 014 №2](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/02.jpg)
 
 ### Фото 3
 
-![Композиция в шляпной коробочке 014, фото 3](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/03.jpg)
+![Композиция в шляпной коробочке 014 №3](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/03.jpg)
 
 ### Фото 4
 
-![Композиция в шляпной коробочке 014, фото 4](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/04.jpg)
+![Композиция в шляпной коробочке 014 №4](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/04.jpg)
 
 ### Фото 5
 
-![Композиция в шляпной коробочке 014, фото 5](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/05.jpg)
+![Композиция в шляпной коробочке 014 №5](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/05.jpg)
 
 ### Фото 6
 
-![Композиция в шляпной коробочке 014, фото 6](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/06.jpg)
+![Композиция в шляпной коробочке 014 №6](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/kompoziciya-v-shlyapnoy-k-3035/photos/06.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

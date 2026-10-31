@@ -1,64 +1,70 @@
 # Авторский букет26
 
-**Оригинальная карточка:** https://flowwow.com/flowers/avtorskiy-buket-9444/
+**Источник:** https://flowwow.com/flowers/avtorskiy-buket-9444/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Авторские букеты
-**Цена, наблюдавшаяся на Flowwow:** 8158 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `UNKNOWN_NOT_REVERIFIED`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 8158 ₽
+**Цена при проверке 31.10.2026:** 8158 ₽
+**Наблюдавшееся наличие:** available
+**Размеры:** 33 × 50 см
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Эвкалипт | 3 | шт |
+| Хризантема | 3 | шт |
+| Эустома | 1 | шт |
+| Лента атласная | 2 | шт |
+| Диантус | 2 | шт |
+| Роза пионовидная кустовая | 3 | шт |
+| Упаковка дизайнерская | 5 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Авторский букет26, фото 1](../../../data/flowwow/items/avtorskiy-buket-9444/photos/01.jpg)
+![Авторский букет26 №1](../../../data/flowwow/items/avtorskiy-buket-9444/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-9444/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-9444/photos/01.jpg)
 
 ### Фото 2
 
-![Авторский букет26, фото 2](../../../data/flowwow/items/avtorskiy-buket-9444/photos/02.jpg)
+![Авторский букет26 №2](../../../data/flowwow/items/avtorskiy-buket-9444/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-9444/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-9444/photos/02.jpg)
 
 ### Фото 3
 
-![Авторский букет26, фото 3](../../../data/flowwow/items/avtorskiy-buket-9444/photos/03.jpg)
+![Авторский букет26 №3](../../../data/flowwow/items/avtorskiy-buket-9444/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-9444/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-9444/photos/03.jpg)
 
 ### Фото 4
 
-![Авторский букет26, фото 4](../../../data/flowwow/items/avtorskiy-buket-9444/photos/04.jpg)
+![Авторский букет26 №4](../../../data/flowwow/items/avtorskiy-buket-9444/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-9444/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-9444/photos/04.jpg)
 
 ### Фото 5
 
-![Авторский букет26, фото 5](../../../data/flowwow/items/avtorskiy-buket-9444/photos/05.jpg)
+![Авторский букет26 №5](../../../data/flowwow/items/avtorskiy-buket-9444/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-9444/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-9444/photos/05.jpg)
 
 ### Фото 6
 
-![Авторский букет26, фото 6](../../../data/flowwow/items/avtorskiy-buket-9444/photos/06.jpg)
+![Авторский букет26 №6](../../../data/flowwow/items/avtorskiy-buket-9444/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-9444/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-9444/photos/06.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

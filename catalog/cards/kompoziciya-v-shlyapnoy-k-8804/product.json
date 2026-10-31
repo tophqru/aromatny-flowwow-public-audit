@@ -6,8 +6,47 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": null,
   "availability_observed": "temporarily_unavailable",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Гипсофила",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза кустовая",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 7,
+      "unit": "шт"
+    },
+    {
+      "component": "Эустома",
+      "quantity": 5,
+      "unit": "шт"
+    },
+    {
+      "component": "Шляпная коробка",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Орхидеи",
+      "quantity": 1,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 28,
+    "height": 31
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +97,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-8804/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Гипсофила - 1 шт. Роза кустовая - 1 шт. Эвкалипт - 7 шт. Эустома - 5 шт. Шляпная коробка - 1 шт. Оазис флористический - 1 шт. Орхидеи - 1 шт.",
+    "dimensions_cm": {
+      "width": 28,
+      "height": 31
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

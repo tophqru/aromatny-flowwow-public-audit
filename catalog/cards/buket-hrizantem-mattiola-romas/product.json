@@ -6,8 +6,37 @@
   "source_category": "Авторские букеты",
   "price_observed_rub": 7499,
   "availability_observed": "UNKNOWN_NOT_REVERIFIED",
-  "composition_items": [],
-  "dimensions_cm": null,
+  "composition_items": [
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Ромашка кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Хризантема одноголовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Упаковка дизайнерская",
+      "quantity": 4,
+      "unit": "шт"
+    }
+  ],
+  "dimensions_cm": {
+    "width": 28,
+    "height": 50
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -58,5 +87,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 8251,
+    "composition_raw_ru": "Лента атласная - 2 шт. Роза пионовидная кустовая - 3 шт. Ромашка кустовая - 3 шт. Хризантема одноголовая - 3 шт. Упаковка дизайнерская - 4 шт.",
+    "dimensions_cm": {
+      "width": 28,
+      "height": 50
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

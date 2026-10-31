@@ -6,7 +6,43 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": null,
   "availability_observed": "sold_out",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Астра",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Гортензия",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Маттиола",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Лента атласная",
+      "quantity": 2,
+      "unit": "шт"
+    },
+    {
+      "component": "Ромашка кустовая",
+      "quantity": 4,
+      "unit": "шт"
+    },
+    {
+      "component": "Оазис флористический",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "композиция в шляпной коробке",
+      "quantity": 1,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -72,5 +108,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-6842/",
+    "public_source_card_opened": true,
+    "availability": "sold_out",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Астра - 2 шт. Гортензия - 1 шт. Маттиола - 2 шт. Лента атласная - 2 шт. Ромашка кустовая - 4 шт. Оазис флористический - 1 шт. композиция в шляпной коробке - 1 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

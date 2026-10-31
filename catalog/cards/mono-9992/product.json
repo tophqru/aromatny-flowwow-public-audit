@@ -23,7 +23,10 @@
       "unit": "шт"
     }
   ],
-  "dimensions_cm": null,
+  "dimensions_cm": {
+    "width": 30,
+    "height": 50
+  },
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
@@ -82,7 +85,10 @@
     "availability": "available",
     "price_visible_in_buy_block_rub": 9507,
     "composition_raw_ru": "Эвкалипт - 7 шт. Роза пионовидная кустовая - 13 шт. Упаковка дизайнерская - 5 шт.",
-    "dimensions_cm": null,
+    "dimensions_cm": {
+      "width": 30,
+      "height": 50
+    },
     "raw_description_ru": null,
     "raw_description_status": "NOT_YET_CAPTURED"
   },

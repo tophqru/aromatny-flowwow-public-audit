@@ -38,7 +38,7 @@
       "unit": "шт"
     },
     {
-      "component": "Маттиола кустовая",
+      "component": "маттиола кустовая",
       "quantity": 3,
       "unit": "шт"
     }
@@ -97,5 +97,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buket-lavandovye-grezy-roza-ma/",
+    "public_source_card_opened": true,
+    "availability": "temporarily_unavailable",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Лимониум - 1 шт. Эрингиум - 1 шт. Роза - 3 шт. Лента атласная - 2 шт. Упаковка дизайнерская - 4 шт. Лагурус - 3 шт. маттиола кустовая - 3 шт.",
+    "dimensions_cm": {
+      "width": 28,
+      "height": 50
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

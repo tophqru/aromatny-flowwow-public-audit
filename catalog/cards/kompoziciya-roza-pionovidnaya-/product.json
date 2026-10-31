@@ -6,7 +6,38 @@
   "source_category": "Цветы в коробке",
   "price_observed_rub": 2500,
   "availability_observed": "sold_out",
-  "composition_items": [],
+  "composition_items": [
+    {
+      "component": "Маттиола",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Озотамнус",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Эвкалипт",
+      "quantity": 4,
+      "unit": "шт"
+    },
+    {
+      "component": "Эрингиум",
+      "quantity": 1,
+      "unit": "шт"
+    },
+    {
+      "component": "Роза пионовидная кустовая",
+      "quantity": 3,
+      "unit": "шт"
+    },
+    {
+      "component": "Шляпная коробка",
+      "quantity": 1,
+      "unit": "шт"
+    }
+  ],
   "dimensions_cm": null,
   "description_raw_ru": null,
   "description_status": "NOT_CAPTURED",
@@ -72,5 +103,17 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/",
+    "public_source_card_opened": true,
+    "availability": "sold_out",
+    "price_visible_in_buy_block_rub": null,
+    "composition_raw_ru": "Маттиола - 1 шт. Озотамнус - 1 шт. Эвкалипт - 4 шт. Эрингиум - 1 шт. Роза пионовидная кустовая - 3 шт. Шляпная коробка - 1 шт.",
+    "dimensions_cm": null,
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }

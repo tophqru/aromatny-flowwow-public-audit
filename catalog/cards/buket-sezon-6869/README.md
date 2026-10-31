@@ -1,76 +1,83 @@
 # Яркий букет Сезон
 
-**Оригинальная карточка:** https://flowwow.com/flowers/buket-sezon-6869/
+**Источник:** https://flowwow.com/flowers/buket-sezon-6869/
 
-**Продавец:** [Ароматный букет](https://flowwow.com/shop/lyubov-eto-699e0e4519/)
 **Категория:** Авторские букеты
-**Цена, наблюдавшаяся на Flowwow:** 9850 ₽ (может устареть)
-**Наличие, наблюдалось ранее:** `sold_out`
-**Размеры:** не сохранились
+**Цена при первоначальном сохранении:** 9850 ₽
+**Цена при проверке 31.10.2026:** не отображалась в блоке покупки
+**Наблюдавшееся наличие:** sold_out
+**Размеры:** не подтверждены
 
-## Описание
+## Исходное описание
 
-*Полное исходное описание пока не собрано — требует проверки по оригинальной странице.*
+*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
 
 ## Состав
 
-*Состав с точным количеством пока не получен. Не выводить его из названия или фотографии.*
+| Компонент | Количество | Единица |
+|---|---:|---|
+| Астра | 15 | шт |
+| Маттиола | 2 | шт |
+| Лента атласная | 2 | шт |
+| Диантус | 7 | шт |
+| Роза пионовидная | 3 | шт |
+| Гладиолус | 5 | шт |
+| Упаковка дизайнерская | 5 | шт |
+| Георгина | 1 | шт |
 
-## Фотографии товара
+## Все фотографии товара
 
-Все фотографии из подтверждённой галереи. SHA256 и источники каждого файла приведены в [product.json](product.json).
-
+**8 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
 
 ### Фото 1
 
-![Яркий букет Сезон, фото 1](../../../data/flowwow/items/buket-sezon-6869/photos/01.jpg)
+![Яркий букет Сезон №1](../../../data/flowwow/items/buket-sezon-6869/photos/01.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/01.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/01.jpg)
 
 ### Фото 2
 
-![Яркий букет Сезон, фото 2](../../../data/flowwow/items/buket-sezon-6869/photos/02.jpg)
+![Яркий букет Сезон №2](../../../data/flowwow/items/buket-sezon-6869/photos/02.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/02.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/02.jpg)
 
 ### Фото 3
 
-![Яркий букет Сезон, фото 3](../../../data/flowwow/items/buket-sezon-6869/photos/03.jpg)
+![Яркий букет Сезон №3](../../../data/flowwow/items/buket-sezon-6869/photos/03.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/03.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/03.jpg)
 
 ### Фото 4
 
-![Яркий букет Сезон, фото 4](../../../data/flowwow/items/buket-sezon-6869/photos/04.jpg)
+![Яркий букет Сезон №4](../../../data/flowwow/items/buket-sezon-6869/photos/04.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/04.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/04.jpg)
 
 ### Фото 5
 
-![Яркий букет Сезон, фото 5](../../../data/flowwow/items/buket-sezon-6869/photos/05.jpg)
+![Яркий букет Сезон №5](../../../data/flowwow/items/buket-sezon-6869/photos/05.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/05.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/05.jpg)
 
 ### Фото 6
 
-![Яркий букет Сезон, фото 6](../../../data/flowwow/items/buket-sezon-6869/photos/06.jpg)
+![Яркий букет Сезон №6](../../../data/flowwow/items/buket-sezon-6869/photos/06.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/06.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/06.jpg)
 
 ### Фото 7
 
-![Яркий букет Сезон, фото 7](../../../data/flowwow/items/buket-sezon-6869/photos/07.jpg)
+![Яркий букет Сезон №7](../../../data/flowwow/items/buket-sezon-6869/photos/07.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/07.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/07.jpg)
 
 ### Фото 8
 
-![Яркий букет Сезон, фото 8](../../../data/flowwow/items/buket-sezon-6869/photos/08.jpg)
+![Яркий букет Сезон №8](../../../data/flowwow/items/buket-sezon-6869/photos/08.jpg)
 
-[Открыть оригинал](../../../data/flowwow/items/buket-sezon-6869/photos/08.jpg)
+[Открыть оригинальное фото](../../../data/flowwow/items/buket-sezon-6869/photos/08.jpg)
 
----
 
-**Статус:** публичный архив для аудита, не одобрен для торговли. Отсутствие описания/размеров не означает отсутствие на Flowwow.
+Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
 
-[Назад ко всему каталогу](../../INDEX.md)
+[Все товары](../../INDEX.md)

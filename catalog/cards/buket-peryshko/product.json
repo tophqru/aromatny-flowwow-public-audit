@@ -43,7 +43,7 @@
       "unit": "шт"
     },
     {
-      "component": "Помпон",
+      "component": "помпон",
       "quantity": 3,
       "unit": "шт"
     }
@@ -102,5 +102,20 @@
   ],
   "owner_approved": false,
   "may_order": false,
-  "may_show_publicly": false
+  "may_show_publicly": false,
+  "latest_source_observation": {
+    "observed_on": "2026-10-31",
+    "page_url": "https://flowwow.com/flowers/buket-peryshko/",
+    "public_source_card_opened": true,
+    "availability": "available",
+    "price_visible_in_buy_block_rub": 6727,
+    "composition_raw_ru": "Лимониум - 1 шт. Озотамнус - 1 шт. Роза - 3 шт. Лента атласная - 2 шт. Упаковка дизайнерская - 6 шт. Лагурус - 6 шт. Кустовая роза пионовидная - 3 шт. помпон - 3 шт.",
+    "dimensions_cm": {
+      "width": 34,
+      "height": 50
+    },
+    "raw_description_ru": null,
+    "raw_description_status": "NOT_YET_CAPTURED"
+  },
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
 }
