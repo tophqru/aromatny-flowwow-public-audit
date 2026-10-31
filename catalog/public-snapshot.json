@@ -711,8 +711,8 @@
         "width": 38,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -773,10 +773,15 @@
           "width": 38,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-mattiola-roza-piono-5396/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-iz-roz-kustovoy-pio-6913",
@@ -867,8 +872,8 @@
         "width": 31,
         "height": 60
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -929,10 +934,15 @@
           "width": 31,
           "height": 60
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "avtorskiy-buket-lyublyu-roza-p",
@@ -978,8 +988,8 @@
         "width": 33,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1040,10 +1050,15 @@
           "width": 33,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-lyublyu-roza-p/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-rozy-pionovidnoy-kustovo",
@@ -1084,8 +1099,8 @@
         "width": 30,
         "height": 30
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1160,10 +1175,15 @@
           "width": 30,
           "height": 30
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-rozy-pionovidnoy-kustovo/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-s-pionovidnoy-kusto-4643",
@@ -1199,8 +1219,8 @@
         "width": 45,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1261,10 +1281,15 @@
           "width": 45,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-s-pionovidnoy-kusto-4643/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-iz-gortenzii-kustov-7019",
@@ -1312,8 +1337,8 @@
         }
       ],
       "dimensions_cm": null,
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1371,10 +1396,15 @@
         "price_visible_in_buy_block_rub": 10892,
         "composition_raw_ru": "Гортензия - 1 шт. Пион - 2 шт. Эвкалипт - 5 шт. Упаковка - 6 шт. Лента атласная - 2 шт. Кустовая роза пионовидная - 4 шт. диантус гвоздика - 3 шт.",
         "dimensions_cm": null,
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Прекрасный дизайнерский букет в современном исполнении из свежих срезанных цветов обрадует любого получателя. Наши флористы вкладывают душу в каждый букет.🌸🌸🌸",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "avtorskiy-buketik-dlya-tebya-r",
@@ -1462,8 +1492,8 @@
         "width": 43,
         "height": 55
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1524,10 +1554,15 @@
           "width": 43,
           "height": 55
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/francuzskie-rozy-pod-lentu-21-/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "avtorskiy-buket-roza-pion-7064",
@@ -1786,8 +1821,8 @@
         "width": 18,
         "height": 20
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -1862,10 +1897,15 @@
           "width": 18,
           "height": 20
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-nevesty-1149/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "kompoziciya-premium-v-korzine-",
@@ -2604,8 +2644,8 @@
         "width": 33,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -2666,10 +2706,15 @@
           "width": 33,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-aromatnyh-mattiol-kustov/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-v-korzine-exclusive",
@@ -2826,8 +2871,8 @@
         "width": 30,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -2888,10 +2933,15 @@
           "width": 30,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/mono-9992/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "kompoziciya-v-korzine-rom-4151",
@@ -3284,8 +3334,8 @@
         "width": 31,
         "height": 35
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -3346,10 +3396,15 @@
           "width": 31,
           "height": 35
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-v-korobochke-eusto/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "kompoziciya-v-shlyapnoy-k-7428",
@@ -3505,8 +3560,8 @@
         "width": 35,
         "height": 35
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -3567,10 +3622,15 @@
           "width": 35,
           "height": 35
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-3035/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-v-shlyapnoy-korobke-8250",
@@ -3636,8 +3696,8 @@
         "width": 35,
         "height": 37
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -3698,10 +3758,15 @@
           "width": 35,
           "height": 37
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-v-shlyapnoy-korobke-8250/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "premium-kompoziciya-v-kor-2521",
@@ -4710,8 +4775,8 @@
         "width": 30,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -4765,10 +4830,15 @@
           "width": 30,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-23/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "avtorskiy-buketik-gortenzii-ra",
@@ -4819,8 +4889,8 @@
         "width": 32,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -4881,10 +4951,15 @@
           "width": 32,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых теплых моментах.",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-gortenzii-ra/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "avtorskiy-buket-9444",
@@ -5051,8 +5126,8 @@
         "width": 35,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -5113,10 +5188,15 @@
           "width": 35,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-vas-1541/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "buket-sezon-6869",
@@ -5523,8 +5603,8 @@
         "width": 32,
         "height": 53
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -5585,10 +5665,15 @@
           "width": 32,
           "height": 53
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/avtorskiy-buket-3448/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     },
     {
       "slug": "avtorskiy-buket-vozdushnoe-bez",
@@ -7091,8 +7176,8 @@
         "width": 31,
         "height": 50
       },
-      "description_raw_ru": null,
-      "description_status": "NOT_CAPTURED",
+      "description_raw_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+      "description_status": "SOURCE_TEXT_VERIFIED_2026-10-31",
       "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
       "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
       "gallery": [
@@ -7153,10 +7238,15 @@
           "width": 31,
           "height": 50
         },
-        "raw_description_ru": null,
-        "raw_description_status": "NOT_YET_CAPTURED"
+        "raw_description_ru": "Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами",
+        "raw_description_status": "SOURCE_TEXT_VERIFIED_2026-10-31"
       },
-      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+      "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+      "description_evidence": {
+        "source_url": "https://flowwow.com/flowers/buket-zvezda/",
+        "observed_on": "2026-10-31",
+        "duplicate_source_display_deduplicated": true
+      }
     }
   ]
 }

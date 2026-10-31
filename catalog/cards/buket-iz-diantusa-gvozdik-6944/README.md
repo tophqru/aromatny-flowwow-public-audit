@@ -1,20 +1,18 @@
 # Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке
 
-**Источник:** https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/
+**Оригинальный товар:** https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/
 
 **Категория:** Авторские букеты
-**Цена при первоначальном сохранении:** 8663 ₽
-**Цена при последней проверке:** 8663 ₽
-**Наблюдавшееся наличие на 31.10.2026:** available
+**Цена при исходном сохранении:** 8663 ₽
+**Цена в доступном блоке покупки (31.10.2026):** 8663 ₽
+**Наблюдавшееся наличие:** available
 **Размеры:** 31 × 60 см
 
 ## Исходное описание
 
-*Оригинальное описание не сохранено. Требуется проверка Flowwow.*
+Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами
 
 ## Состав
-
-Источник: https://flowwow.com/flowers/buket-iz-diantusa-gvozdik-6944/
 
 | Компонент | Количество | Единица |
 |---|---:|---|
@@ -25,44 +23,44 @@
 
 ## Все фотографии товара
 
-6 оригинальных фото, порядок и SHA256 в [product.json](product.json).
+6 оригинальных JPEG, источник и SHA256 — в [product.json](product.json).
 
 ### Фото 1
 
-![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке фото 1](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/01.jpg)
+![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке, фото 1](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/01.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/01.jpg)
+[Открыть оригинал](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/01.jpg)
 
 ### Фото 2
 
-![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке фото 2](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/02.jpg)
+![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке, фото 2](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/02.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/02.jpg)
+[Открыть оригинал](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/02.jpg)
 
 ### Фото 3
 
-![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке фото 3](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/03.jpg)
+![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке, фото 3](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/03.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/03.jpg)
+[Открыть оригинал](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/03.jpg)
 
 ### Фото 4
 
-![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке фото 4](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/04.jpg)
+![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке, фото 4](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/04.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/04.jpg)
+[Открыть оригинал](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/04.jpg)
 
 ### Фото 5
 
-![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке фото 5](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/05.jpg)
+![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке, фото 5](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/05.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/05.jpg)
+[Открыть оригинал](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/05.jpg)
 
 ### Фото 6
 
-![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке фото 6](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/06.jpg)
+![Букет из диантуса, ароматной маттиолы кустовой в стильной упаковке, фото 6](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/06.jpg)
 
-[Открыть JPEG](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/06.jpg)
+[Открыть оригинал](../../../data/flowwow/items/buket-iz-diantusa-gvozdik-6944/photos/06.jpg)
 
-**Сведения Flowwow не являются подтверждённой ценой или остатками нашего магазина.**
+Данные Flowwow не подтверждают цену и наличие нашего магазина.
 
-[Весь каталог](../../INDEX.md)
+[Все товары](../../INDEX.md)

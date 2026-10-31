@@ -1,16 +1,16 @@
 # Авторский букет гортензия роза эустома маттиола
 
-**Источник:** https://flowwow.com/flowers/avtorskiy-buket-3448/
+**Оригинальный товар:** https://flowwow.com/flowers/avtorskiy-buket-3448/
 
 **Категория:** Авторские букеты
-**Цена при первоначальном сохранении:** 12539 ₽
-**Цена при проверке 31.10.2026:** 13633 ₽
+**Цена при исходном сохранении:** 12539 ₽
+**Цена в доступном блоке покупки (31.10.2026):** 13633 ₽
 **Наблюдавшееся наличие:** available
 **Размеры:** 32 × 53 см
 
 ## Исходное описание
 
-*Не сохранено полностью, требуется оригинальный текст с Flowwow.*
+Букет цветов является универсальным способом выразить чувства, поскольку каждый цветок и цвет несет определенный символический смысл, а сами цветы способны передать эмоции, которые сложно выразить словами
 
 ## Состав
 
@@ -28,45 +28,44 @@
 
 ## Все фотографии товара
 
-**6 оригинальных JPEG.** Полные SHA-256 и исходные URL — в [product.json](product.json).
+6 оригинальных JPEG, источник и SHA256 — в [product.json](product.json).
 
 ### Фото 1
 
-![Авторский букет гортензия роза эустома маттиола №1](../../../data/flowwow/items/avtorskiy-buket-3448/photos/01.jpg)
+![Авторский букет гортензия роза эустома маттиола, фото 1](../../../data/flowwow/items/avtorskiy-buket-3448/photos/01.jpg)
 
-[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-3448/photos/01.jpg)
+[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-3448/photos/01.jpg)
 
 ### Фото 2
 
-![Авторский букет гортензия роза эустома маттиола №2](../../../data/flowwow/items/avtorskiy-buket-3448/photos/02.jpg)
+![Авторский букет гортензия роза эустома маттиола, фото 2](../../../data/flowwow/items/avtorskiy-buket-3448/photos/02.jpg)
 
-[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-3448/photos/02.jpg)
+[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-3448/photos/02.jpg)
 
 ### Фото 3
 
-![Авторский букет гортензия роза эустома маттиола №3](../../../data/flowwow/items/avtorskiy-buket-3448/photos/03.jpg)
+![Авторский букет гортензия роза эустома маттиола, фото 3](../../../data/flowwow/items/avtorskiy-buket-3448/photos/03.jpg)
 
-[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-3448/photos/03.jpg)
+[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-3448/photos/03.jpg)
 
 ### Фото 4
 
-![Авторский букет гортензия роза эустома маттиола №4](../../../data/flowwow/items/avtorskiy-buket-3448/photos/04.jpg)
+![Авторский букет гортензия роза эустома маттиола, фото 4](../../../data/flowwow/items/avtorskiy-buket-3448/photos/04.jpg)
 
-[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-3448/photos/04.jpg)
+[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-3448/photos/04.jpg)
 
 ### Фото 5
 
-![Авторский букет гортензия роза эустома маттиола №5](../../../data/flowwow/items/avtorskiy-buket-3448/photos/05.jpg)
+![Авторский букет гортензия роза эустома маттиола, фото 5](../../../data/flowwow/items/avtorskiy-buket-3448/photos/05.jpg)
 
-[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-3448/photos/05.jpg)
+[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-3448/photos/05.jpg)
 
 ### Фото 6
 
-![Авторский букет гортензия роза эустома маттиола №6](../../../data/flowwow/items/avtorskiy-buket-3448/photos/06.jpg)
+![Авторский букет гортензия роза эустома маттиола, фото 6](../../../data/flowwow/items/avtorskiy-buket-3448/photos/06.jpg)
 
-[Открыть оригинальное фото](../../../data/flowwow/items/avtorskiy-buket-3448/photos/06.jpg)
+[Открыть оригинал](../../../data/flowwow/items/avtorskiy-buket-3448/photos/06.jpg)
 
-
-Историческое наличие и цена Flowwow не утверждают возможность продажи на собственном сайте.
+Данные Flowwow не подтверждают цену и наличие нашего магазина.
 
 [Все товары](../../INDEX.md)
