@@ -1,0 +1,140 @@
+test_arena_review2_independent (unittest.loader._FailedTest.test_arena_review2_independent) ... ERROR
+test_capture (unittest.loader._FailedTest.test_capture) ... ERROR
+test_category_logic (unittest.loader._FailedTest.test_category_logic) ... ERROR
+test_baseline_target_missing (test_pilot_targets.TestPilot.test_baseline_target_missing) ... ok
+test_crawl_rejects_unrelated_prior_database_before_browser (test_pilot_targets.TestPilot.test_crawl_rejects_unrelated_prior_database_before_browser) ... ERROR
+test_crawl_uses_only_pilot_targets_not_discovered (test_pilot_targets.TestPilot.test_crawl_uses_only_pilot_targets_not_discovered) ... ERROR
+test_db_isolated (test_pilot_targets.TestPilot.test_db_isolated) ... ok
+test_db_rejects_foreign_discovery_even_without_pages (test_pilot_targets.TestPilot.test_db_rejects_foreign_discovery_even_without_pages) ... ok
+test_db_rejects_foreign_media_even_without_pages (test_pilot_targets.TestPilot.test_db_rejects_foreign_media_even_without_pages) ... ok
+test_duplicate_json_keys (test_pilot_targets.TestPilot.test_duplicate_json_keys) ... ok
+test_duplicate_sku (test_pilot_targets.TestPilot.test_duplicate_sku) ... ok
+test_exact_three_order (test_pilot_targets.TestPilot.test_exact_three_order) ... ok
+test_pending_must_be_missing_from_baseline (test_pilot_targets.TestPilot.test_pending_must_be_missing_from_baseline) ... ok
+test_pinned_blob_changed (test_pilot_targets.TestPilot.test_pinned_blob_changed) ... ok
+test_prior_non_pilot_session_rejected (test_pilot_targets.TestPilot.test_prior_non_pilot_session_rejected) ... ok
+test_sale_flags (test_pilot_targets.TestPilot.test_sale_flags) ... ok
+test_unrelated_domain (test_pilot_targets.TestPilot.test_unrelated_domain) ... ok
+test_url_query (test_pilot_targets.TestPilot.test_url_query) ... ok
+test_wrong_count (test_pilot_targets.TestPilot.test_wrong_count) ... ok
+test_wrong_pinned_commit (test_pilot_targets.TestPilot.test_wrong_pinned_commit) ... ok
+test_wrong_public_repo (test_pilot_targets.TestPilot.test_wrong_public_repo) ... ok
+test_wrong_seller (test_pilot_targets.TestPilot.test_wrong_seller) ... ok
+test_review1 (unittest.loader._FailedTest.test_review1) ... ERROR
+test_scroll_logic (unittest.loader._FailedTest.test_scroll_logic) ... ERROR
+
+======================================================================
+ERROR: test_arena_review2_independent (unittest.loader._FailedTest.test_arena_review2_independent)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_arena_review2_independent
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/unittest/loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_arena_review2_independent.py", line 20, in <module>
+    import parsing
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/parsing.py", line 10, in <module>
+    from bs4 import BeautifulSoup, Tag
+ModuleNotFoundError: No module named 'bs4'
+
+
+======================================================================
+ERROR: test_capture (unittest.loader._FailedTest.test_capture)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_capture
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/unittest/loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_capture.py", line 12, in <module>
+    from parsing import (
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/parsing.py", line 10, in <module>
+    from bs4 import BeautifulSoup, Tag
+ModuleNotFoundError: No module named 'bs4'
+
+
+======================================================================
+ERROR: test_category_logic (unittest.loader._FailedTest.test_category_logic)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_category_logic
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/unittest/loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_category_logic.py", line 2, in <module>
+    from category_logic import discover_category_labels
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/category_logic.py", line 6, in <module>
+    from bs4 import BeautifulSoup
+ModuleNotFoundError: No module named 'bs4'
+
+
+======================================================================
+ERROR: test_crawl_rejects_unrelated_prior_database_before_browser (test_pilot_targets.TestPilot.test_crawl_rejects_unrelated_prior_database_before_browser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_pilot_targets.py", line 130, in test_crawl_rejects_unrelated_prior_database_before_browser
+    with self.assertRaises(PilotGuardError):capture.crawl(args)
+                                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 471, in crawl
+    with exclusive_run_lock(out/"capture.lock"):
+         ^^^^^^^^^^^^^^^^^^
+NameError: name 'exclusive_run_lock' is not defined
+
+======================================================================
+ERROR: test_crawl_uses_only_pilot_targets_not_discovered (test_pilot_targets.TestPilot.test_crawl_uses_only_pilot_targets_not_discovered)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_pilot_targets.py", line 107, in test_crawl_uses_only_pilot_targets_not_discovered
+    self.assertEqual(0,capture.crawl(args))
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 471, in crawl
+    with exclusive_run_lock(out/"capture.lock"):
+         ^^^^^^^^^^^^^^^^^^
+NameError: name 'exclusive_run_lock' is not defined
+
+======================================================================
+ERROR: test_review1 (unittest.loader._FailedTest.test_review1)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_review1
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/unittest/loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_review1.py", line 15, in <module>
+    from parsing import SHOP, canonical_product, canonical_shop, image_url_safe
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/parsing.py", line 10, in <module>
+    from bs4 import BeautifulSoup, Tag
+ModuleNotFoundError: No module named 'bs4'
+
+
+======================================================================
+ERROR: test_scroll_logic (unittest.loader._FailedTest.test_scroll_logic)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_scroll_logic
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/unittest/loader.py", line 407, in _find_test_path
+    module = self._get_module_from_name(name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/loader.py", line 350, in _get_module_from_name
+    __import__(name)
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_scroll_logic.py", line 4, in <module>
+    from scroll_logic import (scan_links, sweep_incrementally, visible_more_controls, expand_shop_conservatively)
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/scroll_logic.py", line 9, in <module>
+    from parsing import canonical_product, shop_item_links, SHOP, same_shop_url
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/parsing.py", line 10, in <module>
+    from bs4 import BeautifulSoup, Tag
+ModuleNotFoundError: No module named 'bs4'
+
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.046s
+
+FAILED (errors=7)

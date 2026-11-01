@@ -1,0 +1,311 @@
+test_acceptance_candidate_gallery_never_passes (test_round3_independent.Round3Tests.test_acceptance_candidate_gallery_never_passes) ... ERROR
+test_acceptance_empty_is_partial (test_round3_independent.Round3Tests.test_acceptance_empty_is_partial) ... ERROR
+test_acceptance_error_is_blocked (test_round3_independent.Round3Tests.test_acceptance_error_is_blocked) ... ERROR
+test_atomic_parent_symlink_rejected (test_round3_independent.Round3Tests.test_atomic_parent_symlink_rejected) ... FAIL
+test_atomic_predictable_temp_symlink_not_followed (test_round3_independent.Round3Tests.test_atomic_predictable_temp_symlink_not_followed) ... FAIL
+test_baseline_object_must_match_hashed_bytes (test_round3_independent.Round3Tests.test_baseline_object_must_match_hashed_bytes) ... ok
+test_db_captured_missing_flags_rejected (test_round3_independent.Round3Tests.test_db_captured_missing_flags_rejected) ... FAIL
+test_db_payload_foreign_url_rejected (test_round3_independent.Round3Tests.test_db_payload_foreign_url_rejected) ... FAIL
+test_db_pending_metadata_only_cannot_have_media (test_round3_independent.Round3Tests.test_db_pending_metadata_only_cannot_have_media) ... FAIL
+test_db_row_foreign_slug_rejected (test_round3_independent.Round3Tests.test_db_row_foreign_slug_rejected) ... FAIL
+test_db_sale_flag_true_rejected (test_round3_independent.Round3Tests.test_db_sale_flag_true_rejected) ... FAIL
+test_dimension_contradictory_sizes_rejected (test_round3_independent.Round3Tests.test_dimension_contradictory_sizes_rejected) ... FAIL
+test_dimension_decimal_not_silently_integer (test_round3_independent.Round3Tests.test_dimension_decimal_not_silently_integer) ... FAIL
+test_discovery_allowlist_at_write_boundary (test_round3_independent.Round3Tests.test_discovery_allowlist_at_write_boundary) ... FAIL
+test_export_rejects_post_preflight_foreign_discovery (test_round3_independent.Round3Tests.test_export_rejects_post_preflight_foreign_discovery) ... FAIL
+test_export_takes_exclusive_lock (test_round3_independent.Round3Tests.test_export_takes_exclusive_lock) ... FAIL
+test_output_catalog_rejected (test_round3_independent.Round3Tests.test_output_catalog_rejected) ... ERROR
+test_path_length_fail_before_write (test_round3_independent.Round3Tests.test_path_length_fail_before_write) ... FAIL
+test_pin_allowed_urls_must_match (test_round3_independent.Round3Tests.test_pin_allowed_urls_must_match) ... FAIL
+test_replacement_baseline_sku_rejected (test_round3_independent.Round3Tests.test_replacement_baseline_sku_rejected) ... FAIL
+test_replacement_pending_sku_rejected (test_round3_independent.Round3Tests.test_replacement_pending_sku_rejected) ... FAIL
+test_store_hardlink_rejected (test_round3_independent.Round3Tests.test_store_hardlink_rejected) ... FAIL
+test_store_symlink_rejected_before_wal (test_round3_independent.Round3Tests.test_store_symlink_rejected_before_wal) ... FAIL
+test_stream_chunked_limited_read (test_round3_independent.Round3Tests.test_stream_chunked_limited_read) ... ERROR
+test_stream_compression_rejected_before_body (test_round3_independent.Round3Tests.test_stream_compression_rejected_before_body) ... ERROR
+test_stream_mixed_dns_rejected (test_round3_independent.Round3Tests.test_stream_mixed_dns_rejected) ... ERROR
+test_stream_oversize_header_before_body (test_round3_independent.Round3Tests.test_stream_oversize_header_before_body) ... ERROR
+test_stream_private_dns_rejected (test_round3_independent.Round3Tests.test_stream_private_dns_rejected) ... ERROR
+test_stream_redirect_never_followed (test_round3_independent.Round3Tests.test_stream_redirect_never_followed) ... ERROR
+test_unsafe_request_body_not_used (test_round3_independent.Round3Tests.test_unsafe_request_body_not_used) ... ERROR
+
+======================================================================
+ERROR: test_acceptance_candidate_gallery_never_passes (test_round3_independent.Round3Tests.test_acceptance_candidate_gallery_never_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 124, in test_acceptance_candidate_gallery_never_passes
+    self.assertEqual('PARTIAL',capture.pilot_acceptance(self.store,self.root)['status'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_acceptance_empty_is_partial (test_round3_independent.Round3Tests.test_acceptance_empty_is_partial)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 115, in test_acceptance_empty_is_partial
+    report=capture.pilot_acceptance(self.store,self.root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_acceptance_error_is_blocked (test_round3_independent.Round3Tests.test_acceptance_error_is_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 119, in test_acceptance_error_is_blocked
+    self.assertEqual('BLOCKED',capture.pilot_acceptance(self.store,self.root)['status'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_output_catalog_rejected (test_round3_independent.Round3Tests.test_output_catalog_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 113, in test_output_catalog_rejected
+    with self.assertRaises(RuntimeError): capture.checked_output(repo/'catalog')
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'checked_output'
+
+======================================================================
+ERROR: test_stream_chunked_limited_read (test_round3_independent.Round3Tests.test_stream_chunked_limited_read)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 163, in test_stream_chunked_limited_read
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_compression_rejected_before_body (test_round3_independent.Round3Tests.test_stream_compression_rejected_before_body)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 151, in test_stream_compression_rejected_before_body
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_mixed_dns_rejected (test_round3_independent.Round3Tests.test_stream_mixed_dns_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 141, in test_stream_mixed_dns_rejected
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_oversize_header_before_body (test_round3_independent.Round3Tests.test_stream_oversize_header_before_body)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 157, in test_stream_oversize_header_before_body
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_private_dns_rejected (test_round3_independent.Round3Tests.test_stream_private_dns_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 136, in test_stream_private_dns_rejected
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_redirect_never_followed (test_round3_independent.Round3Tests.test_stream_redirect_never_followed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 145, in test_stream_redirect_never_followed
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_unsafe_request_body_not_used (test_round3_independent.Round3Tests.test_unsafe_request_body_not_used)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 132, in test_unsafe_request_body_not_used
+    with patch('capture.fetch_image',return_value=b'bad') as fetch:
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'fetch_image'
+
+======================================================================
+FAIL: test_atomic_parent_symlink_rejected (test_round3_independent.Round3Tests.test_atomic_parent_symlink_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 99, in test_atomic_parent_symlink_rejected
+    with self.assertRaises(RuntimeError): storage.atomic_bytes(link/'report',b'x')
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_atomic_predictable_temp_symlink_not_followed (test_round3_independent.Round3Tests.test_atomic_predictable_temp_symlink_not_followed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 95, in test_atomic_predictable_temp_symlink_not_followed
+    self.assertEqual(b'old',victim.read_bytes())
+AssertionError: b'old' != b'new'
+
+======================================================================
+FAIL: test_db_captured_missing_flags_rejected (test_round3_independent.Round3Tests.test_db_captured_missing_flags_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 69, in test_db_captured_missing_flags_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_payload_foreign_url_rejected (test_round3_independent.Round3Tests.test_db_payload_foreign_url_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 57, in test_db_payload_foreign_url_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_pending_metadata_only_cannot_have_media (test_round3_independent.Round3Tests.test_db_pending_metadata_only_cannot_have_media)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 73, in test_db_pending_metadata_only_cannot_have_media
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_row_foreign_slug_rejected (test_round3_independent.Round3Tests.test_db_row_foreign_slug_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 61, in test_db_row_foreign_slug_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_sale_flag_true_rejected (test_round3_independent.Round3Tests.test_db_sale_flag_true_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 65, in test_db_sale_flag_true_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_dimension_contradictory_sizes_rejected (test_round3_independent.Round3Tests.test_dimension_contradictory_sizes_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 173, in test_dimension_contradictory_sizes_rejected
+    self.assertEqual('UNVERIFIED_PARSE',parsing.parse_dimensions('35x45 см; Ширина: 90 см Высота: 100 см')['status'])
+AssertionError: 'UNVERIFIED_PARSE' != 'PARSED_NEEDS_SELLER_CONFIRMATION'
+- UNVERIFIED_PARSE
++ PARSED_NEEDS_SELLER_CONFIRMATION
+
+
+======================================================================
+FAIL: test_dimension_decimal_not_silently_integer (test_round3_independent.Round3Tests.test_dimension_decimal_not_silently_integer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 170, in test_dimension_decimal_not_silently_integer
+    self.assertEqual('UNVERIFIED_PARSE',parsing.parse_dimensions('Ширина: 35,5 см Высота: 45 см')['status'])
+AssertionError: 'UNVERIFIED_PARSE' != 'PARSED_NEEDS_SELLER_CONFIRMATION'
+- UNVERIFIED_PARSE
++ PARSED_NEEDS_SELLER_CONFIRMATION
+
+
+======================================================================
+FAIL: test_discovery_allowlist_at_write_boundary (test_round3_independent.Round3Tests.test_discovery_allowlist_at_write_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 128, in test_discovery_allowlist_at_write_boundary
+    self.assertEqual([],self.store.urls())
+AssertionError: Lists differ: [] != [('https://flowwow.com/flowers/foreign/', 'x')]
+
+Second list contains 1 additional elements.
+First extra element 0:
+('https://flowwow.com/flowers/foreign/', 'x')
+
+- []
++ [('https://flowwow.com/flowers/foreign/', 'x')]
+
+======================================================================
+FAIL: test_export_rejects_post_preflight_foreign_discovery (test_round3_independent.Round3Tests.test_export_rejects_post_preflight_foreign_discovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 90, in test_export_rejects_post_preflight_foreign_discovery
+    with self.assertRaises(PilotGuardError): capture.export(SimpleNamespace(output=str(self.root)))
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_export_takes_exclusive_lock (test_round3_independent.Round3Tests.test_export_takes_exclusive_lock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 83, in test_export_takes_exclusive_lock
+    with self.assertRaises(RuntimeError): capture.export(SimpleNamespace(output=str(self.root)))
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_path_length_fail_before_write (test_round3_independent.Round3Tests.test_path_length_fail_before_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 110, in test_path_length_fail_before_write
+    with self.assertRaises(RuntimeError): storage.atomic_bytes(long,b'x')
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_pin_allowed_urls_must_match (test_round3_independent.Round3Tests.test_pin_allowed_urls_must_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 78, in test_pin_allowed_urls_must_match
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_replacement_baseline_sku_rejected (test_round3_independent.Round3Tests.test_replacement_baseline_sku_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 48, in test_replacement_baseline_sku_rejected
+    with self.assertRaises(PilotGuardError): self.check_manifest()
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_replacement_pending_sku_rejected (test_round3_independent.Round3Tests.test_replacement_pending_sku_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 44, in test_replacement_pending_sku_rejected
+    with self.assertRaises(PilotGuardError): self.check_manifest()
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_store_hardlink_rejected (test_round3_independent.Round3Tests.test_store_hardlink_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 107, in test_store_hardlink_rejected
+    with self.assertRaises(RuntimeError): Store(link)
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_store_symlink_rejected_before_wal (test_round3_independent.Round3Tests.test_store_symlink_rejected_before_wal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/aromatny-flowwow-public-audit/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 103, in test_store_symlink_rejected_before_wal
+    with self.assertRaises(RuntimeError): Store(link)
+AssertionError: RuntimeError not raised
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.234s
+
+FAILED (failures=18, errors=11)
+{
+  "recorded_products": 0,
+  "browser_captured": 0,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 1,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpr2aqxztf/review/report.html
+{
+  "recorded_products": 0,
+  "browser_captured": 0,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmp44eaylm1/review/report.html

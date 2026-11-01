@@ -11,6 +11,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlsplit
 
+EXACT_SLUGS = ("avtorskiy-buket-s-gortenz-3168", "buket-gortenziy-23", "buket-gortenziy-pionov-roz-eus")
+PINNED_PUBLIC_BLOB = "b1ba9fbe10b7961d35a723d40af01686a0e10b78"
 SHOP = "https://flowwow.com/shop/lyubov-eto-699e0e4519/"
 _ALLOWED_KINDS = ("BASELINE_GAPS", "BASELINE_GAPS", "PENDING_SELLER_VERIFIED_METADATA_ONLY")
 _PRODUCT_PATH = re.compile(r"^/flowers/([a-z0-9_-]+)/$")
@@ -50,7 +52,14 @@ def read_pilot_manifest(path: Path, snapshot: dict, *, expected_public_commit: s
     Validate against a frozen 66-SKU snapshot, never a mixture of moving branches.
     The caller must separately verify the snapshot came from expected_public_commit.
     """
-    raw = Path(path).read_bytes()
+    with open(path, "rb") as file:
+        raw = file.read(64_001)
+    try:
+        decoded_baseline = json.loads(baseline_bytes.decode("utf-8"), object_pairs_hook=_distinct_json_pairs)
+    except (ValueError, UnicodeError) as exc:
+        raise PilotGuardError("Invalid baseline bytes") from exc
+    if decoded_baseline != snapshot:
+        raise PilotGuardError("Parsed baseline differs from hashed baseline bytes")
     if len(raw) > 64_000:
         raise PilotGuardError("Pilot manifest too large")
     try:
@@ -92,7 +101,7 @@ def read_pilot_manifest(path: Path, snapshot: dict, *, expected_public_commit: s
         if not isinstance(item, dict):
             raise PilotGuardError("Pilot target must be an object")
         slug = _exact_product_url(item.get("url"))
-        if slug != item.get("slug") or slug in seen:
+        if slug != EXACT_SLUGS[i] or slug != item.get("slug") or slug in seen:
             raise PilotGuardError("Pilot target slug mismatch or duplicate")
         if item.get("kind") != _ALLOWED_KINDS[i]:
             raise PilotGuardError("Unexpected pilot target role or order")
@@ -108,7 +117,25 @@ def read_pilot_manifest(path: Path, snapshot: dict, *, expected_public_commit: s
 def verify_pilot_db(store, targets: list[tuple[str, str]], manifest_sha: str) -> None:
     """Reject wrong previous run in same output directory; never reset/delete it."""
     authorized = {url for url, _ in targets}
+    for table, limit in (("pages",3),("discovery",3),("assets",120),("events",10000)):
+        if store.db.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0] > limit:
+            raise PilotGuardError("Pilot database row budget exceeded: "+table)
+    if store.db.execute("SELECT COUNT(*) FROM pages WHERE length(result_json)>2000000").fetchone()[0] or store.db.execute("SELECT COUNT(*) FROM events WHERE length(detail_json)>64000").fetchone()[0]:
+        raise PilotGuardError("Pilot database payload budget exceeded")
+    if store.db.execute("PRAGMA quick_check").fetchall() != [("ok",)]:
+        raise PilotGuardError("SQLite integrity check failed")
     rows = store.db.execute("SELECT url FROM pages").fetchall()
+    for url, slug, status, payload in store.db.execute("SELECT url,slug,status,result_json FROM pages"):
+        item = json.loads(payload)
+        if not isinstance(item, dict) or slug != url.rstrip("/").split("/")[-1]:
+            raise PilotGuardError("Inconsistent page row identity")
+        if item.get("url", url) != url or item.get("slug", slug) != slug:
+            raise PilotGuardError("Inconsistent captured payload identity")
+        for flag in ("owner_approved", "may_order", "may_show_publicly"):
+            if (status == "CAPTURED" and item.get(flag) is not False) or (flag in item and item[flag] is not False):
+                raise PilotGuardError("Unsafe or missing captured sale flags")
+        if status == "CAPTURED" and (item.get("url") != url or item.get("slug") != slug):
+            raise PilotGuardError("Missing captured identity")
     if any(row[0] not in authorized for row in rows):
         raise PilotGuardError("Output DB contains an unrelated SKU: use a new output directory")
     # A previous non-pilot run can leave unrelated discovery/media behind even
@@ -117,11 +144,21 @@ def verify_pilot_db(store, targets: list[tuple[str, str]], manifest_sha: str) ->
     if any(url not in authorized for (url,) in foreign_discovery):
         raise PilotGuardError("Output DB contains discovery from an unrelated SKU")
     allowed_slugs = {url.rstrip("/").split("/")[-1] for url in authorized}
+    for url,slug,sha,path,size,width,height,status in store.asset_rows():
+        if status not in ("NEW_ORIGINAL_FILE","BASELINE_HASH_MATCH") or not re.fullmatch(r"[0-9a-f]{64}",sha):
+            raise PilotGuardError("Invalid pilot asset evidence")
+        if not (64<=size<=18*1024*1024 and 480<=width<=6000 and 480<=height<=6000):
+            raise PilotGuardError("Invalid pilot asset size")
+        if (status=="BASELINE_HASH_MATCH" and path is not None) or (status=="NEW_ORIGINAL_FILE" and (not isinstance(path,str) or not path.startswith(f"new-media/{slug}/"))):
+            raise PilotGuardError("Invalid pilot asset path ownership")
     foreign_assets = store.db.execute("SELECT slug FROM assets").fetchall()
     if any(slug not in allowed_slugs for (slug,) in foreign_assets):
         raise PilotGuardError("Output DB contains media from an unrelated SKU")
+    if any(slug == EXACT_SLUGS[2] for (slug,) in foreign_assets):
+        raise PilotGuardError("Third target is metadata only; media forbidden")
     guards = store.db.execute("SELECT detail_json FROM events WHERE kind='PILOT_ALLOWLIST_PIN'").fetchall()
-    if any(json.loads(row[0]).get("manifest_sha256") != manifest_sha for row in guards):
+    if any(json.loads(row[0]).get("manifest_sha256") != manifest_sha or
+           json.loads(row[0]).get("allowed_urls") != [u for u, _ in targets] for row in guards):
         raise PilotGuardError("Output DB belongs to a different pilot manifest")
     sessions = store.db.execute("SELECT COUNT(*) FROM events WHERE kind='SESSION_START'").fetchone()[0]
     if sessions and not guards:
@@ -130,3 +167,14 @@ def verify_pilot_db(store, targets: list[tuple[str, str]], manifest_sha: str) ->
         store.event("PILOT_ALLOWLIST_PIN", {"manifest_sha256": manifest_sha,
                                            "allowed_urls": [u for u, _ in targets],
                                            "scope": "EXACT_THREE_ONLY"})
+
+
+def verify_pilot_export(store):
+    """Revalidate the stored scope on every export, without re-pinning a new run."""
+    guards = store.db.execute("SELECT detail_json FROM events WHERE kind='PILOT_ALLOWLIST_PIN'").fetchall()
+    if guards:
+        pin = json.loads(guards[0][0])
+        targets = [(f"https://flowwow.com/flowers/{s}/", f"PILOT_EXACT_{i}") for i, s in enumerate(EXACT_SLUGS, 1)]
+        verify_pilot_db(store, targets, pin["manifest_sha256"])
+        return targets
+    return None

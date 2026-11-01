@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "shop_url": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "safe_to_publish": false,
+  "may_order": false,
+  "owner_approved": false,
+  "baseline_public": {
+    "repo": "tophqru/aromatny-flowwow-public-audit",
+    "commit": "864f6e222ea58cfed063f6594f896edb67ed8e7f",
+    "git_blob_sha": "b1ba9fbe10b7961d35a723d40af01686a0e10b78"
+  },
+  "private_reference": {
+    "repo": "tophqru/flower-shop",
+    "commit": "ac74ac06983eff5b4cdd72e8cd11433baf1d7240"
+  },
+  "exact_trial": [
+    {
+      "slug": "avtorskiy-buket-s-gortenz-3168",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/",
+      "kind": "BASELINE_GAPS"
+    },
+    {
+      "slug": "buket-gortenziy-23",
+      "url": "https://flowwow.com/flowers/buket-gortenziy-23/",
+      "kind": "BASELINE_GAPS"
+    },
+    {
+      "slug": "buket-gortenziy-pionov-roz-eus",
+      "url": "https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/",
+      "kind": "PENDING_SELLER_VERIFIED_METADATA_ONLY"
+    }
+  ]
+}

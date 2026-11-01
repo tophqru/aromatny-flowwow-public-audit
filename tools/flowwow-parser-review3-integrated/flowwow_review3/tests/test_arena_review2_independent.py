@@ -277,10 +277,12 @@ class SecurityTests(unittest.TestCase):
             get = Mock(return_value=resp)
             context = SimpleNamespace(request=SimpleNamespace(get=get))
             args = SimpleNamespace(max_gallery_assets=10, pause_min=0, pause_max=0)
-            results = capture.download_assets(context, store, args, "buket-example",
-                                              [IMG], {"products": []}, out)
+            with patch('capture.fetch_image',side_effect=RuntimeError('IMAGE_STATUS_301_NO_REDIRECTS')) as fetch:
+                results = capture.download_assets(context, store, args, "buket-example",
+                                                  [IMG], {"products": []}, out)
             store.close()
-            self.assertEqual(get.call_count, 1)
+            self.assertEqual(fetch.call_count, 1)
+            get.assert_not_called()
             self.assertEqual(results[0]["status"], "UNVERIFIED_DOWNLOAD_ERROR")
             self.assertFalse(list(out.glob("new-media/**/*")))
 

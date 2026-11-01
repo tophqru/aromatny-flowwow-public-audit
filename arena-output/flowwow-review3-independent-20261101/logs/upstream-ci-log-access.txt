@@ -1,0 +1,13 @@
+Attempt: gh run view 41277920189 --log
+Result: failed to get run log; redirected download at results-receiver.actions.githubusercontent.com returned EOF.
+The sandbox's allowed network hosts do not include that host.
+Full upstream CI console log: NOT_RETRIEVED (do not treat metadata as console inspection).
+Job metadata successfully obtained with:
+  gh api repos/tophqru/aromatny-flowwow-public-audit/actions/jobs/124763765942
+See upstream-ci-job.json. All steps report success, head_sha 6313dcd1efa068c3ee011d8ccead8796dffbf60f.
+Independent local reproduction, not CI's declared count, establishes 104 initial passing tests.
+
+Private source verification attempted with:
+  gh api repos/tophqru/flower-shop/commits/74dcb841dd5bb8555a8aa4817870a8c1cf8db65a
+Result: HTTP 403, Resource not accessible by integration.
+Private pilot blob equality: NOT_VERIFIED. No private files/credentials fetched or published.
