@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "new_skus": [],
+  "new_sku_count": 0,
+  "reason_ru": "Ни один из 55 кандидатов не подтверждён точным переходом к canonical seller в этом запуске; четыре прежних metadata-only товара не стали новыми находками этого запуска.",
+  "excluded_sku_reintroduced": false,
+  "sale_flags": {
+    "owner_approved": false,
+    "may_order": false,
+    "may_show_publicly": false
+  }
+}

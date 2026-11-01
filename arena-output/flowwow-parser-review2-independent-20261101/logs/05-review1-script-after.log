@@ -1,0 +1,23 @@
+test_completed_media_need_not_be_refetched (__main__.NewSafetyTests.test_completed_media_need_not_be_refetched) ... ok
+test_correct_preexisting_media_not_downloaded_again (__main__.NewSafetyTests.test_correct_preexisting_media_not_downloaded_again) ... ok
+test_corrupt_preexisting_media_halts_without_network (__main__.NewSafetyTests.test_corrupt_preexisting_media_halts_without_network) ... ok
+test_export_detects_corrupt_new_media (__main__.NewSafetyTests.test_export_detects_corrupt_new_media) ... ok
+test_failed_media_is_rechecked_during_full_run (__main__.NewSafetyTests.test_failed_media_is_rechecked_during_full_run) ... ok
+test_good_media_is_verified (__main__.NewSafetyTests.test_good_media_is_verified) ... ok
+test_media_recheck_respects_explicit_max_assets (__main__.NewSafetyTests.test_media_recheck_respects_explicit_max_assets) ... ok
+test_path_traversal_database_asset_is_rejected (__main__.NewSafetyTests.test_path_traversal_database_asset_is_rejected) ... ok
+test_powershell_propagates_nonzero_capture_status (__main__.NewSafetyTests.test_powershell_propagates_nonzero_capture_status) ... ok
+test_recovery_link_cannot_redirect_to_other_product (__main__.NewSafetyTests.test_recovery_link_cannot_redirect_to_other_product) ... ok
+test_trial_without_media_is_rechecked_during_full_run (__main__.NewSafetyTests.test_trial_without_media_is_rechecked_during_full_run) ... ok
+test_unexpected_ports_are_rejected (__main__.NewSafetyTests.test_unexpected_ports_are_rejected) ... ok
+test_unverified_seller_is_not_auto_downloaded (__main__.NewSafetyTests.test_unverified_seller_is_not_auto_downloaded) ... ok
+test_crawl_revisits_trial_capture_for_media (__main__.ResumeIntegrationTests.test_crawl_revisits_trial_capture_for_media) ... 1: BASELINE_66: https://flowwow.com/flowers/buket-example/
+ok
+test_dont_revisit_completed_capture (__main__.ResumeIntegrationTests.test_dont_revisit_completed_capture) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.062s
+
+OK
+Finished batch: 1 products attempted; data in /tmp/tmpapdtd901
+Finished batch: 0 products attempted; data in /tmp/tmp5a_ncsbi

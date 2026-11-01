@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "photos": [],
+  "new_photo_count": 0,
+  "new_media_bytes": 0,
+  "reason_ru": "Интерактивного браузера нет; новые оригинальные URL и байты не собирались. Существующие 435 JPEG не скачивались и не переупаковывались.",
+  "deduplication_baseline": {
+    "existing_source_urls": 435,
+    "existing_sha256": 426,
+    "ordered_media_manifest_sha256": "311b81746be498a7e825cbb3843ed67eb651304b70718a6cc59a1f670727e9d9"
+  }
+}

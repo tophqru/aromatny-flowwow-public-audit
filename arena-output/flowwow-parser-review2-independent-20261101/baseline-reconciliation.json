@@ -1,0 +1,75 @@
+{
+  "base_branch": "audit/chatgpt-description-recovery-20261031",
+  "base_commit": "864f6e222ea58cfed063f6594f896edb67ed8e7f",
+  "seller": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "sku_count": 66,
+  "gallery_url_count": 435,
+  "local_jpeg_count": 435,
+  "local_jpeg_bytes": 49614983,
+  "composition_present": 59,
+  "description_present": 36,
+  "valid_dimension_pairs": 54,
+  "missing_composition": 7,
+  "missing_description": 30,
+  "missing_dimensions": 12,
+  "missing_field_values_total": 49,
+  "gap_sku_count": 30,
+  "gap_skus": [
+    "avtorskiy-buket-s-gortenz-3168",
+    "avtorskiy-buket-roza-alst-8286",
+    "buket-gortenziy-23",
+    "buket-iz-kustovoy-pionovi-3287",
+    "buket-gortenzii-roza-pionovidn",
+    "buket-iz-roz-kustovoy-pio-6913",
+    "avtorskiy-buketik-dlya-tebya-r",
+    "kompoziciya-v-korzine-astra-po",
+    "buketik-premium-v-korzine",
+    "cve-7264",
+    "buket-astr-osennih",
+    "kompoziciya-v-korzine-rom-4151",
+    "buket-aromatniy-pion-evkalipt-",
+    "kompoziciya-v-shlyapnoy-k-7428",
+    "kompoziciya-v-shlyapnoy-k-6842",
+    "kompoziciya-v-shlyapnoy-k-7637",
+    "kompoziciya-v-shlyapnoy-k-8804",
+    "kompoziciya-roza-pionovidnaya-",
+    "buket-hrizantem-mattiola-romas",
+    "avtorskiy-buket-9444",
+    "buket-sezon-6869",
+    "buket-astr-67892",
+    "avtorskiy-buket-24579",
+    "avtorskiy-buketik-roza-go-1029",
+    "buket-siciliya-6909",
+    "avtorskiy-buket-7186",
+    "avtorskiy-buket-gortenzii-3341",
+    "avtorskiy-buket-roza-mattiola-",
+    "avtorskiy-buket-67899",
+    "buket-peryshko"
+  ],
+  "seller_verified_pending_gallery": 4,
+  "indexed_unverified_candidates": 55,
+  "quarantined_candidates": [
+    "avtorskiy-buketik-francuzskaya",
+    "avtorskiy-buketik-pion-go-1251"
+  ],
+  "owner_excluded_slug": "kompoziciya-v-shlyapnoy-k-4183",
+  "owner_excluded_present_in_snapshot": false,
+  "permission_values": {
+    "owner_approved": [
+      "False"
+    ],
+    "may_order": [
+      "False"
+    ],
+    "may_show_publicly": [
+      "False"
+    ]
+  },
+  "live_flowwow_pages_opened": 0,
+  "live_categories_opened": 0,
+  "live_seller_clicks": 0,
+  "live_show_more_clicks": 0,
+  "new_media_saved": 0,
+  "automatic_sale_approvals": 0,
+  "status": "OFFLINE_BASELINE_RECONCILED_LIVE_NOT_PERFORMED"
+}

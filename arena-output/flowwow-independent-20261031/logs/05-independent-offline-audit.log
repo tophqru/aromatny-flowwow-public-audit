@@ -1,0 +1,44 @@
+utc=2026-10-31T22:43:15.048591+00:00
+command=["/home/user/.arena-audit-venv/bin/python", "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/audit_offline.py"]
+--- output ---
+{
+  "result": "PASS_OFFLINE_AUDIT_WITH_FINDINGS",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_head": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "counts": {
+    "baseline_sku": 66,
+    "baseline_sku_checked_offline": 66,
+    "live_flowwow_product_pages_opened": 0,
+    "existing_jpeg_checked": 435,
+    "existing_jpeg_bytes": 49614983,
+    "valid_compositions": 59,
+    "valid_original_descriptions": 36,
+    "valid_dimension_pairs": 54,
+    "missing_compositions": 7,
+    "missing_descriptions": 30,
+    "missing_or_unusable_dimension_pairs": 12,
+    "unique_skus_with_any_field_gap": 30,
+    "total_missing_field_values": 49,
+    "newly_recovered_fields": 0,
+    "new_photos": 0,
+    "new_confirmed_skus": 0,
+    "indexed_candidates_reviewed": 55,
+    "indexed_candidates_independently_seller_confirmed": 0,
+    "indexed_candidates_other_seller_confirmed": 0,
+    "indexed_candidates_unverified": 55,
+    "prior_seller_verified_metadata_only": 4,
+    "prior_verified_galleries_completed": 0,
+    "quarantined_candidates": 2,
+    "confirmed_abandoned_drafts": 0,
+    "baseline_categories_inventoried_offline": 7,
+    "categories_fully_traversed_live": 0,
+    "show_more_clicks": 0,
+    "exact_seller_link_clicks_this_run": 0,
+    "sale_permissions_enabled": 0,
+    "excluded_sku_reintroduced": false
+  },
+  "findings": 16,
+  "no_write": false
+}
+
+--- exit_code=0 ---

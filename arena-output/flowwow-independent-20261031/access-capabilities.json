@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-10-31T22:45:20+00:00",
+  "public_source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_branch_sha_observed": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "official_arena_github_connector": "unsupported",
+  "preconfigured_git_gh_available": true,
+  "repository_is_public": true,
+  "github_api_permissions_observed": {
+    "pull": true,
+    "push": true,
+    "triage": true
+  },
+  "credentials_requested_in_chat": false,
+  "credential_values_recorded": false,
+  "interactive_browser_available": false,
+  "live_flowwow_http_requests_this_run": 0,
+  "live_flowwow_product_pages_opened_this_run": 0,
+  "show_more_clicks_this_run": 0,
+  "canonical_seller_link_clicks_this_run": 0,
+  "previous_zip_files_found_in_workspace": 0,
+  "previous_zip_comparison": "NOT_PERFORMED_NO_ZIP_PRESENT",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "branch_note": "Arena session branch is fixed by the environment. The full task permits an Agent Mode-created branch; no additional branch was created or renamed.",
+  "intended_delivery": "One Draft PR in the public repository, base audit/chatgpt-description-recovery-20261031, changes only under arena-output/flowwow-independent-20261031/. No auto-merge.",
+  "github_actions_workflow_dispatch": "HTTP_403_RESOURCE_NOT_ACCESSIBLE_BY_INTEGRATION",
+  "github_actions_workflow_dispatch_bypass_attempted": false
+}

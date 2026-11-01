@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "recoveries": [],
+  "newly_recovered_field_count": 0,
+  "reason_ru": "Все проверенные точные тексты и размеры из доступных evidence уже присутствуют в source. Новых достоверных значений без живой сверки не получено. Конфликт 23/35 пионов не разрешён автоматически.",
+  "existing_fields_consistency_checked": {
+    "descriptions": 36,
+    "dimension_pairs": 54,
+    "dedicated_saved_composition_observations": 48
+  },
+  "policy": "No invented descriptions, compositions, dimensions, prices, stock, or permissions; SOURCE_NOT_VISIBLE is not SOURCE_CONFIRMED_EMPTY."
+}

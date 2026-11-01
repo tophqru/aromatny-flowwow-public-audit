@@ -1,0 +1,9 @@
+utc=2026-10-31T22:34:41.523172+00:00
+cwd=/home/user/.arena-audit-tmp/source-coverage-retry
+command=["/home/user/.arena-audit-venv/bin/python", "/home/user/.arena-audit-tmp/source-coverage-retry/scripts/report_source_field_gaps.py"]
+reason=Retry with scripts/ subdirectory because original verifier resolves symlinks before deriving ROOT.
+--- output ---
+{"validation": "PASS_SOURCE_STRUCTURE", "catalog_completion": "INCOMPLETE", "counts": {"products": 66, "composition_complete": 59, "description_complete": 36, "dimensions_complete": 54}}
+INCOMPLETE source fields: inspect source-field-coverage.json; SUCCESS is not catalog completion.
+
+--- exit_code=0 ---

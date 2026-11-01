@@ -1,0 +1,10 @@
+audit_date_utc=2026-10-31T22:32:46Z
+source_branch=audit/chatgpt-description-recovery-20261031
+source_sha=f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048
+working_branch=arena/ccb3137a-aromatny-flowwow-public-audit
+Python 3.11.2
+Pillow=11.3.0
+git version 2.39.5
+gh version 2.23.0 (2023-02-27 Debian 2.23.0+dfsg1-1)
+existing_media_files=435
+previous_zip_files_in_home=0

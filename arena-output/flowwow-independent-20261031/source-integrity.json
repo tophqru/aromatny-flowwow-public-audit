@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-10-31T22:43:14+00:00",
+  "source_repository": "https://github.com/tophqru/aromatny-flowwow-public-audit",
+  "source_branch": "audit/chatgpt-description-recovery-20261031",
+  "source_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "working_branch": "arena/ccb3137a-aromatny-flowwow-public-audit",
+  "working_head_at_audit": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+  "audit_method": "OFFLINE_PUBLIC_GITHUB_FILES",
+  "live_flowwow_verification": "NOT_PERFORMED",
+  "interactive_browser_available": false,
+  "catalog_git_tree": "fe667ba7e4745dc9d6679013e89f37fe5f5a4e93",
+  "media_git_tree": "e775b74898826e1f9c45d7370b6bebd247295a3e",
+  "snapshot_sha256": "18a1741ff949547bc52ba21550814784e214150f371790d5cc780c53d7416360",
+  "index_sha256": "a9437645f4dd239b4464e83f88c72a1dce2a263a36256e297c83f0d79027e81f",
+  "task_sha256": "21b892169815f224b5b1a3e5f58b1799b57c496df75e4c17bcad82cb98bf002c",
+  "protected_paths_changed_vs_source": [],
+  "protected_worktree_changes": [],
+  "untracked_protected_files": [],
+  "remote_github_media_tree_check": {
+    "checked_at_utc": "2026-10-31T22:37:23.600423+00:00",
+    "command": [
+      "gh",
+      "api",
+      "repos/tophqru/aromatny-flowwow-public-audit/git/trees/f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048?recursive=1"
+    ],
+    "repository": "tophqru/aromatny-flowwow-public-audit",
+    "requested_tree_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+    "remote_tree_sha": "f1e717fda918ce4ca8ccba9d4e8dc5ab7ab8f048",
+    "remote_tree_truncated": false,
+    "remote_media_blob_count": 435,
+    "local_source_media_blob_count": 435,
+    "path_sets_equal": true,
+    "all_media_blob_oids_equal": true,
+    "image_bytes_downloaded": 0,
+    "mismatched_paths": []
+  },
+  "previous_zip_files_found": 0,
+  "existing_image_bytes_downloaded": 0
+}

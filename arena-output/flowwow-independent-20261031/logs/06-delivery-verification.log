@@ -1,0 +1,6 @@
+utc=2026-10-31T22:48:39.730263+00:00
+command=["/home/user/.arena-audit-venv/bin/python", "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-independent-20261031/scripts/verify_delivery.py"]
+--- output ---
+{"result": "PASS_DELTA_DELIVERY_CHECKS", "output_json_files": 13, "baseline_sku": 66, "indexed_candidates": 55, "new_photos": 0, "privacy_pattern_scan": "PASS", "sha256sums": "NOT_PRESENT", "protected_source_changes": 0, "sale_permissions_enabled": 0}
+
+--- exit_code=0 ---
