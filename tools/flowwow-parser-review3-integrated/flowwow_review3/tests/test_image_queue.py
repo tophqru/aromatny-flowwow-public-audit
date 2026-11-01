@@ -24,6 +24,24 @@ class ImageQueueTests(unittest.TestCase):
         for r in routes:queue.admit(r)
         queue.finished(object())
         routes[3].continue_.assert_not_called()
+    def test_cancelled_queued_request_is_never_dispatched_later(self):
+        queue=ImageQueue(limit=1);active,cancelled,next_live=[route() for _ in range(3)]
+        for r in (active,cancelled,next_live):queue.admit(r)
+        # Closing a seller popup can fail requests before their queued route runs.
+        queue.finished(cancelled.request)
+        queue.finished(active.request)
+        cancelled.continue_.assert_not_called()
+        next_live.continue_.assert_called_once()
+        self.assertEqual(queue.active,{next_live.request})
+    def test_all_queued_requests_can_cancel_without_occupying_slots(self):
+        queue=ImageQueue();routes=[route() for _ in range(9)]
+        for r in routes:queue.admit(r)
+        for r in routes[3:]:queue.finished(r.request)
+        self.assertEqual(queue.snapshot()['queued'],0)
+        for r in routes[:3]:queue.finished(r.request)
+        self.assertEqual(queue.snapshot()['inflight'],0)
+        self.assertEqual(queue.snapshot()['started'],3)
+        for r in routes[3:]:r.continue_.assert_not_called()
     def test_failed_dispatch_releases_slot_without_retry(self):
         queue=ImageQueue();bad=route();bad.continue_.side_effect=RuntimeError('closed')
         queue.admit(bad)

@@ -8,6 +8,7 @@ class ImageQueue:
         self.dispatch=dispatch or (lambda route:route.continue_())
         self.active=set();self.pending=deque();self.closed=False
         self.peak=0;self.started=0;self.completed=0;self.errors=0;self._draining=False
+        self.cancelled_queued=0
 
     def admit(self,route):
         if self.closed:
@@ -30,13 +31,21 @@ class ImageQueue:
         finally:self._draining=False
 
     def finished(self,request):
-        if request not in self.active:return
+        if request not in self.active:
+            # A navigation/closed popup can cancel a request while its route is
+            # still deferred. Dispatching it later would consume a slot with no
+            # future completion event, starving live gallery requests.
+            before=len(self.pending)
+            self.pending=deque(route for route in self.pending if route.request is not request)
+            self.cancelled_queued+=before-len(self.pending)
+            return
         self.active.remove(request);self.completed+=1
         self._drain()
 
     def snapshot(self):
         return {'limit':self.limit,'peak_inflight':self.peak,'inflight':len(self.active),
-                'queued':len(self.pending),'started':self.started,'completed':self.completed,'dispatch_errors':self.errors}
+                'queued':len(self.pending),'started':self.started,'completed':self.completed,'dispatch_errors':self.errors,
+                'cancelled_queued':self.cancelled_queued}
 
     def close(self,*_):
         self.closed=True;self.pending.clear();self.active.clear()
