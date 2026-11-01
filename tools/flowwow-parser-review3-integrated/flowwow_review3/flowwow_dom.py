@@ -50,6 +50,8 @@ def observed_sections(html):
                 result[field]['parser_text']='\n'.join(re.sub(r'^(Ширина|Высота)\s+-\s+(\d+)\s+см$',r'\1: \2 см',v) for v in values)
         else:result[field]=absent('MISSING_OR_AMBIGUOUS_OBSERVED_BLOCK')
     blocks=root.select('.product-properties-general-desktop > .property-item')
+    if not blocks:
+        result['description']={'status':'NOT_PRESENT_IN_SOURCE','text':None,'reason':'NO_DESKTOP_DESCRIPTION_BLOCK_IN_OBSERVED_LAYOUT'}
     if len(blocks)==1 and not blocks[0].select('h1,h2,h3'):
         values=blocks[0].select('.pre-line')
         if len(values)==1:
@@ -63,6 +65,7 @@ def navigation_allowed(url, allowed, shop):
     return url in set(allowed) | {shop,shop+'?from=product'}
 
 def wait_layout_ready(page):
+    page.bring_to_front()
     page.wait_for_selector(MAIN+'.swiper-initialized',state='visible',timeout=60000)
 
 def observe_ui(page,url,out,blocked):
@@ -99,11 +102,14 @@ def observe_ui(page,url,out,blocked):
         if thumb.count()!=1:raise blocked('OBSERVED_ADAPTER_THUMBNAIL_NOT_UNIQUE')
         thumb.click(timeout=7000)
         try:
+            # Lazy images must be in the actual viewport. A CSS-visible
+            # carousel may still be below the seller/expanded sections.
+            main.scroll_into_view_if_needed(timeout=7000)
             page.wait_for_function('''({selector,index})=>{
               const img=document.querySelector(selector);
               return img && img.closest('.swiper-slide').getAttribute('data-swiper-slide-index')===String(index)
                 && img.complete && img.naturalWidth>=480 && img.naturalHeight>=480;
-            }''',arg={'selector':ACTIVE,'index':index},timeout=frame_wait_budget(started,time.monotonic()))
+            }''',arg={'selector':ACTIVE,'index':index},polling=250,timeout=frame_wait_budget(started,time.monotonic()))
         except Exception as exc:
             guard()
             progress['failure']={'stage':'IMAGE_DECODE_WAIT','index':index,'error_type':type(exc).__name__}

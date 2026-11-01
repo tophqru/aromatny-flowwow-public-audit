@@ -16,6 +16,8 @@ from capture import click_seller_link
 from flowwow_dom import frame_wait_budget, GalleryObservationError
 import capture
 from storage import Store
+from bs4 import BeautifulSoup
+from pilot_targets import EXACT_SLUGS
 
 FIXTURE='''<div class="product-detail"><h1>Allowed product</h1>
 <div class="right-content"><div class="properties">
@@ -27,6 +29,24 @@ FIXTURE='''<div class="product-detail"><h1>Allowed product</h1>
 </div><aside><h3>Состав</h3><p>Wrong product - 99 шт.</p></aside>'''
 
 class ObservedDOMTests(unittest.TestCase):
+    def test_absent_description_distinct_from_ambiguous_description(self):
+        soup=BeautifulSoup(FIXTURE,'html.parser')
+        soup.select_one('.product-properties-general-desktop').decompose()
+        self.assertEqual(observed_sections(str(soup))['description']['status'],'NOT_PRESENT_IN_SOURCE')
+
+    def test_acceptance_allows_only_observed_seller_query_without_rewriting_raw_url(self):
+        with tempfile.TemporaryDirectory() as folder:
+            store=Store(Path(folder)/'db')
+            try:
+                slug=EXACT_SLUGS[0];url=f'https://flowwow.com/flowers/{slug}/'
+                for final,valid in ((SHOP,True),(SHOP+'?from=product',True),(SHOP+'?from=other',False)):
+                    payload={'url':url,'slug':slug,'seller':{'status':'EXACT_SELLER_CLICK_VERIFIED','clicked':True,'final_url':final}}
+                    store.record_page(url,slug,'BASELINE_GAPS','CAPTURED',payload)
+                    report=capture.pilot_acceptance(store,Path(folder))
+                    self.assertEqual('SELLER_NOT_PROVEN' not in report['targets'][0]['missing_evidence'],valid)
+                    self.assertEqual(__import__('json').loads(store.page_rows()[0][5])['seller']['final_url'],final)
+                    self.assertNotEqual(report['status'],'PASS')
+            finally:store.close()
     def test_slow_frame_wait_has_per_frame_and_total_bounds(self):
         self.assertEqual(frame_wait_budget(10,10),90000)
         self.assertEqual(frame_wait_budget(10,160),30000)

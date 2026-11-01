@@ -18,7 +18,7 @@ def pilot_acceptance(store, out):
             p = json.loads(row[5])
             seller = p.get('seller', {})
             if (seller.get('status') != 'EXACT_SELLER_CLICK_VERIFIED' or
-                    seller.get('clicked') is not True or seller.get('final_url') != SHOP):
+                    seller.get('clicked') is not True or seller.get('final_url') not in (SHOP, SHOP+'?from=product')):
                 missing.append('SELLER_NOT_PROVEN')
             if p.get('url') != url or p.get('slug') != slug or p.get('page',{}).get('final_url') != url:
                 missing.append('PRODUCT_IDENTITY_NOT_PROVEN')
