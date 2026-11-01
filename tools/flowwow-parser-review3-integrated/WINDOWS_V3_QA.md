@@ -49,3 +49,35 @@ seller/gallery proof, new photos, catalog completeness or import readiness is
 claimed. Slow connectivity remains a separate consideration; the structural
 challenge evidence is what triggered the stop. CI status must be read from
 the PR checks, separately from these actual ASUS results.
+
+## Owner-resumed pilot on stable Russian connection
+
+The owner later configured Edge for Russian sites and explicitly resumed work.
+A separate Edge profile returned RU from a public routing diagnostic (IP not
+recorded). The permitted first product then loaded without a challenge; no
+protective page was solved or modified. No further network switching was done.
+
+The real desktop DOM required a narrow adapter: one .product-detail without
+main, label-less desktop description, scoped composition/size, visible show-more,
+unique indexed thumbnails, and exclusion of Swiper loop clones. The seller
+guard admits only the observed canonical shop query ?from=product.
+
+One strict 3-SKU run was executed using Windows PowerShell 5.1, --skip-shop,
+fresh isolated SQLite and the checked dedicated browser profile. No media
+download flag. Second and third products were seller-click verified and each
+had all six displayed 1000x1000 frames clicked and decoded by the browser.
+Their composition and dimensions were captured; third description stayed
+unverified. The first seller click was initially not observed within 1s.
+After a bounded delayed-popup fix, a single --retry-failed run skipped the two
+CAPTURED products. The first reached the gallery wait but timed out (25s).
+Intermediate evidence was not persisted as a successful first capture.
+See ARENA_TARGETED_FIRST_SKU.md for a focused offline repair task; no more live
+visits were attempted. Machine acceptance remains unmodified; crawl/export
+returned 5 in both runs, and the first ERROR keeps overall acceptance BLOCKED.
+
+Final suite after the adapter and separately gated Phase-2 proposal:
+**194/194 PASS**, 0 fail/error/skip; compileall exit 0. Phase-2 negative gate
+tests make zero requests and its positive JPEG test uses mocked transport.
+No real Phase-2 download was authorized or executed. The first-pilot third-SKU
+metadata-only guard remains unchanged. Maximum resolution beyond the actual
+displayed 1000x1000 sources remains unproven, as does full catalog completeness.
