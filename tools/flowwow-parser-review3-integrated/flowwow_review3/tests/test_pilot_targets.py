@@ -142,6 +142,27 @@ class TestPilot(unittest.TestCase):
             s.record_page('https://flowwow.com/flowers/unrelated/','unrelated','x','CAPTURED',{})
             with self.assertRaises(PilotGuardError):verify_pilot_db(s,rows,sha)
         finally:s.close()
+    def test_db_rejects_foreign_discovery_even_without_pages(self):
+        rows, sha = self.check()
+        s = self._store()
+        try:
+            s.discover("https://flowwow.com/flowers/unrelated/", "other", "TEST")
+            with self.assertRaises(PilotGuardError):
+                verify_pilot_db(s, rows, sha)
+        finally:
+            s.close()
+
+    def test_db_rejects_foreign_media_even_without_pages(self):
+        rows, sha = self.check()
+        s = self._store()
+        try:
+            s.record_asset("unrelated", "https://content.flowwow-images.com/123.jpg",
+                           "0" * 64, None, 100, 500, 500, "NEW_ORIGINAL_FILE")
+            with self.assertRaises(PilotGuardError):
+                verify_pilot_db(s, rows, sha)
+        finally:
+            s.close()
+
     def test_prior_non_pilot_session_rejected(self):
         rows,sha=self.check(); s=self._store()
         try:
