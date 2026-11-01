@@ -99,12 +99,13 @@ class TestPilot(unittest.TestCase):
             baseline={'seller':'https://flowwow.com/shop/lyubov-eto-699e0e4519/','products':base['products']}
             seen=[]
             def record(_page,_ctx,_db,_args,_baseline,url,*rest):seen.append(url)
-            with patch('capture.load_source',return_value=(baseline,[],{'mode':'MOCK'})), \
+            with patch('capture.load_source',return_value=(base,[],{'mode':'MOCK','sha256':hashlib.sha256(raw).hexdigest()})), \
+                 patch('capture.PINNED_PUBLIC_BLOB',m['baseline_public']['git_blob_sha']), \
                  patch('capture.load_playwright',return_value=lambda:FakePlaywright()), \
-                 patch('capture.launch_context',return_value=SimpleNamespace(pages=[object()],close=Mock())), \
+                 patch('capture.launch_context',return_value=SimpleNamespace(pages=[object()],close=Mock(),route=Mock())), \
                  patch('capture.gentle_wait',return_value=None), \
                  patch('capture.record_product',side_effect=record):
-                self.assertEqual(0,capture.crawl(args))
+                self.assertEqual(5,capture.crawl(args))  # batch is not three verified cards
             self.assertEqual([p['url'] for p in m['exact_trial']],seen)
 
     def test_crawl_rejects_unrelated_prior_database_before_browser(self):
@@ -125,7 +126,8 @@ class TestPilot(unittest.TestCase):
                 max_products=3,max_categories=1,browser='chromium',skip_shop=True,download_new_media=False,
                 max_gallery_assets=30,recheck_unverified=False,pause_min=0,pause_max=0)
             baseline={'seller':'https://flowwow.com/shop/lyubov-eto-699e0e4519/','products':self.snapshot['products']}
-            with patch('capture.load_source',return_value=(baseline,[],{'mode':'MOCK'})), \
+            with patch('capture.load_source',return_value=(self.snapshot,[],{'mode':'MOCK','sha256':hashlib.sha256(raw).hexdigest()})), \
+                 patch('capture.PINNED_PUBLIC_BLOB',m['baseline_public']['git_blob_sha']), \
                  patch('capture.load_playwright') as launch:
                 with self.assertRaises(PilotGuardError):capture.crawl(args)
                 launch.assert_not_called()

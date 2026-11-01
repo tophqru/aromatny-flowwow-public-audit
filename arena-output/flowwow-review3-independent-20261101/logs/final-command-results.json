@@ -1,0 +1,106 @@
+{
+  "at_utc": "2026-11-01T06:22:29.144036+00:00",
+  "commands": [
+    {
+      "command": [
+        "/home/user/audit-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.957,
+      "log": "baseline-tests-deps.log"
+    },
+    {
+      "command": [
+        "/home/user/audit-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests",
+        "-p",
+        "test_round3_independent.py",
+        "-v"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "duration_seconds": 1.005,
+      "log": "final-independent-before.log"
+    },
+    {
+      "command": [
+        "/home/user/audit-venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "tools/flowwow-parser-review3-integrated/flowwow_review3"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.052,
+      "log": "compileall.log"
+    },
+    {
+      "command": [
+        "/home/user/audit-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/flowwow-parser-review3-integrated/flowwow_review3/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 1.918,
+      "log": "final-all-tests.log"
+    },
+    {
+      "command": [
+        "/home/user/audit-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/flowwow-parser-review3-integrated/flowwow_review3/tests",
+        "-p",
+        "test_round3_independent.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 1.231,
+      "log": "final-independent-after.log"
+    },
+    {
+      "command": [
+        "/home/user/audit-venv/bin/python",
+        "-S",
+        "tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py",
+        "doctor"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.069,
+      "log": "doctor-no-deps.json"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "6313dcd1efa068c3ee011d8ccead8796dffbf60f"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "duration_seconds": 0.009,
+      "log": "diff-check.log"
+    }
+  ]
+}

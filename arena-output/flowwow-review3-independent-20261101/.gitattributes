@@ -1,0 +1,2 @@
+# Unified-diff context uses a single space even on blank source lines.
+changes.patch -whitespace

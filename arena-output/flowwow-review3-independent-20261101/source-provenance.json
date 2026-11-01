@@ -1,0 +1,103 @@
+{
+  "review3_commit": "6313dcd1efa068c3ee011d8ccead8796dffbf60f",
+  "review2_commit": "2c6c79251be07355d5d6b864a1e48b73ec6a8cb6",
+  "review2_source_comparison": [
+    {
+      "file": ".gitignore",
+      "review2_blob": "bb53c89e03ee589c658f31e8dc4356baa59ab04c",
+      "review3_initial_blob": "bb53c89e03ee589c658f31e8dc4356baa59ab04c",
+      "identical": true
+    },
+    {
+      "file": "capture.py",
+      "review2_blob": "849776bce0184c66752b3024ca03297071af4a28",
+      "review3_initial_blob": "ec1e382c0a52d6c69f1aa455005a6b53892370cf",
+      "identical": false
+    },
+    {
+      "file": "category_logic.py",
+      "review2_blob": "290684592df3490349c7ddd269c6ffd54c805fd5",
+      "review3_initial_blob": "290684592df3490349c7ddd269c6ffd54c805fd5",
+      "identical": true
+    },
+    {
+      "file": "parsing.py",
+      "review2_blob": "94c82d5e2530c67a17dec1aeaecef08c146240c7",
+      "review3_initial_blob": "94c82d5e2530c67a17dec1aeaecef08c146240c7",
+      "identical": true
+    },
+    {
+      "file": "requirements.txt",
+      "review2_blob": "7e6e2b16389d39855342dd84de69b410d9c995d3",
+      "review3_initial_blob": "7e6e2b16389d39855342dd84de69b410d9c995d3",
+      "identical": true
+    },
+    {
+      "file": "run_full.ps1",
+      "review2_blob": "2542e270971f095a4197d0b83705e00f91fe0aa1",
+      "review3_initial_blob": "2542e270971f095a4197d0b83705e00f91fe0aa1",
+      "identical": true
+    },
+    {
+      "file": "run_trial.ps1",
+      "review2_blob": "c4c85c993f84837c5a9e13fdd5c307b007399a81",
+      "review3_initial_blob": "c4c85c993f84837c5a9e13fdd5c307b007399a81",
+      "identical": true
+    },
+    {
+      "file": "scroll_logic.py",
+      "review2_blob": "bdb3dddfb39cdc315462fa786b3a6c6193128ab3",
+      "review3_initial_blob": "bdb3dddfb39cdc315462fa786b3a6c6193128ab3",
+      "identical": true
+    },
+    {
+      "file": "setup_windows.ps1",
+      "review2_blob": "2f7b274a608c1de44c05714b70500619a2f0461d",
+      "review3_initial_blob": "2f7b274a608c1de44c05714b70500619a2f0461d",
+      "identical": true
+    },
+    {
+      "file": "storage.py",
+      "review2_blob": "d95e9dd806a7862dbff096b133ec829f5973a8b9",
+      "review3_initial_blob": "d95e9dd806a7862dbff096b133ec829f5973a8b9",
+      "identical": true
+    },
+    {
+      "file": "tests/test_arena_review2_independent.py",
+      "review2_blob": "aecd6a2254892decc17d6bf92ed5e0cf28cac58b",
+      "review3_initial_blob": "aecd6a2254892decc17d6bf92ed5e0cf28cac58b",
+      "identical": true
+    },
+    {
+      "file": "tests/test_capture.py",
+      "review2_blob": "c670bae56f16c469ade3784757f1feea0707c1a1",
+      "review3_initial_blob": "c670bae56f16c469ade3784757f1feea0707c1a1",
+      "identical": true
+    },
+    {
+      "file": "tests/test_category_logic.py",
+      "review2_blob": "4507d363c253c8b784bebb5a466ecab60adeb6da",
+      "review3_initial_blob": "4507d363c253c8b784bebb5a466ecab60adeb6da",
+      "identical": true
+    },
+    {
+      "file": "tests/test_review1.py",
+      "review2_blob": "2323eee49a1a42ac878e48aea42b1085f31736cf",
+      "review3_initial_blob": "2323eee49a1a42ac878e48aea42b1085f31736cf",
+      "identical": true
+    },
+    {
+      "file": "tests/test_scroll_logic.py",
+      "review2_blob": "7aaeb65d968e1bc0b96ad58be7aebf10c5ced959",
+      "review3_initial_blob": "7aaeb65d968e1bc0b96ad58be7aebf10c5ced959",
+      "identical": true
+    }
+  ],
+  "identical_files": 14,
+  "total_comparable_files": 15,
+  "baseline_commit": "864f6e222ea58cfed063f6594f896edb67ed8e7f",
+  "baseline_commit_blob": "b1ba9fbe10b7961d35a723d40af01686a0e10b78",
+  "baseline_worktree_blob": "b1ba9fbe10b7961d35a723d40af01686a0e10b78",
+  "private_pilot_source": "NOT_VERIFIED_HTTP_403_Resource_not_accessible_by_integration",
+  "private_source_commit": "74dcb841dd5bb8555a8aa4817870a8c1cf8db65a"
+}

@@ -168,7 +168,14 @@ def parse_composition(raw: str | None) -> dict:
 
 def parse_dimensions(raw: str | None) -> dict:
     if not raw: return {"status":"SOURCE_NOT_VISIBLE","width_cm":None,"height_cm":None,"raw":raw}
+    if re.search(r"\d[.,]\d|\d\s*(?:мм|mm)\b|[-−]\s*\d", raw, re.I):
+        return {"status":"UNVERIFIED_PARSE","width_cm":None,"height_cm":None,"raw":raw}
     matches=SIZE_RE.findall(raw)
+    widths=re.findall(r"\bширина\s*[:–-]?\s*(\d{1,3})\s*(?:см|cm)?\b",raw,re.I)
+    heights=re.findall(r"\bвысота\s*[:–-]?\s*(\d{1,3})\s*(?:см|cm)?\b",raw,re.I)
+    if len(matches)==1 and (widths or heights):
+        if len(widths)>1 or len(heights)>1 or (widths and int(widths[0])!=int(matches[0][0])) or (heights and int(heights[0])!=int(matches[0][1])):
+            return {"status":"UNVERIFIED_PARSE","width_cm":None,"height_cm":None,"raw":raw}
     if len(matches)!=1:
         widths=re.findall(r"\bширина\s*[:–-]?\s*(\d{1,3})\s*(?:см|cm)?\b",raw,re.I)
         heights=re.findall(r"\bвысота\s*[:–-]?\s*(\d{1,3})\s*(?:см|cm)?\b",raw,re.I)

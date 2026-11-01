@@ -144,6 +144,9 @@ class ValidationTests(unittest.TestCase):
   x["dimensions"]["status"]="PARSED_NEEDS_SELLER_CONFIRMATION"
   x["source_sections"]["description"]["status"]="SOURCE_SECTION_TEXT_CAPTURED"
   x["gallery"]["status"]="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS"
+  self.assertTrue(needs_source_recheck(x))  # DOM candidates are still incomplete
+  x["gallery"]["status"]="ALL_GALLERY_FRAMES_OBSERVED"
+  x["ui_evidence"]={"sections_expanded":True}
   self.assertFalse(needs_source_recheck(x))
  def test_network_block_stops_before_dom(self):
   class BrokenPage:
@@ -168,8 +171,12 @@ class ValidationTests(unittest.TestCase):
    response=SimpleNamespace(ok=False,status=403,headers={},body=lambda:b'')
    ctx=SimpleNamespace(request=Mock(get=Mock(return_value=response)))
    args=SimpleNamespace(max_gallery_assets=10,pause_min=0,pause_max=0)
-   with self.assertRaises(BrowserBlocked):download_assets(ctx,s,args,'buket-xyz',[u1,u2],baseline(),Path(d))
-   self.assertEqual(ctx.request.get.call_count,1)
+   from unittest.mock import patch
+   import capture
+   with patch('capture.fetch_image',side_effect=capture.MediaAccessBlocked('403')) as fetch:
+    with self.assertRaises(BrowserBlocked):download_assets(ctx,s,args,'buket-xyz',[u1,u2],baseline(),Path(d))
+   self.assertEqual(fetch.call_count,1)
+   ctx.request.get.assert_not_called()
    s.close()
  def test_atomic_replace_failure_leaves_old_file(self):
   from unittest.mock import patch
@@ -195,7 +202,9 @@ class ValidationTests(unittest.TestCase):
    response=SimpleNamespace(ok=True,status=200,headers={'content-type':'image/jpeg'},body=lambda:payload)
    ctx=SimpleNamespace(request=Mock(get=Mock(return_value=response)))
    args=SimpleNamespace(max_gallery_assets=10,pause_min=0,pause_max=0)
-   result=download_assets(ctx,s,args,'buket-xyz',[u],baseline(),Path(d))
+   from unittest.mock import patch
+   with patch('capture.fetch_image',return_value=payload):
+    result=download_assets(ctx,s,args,'buket-xyz',[u],baseline(),Path(d))
    self.assertEqual(result[0]['status'],'NEW_ORIGINAL_FILE')
    self.assertEqual(len(list((Path(d)/'new-media'/'buket-xyz').glob('*.jpg'))),1)
    s.close()

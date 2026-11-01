@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import contextlib
 import hashlib
 import io
 import json
@@ -19,15 +20,18 @@ import time
 import urllib.request
 from pathlib import Path
 from urllib.parse import quote
-from pilot_targets import PilotGuardError, read_pilot_manifest, verify_pilot_db
+from pilot_targets import (PilotGuardError, read_pilot_manifest, verify_pilot_db,
+                           verify_pilot_export, EXACT_SLUGS, PINNED_PUBLIC_BLOB)
+from acceptance import pilot_acceptance
 _IMPORT_ERROR = None
 try:
     from PIL import Image, UnidentifiedImageError
+    from media_transport import fetch_image, MediaAccessBlocked
     from parsing import (SHOP, canonical_product, canonical_shop, detect_challenge,
                          extract_sections, gallery_candidates, shop_item_links,
                          visible_seller_links, parse_composition, parse_dimensions,
                          image_url_safe, same_shop_url)
-    from storage import Store, exclusive_run_lock, atomic_json, atomic_bytes, utc_now
+    from storage import Store, exclusive_run_lock, atomic_json, atomic_bytes, utc_now, safe_local_path
     from scroll_logic import expand_shop_conservatively
     from category_logic import discover_category_labels
 except ImportError as exc:  # pragma: no cover - exercised by doctor without site-packages
@@ -60,12 +64,36 @@ class LocalIntegrityError(RuntimeError): pass
 def sha_bytes(data:bytes)->str:return hashlib.sha256(data).hexdigest()
 
 
+def bounded_local_bytes(path, limit):
+    with open(safe_local_path(Path(path)), "rb") as file:
+        data=file.read(limit+1)
+    if len(data)>limit:raise LocalIntegrityError("LOCAL_FILE_SIZE_LIMIT_EXCEEDED")
+    return data
+
+
+def media_sha(path):
+    safe_local_path(path)
+    if path.stat().st_size>MAX_BYTES:raise LocalIntegrityError("LOCAL_MEDIA_TOO_LARGE")
+    value=hashlib.sha256()
+    with open(path,"rb") as file:
+        total=0
+        while True:
+            chunk=file.read(64*1024)
+            if not chunk:break
+            total+=len(chunk)
+            if total>MAX_BYTES:raise LocalIntegrityError("LOCAL_MEDIA_TOO_LARGE")
+            value.update(chunk)
+    return value.hexdigest()
+
+
 def public_gh_json(path:str)->tuple[dict,str]:
     # Official public GitHub Contents API, no auth, no scraping of private URLs.
     url=f"https://api.github.com/repos/{REPO}/contents/{path}?ref={quote(BASE_BRANCH,safe='')}"
     req=urllib.request.Request(url,headers={"Accept":"application/vnd.github+json","User-Agent":"AromatnyOwnStoreReadOnly/1.0"})
     with urllib.request.urlopen(req,timeout=25) as resp:
-        envelope=json.load(resp)
+        raw=resp.read(15*1024*1024+1)
+        if len(raw)>15*1024*1024:raise RuntimeError("GitHub response too large")
+        envelope=json.loads(raw)
     if envelope.get("encoding")!="base64" or not isinstance(envelope.get("content"),str):
         raise RuntimeError("Public GitHub response has unexpected format; cannot safely continue")
     data=base64.b64decode(envelope["content"])
@@ -76,8 +104,9 @@ def public_gh_json(path:str)->tuple[dict,str]:
 def load_source(out:Path,baseline_file:str|None,offline:bool=False)->tuple[dict,list[dict],dict]:
     cache=out/"cache";cache.mkdir(parents=True,exist_ok=True)
     if baseline_file:
-        snapshot=json.loads(Path(baseline_file).read_text(encoding="utf-8"))
-        origin={"mode":"SUPPLIED_LOCAL_JSON","file":str(baseline_file),"sha256":sha_bytes(Path(baseline_file).read_bytes())}
+        raw=bounded_local_bytes(baseline_file,10*1024*1024)
+        snapshot=json.loads(raw.decode("utf-8"))
+        origin={"mode":"SUPPLIED_LOCAL_JSON","file":str(baseline_file),"sha256":sha_bytes(raw)}
     else:
         path=cache/"public-snapshot.json"
         if not offline:
@@ -88,6 +117,7 @@ def load_source(out:Path,baseline_file:str|None,offline:bool=False)->tuple[dict,
             except Exception as e:
                 if not path.exists():raise RuntimeError(f"Cannot fetch public source and no offline cache: {type(e).__name__}: {e}")
                 print("WARNING: Using cached snapshot; public GitHub read failed:",type(e).__name__,file=sys.stderr)
+                snapshot=json.loads(bounded_local_bytes(path,10*1024*1024).decode("utf-8"))
         else:
             if not path.exists():raise RuntimeError("No cached baseline; run once online or pass --baseline")
             snapshot=json.loads(path.read_text(encoding="utf-8"))
@@ -137,7 +167,8 @@ def needs_source_recheck(result: dict) -> bool:
             or result.get("composition",{}).get("status")!="PARSED_NEEDS_SELLER_CONFIRMATION"
             or result.get("dimensions",{}).get("status")!="PARSED_NEEDS_SELLER_CONFIRMATION"
             or result.get("source_sections",{}).get("description",{}).get("status")!="SOURCE_SECTION_TEXT_CAPTURED"
-            or result.get("gallery",{}).get("status")!="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS")
+            or result.get("gallery",{}).get("status")!="ALL_GALLERY_FRAMES_OBSERVED"
+            or result.get("ui_evidence",{}).get("sections_expanded") is not True)
 
 
 def needs_media_capture(result: dict, max_assets: int, out: Path | None = None) -> bool:
@@ -166,7 +197,7 @@ def needs_media_capture(result: dict, max_assets: int, out: Path | None = None) 
                 continue
             if not target.is_file():
                 continue
-            if r.get("sha256") and sha_bytes(target.read_bytes()) != r["sha256"]:
+            if r.get("sha256") and media_sha(target) != r["sha256"]:
                 continue
         done.add(r.get("source_url"))
     return any(url not in done for url in expected)
@@ -174,6 +205,7 @@ def needs_media_capture(result: dict, max_assets: int, out: Path | None = None) 
 
 def safe_new_media_path(out: Path, relative: str) -> Path:
     """Never let a manipulated progress database reference a file outside output/new-media."""
+    safe_local_path(out / relative)
     output_root = out.resolve()
     media_root = (out / "new-media").resolve()
     target = (out / relative).resolve()
@@ -190,10 +222,12 @@ def verify_local_media(out: Path, assets: list[tuple]) -> int:
             continue
         if not path:
             raise LocalIntegrityError("NEW_MEDIA_RECORD_HAS_NO_PATH")
+        if not path.startswith(f"new-media/{slug}/"):
+            raise LocalIntegrityError("MEDIA_PATH_BELONGS_TO_DIFFERENT_SKU")
         target = safe_new_media_path(out, path)
         if not target.is_file() or target.stat().st_size != byte_count:
             raise LocalIntegrityError("MISSING_OR_TRUNCATED_LOCAL_MEDIA:" + slug)
-        if sha_bytes(target.read_bytes()) != sha:
+        if media_sha(target) != sha:
             raise LocalIntegrityError("LOCAL_MEDIA_SHA256_MISMATCH:" + slug)
         verified += 1
     return verified
@@ -223,8 +257,9 @@ def load_playwright():
 
 def browser_profile(out:Path)->Path:
     parent=Path(os.environ.get("LOCALAPPDATA",str(Path.home())))
-    profile=(parent/"AromatnyFlowwowCapture"/"BrowserProfile").resolve()
-    if profile.is_relative_to(out.resolve()) or profile.is_relative_to(ROOT.resolve()):
+    profile=safe_local_path(parent/"AromatnyFlowwowCapture"/"BrowserProfile")
+    repo=next((p for p in ROOT.parents if (p/".git").exists()), ROOT)
+    if profile.is_relative_to(out.resolve()) or profile.is_relative_to(repo):
         raise RuntimeError("Refusing to store browser session inside output or source folder")
     profile.mkdir(parents=True,exist_ok=True)
     return profile
@@ -232,7 +267,7 @@ def browser_profile(out:Path)->Path:
 
 def launch_context(p,args,out:Path):
     options={"headless":False,"viewport":{"width":1280,"height":900},"accept_downloads":False,
-             "service_workers":"allow","timeout":40000}
+             "service_workers":"block","timeout":40000}
     # No stealth args / proxy / fingerprint spoofing / remote debugging of user's normal Chrome profile.
     profile=browser_profile(out)
     if args.browser=="chromium":
@@ -312,7 +347,7 @@ def collect_shop(page,store:Store,args,snapshot:dict)->list[dict]:
                 continue
         observed=expand_shop(page,args,store,category)
         result.append(observed)
-        if observed.get('stop_reason')=='MORE_CONTROL_NAVIGATED_OUTSIDE_SHOP':
+        if observed.get('stop_reason') in ('MORE_CONTROL_NAVIGATED_OUTSIDE_SHOP','MORE_CONTROL_OPENED_NEW_TAB'):
             raise BrowserBlocked('Show-more control navigated outside canonical shop; stop')
         gentle_wait(args)
     return result
@@ -360,17 +395,20 @@ def click_seller_link(page,url_before:str)->dict:
     except Exception as e:
         out={"status":"UNVERIFIED","reason":"CLICK_FAILED:"+type(e).__name__,"clicked":False}
     finally:
-        if popup is not None:
-            try:popup.close()
-            except Exception:pass
+        for opened in list(context.pages) if context is not None else []:
+            if opened not in pages_before:
+                try:opened.close()
+                except Exception:pass
         # Returning to known URL is safer than browser.back() after SPA navigation.
         navigate(page,url_before)
     return out
 
 
 def download_assets(context,store:Store,args,slug:str,source_urls:list[str],baseline:dict,out:Path)->list[dict]:
-    by_url={x["source_url"]:x for p in baseline["products"] for x in p.get("gallery",[])}
-    by_hash={x["sha256"]:x for p in baseline["products"] for x in p.get("gallery",[])}
+    if getattr(store, "allowed_urls", None) is not None and slug == EXACT_SLUGS[2]:
+        raise PilotGuardError("Third pilot target is metadata only")
+    by_url={x["source_url"]:x for p in baseline["products"] if p.get("slug")==slug for x in p.get("gallery",[])}
+    by_hash={x["sha256"]:x for p in baseline["products"] if p.get("slug")==slug for x in p.get("gallery",[])}
     results=[]
     for i,url in enumerate(source_urls[:args.max_gallery_assets],1):
         safe_url=image_url_safe(url)
@@ -389,22 +427,22 @@ def download_assets(context,store:Store,args,slug:str,source_urls:list[str],base
             if path:
                 existing_file = safe_new_media_path(out, path)
                 if existing_file.exists():
-                    if existing_file.stat().st_size != bytes_n or sha_bytes(existing_file.read_bytes()) != sha:
+                    if existing_file.stat().st_size != bytes_n or media_sha(existing_file) != sha:
                         raise LocalIntegrityError("LOCAL_MEDIA_SHA256_MISMATCH:" + slug)
                     results.append({"order":i,"source_url":url,"status":"ALREADY_CAPTURED","sha256":sha,"relative_path":path});continue
         gentle_wait(args)
         try:
-            response=context.request.get(url,timeout=30000,max_redirects=0)
-            if response.status in (401,403,429):raise BrowserBlocked(f"Image CDN refused access: {response.status}; stop")
-            if not response.ok:raise RuntimeError(f"IMAGE_STATUS_{response.status}")
-            size_header=response.headers.get("content-length")
-            if size_header and int(size_header)>MAX_BYTES:raise RuntimeError("IMAGE_TOO_LARGE")
-            data=response.body()
+            try:
+                data=fetch_image(url,MAX_BYTES)
+            except MediaAccessBlocked as exc:
+                raise BrowserBlocked(str(exc)) from exc
             if not (64<=len(data)<=MAX_BYTES):raise RuntimeError("IMAGE_SIZE_OUT_OF_RANGE")
             with Image.open(io.BytesIO(data)) as im:
                 image_type=(im.format or "").upper();width,height=im.size
                 if width>6000 or height>6000 or width*height>36_000_000:
                     raise RuntimeError("IMAGE_PIXEL_LIMIT_EXCEEDED")
+                if getattr(im, "n_frames", 1) != 1:
+                    raise RuntimeError("ANIMATED_PRODUCT_MEDIA_FORBIDDEN")
                 im.verify()
             if image_type not in ("JPEG","PNG","WEBP") or width<480 or height<480:
                 raise RuntimeError("IMAGE_NOT_HIGH_RES_PRODUCT_MEDIA")
@@ -417,7 +455,7 @@ def download_assets(context,store:Store,args,slug:str,source_urls:list[str],base
             ext={"JPEG":"jpg","PNG":"png","WEBP":"webp"}[image_type]
             relative=f"new-media/{slug}/{i:03d}-{sha[:12]}.{ext}"
             path=safe_new_media_path(out,relative)
-            if path.exists() and sha_bytes(path.read_bytes())!=sha:raise LocalIntegrityError("SAVED_ASSET_CONFLICT:" + slug)
+            if path.exists() and media_sha(path)!=sha:raise LocalIntegrityError("SAVED_ASSET_CONFLICT:" + slug)
             if not path.exists():atomic_bytes(path,data)
             store.record_asset(slug,url,sha,relative,len(data),width,height,"NEW_ORIGINAL_FILE")
             results.append({"order":i,"source_url":url,"status":"NEW_ORIGINAL_FILE","relative_path":relative,
@@ -443,6 +481,13 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     # Seller click/return may redirect to a *different* product. Never mix galleries or names.
     if canonical_product(page.url) != url:
         raise BrowserBlocked("PRODUCT_URL_CHANGED_AFTER_SELLER_CLICK_OR_RETURN")
+    if seller.get("status") != "EXACT_SELLER_CLICK_VERIFIED":
+        rejected={"url":url,"slug":slug,"seller":seller,"owner_approved":False,
+            "may_order":False,"may_show_publicly":False,"publication_status":"NOT_APPROVED",
+            "reason":"SELLER_NOT_PROVEN_NO_PRODUCT_FIELDS_OR_MEDIA_IMPORTED"}
+        store.record_page(url,slug,category,"SELLER_UNVERIFIED",rejected)
+        store.event("PRODUCT_SELLER_UNVERIFIED",{"url":url})
+        return rejected
     # Seller click may navigate/re-render, so capture DOM a second time if it did.
     if seller.get("clicked"):
         dom=page.content();sections=extract_sections(dom)
@@ -458,7 +503,12 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
             "source_method":"ACTUAL_VISIBLE_BROWSER_DOM","owner_approved":False,"may_order":False,"may_show_publicly":False,
             "publication_status":"NOT_APPROVED","image_downloads":[],
             "limitations":["Live seller stock/price and review images are not verified by this conservative extractor."]}
-    if args.download_new_media and seller.get("status")=="EXACT_SELLER_CLICK_VERIFIED" and gallery["status"]=="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS":
+    result["ui_evidence"]={"sections_expanded":False,"description_clicks":"NOT_PROVEN",
+        "composition_clicks":"NOT_PROVEN","gallery_frame_clicks":"NOT_PROVEN",
+        "delayed_spa_ready":"NOT_PROVEN","reason":"No live validated DOM action contract; candidate extraction only"}
+    if (getattr(store,"allowed_urls",None) is not None and slug == EXACT_SLUGS[2]):
+        result["media_policy"]="METADATA_ONLY_NO_DOWNLOAD"
+    elif args.download_new_media and seller.get("status")=="EXACT_SELLER_CLICK_VERIFIED" and gallery["status"]=="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS":
         result["image_downloads"]=download_assets(context,store,args,slug,gallery["items"],baseline,out)
     # Save one product transaction immediately; no modified source catalog.
     store.record_page(url,slug,category,"CAPTURED",result)
@@ -466,9 +516,78 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     return result
 
 
+def configure_pilot_navigation(context, allowed):
+    """Abort unauthorized document redirects/popups before fetching their body.
+
+    This is not a DOM selector or access bypass. Subresources remain browser-managed.
+    """
+    def guard(route):
+        request=route.request
+        if request.resource_type == "document" and request.url not in allowed | {SHOP}:
+            route.abort("blockedbyclient")
+        else:
+            route.continue_()
+    context.route("**/*",guard)
+
+
+def checked_output(value):
+    out = safe_local_path(Path(value).expanduser())
+    # Existing repository catalog/source is never a legal output, including aliases.
+    repo = next((p for p in ROOT.parents if (p/".git").exists()), None)
+    allowed_default = ROOT/"output"
+    if out == ROOT or ROOT.is_relative_to(out) or (repo and out.is_relative_to(repo) and not out.is_relative_to(allowed_default)):
+        raise RuntimeError("OUTPUT_OVERLAPS_PROTECTED_REPOSITORY")
+    if len(str(out)) > 140:
+        raise RuntimeError("OUTPUT_PATH_TOO_LONG_FOR_WINDOWS_MEDIA")
+    return out
+
+
+def check_pilot_files(args, baseline, origin):
+    raw=bounded_local_bytes(args.baseline,10*1024*1024)
+    actual=hashlib.sha1(f"blob {len(raw)}\0".encode()+raw).hexdigest()
+    if actual != PINNED_PUBLIC_BLOB:
+        raise PilotGuardError("Baseline does not match independently pinned public blob")
+    if sha_bytes(raw) != origin.get("sha256"):
+        raise PilotGuardError("Baseline changed after loading")
+    return read_pilot_manifest(Path(args.pilot_manifest), baseline,
+        expected_public_commit="864f6e222ea58cfed063f6594f896edb67ed8e7f",
+        expected_private_commit="ac74ac06983eff5b4cdd72e8cd11433baf1d7240",baseline_bytes=raw)
+
+
+def assert_pilot_unchanged(args, manifest_sha, origin):
+    if (sha_bytes(bounded_local_bytes(args.pilot_manifest,64000)) != manifest_sha or
+            sha_bytes(bounded_local_bytes(args.baseline,10*1024*1024)) != origin.get("sha256")):
+        raise PilotGuardError("Pilot input changed after preflight; stop without further browser work")
+
+
+def blocked_pilot_report(reason):
+    return {"schema_version":1,"status":"BLOCKED","reason":reason,"automatically_approved_products":0,
+        "targets":[{"slug":s,"url":f"https://flowwow.com/flowers/{s}/","status":"BLOCKED",
+                    "missing_evidence":[reason]} for s in EXACT_SLUGS]}
+
+
+def write_acceptance(store, out, forced=None):
+    report=pilot_acceptance(store,out)
+    verify_local_media(out,store.asset_rows())
+    if forced:
+        report["status"]="BLOCKED";report["reason"]=forced
+    atomic_json(out/"review"/"pilot-acceptance.json",report)
+    return report
+
+
 def crawl(args):
-    out=Path(args.output).expanduser().resolve();out.mkdir(parents=True,exist_ok=True)
-    with exclusive_run_lock(out/"capture.lock"):
+    out=checked_output(args.output);out.mkdir(parents=True,exist_ok=True)
+    with exclusive_run_lock(out/"capture.lock"), contextlib.ExitStack() as locks:
+        is_pilot=bool(getattr(args,"pilot_manifest",None))
+        if is_pilot:
+            atomic_json(out/"pilot-run.json",{"state":"IN_PROGRESS"})
+            atomic_json(out/"review"/"pilot-acceptance.json",blocked_pilot_report("PREFLIGHT_OR_SESSION_NOT_FINISHED"))
+            if not args.baseline or out == DEFAULT_OUT or args.max_products != 3 or args.max_categories != 1:
+                raise PilotGuardError("Strict pilot requires explicit pinned baseline, isolated output and exact limits")
+        baseline,ledgers,origin=load_source(out,args.baseline,args.offline_baseline)
+        pilot_targets = None
+        if is_pilot:
+            pilot_targets, manifest_sha = check_pilot_files(args,baseline,origin)
         store=Store(out/"progress.sqlite3")
         try:
             # A previous global HTTP/network block must not turn into a crawl of
@@ -480,24 +599,26 @@ def crawl(args):
                     print("STOP: previous access block is unresolved. Do not retry automatically. After restoring permitted access, explicitly pass --retry-failed.",file=sys.stderr)
                     return 3
                 store.event("OPERATOR_RETRY_AUTHORIZED",{"previous_block_event_seq":blocked,"source":"explicit CLI --retry-failed"})
-            baseline,ledgers,origin=load_source(out,args.baseline,args.offline_baseline)
-            pilot_targets = None
-            if getattr(args, "pilot_manifest", None):
-                pilot_targets, manifest_sha = read_pilot_manifest(
-                    Path(args.pilot_manifest), baseline,
-                    expected_public_commit="864f6e222ea58cfed063f6594f896edb67ed8e7f",
-                    expected_private_commit="ac74ac06983eff5b4cdd72e8cd11433baf1d7240",
-                    baseline_bytes=Path(args.baseline).read_bytes())
+            if is_pilot:
                 verify_pilot_db(store, pilot_targets, manifest_sha)
+                store.allowed_urls={u for u,_ in pilot_targets}
+                store.allowed_media_slugs=set(EXACT_SLUGS[:2])
+                atomic_json(out/"pilot-scope.json",{"manifest_sha256":manifest_sha,"allowed_urls":[u for u,_ in pilot_targets]})
+                write_acceptance(store,out,forced="SESSION_IN_PROGRESS_OR_INTERRUPTED")
                 store.event("PILOT_PREFLIGHT_VALIDATED", {"manifest_sha256":manifest_sha,
                     "authorized_product_count":len(pilot_targets),"strict_one_store":SHOP})
             store.event("SESSION_START",{"source":origin,"browser":args.browser,"max_products":args.max_products,
                                          "strict_one_store":SHOP,"parallel_workers":1})
+            if pilot_targets is not None:
+                assert_pilot_unchanged(args,manifest_sha,origin)
+            locks.enter_context(exclusive_run_lock(browser_profile(out).parent/"profile.lock"))
             with load_playwright()() as p:
                 ctx=launch_context(p,args,out)
                 try:
+                    if is_pilot: configure_pilot_navigation(ctx,store.allowed_urls)
                     # Persistent Chromium may already have an initial blank tab.
                     page=ctx.pages[0] if ctx.pages else ctx.new_page()
+                    for extra in list(ctx.pages)[1:]:extra.close()
                     if not args.skip_shop:
                         print("OPEN SHOP",SHOP,flush=True)
                         try:collect_shop(page,store,args,baseline)
@@ -508,6 +629,8 @@ def crawl(args):
                     targets=pilot_targets if pilot_targets is not None else initial_queue(baseline,ledgers,store.urls())
                     seen=0
                     for url,kind in targets:
+                        if pilot_targets is not None:
+                            assert_pilot_unchanged(args,manifest_sha,origin)
                         if args.max_products and seen>=args.max_products:break
                         old=store.db.execute("SELECT status,result_json FROM pages WHERE url=?",(url,)).fetchone()
                         if old:
@@ -541,6 +664,14 @@ def crawl(args):
                         except Exception as e:
                             store.record_page(url,url.rstrip("/").split("/")[-1],kind,"ERROR",{"error_type":type(e).__name__},str(e)[:150])
                             store.event("PRODUCT_ERROR",{"url":url,"error_type":type(e).__name__,"detail":str(e)[:150]})
+                    if pilot_targets is not None:
+                        verify_pilot_db(store,pilot_targets,manifest_sha)
+                        report=write_acceptance(store,out)
+                        store.event("PILOT_ACCEPTANCE",{"status":report["status"]})
+                        atomic_json(out/"pilot-run.json",{"state":"FINISHED","status":report["status"]})
+                        if report["status"]!="PASS":return 5
+                    elif store.db.execute("SELECT COUNT(*) FROM pages WHERE status!='CAPTURED'").fetchone()[0]:
+                        return 5
                     store.event("SESSION_FINISHED",{"products_attempted_this_run":seen,"all_seller_categories_proven_complete":False})
                     print(f"Finished batch: {seen} products attempted; data in {out}")
                 finally:ctx.close()
@@ -549,10 +680,26 @@ def crawl(args):
 
 
 def export(args):
-    out=Path(args.output).expanduser().resolve();db_path=out/"progress.sqlite3"
+    out=checked_output(args.output)
+    with exclusive_run_lock(out/"capture.lock"):
+        return export_locked(args,out)
+
+
+def export_locked(args,out):
+    if (out/"review"/"pilot-acceptance.json").exists():
+        atomic_json(out/"review"/"pilot-acceptance.json",blocked_pilot_report("EXPORT_NOT_FINISHED"))
+    db_path=out/"progress.sqlite3"
     if not db_path.exists():raise RuntimeError("No progress database exists. Run crawl first.")
     store=Store(db_path)
     try:
+        pilot=verify_pilot_export(store)
+        if not pilot and any((out/name).exists() for name in ("pilot-run.json","pilot-scope.json","review/pilot-acceptance.json")):
+            raise PilotGuardError("Pilot output has no valid database pin; refuse non-pilot fallback")
+        if (out/"pilot-scope.json").exists():
+            scope=json.loads(safe_local_path(out/"pilot-scope.json").read_text(encoding="utf-8"))
+            pin=store.db.execute("SELECT detail_json FROM events WHERE kind='PILOT_ALLOWLIST_PIN' ORDER BY seq LIMIT 1").fetchone()
+            if not pilot or not pin or any(scope.get(k)!=json.loads(pin[0]).get(k) for k in ("manifest_sha256","allowed_urls")):
+                raise PilotGuardError("Pilot scope marker and database differ")
         products=[]
         for url,slug,cat,status,at,payload,error,attempts in store.page_rows():
             item=json.loads(payload)
@@ -570,6 +717,9 @@ def export(args):
                 "new_image_files_sha256_verified":verified_local_files,
                 "observed_discovery_links":len(discoveries),"all_categories_proven_complete":False,
                 "automatically_approved_products":0}
+        if pilot:
+            state_path=safe_local_path(out/"pilot-run.json")
+            unfinished=state_path.exists() and json.loads(state_path.read_text(encoding="utf-8")).get("state")!="FINISHED"
         review=out/"review"
         atomic_json(review/"products.json",products)
         atomic_json(review/"discovery.json",discoveries)
@@ -591,14 +741,16 @@ def export(args):
             rows.append(f'<tr><td>{url_cell}</td><td>{seller}</td><td>{comp}</td><td>{dim}</td><td>{gallery}</td></tr>')
         page='''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Ароматный букет — локальный журнал</title><style>body{font:15px/1.5 system-ui;margin:28px auto;max-width:1200px;padding:0 15px;color:#223}table{border-collapse:collapse;width:100%}th,td{padding:10px;border-bottom:1px solid #ddd;text-align:left}thead{background:#eee}tr:nth-child(2n){background:#f7f7f9}a{color:#0652a5}</style><h1>Локальный журнал Flowwow</h1><p>Это <b>не опубликованный каталог</b>. Все поля и фотографии требуют подтверждения перед импортом. Исходные продажи не изменялись.</p><table><thead><tr><th>Товар</th><th>Продавец</th><th>Состав</th><th>Размеры</th><th>Фото</th></tr></thead><tbody>'''+''.join(rows)+'''</tbody></table></html>'''
         atomic_bytes(review/"report.html",page.encode("utf-8"))
+        if pilot:
+            acceptance=write_acceptance(store,out,forced="PREVIOUS_RUN_DID_NOT_FINISH" if unfinished else None)
         print(json.dumps(counts,ensure_ascii=False,indent=2));print("Report:",review/"report.html")
     finally:store.close()
-    return 0
+    return 5 if pilot and acceptance["status"] != "PASS" else 0
 
 
 def doctor(args):
     import platform
-    report={"python":sys.version.split()[0],"os":platform.platform(),"ram_note":"For 12 GB RAM, keep one headed browser and one tab; no parallel workers.",
+    report={"python":sys.version.split()[0],"os":platform.platform(),"ram_note":"For 8 GB RAM, keep one headed browser and one tab; no parallel workers.",
             "baseline_source":f"PUBLIC {REPO} @ {BASE_BRANCH}","output":str(Path(args.output).resolve())}
     if _IMPORT_ERROR is not None:
         report["dependencies"]="MISSING"
@@ -645,6 +797,8 @@ def cli(argv=None):
         if _IMPORT_ERROR is not None:
             raise RuntimeError(f"Missing dependencies: {_IMPORT_ERROR}. Run setup_windows.ps1 or pip install -r requirements.txt")
         if args.command=="export":return export(args)
+        if not args.pilot_manifest:
+            raise PilotGuardError("This audited CLI only permits strict --pilot-manifest crawl; full catalog crawl is disabled")
         return crawl(args)
     except KeyboardInterrupt:
         print("Interrupted; previously committed SQLite records remain available",file=sys.stderr)

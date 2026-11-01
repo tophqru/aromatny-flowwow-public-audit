@@ -1,0 +1,758 @@
+Pristine source: 6313dcd1efa068c3ee011d8ccead8796dffbf60f
+Only final test_round3_independent.py copied; production source untouched.
+Expected exit: 1
+
+test_actual_pinned_baseline_and_manifest_offline_preflight (test_round3_independent.Round3IntegrationTests.test_actual_pinned_baseline_and_manifest_offline_preflight) ... ERROR
+test_corrupted_db_export_invalidates_old_acceptance (test_round3_independent.Round3IntegrationTests.test_corrupted_db_export_invalidates_old_acceptance) ... FAIL
+test_corrupted_sqlite_no_repair_or_reset (test_round3_independent.Round3IntegrationTests.test_corrupted_sqlite_no_repair_or_reset) ... ok
+test_document_redirect_blocked_before_request (test_round3_independent.Round3IntegrationTests.test_document_redirect_blocked_before_request) ... ERROR
+test_export_after_rejected_foreign_db_never_falls_back_to_nonpilot (test_round3_independent.Round3IntegrationTests.test_export_after_rejected_foreign_db_never_falls_back_to_nonpilot) ... FAIL
+test_export_cannot_upgrade_interrupted_run (test_round3_independent.Round3IntegrationTests.test_export_cannot_upgrade_interrupted_run) ... {
+  "recorded_products": 1,
+  "browser_captured": 0,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpuj981apo/work/review/report.html
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+STOP: browser access restricted. No retries or bypass attempted.
+ERROR
+test_export_scope_marker_cannot_be_downgraded (test_round3_independent.Round3IntegrationTests.test_export_scope_marker_cannot_be_downgraded) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+FAIL
+test_failed_browser_launch_invalidates_old_pass (test_round3_independent.Round3IntegrationTests.test_failed_browser_launch_invalidates_old_pass) ... FAIL
+test_global_block_stops_first_target (test_round3_independent.Round3IntegrationTests.test_global_block_stops_first_target) ... Finished batch: 3 products attempted; data in /tmp/tmposhw6g7m/work
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+STOP: browser access restricted. No retries or bypass attempted.
+ERROR
+test_invalid_manifest_never_opens_wrong_database (test_round3_independent.Round3IntegrationTests.test_invalid_manifest_never_opens_wrong_database) ... ERROR
+test_media_transport_closes_on_failure (test_round3_independent.Round3IntegrationTests.test_media_transport_closes_on_failure) ... ERROR
+test_media_transport_success_and_truncation (test_round3_independent.Round3IntegrationTests.test_media_transport_success_and_truncation) ... ERROR
+test_metadata_only_download_is_rejected_before_network (test_round3_independent.Round3IntegrationTests.test_metadata_only_download_is_rejected_before_network) ... ERROR
+test_mid_session_baseline_change_stops_next_product (test_round3_independent.Round3IntegrationTests.test_mid_session_baseline_change_stops_next_product) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+FAIL
+test_mid_session_manifest_change_stops_next_product (test_round3_independent.Round3IntegrationTests.test_mid_session_manifest_change_stops_next_product) ... Finished batch: 3 products attempted; data in /tmp/tmpx7n1b23u/work
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+FAIL
+test_other_sku_baseline_photo_never_counts_as_owned (test_round3_independent.Round3IntegrationTests.test_other_sku_baseline_photo_never_counts_as_owned) ... ERROR
+test_product_errors_cannot_return_success (test_round3_independent.Round3IntegrationTests.test_product_errors_cannot_return_success) ... Finished batch: 3 products attempted; data in /tmp/tmps4amdidp/work
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+FAIL
+test_product_unavailable_cannot_return_success (test_round3_independent.Round3IntegrationTests.test_product_unavailable_cannot_return_success) ... Finished batch: 3 products attempted; data in /tmp/tmp9egi_o29/work
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+FAIL
+test_shop_foreign_discovery_never_persisted (test_round3_independent.Round3IntegrationTests.test_shop_foreign_discovery_never_persisted) ... Finished batch: 3 products attempted; data in /tmp/tmpur3e3k1a/work
+OPEN SHOP https://flowwow.com/shop/lyubov-eto-699e0e4519/
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+FAIL
+test_symlink_wal_rejected (test_round3_independent.Round3IntegrationTests.test_symlink_wal_rejected) ... ERROR
+test_tls_connection_uses_pinned_ip_and_hostname (test_round3_independent.Round3IntegrationTests.test_tls_connection_uses_pinned_ip_and_hostname) ... ERROR
+test_unrelated_sqlite_schema_unchanged (test_round3_independent.Round3IntegrationTests.test_unrelated_sqlite_schema_unchanged) ... FAIL
+test_valid_self_signed_but_untrusted_baseline_rejected (test_round3_independent.Round3IntegrationTests.test_valid_self_signed_but_untrusted_baseline_rejected) ... ERROR
+test_animated_media_rejected_without_write (test_round3_independent.Round3RecoveryTests.test_animated_media_rejected_without_write) ... ERROR
+test_browser_profile_never_stored_under_repository (test_round3_independent.Round3RecoveryTests.test_browser_profile_never_stored_under_repository) ... FAIL
+test_failing_online_read_actually_uses_existing_cache (test_round3_independent.Round3RecoveryTests.test_failing_online_read_actually_uses_existing_cache) ... WARNING: Using cached snapshot; public GitHub read failed: OSError
+ERROR
+test_invalid_utf8_manifest_rejected (test_round3_independent.Round3RecoveryTests.test_invalid_utf8_manifest_rejected) ... ok
+test_large_baseline_is_bounded (test_round3_independent.Round3RecoveryTests.test_large_baseline_is_bounded) ... ERROR
+test_large_local_media_is_not_read_into_ram (test_round3_independent.Round3RecoveryTests.test_large_local_media_is_not_read_into_ram) ... ERROR
+test_media_path_cannot_belong_to_other_target (test_round3_independent.Round3RecoveryTests.test_media_path_cannot_belong_to_other_target) ... FAIL
+test_multiple_seller_popups_are_closed (test_round3_independent.Round3RecoveryTests.test_multiple_seller_popups_are_closed) ... FAIL
+test_no_manifest_cli_never_loads_browser (test_round3_independent.Round3RecoveryTests.test_no_manifest_cli_never_loads_browser) ... FAIL
+test_oversized_manifest_rejected (test_round3_independent.Round3RecoveryTests.test_oversized_manifest_rejected) ... ok
+test_pixel_bomb_rejected_before_decode (test_round3_independent.Round3RecoveryTests.test_pixel_bomb_rejected_before_decode) ... ERROR
+test_process_kill_releases_lock_and_keeps_committed_wal (test_round3_independent.Round3RecoveryTests.test_process_kill_releases_lock_and_keeps_committed_wal) ... ok
+test_recheck_cannot_treat_candidate_gallery_as_complete (test_round3_independent.Round3RecoveryTests.test_recheck_cannot_treat_candidate_gallery_as_complete) ... FAIL
+test_show_more_popup_is_propagated_to_session_stop (test_round3_independent.Round3RecoveryTests.test_show_more_popup_is_propagated_to_session_stop) ... ERROR
+test_unverified_seller_fields_and_photos_are_quarantined (test_round3_independent.Round3RecoveryTests.test_unverified_seller_fields_and_photos_are_quarantined) ... FAIL
+test_windows_failed_lock_does_not_unlock_active_owner_mock (test_round3_independent.Round3RecoveryTests.test_windows_failed_lock_does_not_unlock_active_owner_mock) ... FAIL
+test_acceptance_candidate_gallery_never_passes (test_round3_independent.Round3Tests.test_acceptance_candidate_gallery_never_passes) ... ERROR
+test_acceptance_empty_is_partial (test_round3_independent.Round3Tests.test_acceptance_empty_is_partial) ... ERROR
+test_acceptance_error_is_blocked (test_round3_independent.Round3Tests.test_acceptance_error_is_blocked) ... ERROR
+test_atomic_parent_symlink_rejected (test_round3_independent.Round3Tests.test_atomic_parent_symlink_rejected) ... FAIL
+test_atomic_predictable_temp_symlink_not_followed (test_round3_independent.Round3Tests.test_atomic_predictable_temp_symlink_not_followed) ... FAIL
+test_baseline_object_must_match_hashed_bytes (test_round3_independent.Round3Tests.test_baseline_object_must_match_hashed_bytes) ... ok
+test_db_captured_missing_flags_rejected (test_round3_independent.Round3Tests.test_db_captured_missing_flags_rejected) ... FAIL
+test_db_payload_foreign_url_rejected (test_round3_independent.Round3Tests.test_db_payload_foreign_url_rejected) ... FAIL
+test_db_pending_metadata_only_cannot_have_media (test_round3_independent.Round3Tests.test_db_pending_metadata_only_cannot_have_media) ... FAIL
+test_db_row_foreign_slug_rejected (test_round3_independent.Round3Tests.test_db_row_foreign_slug_rejected) ... FAIL
+test_db_sale_flag_true_rejected (test_round3_independent.Round3Tests.test_db_sale_flag_true_rejected) ... FAIL
+test_dimension_contradictory_sizes_rejected (test_round3_independent.Round3Tests.test_dimension_contradictory_sizes_rejected) ... FAIL
+test_dimension_decimal_not_silently_integer (test_round3_independent.Round3Tests.test_dimension_decimal_not_silently_integer) ... FAIL
+test_discovery_allowlist_at_write_boundary (test_round3_independent.Round3Tests.test_discovery_allowlist_at_write_boundary) ... FAIL
+test_export_rejects_post_preflight_foreign_discovery (test_round3_independent.Round3Tests.test_export_rejects_post_preflight_foreign_discovery) ... FAIL
+test_export_takes_exclusive_lock (test_round3_independent.Round3Tests.test_export_takes_exclusive_lock) ... FAIL
+test_output_catalog_rejected (test_round3_independent.Round3Tests.test_output_catalog_rejected) ... ERROR
+test_path_length_fail_before_write (test_round3_independent.Round3Tests.test_path_length_fail_before_write) ... FAIL
+test_pin_allowed_urls_must_match (test_round3_independent.Round3Tests.test_pin_allowed_urls_must_match) ... FAIL
+test_replacement_baseline_sku_rejected (test_round3_independent.Round3Tests.test_replacement_baseline_sku_rejected) ... FAIL
+test_replacement_pending_sku_rejected (test_round3_independent.Round3Tests.test_replacement_pending_sku_rejected) ... FAIL
+test_store_hardlink_rejected (test_round3_independent.Round3Tests.test_store_hardlink_rejected) ... FAIL
+test_store_symlink_rejected_before_wal (test_round3_independent.Round3Tests.test_store_symlink_rejected_before_wal) ... FAIL
+test_stream_chunked_limited_read (test_round3_independent.Round3Tests.test_stream_chunked_limited_read) ... ERROR
+test_stream_compression_rejected_before_body (test_round3_independent.Round3Tests.test_stream_compression_rejected_before_body) ... ERROR
+test_stream_mixed_dns_rejected (test_round3_independent.Round3Tests.test_stream_mixed_dns_rejected) ... ERROR
+test_stream_oversize_header_before_body (test_round3_independent.Round3Tests.test_stream_oversize_header_before_body) ... ERROR
+test_stream_private_dns_rejected (test_round3_independent.Round3Tests.test_stream_private_dns_rejected) ... ERROR
+test_stream_redirect_never_followed (test_round3_independent.Round3Tests.test_stream_redirect_never_followed) ... ERROR
+test_unsafe_request_body_not_used (test_round3_independent.Round3Tests.test_unsafe_request_body_not_used) ... ERROR
+
+======================================================================
+ERROR: test_actual_pinned_baseline_and_manifest_offline_preflight (test_round3_independent.Round3IntegrationTests.test_actual_pinned_baseline_and_manifest_offline_preflight)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 199, in test_actual_pinned_baseline_and_manifest_offline_preflight
+    rows,sha=capture.check_pilot_files(self.args,b,origin)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'check_pilot_files'
+
+======================================================================
+ERROR: test_document_redirect_blocked_before_request (test_round3_independent.Round3IntegrationTests.test_document_redirect_blocked_before_request)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 309, in test_document_redirect_blocked_before_request
+    ctx=Mock();capture.configure_pilot_navigation(ctx,{t['url'] for t in m()['exact_trial']})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'configure_pilot_navigation'
+
+======================================================================
+ERROR: test_export_cannot_upgrade_interrupted_run (test_round3_independent.Round3IntegrationTests.test_export_cannot_upgrade_interrupted_run)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 303, in test_export_cannot_upgrade_interrupted_run
+    with patch('capture.pilot_acceptance',return_value={'status':'PASS','targets':[]}):
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_global_block_stops_first_target (test_round3_independent.Round3IntegrationTests.test_global_block_stops_first_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 236, in test_global_block_stops_first_target
+    self.assertEqual(3,self.run_fake(blocked));self.assertEqual(1,len(seen));self.assertEqual('BLOCKED',self.report()['status'])
+                                                                                                        ^^^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 196, in report
+    return json.loads((self.root/'work/review/pilot-acceptance.json').read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/pathlib.py", line 1059, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/pathlib.py", line 1045, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp81z14f9w/work/review/pilot-acceptance.json'
+
+======================================================================
+ERROR: test_invalid_manifest_never_opens_wrong_database (test_round3_independent.Round3IntegrationTests.test_invalid_manifest_never_opens_wrong_database)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 213, in test_invalid_manifest_never_opens_wrong_database
+    with self.assertRaises(PilotGuardError):capture.crawl(self.args)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 478, in crawl
+    if blocked>allowed:
+       ^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+
+======================================================================
+ERROR: test_media_transport_closes_on_failure (test_round3_independent.Round3IntegrationTests.test_media_transport_closes_on_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 316, in test_media_transport_closes_on_failure
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_media_transport_success_and_truncation (test_round3_independent.Round3IntegrationTests.test_media_transport_success_and_truncation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 322, in test_media_transport_success_and_truncation
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_metadata_only_download_is_rejected_before_network (test_round3_independent.Round3IntegrationTests.test_metadata_only_download_is_rejected_before_network)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 255, in test_metadata_only_download_is_rejected_before_network
+    with patch('capture.fetch_image') as fetch:
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'fetch_image'
+
+======================================================================
+ERROR: test_other_sku_baseline_photo_never_counts_as_owned (test_round3_independent.Round3IntegrationTests.test_other_sku_baseline_photo_never_counts_as_owned)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 262, in test_other_sku_baseline_photo_never_counts_as_owned
+    with patch('capture.fetch_image',side_effect=RuntimeError('offline')) as fetch,patch('capture.gentle_wait'):
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'fetch_image'
+
+======================================================================
+ERROR: test_symlink_wal_rejected (test_round3_independent.Round3IntegrationTests.test_symlink_wal_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 278, in test_symlink_wal_rejected
+    with self.assertRaises(RuntimeError):Store(path)
+                                         ^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/storage.py", line 41, in __init__
+    self.db.execute("PRAGMA journal_mode=WAL")
+sqlite3.OperationalError: unable to open database file
+
+======================================================================
+ERROR: test_tls_connection_uses_pinned_ip_and_hostname (test_round3_independent.Round3IntegrationTests.test_tls_connection_uses_pinned_ip_and_hostname)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 331, in test_tls_connection_uses_pinned_ip_and_hostname
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_valid_self_signed_but_untrusted_baseline_rejected (test_round3_independent.Round3IntegrationTests.test_valid_self_signed_but_untrusted_baseline_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 207, in test_valid_self_signed_but_untrusted_baseline_rejected
+    with self.assertRaises(PilotGuardError):capture.crawl(self.args)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 478, in crawl
+    if blocked>allowed:
+       ^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+
+======================================================================
+ERROR: test_animated_media_rejected_without_write (test_round3_independent.Round3RecoveryTests.test_animated_media_rejected_without_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 460, in test_animated_media_rejected_without_write
+    with patch('capture.fetch_image',return_value=b'x'*64),patch('capture.Image.open',return_value=manager),patch('capture.gentle_wait'):
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'fetch_image'
+
+======================================================================
+ERROR: test_failing_online_read_actually_uses_existing_cache (test_round3_independent.Round3RecoveryTests.test_failing_online_read_actually_uses_existing_cache)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 437, in test_failing_online_read_actually_uses_existing_cache
+    value,_,_=capture.load_source(root,None,False)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 95, in load_source
+    validate_baseline(snapshot)
+                      ^^^^^^^^
+UnboundLocalError: cannot access local variable 'snapshot' where it is not associated with a value
+
+======================================================================
+ERROR: test_large_baseline_is_bounded (test_round3_independent.Round3RecoveryTests.test_large_baseline_is_bounded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 429, in test_large_baseline_is_bounded
+    with self.assertRaises(capture.LocalIntegrityError):capture.load_source(Path(folder),str(path))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 79, in load_source
+    snapshot=json.loads(Path(baseline_file).read_text(encoding="utf-8"))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+======================================================================
+ERROR: test_large_local_media_is_not_read_into_ram (test_round3_independent.Round3RecoveryTests.test_large_local_media_is_not_read_into_ram)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 424, in test_large_local_media_is_not_read_into_ram
+    with self.assertRaises(capture.LocalIntegrityError):capture.media_sha(path)
+                                                        ^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'media_sha'
+
+======================================================================
+ERROR: test_pixel_bomb_rejected_before_decode (test_round3_independent.Round3RecoveryTests.test_pixel_bomb_rejected_before_decode)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 469, in test_pixel_bomb_rejected_before_decode
+    with patch('capture.fetch_image',return_value=b'x'*64),patch('capture.Image.open',return_value=manager),patch('capture.gentle_wait'):
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'fetch_image'
+
+======================================================================
+ERROR: test_show_more_popup_is_propagated_to_session_stop (test_round3_independent.Round3RecoveryTests.test_show_more_popup_is_propagated_to_session_stop)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 387, in test_show_more_popup_is_propagated_to_session_stop
+    with self.assertRaises(capture.BrowserBlocked):capture.collect_shop(page,Mock(),SimpleNamespace(max_categories=1),{'products':[]})
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 317, in collect_shop
+    gentle_wait(args)
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py", line 243, in gentle_wait
+    def gentle_wait(args):time.sleep(random.uniform(args.pause_min,args.pause_max))
+                                                    ^^^^^^^^^^^^^^
+AttributeError: 'types.SimpleNamespace' object has no attribute 'pause_min'
+
+======================================================================
+ERROR: test_acceptance_candidate_gallery_never_passes (test_round3_independent.Round3Tests.test_acceptance_candidate_gallery_never_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 124, in test_acceptance_candidate_gallery_never_passes
+    self.assertEqual('PARTIAL',capture.pilot_acceptance(self.store,self.root)['status'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_acceptance_empty_is_partial (test_round3_independent.Round3Tests.test_acceptance_empty_is_partial)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 115, in test_acceptance_empty_is_partial
+    report=capture.pilot_acceptance(self.store,self.root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_acceptance_error_is_blocked (test_round3_independent.Round3Tests.test_acceptance_error_is_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 119, in test_acceptance_error_is_blocked
+    self.assertEqual('BLOCKED',capture.pilot_acceptance(self.store,self.root)['status'])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'pilot_acceptance'
+
+======================================================================
+ERROR: test_output_catalog_rejected (test_round3_independent.Round3Tests.test_output_catalog_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 113, in test_output_catalog_rejected
+    with self.assertRaises(RuntimeError): capture.checked_output(repo/'catalog')
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'capture' has no attribute 'checked_output'
+
+======================================================================
+ERROR: test_stream_chunked_limited_read (test_round3_independent.Round3Tests.test_stream_chunked_limited_read)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 163, in test_stream_chunked_limited_read
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_compression_rejected_before_body (test_round3_independent.Round3Tests.test_stream_compression_rejected_before_body)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 151, in test_stream_compression_rejected_before_body
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_mixed_dns_rejected (test_round3_independent.Round3Tests.test_stream_mixed_dns_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 141, in test_stream_mixed_dns_rejected
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_oversize_header_before_body (test_round3_independent.Round3Tests.test_stream_oversize_header_before_body)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 157, in test_stream_oversize_header_before_body
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_private_dns_rejected (test_round3_independent.Round3Tests.test_stream_private_dns_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 136, in test_stream_private_dns_rejected
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_stream_redirect_never_followed (test_round3_independent.Round3Tests.test_stream_redirect_never_followed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 145, in test_stream_redirect_never_followed
+    import media_transport
+ModuleNotFoundError: No module named 'media_transport'
+
+======================================================================
+ERROR: test_unsafe_request_body_not_used (test_round3_independent.Round3Tests.test_unsafe_request_body_not_used)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 132, in test_unsafe_request_body_not_used
+    with patch('capture.fetch_image',return_value=b'bad') as fetch:
+  File "/usr/lib/python3.11/unittest/mock.py", line 1437, in __enter__
+    original, local = self.get_original()
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/unittest/mock.py", line 1410, in get_original
+    raise AttributeError(
+AttributeError: <module 'capture' from '/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/capture.py'> does not have the attribute 'fetch_image'
+
+======================================================================
+FAIL: test_corrupted_db_export_invalidates_old_acceptance (test_round3_independent.Round3IntegrationTests.test_corrupted_db_export_invalidates_old_acceptance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 290, in test_corrupted_db_export_invalidates_old_acceptance
+    self.assertEqual('BLOCKED',self.report()['status'])
+AssertionError: 'BLOCKED' != 'PASS'
+- BLOCKED
++ PASS
+
+
+======================================================================
+FAIL: test_export_after_rejected_foreign_db_never_falls_back_to_nonpilot (test_round3_independent.Round3IntegrationTests.test_export_after_rejected_foreign_db_never_falls_back_to_nonpilot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 297, in test_export_after_rejected_foreign_db_never_falls_back_to_nonpilot
+    with self.assertRaises(PilotGuardError):capture.export(self.args)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_export_scope_marker_cannot_be_downgraded (test_round3_independent.Round3IntegrationTests.test_export_scope_marker_cannot_be_downgraded)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 281, in test_export_scope_marker_cannot_be_downgraded
+    self.assertEqual(5,self.run_fake())
+AssertionError: 5 != 0
+
+======================================================================
+FAIL: test_failed_browser_launch_invalidates_old_pass (test_round3_independent.Round3IntegrationTests.test_failed_browser_launch_invalidates_old_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 242, in test_failed_browser_launch_invalidates_old_pass
+    self.assertEqual('BLOCKED',self.report()['status'])
+AssertionError: 'BLOCKED' != 'PASS'
+- BLOCKED
++ PASS
+
+
+======================================================================
+FAIL: test_mid_session_baseline_change_stops_next_product (test_round3_independent.Round3IntegrationTests.test_mid_session_baseline_change_stops_next_product)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 224, in test_mid_session_baseline_change_stops_next_product
+    with self.assertRaises(PilotGuardError):self.run_fake(change)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_mid_session_manifest_change_stops_next_product (test_round3_independent.Round3IntegrationTests.test_mid_session_manifest_change_stops_next_product)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 219, in test_mid_session_manifest_change_stops_next_product
+    with self.assertRaises(PilotGuardError):self.run_fake(change)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_product_errors_cannot_return_success (test_round3_independent.Round3IntegrationTests.test_product_errors_cannot_return_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 228, in test_product_errors_cannot_return_success
+    self.assertEqual(5,code);self.assertEqual('BLOCKED',self.report()['status'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 5 != 0
+
+======================================================================
+FAIL: test_product_unavailable_cannot_return_success (test_round3_independent.Round3IntegrationTests.test_product_unavailable_cannot_return_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 232, in test_product_unavailable_cannot_return_success
+    self.assertEqual(5,code);self.assertEqual('BLOCKED',self.report()['status'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 5 != 0
+
+======================================================================
+FAIL: test_shop_foreign_discovery_never_persisted (test_round3_independent.Round3IntegrationTests.test_shop_foreign_discovery_never_persisted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 248, in test_shop_foreign_discovery_never_persisted
+    self.assertEqual(5,self.run_fake(shop=shop))
+AssertionError: 5 != 0
+
+======================================================================
+FAIL: test_unrelated_sqlite_schema_unchanged (test_round3_independent.Round3IntegrationTests.test_unrelated_sqlite_schema_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 269, in test_unrelated_sqlite_schema_unchanged
+    with self.assertRaises(RuntimeError):Store(path)
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_browser_profile_never_stored_under_repository (test_round3_independent.Round3RecoveryTests.test_browser_profile_never_stored_under_repository)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 442, in test_browser_profile_never_stored_under_repository
+    with self.assertRaises(RuntimeError):capture.browser_profile(Path('/tmp/unrelated'))
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_media_path_cannot_belong_to_other_target (test_round3_independent.Round3RecoveryTests.test_media_path_cannot_belong_to_other_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 383, in test_media_path_cannot_belong_to_other_target
+    with self.assertRaises(capture.LocalIntegrityError):capture.verify_local_media(root,[('url',S1,sha,f'new-media/{S2}/a.jpg',64,500,500,'NEW_ORIGINAL_FILE')])
+AssertionError: LocalIntegrityError not raised
+
+======================================================================
+FAIL: test_multiple_seller_popups_are_closed (test_round3_independent.Round3RecoveryTests.test_multiple_seller_popups_are_closed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 395, in test_multiple_seller_popups_are_closed
+    self.assertEqual('UNVERIFIED',result['status']);self.assertEqual(1,len(page.context.pages))
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 3
+
+======================================================================
+FAIL: test_no_manifest_cli_never_loads_browser (test_round3_independent.Round3RecoveryTests.test_no_manifest_cli_never_loads_browser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 445, in test_no_manifest_cli_never_loads_browser
+    self.assertEqual(2,capture.cli(['crawl','--baseline','missing.json','--output',folder]))
+AssertionError: 2 != 0
+
+======================================================================
+FAIL: test_recheck_cannot_treat_candidate_gallery_as_complete (test_round3_independent.Round3RecoveryTests.test_recheck_cannot_treat_candidate_gallery_as_complete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 401, in test_recheck_cannot_treat_candidate_gallery_as_complete
+    self.assertTrue(capture.needs_source_recheck(p))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_unverified_seller_fields_and_photos_are_quarantined (test_round3_independent.Round3RecoveryTests.test_unverified_seller_fields_and_photos_are_quarantined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 376, in test_unverified_seller_fields_and_photos_are_quarantined
+    self.assertEqual('SELLER_UNVERIFIED',store.page_rows()[0][3])
+AssertionError: 'SELLER_UNVERIFIED' != 'CAPTURED'
+- SELLER_UNVERIFIED
++ CAPTURED
+
+
+======================================================================
+FAIL: test_windows_failed_lock_does_not_unlock_active_owner_mock (test_round3_independent.Round3RecoveryTests.test_windows_failed_lock_does_not_unlock_active_owner_mock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 416, in test_windows_failed_lock_does_not_unlock_active_owner_mock
+    self.assertTrue(active[0])
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_atomic_parent_symlink_rejected (test_round3_independent.Round3Tests.test_atomic_parent_symlink_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 99, in test_atomic_parent_symlink_rejected
+    with self.assertRaises(RuntimeError): storage.atomic_bytes(link/'report',b'x')
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_atomic_predictable_temp_symlink_not_followed (test_round3_independent.Round3Tests.test_atomic_predictable_temp_symlink_not_followed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 95, in test_atomic_predictable_temp_symlink_not_followed
+    self.assertEqual(b'old',victim.read_bytes())
+AssertionError: b'old' != b'new'
+
+======================================================================
+FAIL: test_db_captured_missing_flags_rejected (test_round3_independent.Round3Tests.test_db_captured_missing_flags_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 69, in test_db_captured_missing_flags_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_payload_foreign_url_rejected (test_round3_independent.Round3Tests.test_db_payload_foreign_url_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 57, in test_db_payload_foreign_url_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_pending_metadata_only_cannot_have_media (test_round3_independent.Round3Tests.test_db_pending_metadata_only_cannot_have_media)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 73, in test_db_pending_metadata_only_cannot_have_media
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_row_foreign_slug_rejected (test_round3_independent.Round3Tests.test_db_row_foreign_slug_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 61, in test_db_row_foreign_slug_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_db_sale_flag_true_rejected (test_round3_independent.Round3Tests.test_db_sale_flag_true_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 65, in test_db_sale_flag_true_rejected
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_dimension_contradictory_sizes_rejected (test_round3_independent.Round3Tests.test_dimension_contradictory_sizes_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 174, in test_dimension_contradictory_sizes_rejected
+    self.assertEqual('UNVERIFIED_PARSE',parsing.parse_dimensions('35x45 см; Ширина: 90 см Высота: 100 см')['status'])
+AssertionError: 'UNVERIFIED_PARSE' != 'PARSED_NEEDS_SELLER_CONFIRMATION'
+- UNVERIFIED_PARSE
++ PARSED_NEEDS_SELLER_CONFIRMATION
+
+
+======================================================================
+FAIL: test_dimension_decimal_not_silently_integer (test_round3_independent.Round3Tests.test_dimension_decimal_not_silently_integer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 171, in test_dimension_decimal_not_silently_integer
+    self.assertEqual('UNVERIFIED_PARSE',parsing.parse_dimensions('Ширина: 35,5 см Высота: 45 см')['status'])
+AssertionError: 'UNVERIFIED_PARSE' != 'PARSED_NEEDS_SELLER_CONFIRMATION'
+- UNVERIFIED_PARSE
++ PARSED_NEEDS_SELLER_CONFIRMATION
+
+
+======================================================================
+FAIL: test_discovery_allowlist_at_write_boundary (test_round3_independent.Round3Tests.test_discovery_allowlist_at_write_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 128, in test_discovery_allowlist_at_write_boundary
+    self.assertEqual([],self.store.urls())
+AssertionError: Lists differ: [] != [('https://flowwow.com/flowers/foreign/', 'x')]
+
+Second list contains 1 additional elements.
+First extra element 0:
+('https://flowwow.com/flowers/foreign/', 'x')
+
+- []
++ [('https://flowwow.com/flowers/foreign/', 'x')]
+
+======================================================================
+FAIL: test_export_rejects_post_preflight_foreign_discovery (test_round3_independent.Round3Tests.test_export_rejects_post_preflight_foreign_discovery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 90, in test_export_rejects_post_preflight_foreign_discovery
+    with self.assertRaises(PilotGuardError): capture.export(SimpleNamespace(output=str(self.root)))
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_export_takes_exclusive_lock (test_round3_independent.Round3Tests.test_export_takes_exclusive_lock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 83, in test_export_takes_exclusive_lock
+    with self.assertRaises(RuntimeError): capture.export(SimpleNamespace(output=str(self.root)))
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_path_length_fail_before_write (test_round3_independent.Round3Tests.test_path_length_fail_before_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 110, in test_path_length_fail_before_write
+    with self.assertRaises(RuntimeError): storage.atomic_bytes(long,b'x')
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_pin_allowed_urls_must_match (test_round3_independent.Round3Tests.test_pin_allowed_urls_must_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 78, in test_pin_allowed_urls_must_match
+    with self.assertRaises(PilotGuardError): verify_pilot_db(self.store,rows,sha)
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_replacement_baseline_sku_rejected (test_round3_independent.Round3Tests.test_replacement_baseline_sku_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 48, in test_replacement_baseline_sku_rejected
+    with self.assertRaises(PilotGuardError): self.check_manifest()
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_replacement_pending_sku_rejected (test_round3_independent.Round3Tests.test_replacement_pending_sku_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 44, in test_replacement_pending_sku_rejected
+    with self.assertRaises(PilotGuardError): self.check_manifest()
+AssertionError: PilotGuardError not raised
+
+======================================================================
+FAIL: test_store_hardlink_rejected (test_round3_independent.Round3Tests.test_store_hardlink_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 107, in test_store_hardlink_rejected
+    with self.assertRaises(RuntimeError): Store(link)
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_store_symlink_rejected_before_wal (test_round3_independent.Round3Tests.test_store_symlink_rejected_before_wal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/review3-pristine-fmp5n4ut/tools/flowwow-parser-review3-integrated/flowwow_review3/tests/test_round3_independent.py", line 103, in test_store_symlink_rejected_before_wal
+    with self.assertRaises(RuntimeError): Store(link)
+AssertionError: RuntimeError not raised
+
+----------------------------------------------------------------------
+Ran 69 tests in 0.761s
+
+FAILED (failures=35, errors=29)
+Finished batch: 3 products attempted; data in /tmp/tmpv3_jiab_/work
+{
+  "recorded_products": 0,
+  "browser_captured": 0,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 1,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpw9ssuipp/review/report.html
+{
+  "recorded_products": 0,
+  "browser_captured": 0,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpdzk4tqrk/review/report.html

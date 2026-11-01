@@ -6,25 +6,49 @@ import json
 import os
 import sqlite3
 import sys
+import tempfile
+from urllib.parse import quote
 from pathlib import Path
 
 
 def utc_now(): return dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
 
 
+def safe_local_path(path: Path) -> Path:
+    """Reject links (including ancestor/junction links), hardlinks and long Win10 paths.
+
+    Local same-user concurrent filesystem attackers are outside this portable guard;
+    use a private local output directory, not a shared/network writable directory.
+    """
+    path = Path(os.path.abspath(path))
+    if len(str(path)) > 240:
+        raise RuntimeError("PATH_TOO_LONG_FOR_WINDOWS_10")
+    for part in (path, *path.parents):
+        if part.is_symlink() or (hasattr(part, "is_junction") and part.is_junction()):
+            raise RuntimeError("FILESYSTEM_LINK_FORBIDDEN:" + str(part))
+        if part.exists():
+            st = part.lstat()
+            if getattr(st, "st_file_attributes", 0) & 0x400:
+                raise RuntimeError("WINDOWS_REPARSE_POINT_FORBIDDEN")
+            if part.is_file() and st.st_nlink > 1:
+                raise RuntimeError("FILESYSTEM_HARDLINK_FORBIDDEN")
+    return path
+
+
 def atomic_bytes(path: Path, value: bytes) -> None:
-    path.parent.mkdir(parents=True,exist_ok=True)
-    tmp=path.with_name(path.name+".tmp-"+str(os.getpid()))
+    path = safe_local_path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, name = tempfile.mkstemp(prefix=path.name+".tmp-", dir=path.parent)
+    tmp = Path(name)
     try:
-        with open(tmp,"wb") as f:
-            f.write(value); f.flush();os.fsync(f.fileno())
-        os.replace(tmp,path)
-        # Persist the directory entry on POSIX. Windows has no portable directory
-        # fsync; the file flush + atomic replacement is the available guarantee.
+        with os.fdopen(fd, "wb") as f:
+            f.write(value); f.flush(); os.fsync(f.fileno())
+        safe_local_path(path)
+        os.replace(tmp, path)
         if os.name != "nt":
-            dir_fd=os.open(path.parent,os.O_RDONLY)
-            try:os.fsync(dir_fd)
-            finally:os.close(dir_fd)
+            dir_fd = os.open(path.parent, os.O_RDONLY)
+            try: os.fsync(dir_fd)
+            finally: os.close(dir_fd)
     finally:
         tmp.unlink(missing_ok=True)
 
@@ -33,8 +57,38 @@ def atomic_json(path: Path, value) -> None:
     atomic_bytes(path,(json.dumps(value,ensure_ascii=False,indent=2,sort_keys=True)+"\n").encode("utf-8"))
 
 
+def inspect_existing_db(path):
+    if not path.exists():
+        return
+    if path.stat().st_size == 0 or path.stat().st_size > 64*1024*1024:
+        raise RuntimeError("SQLITE_SIZE_OR_EMPTY_FILE_INVALID")
+    db = sqlite3.connect("file:"+quote(str(path),safe="/:")+"?mode=ro",uri=True,timeout=5)
+    try:
+        if db.execute("PRAGMA quick_check").fetchall() != [("ok",)]:
+            raise RuntimeError("SQLITE_INTEGRITY_FAILED")
+        expected = {
+            "pages":{"url","slug","category","status","captured_at","attempts","result_json","error"},
+            "discovery":{"url","category","observed_at","method"},
+            "assets":{"url","slug","sha256","relative_path","bytes","width","height","status"},
+            "events":{"seq","at","kind","detail_json"}}
+        tables={r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name!='sqlite_sequence'")}
+        if tables != set(expected) or db.execute("SELECT COUNT(*) FROM sqlite_master WHERE type IN ('trigger','view')").fetchone()[0]:
+            raise RuntimeError("UNRELATED_OR_CHANGED_SQLITE_SCHEMA")
+        for table, columns in expected.items():
+            if {r[1] for r in db.execute(f"PRAGMA table_info({table})")} != columns:
+                raise RuntimeError("UNRELATED_OR_CHANGED_SQLITE_COLUMNS")
+    finally:
+        db.close()
+
+
 class Store:
     def __init__(self,path:Path):
+        path = safe_local_path(path)
+        for suffix in ("-wal", "-shm", "-journal"):
+            safe_local_path(Path(str(path)+suffix))
+        inspect_existing_db(path)
+        self.allowed_urls = None
+        self.allowed_media_slugs = None
         self.path=path
         path.parent.mkdir(parents=True,exist_ok=True)
         self.db=sqlite3.connect(path,timeout=20,isolation_level=None)
@@ -71,6 +125,8 @@ class Store:
         return bool(r and r[0]=="CAPTURED")
 
     def record_page(self,url:str,slug:str,category:str,status:str,data:dict,error:str|None=None):
+        if self.allowed_urls is not None and (url not in self.allowed_urls or slug != url.rstrip("/").split("/")[-1]):
+            raise RuntimeError("PAGE_WRITE_OUTSIDE_PILOT_SCOPE")
         payload=json.dumps(data,ensure_ascii=False,sort_keys=True)
         with self.db:
             self.db.execute('''INSERT INTO pages(url,slug,category,status,captured_at,attempts,result_json,error)
@@ -81,6 +137,8 @@ class Store:
               (url,slug,category,status,utc_now(),payload,error))
 
     def discover(self,url:str,category:str,method:str):
+        if self.allowed_urls is not None and url not in self.allowed_urls:
+            return
         with self.db:
             self.db.execute("INSERT OR IGNORE INTO discovery(url,category,observed_at,method) VALUES(?,?,?,?)",
                             (url,category,utc_now(),method))
@@ -89,6 +147,8 @@ class Store:
         return list(self.db.execute("SELECT url,MIN(category) FROM discovery GROUP BY url ORDER BY url"))
 
     def record_asset(self,slug:str,url:str,sha:str,path:str|None,bytes_n:int,width:int,height:int,status:str):
+        if self.allowed_media_slugs is not None and slug not in self.allowed_media_slugs:
+            raise RuntimeError("ASSET_WRITE_OUTSIDE_PILOT_MEDIA_SCOPE")
         with self.db:
             self.db.execute('''INSERT INTO assets(url,slug,sha256,relative_path,bytes,width,height,status)
               VALUES(?,?,?,?,?,?,?,?) ON CONFLICT(url,slug) DO UPDATE SET
@@ -112,9 +172,11 @@ class Store:
 @contextlib.contextmanager
 def exclusive_run_lock(path:Path):
     """OS-released exclusive file lock, including after power loss / process crash."""
+    path = safe_local_path(path)
     path.parent.mkdir(parents=True,exist_ok=True)
     with open(path,"a+b") as file:
         file.seek(0);file.write(b"1");file.flush()
+        acquired=False
         try:
             if os.name=="nt":
                 import msvcrt
@@ -125,11 +187,12 @@ def exclusive_run_lock(path:Path):
                 import fcntl
                 try:fcntl.flock(file.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB)
                 except OSError as e:raise RuntimeError("Another capture process is using this folder") from e
+            acquired=True
             yield
         finally:
-            if os.name=="nt":
+            if acquired and os.name=="nt":
                 try: file.seek(0);msvcrt.locking(file.fileno(),msvcrt.LK_UNLCK,1)
                 except OSError:pass
-            else:
+            elif acquired:
                 try:fcntl.flock(file.fileno(),fcntl.LOCK_UN)
                 except OSError:pass

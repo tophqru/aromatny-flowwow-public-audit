@@ -97,6 +97,10 @@ def expand_shop_conservatively(page,args,store,category,waiter):
                 clicks+=1
                 page.wait_for_timeout(1200)
                 if context is not None and any(p not in pages_before for p in context.pages):
+                    for opened in list(context.pages):
+                        if opened not in pages_before:
+                            try:opened.close()
+                            except Exception:pass
                     reason='MORE_CONTROL_OPENED_NEW_TAB';break
                 if not same_shop_url(page.url):
                     reason='MORE_CONTROL_NAVIGATED_OUTSIDE_SHOP'

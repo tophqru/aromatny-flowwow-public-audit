@@ -1,0 +1,235 @@
+test_crawl_without_dependencies_fails_friendly (test_arena_review2_independent.CLITests.test_crawl_without_dependencies_fails_friendly) ... ok
+test_doctor_without_site_packages_reports_missing_not_traceback (test_arena_review2_independent.CLITests.test_doctor_without_site_packages_reports_missing_not_traceback) ... ok
+test_review1_script_mode_runs_integration_tests (test_arena_review2_independent.CLITests.test_review1_script_mode_runs_integration_tests) ... ok
+test_category_labels_ignore_show_more_and_external (test_arena_review2_independent.ParsingTests.test_category_labels_ignore_show_more_and_external) ... ok
+test_composition_decimal_quantity_unverified (test_arena_review2_independent.ParsingTests.test_composition_decimal_quantity_unverified) ... ok
+test_dimensions_ambiguous_multiple_unverified (test_arena_review2_independent.ParsingTests.test_dimensions_ambiguous_multiple_unverified) ... ok
+test_dimensions_labelled_width_height (test_arena_review2_independent.ParsingTests.test_dimensions_labelled_width_height) ... ok
+test_gallery_data_srcset_lazy (test_arena_review2_independent.ParsingTests.test_gallery_data_srcset_lazy) ... ok
+test_gallery_status_never_complete (test_arena_review2_independent.ParsingTests.test_gallery_status_never_complete) ... ok
+test_gallery_truncation_flag (test_arena_review2_independent.ParsingTests.test_gallery_truncation_flag) ... ok
+test_baseline_excluded_sku_rejected (test_arena_review2_independent.SecurityTests.test_baseline_excluded_sku_rejected) ... ok
+test_baseline_rejects_sale_flags_true (test_arena_review2_independent.SecurityTests.test_baseline_rejects_sale_flags_true) ... ok
+test_canonical_product_rejects_homograph_host (test_arena_review2_independent.SecurityTests.test_canonical_product_rejects_homograph_host) ... ok
+test_download_assets_unsafe_url_no_network (test_arena_review2_independent.SecurityTests.test_download_assets_unsafe_url_no_network) ... ok
+test_export_html_escapes_slug (test_arena_review2_independent.SecurityTests.test_export_html_escapes_slug) ... ok
+test_export_report_rejects_javascript_url (test_arena_review2_independent.SecurityTests.test_export_report_rejects_javascript_url) ... ok
+test_image_redirect_not_followed (test_arena_review2_independent.SecurityTests.test_image_redirect_not_followed) ... ok
+test_image_url_safe_rejects_private_and_data_urls (test_arena_review2_independent.SecurityTests.test_image_url_safe_rejects_private_and_data_urls) ... ok
+test_seller_link_new_tab_is_verified (test_arena_review2_independent.SellerClickTests.test_seller_link_new_tab_is_verified) ... ok
+test_seller_link_new_tab_other_seller_rejected (test_arena_review2_independent.SellerClickTests.test_seller_link_new_tab_other_seller_rejected) ... ok
+test_nested_scroll_flag_detects_container (test_arena_review2_independent.ShopNavigationTests.test_nested_scroll_flag_detects_container) ... ok
+test_nested_scroll_flag_not_short_page (test_arena_review2_independent.ShopNavigationTests.test_nested_scroll_flag_not_short_page) ... ok
+test_same_shop_url_accepts_trailing_slash_and_subpath_only (test_arena_review2_independent.ShopNavigationTests.test_same_shop_url_accepts_trailing_slash_and_subpath_only) ... ok
+test_show_more_new_tab_stops_not_stable (test_arena_review2_independent.ShopNavigationTests.test_show_more_new_tab_stops_not_stable) ... ok
+test_atomic_bytes_cyrillic_space_path (test_arena_review2_independent.StorageResumeTests.test_atomic_bytes_cyrillic_space_path) ... ok
+test_atomic_bytes_fsyncs_directory (test_arena_review2_independent.StorageResumeTests.test_atomic_bytes_fsyncs_directory) ... ok
+test_exclusive_lock_released_after_exception (test_arena_review2_independent.StorageResumeTests.test_exclusive_lock_released_after_exception) ... ok
+test_needs_media_capture_accepts_present_local_file (test_arena_review2_independent.StorageResumeTests.test_needs_media_capture_accepts_present_local_file) ... ok
+test_needs_media_capture_detects_missing_local_file (test_arena_review2_independent.StorageResumeTests.test_needs_media_capture_detects_missing_local_file) ... ok
+test_sqlite_cyrillic_space_path (test_arena_review2_independent.StorageResumeTests.test_sqlite_cyrillic_space_path) ... ok
+test_sqlite_wal_reopen_preserves_rows (test_arena_review2_independent.StorageResumeTests.test_sqlite_wal_reopen_preserves_rows) ... ok
+test_setup_windows_does_not_claim_success_without_browser (test_arena_review2_independent.WindowsScriptTests.test_setup_windows_does_not_claim_success_without_browser) ... ok
+test_absent_main_does_not_scrape_reviews (test_capture.DOMTests.test_absent_main_does_not_scrape_reviews) ... ok
+test_access_challenge_detection (test_capture.DOMTests.test_access_challenge_detection) ... ok
+test_ambiguous_heading_no_invention (test_capture.DOMTests.test_ambiguous_heading_no_invention) ... ok
+test_dimensions_ambiguous_and_invalid (test_capture.DOMTests.test_dimensions_ambiguous_and_invalid) ... ok
+test_gallery_multiple_roots_fails_closed (test_capture.DOMTests.test_gallery_multiple_roots_fails_closed) ... ok
+test_gallery_scoped_and_best_srcset (test_capture.DOMTests.test_gallery_scoped_and_best_srcset) ... ok
+test_high_resolution_img_src_beats_small_srcset (test_capture.DOMTests.test_high_resolution_img_src_beats_small_srcset) ... ok
+test_no_media_from_recommendations (test_capture.DOMTests.test_no_media_from_recommendations) ... ok
+test_product_links_no_duplicates (test_capture.DOMTests.test_product_links_no_duplicates) ... ok
+test_sections_scoped_to_main (test_capture.DOMTests.test_sections_scoped_to_main) ... ok
+test_seller_link_is_not_claimed_clicked (test_capture.DOMTests.test_seller_link_is_not_claimed_clicked) ... ok
+test_unparsed_component_cannot_be_declared_exact (test_capture.DOMTests.test_unparsed_component_cannot_be_declared_exact) ... ok
+test_atomic_and_resume (test_capture.StorageTests.test_atomic_and_resume) ... ok
+test_exclusive_os_lock (test_capture.StorageTests.test_exclusive_os_lock) ... ok
+test_canonical_shop (test_capture.URLTests.test_canonical_shop) ... ok
+test_image_urls_no_tokens (test_capture.URLTests.test_image_urls_no_tokens) ... ok
+test_product_allowlist_and_normalization (test_capture.URLTests.test_product_allowlist_and_normalization) ... ok
+test_atomic_replace_failure_leaves_old_file (test_capture.ValidationTests.test_atomic_replace_failure_leaves_old_file) ... ok
+test_bad_baseline_fails (test_capture.ValidationTests.test_bad_baseline_fails) ... ok
+test_blocked_image_stops_no_more_images (test_capture.ValidationTests.test_blocked_image_stops_no_more_images) ... ok
+test_existing_baseline_media_not_downloaded (test_capture.ValidationTests.test_existing_baseline_media_not_downloaded) ... ok
+test_network_block_stops_before_dom (test_capture.ValidationTests.test_network_block_stops_before_dom) ... ok
+test_new_jpeg_atomic_download (test_capture.ValidationTests.test_new_jpeg_atomic_download) ... ok
+test_priority_and_dedup (test_capture.ValidationTests.test_priority_and_dedup) ... ok
+test_recently_seen_success_not_rewritten_by_check (test_capture.ValidationTests.test_recently_seen_success_not_rewritten_by_check) ... ok
+test_recheck_requires_explicit_opt_in_for_incomplete_captures (test_capture.ValidationTests.test_recheck_requires_explicit_opt_in_for_incomplete_captures) ... ok
+test_dont_click_review_show_more (test_category_logic.CategoryTests.test_dont_click_review_show_more) ... ok
+test_header_categories_not_counted (test_category_logic.CategoryTests.test_header_categories_not_counted) ... ok
+test_nav_tabs (test_category_logic.CategoryTests.test_nav_tabs) ... ok
+test_reject_external_category (test_category_logic.CategoryTests.test_reject_external_category) ... ok
+test_baseline_target_missing (test_pilot_targets.TestPilot.test_baseline_target_missing) ... ok
+test_crawl_rejects_unrelated_prior_database_before_browser (test_pilot_targets.TestPilot.test_crawl_rejects_unrelated_prior_database_before_browser) ... ok
+test_crawl_uses_only_pilot_targets_not_discovered (test_pilot_targets.TestPilot.test_crawl_uses_only_pilot_targets_not_discovered) ... {
+  "recorded_products": 1,
+  "browser_captured": 1,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpntwlox89/review/report.html
+{
+  "recorded_products": 1,
+  "browser_captured": 1,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmp6ivbulnf/review/report.html
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+ok
+test_db_isolated (test_pilot_targets.TestPilot.test_db_isolated) ... ok
+test_db_rejects_foreign_discovery_even_without_pages (test_pilot_targets.TestPilot.test_db_rejects_foreign_discovery_even_without_pages) ... ok
+test_db_rejects_foreign_media_even_without_pages (test_pilot_targets.TestPilot.test_db_rejects_foreign_media_even_without_pages) ... ok
+test_duplicate_json_keys (test_pilot_targets.TestPilot.test_duplicate_json_keys) ... ok
+test_duplicate_sku (test_pilot_targets.TestPilot.test_duplicate_sku) ... ok
+test_exact_three_order (test_pilot_targets.TestPilot.test_exact_three_order) ... ok
+test_pending_must_be_missing_from_baseline (test_pilot_targets.TestPilot.test_pending_must_be_missing_from_baseline) ... ok
+test_pinned_blob_changed (test_pilot_targets.TestPilot.test_pinned_blob_changed) ... ok
+test_prior_non_pilot_session_rejected (test_pilot_targets.TestPilot.test_prior_non_pilot_session_rejected) ... ok
+test_sale_flags (test_pilot_targets.TestPilot.test_sale_flags) ... ok
+test_unrelated_domain (test_pilot_targets.TestPilot.test_unrelated_domain) ... ok
+test_url_query (test_pilot_targets.TestPilot.test_url_query) ... ok
+test_wrong_count (test_pilot_targets.TestPilot.test_wrong_count) ... ok
+test_wrong_pinned_commit (test_pilot_targets.TestPilot.test_wrong_pinned_commit) ... ok
+test_wrong_public_repo (test_pilot_targets.TestPilot.test_wrong_public_repo) ... ok
+test_wrong_seller (test_pilot_targets.TestPilot.test_wrong_seller) ... ok
+test_completed_media_need_not_be_refetched (test_review1.NewSafetyTests.test_completed_media_need_not_be_refetched) ... ok
+test_correct_preexisting_media_not_downloaded_again (test_review1.NewSafetyTests.test_correct_preexisting_media_not_downloaded_again) ... ok
+test_corrupt_preexisting_media_halts_without_network (test_review1.NewSafetyTests.test_corrupt_preexisting_media_halts_without_network) ... ok
+test_export_detects_corrupt_new_media (test_review1.NewSafetyTests.test_export_detects_corrupt_new_media) ... ok
+test_failed_media_is_rechecked_during_full_run (test_review1.NewSafetyTests.test_failed_media_is_rechecked_during_full_run) ... ok
+test_good_media_is_verified (test_review1.NewSafetyTests.test_good_media_is_verified) ... ok
+test_media_recheck_respects_explicit_max_assets (test_review1.NewSafetyTests.test_media_recheck_respects_explicit_max_assets) ... ok
+test_path_traversal_database_asset_is_rejected (test_review1.NewSafetyTests.test_path_traversal_database_asset_is_rejected) ... ok
+test_powershell_propagates_nonzero_capture_status (test_review1.NewSafetyTests.test_powershell_propagates_nonzero_capture_status) ... ok
+test_recovery_link_cannot_redirect_to_other_product (test_review1.NewSafetyTests.test_recovery_link_cannot_redirect_to_other_product) ... ok
+test_trial_without_media_is_rechecked_during_full_run (test_review1.NewSafetyTests.test_trial_without_media_is_rechecked_during_full_run) ... ok
+test_unexpected_ports_are_rejected (test_review1.NewSafetyTests.test_unexpected_ports_are_rejected) ... ok
+test_unverified_seller_is_not_auto_downloaded (test_review1.NewSafetyTests.test_unverified_seller_is_not_auto_downloaded) ... ok
+test_crawl_revisits_trial_capture_for_media (test_review1.ResumeIntegrationTests.test_crawl_revisits_trial_capture_for_media) ... 1: BASELINE_66: https://flowwow.com/flowers/buket-example/
+ok
+test_dont_revisit_completed_capture (test_review1.ResumeIntegrationTests.test_dont_revisit_completed_capture) ... ok
+test_actual_pinned_baseline_and_manifest_offline_preflight (test_round3_independent.Round3IntegrationTests.test_actual_pinned_baseline_and_manifest_offline_preflight) ... ok
+test_corrupted_sqlite_no_repair_or_reset (test_round3_independent.Round3IntegrationTests.test_corrupted_sqlite_no_repair_or_reset) ... ok
+test_document_redirect_blocked_before_request (test_round3_independent.Round3IntegrationTests.test_document_redirect_blocked_before_request) ... ok
+test_export_cannot_upgrade_interrupted_run (test_round3_independent.Round3IntegrationTests.test_export_cannot_upgrade_interrupted_run) ... Finished batch: 1 products attempted; data in /tmp/tmpaqnldr18
+Finished batch: 0 products attempted; data in /tmp/tmpzw0w0ltr
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+STOP: browser access restricted. No retries or bypass attempted.
+ok
+test_export_scope_marker_cannot_be_downgraded (test_round3_independent.Round3IntegrationTests.test_export_scope_marker_cannot_be_downgraded) ... {
+  "recorded_products": 1,
+  "browser_captured": 0,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpu6r3br7j/work/review/report.html
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+ok
+test_failed_browser_launch_invalidates_old_pass (test_round3_independent.Round3IntegrationTests.test_failed_browser_launch_invalidates_old_pass) ... ok
+test_global_block_stops_first_target (test_round3_independent.Round3IntegrationTests.test_global_block_stops_first_target) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+STOP: browser access restricted. No retries or bypass attempted.
+ok
+test_invalid_manifest_never_opens_wrong_database (test_round3_independent.Round3IntegrationTests.test_invalid_manifest_never_opens_wrong_database) ... ok
+test_media_transport_closes_on_failure (test_round3_independent.Round3IntegrationTests.test_media_transport_closes_on_failure) ... ok
+test_media_transport_success_and_truncation (test_round3_independent.Round3IntegrationTests.test_media_transport_success_and_truncation) ... ok
+test_metadata_only_download_is_rejected_before_network (test_round3_independent.Round3IntegrationTests.test_metadata_only_download_is_rejected_before_network) ... ok
+test_mid_session_baseline_change_stops_next_product (test_round3_independent.Round3IntegrationTests.test_mid_session_baseline_change_stops_next_product) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+ok
+test_mid_session_manifest_change_stops_next_product (test_round3_independent.Round3IntegrationTests.test_mid_session_manifest_change_stops_next_product) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+ok
+test_other_sku_baseline_photo_never_counts_as_owned (test_round3_independent.Round3IntegrationTests.test_other_sku_baseline_photo_never_counts_as_owned) ... ok
+test_product_errors_cannot_return_success (test_round3_independent.Round3IntegrationTests.test_product_errors_cannot_return_success) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+ok
+test_product_unavailable_cannot_return_success (test_round3_independent.Round3IntegrationTests.test_product_unavailable_cannot_return_success) ... 1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+ok
+test_shop_foreign_discovery_never_persisted (test_round3_independent.Round3IntegrationTests.test_shop_foreign_discovery_never_persisted) ... OPEN SHOP https://flowwow.com/shop/lyubov-eto-699e0e4519/
+1: PILOT_EXACT_1: https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/
+2: PILOT_EXACT_2: https://flowwow.com/flowers/buket-gortenziy-23/
+3: PILOT_EXACT_3: https://flowwow.com/flowers/buket-gortenziy-pionov-roz-eus/
+ok
+test_symlink_wal_rejected (test_round3_independent.Round3IntegrationTests.test_symlink_wal_rejected) ... ok
+test_tls_connection_uses_pinned_ip_and_hostname (test_round3_independent.Round3IntegrationTests.test_tls_connection_uses_pinned_ip_and_hostname) ... ok
+test_unrelated_sqlite_schema_unchanged (test_round3_independent.Round3IntegrationTests.test_unrelated_sqlite_schema_unchanged) ... ok
+test_valid_self_signed_but_untrusted_baseline_rejected (test_round3_independent.Round3IntegrationTests.test_valid_self_signed_but_untrusted_baseline_rejected) ... ok
+test_animated_media_rejected_without_write (test_round3_independent.Round3RecoveryTests.test_animated_media_rejected_without_write) ... ok
+test_browser_profile_never_stored_under_repository (test_round3_independent.Round3RecoveryTests.test_browser_profile_never_stored_under_repository) ... ok
+test_failing_online_read_actually_uses_existing_cache (test_round3_independent.Round3RecoveryTests.test_failing_online_read_actually_uses_existing_cache) ... WARNING: Using cached snapshot; public GitHub read failed: OSError
+WARNING: public discovery FLOWWOW_INDEXED_21_NEW_POSSIBLE_PRODUCTS_2026-10-31.json unavailable: OSError
+WARNING: public discovery FLOWWOW_INDEXED_6_MORE_POSSIBLE_PRODUCTS_2026-10-31.json unavailable: OSError
+WARNING: public discovery FLOWWOW_INDEXED_25_MORE_POSSIBLE_PRODUCTS_2026-10-31.json unavailable: OSError
+WARNING: public discovery FLOWWOW_INDEXED_3_MORE_WITH_SOURCE_DETAILS_2026-10-31.json unavailable: OSError
+WARNING: public discovery new-verified-seller-candidates-20261031-4.json unavailable: OSError
+ok
+test_invalid_utf8_manifest_rejected (test_round3_independent.Round3RecoveryTests.test_invalid_utf8_manifest_rejected) ... ok
+test_large_baseline_is_bounded (test_round3_independent.Round3RecoveryTests.test_large_baseline_is_bounded) ... ok
+test_large_local_media_is_not_read_into_ram (test_round3_independent.Round3RecoveryTests.test_large_local_media_is_not_read_into_ram) ... ok
+test_no_manifest_cli_never_loads_browser (test_round3_independent.Round3RecoveryTests.test_no_manifest_cli_never_loads_browser) ... ERROR: PilotGuardError: This audited CLI only permits strict --pilot-manifest crawl; full catalog crawl is disabled
+ok
+test_oversized_manifest_rejected (test_round3_independent.Round3RecoveryTests.test_oversized_manifest_rejected) ... ok
+test_pixel_bomb_rejected_before_decode (test_round3_independent.Round3RecoveryTests.test_pixel_bomb_rejected_before_decode) ... ok
+test_process_kill_releases_lock_and_keeps_committed_wal (test_round3_independent.Round3RecoveryTests.test_process_kill_releases_lock_and_keeps_committed_wal) ... ok
+test_acceptance_candidate_gallery_never_passes (test_round3_independent.Round3Tests.test_acceptance_candidate_gallery_never_passes) ... ok
+test_acceptance_empty_is_partial (test_round3_independent.Round3Tests.test_acceptance_empty_is_partial) ... ok
+test_acceptance_error_is_blocked (test_round3_independent.Round3Tests.test_acceptance_error_is_blocked) ... ok
+test_atomic_parent_symlink_rejected (test_round3_independent.Round3Tests.test_atomic_parent_symlink_rejected) ... ok
+test_atomic_predictable_temp_symlink_not_followed (test_round3_independent.Round3Tests.test_atomic_predictable_temp_symlink_not_followed) ... ok
+test_baseline_object_must_match_hashed_bytes (test_round3_independent.Round3Tests.test_baseline_object_must_match_hashed_bytes) ... ok
+test_db_captured_missing_flags_rejected (test_round3_independent.Round3Tests.test_db_captured_missing_flags_rejected) ... ok
+test_db_payload_foreign_url_rejected (test_round3_independent.Round3Tests.test_db_payload_foreign_url_rejected) ... ok
+test_db_pending_metadata_only_cannot_have_media (test_round3_independent.Round3Tests.test_db_pending_metadata_only_cannot_have_media) ... ok
+test_db_row_foreign_slug_rejected (test_round3_independent.Round3Tests.test_db_row_foreign_slug_rejected) ... ok
+test_db_sale_flag_true_rejected (test_round3_independent.Round3Tests.test_db_sale_flag_true_rejected) ... ok
+test_dimension_contradictory_sizes_rejected (test_round3_independent.Round3Tests.test_dimension_contradictory_sizes_rejected) ... ok
+test_dimension_decimal_not_silently_integer (test_round3_independent.Round3Tests.test_dimension_decimal_not_silently_integer) ... ok
+test_discovery_allowlist_at_write_boundary (test_round3_independent.Round3Tests.test_discovery_allowlist_at_write_boundary) ... ok
+test_export_rejects_post_preflight_foreign_discovery (test_round3_independent.Round3Tests.test_export_rejects_post_preflight_foreign_discovery) ... ok
+test_export_takes_exclusive_lock (test_round3_independent.Round3Tests.test_export_takes_exclusive_lock) ... ok
+test_output_catalog_rejected (test_round3_independent.Round3Tests.test_output_catalog_rejected) ... ok
+test_path_length_fail_before_write (test_round3_independent.Round3Tests.test_path_length_fail_before_write) ... ok
+test_pin_allowed_urls_must_match (test_round3_independent.Round3Tests.test_pin_allowed_urls_must_match) ... ok
+test_replacement_baseline_sku_rejected (test_round3_independent.Round3Tests.test_replacement_baseline_sku_rejected) ... ok
+test_replacement_pending_sku_rejected (test_round3_independent.Round3Tests.test_replacement_pending_sku_rejected) ... ok
+test_store_hardlink_rejected (test_round3_independent.Round3Tests.test_store_hardlink_rejected) ... ok
+test_store_symlink_rejected_before_wal (test_round3_independent.Round3Tests.test_store_symlink_rejected_before_wal) ... ok
+test_stream_chunked_limited_read (test_round3_independent.Round3Tests.test_stream_chunked_limited_read) ... ok
+test_stream_compression_rejected_before_body (test_round3_independent.Round3Tests.test_stream_compression_rejected_before_body) ... ok
+test_stream_mixed_dns_rejected (test_round3_independent.Round3Tests.test_stream_mixed_dns_rejected) ... ok
+test_stream_oversize_header_before_body (test_round3_independent.Round3Tests.test_stream_oversize_header_before_body) ... ok
+test_stream_private_dns_rejected (test_round3_independent.Round3Tests.test_stream_private_dns_rejected) ... ok
+test_stream_redirect_never_followed (test_round3_independent.Round3Tests.test_stream_redirect_never_followed) ... ok
+test_unsafe_request_body_not_used (test_round3_independent.Round3Tests.test_unsafe_request_body_not_used) ... ok
+test_ambiguous_more_controls_fail_closed (test_scroll_logic.ScrollTests.test_ambiguous_more_controls_fail_closed) ... ok
+test_incremental_sweep_collects_intermediate_virtualized_items (test_scroll_logic.ScrollTests.test_incremental_sweep_collects_intermediate_virtualized_items) ... ok
+test_link_more_is_supported (test_scroll_logic.ScrollTests.test_link_more_is_supported) ... ok
+test_missing_main_does_not_click_header (test_scroll_logic.ScrollTests.test_missing_main_does_not_click_header) ... ok
+test_more_control_redirect_to_other_seller_stops_before_discovery (test_scroll_logic.ScrollTests.test_more_control_redirect_to_other_seller_stops_before_discovery) ... ok
+test_scroll_budget_hit_never_claims_complete (test_scroll_logic.ScrollTests.test_scroll_budget_hit_never_claims_complete) ... ok
+test_show_more_click_then_scroll_new_items (test_scroll_logic.ScrollTests.test_show_more_click_then_scroll_new_items) ... ok
+test_unrelated_button_not_clicked (test_scroll_logic.ScrollTests.test_unrelated_button_not_clicked) ... ok
+
+----------------------------------------------------------------------
+Ran 165 tests in 1.153s
+
+OK

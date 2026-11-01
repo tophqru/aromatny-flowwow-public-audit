@@ -2,6 +2,33 @@
 
 Этот каталог — **изолированный кодовый аудит**, а не изменения рабочего магазина.
 
+## Независимый Round3 audit / исправления
+
+Исходный SHA `6313dcd1efa068c3ee011d8ccead8796dffbf60f` независимо воспроизведён: **104/104 offline tests**.
+После исправлений: **173/173**, включая **69 новых** adversarial/recovery тестов.
+Подробности, реальные логи, before/after, SHA256 и ограничения:
+[ARENA_ROUND3_FINDINGS.md](../../arena-output/flowwow-review3-independent-20261101/ARENA_ROUND3_FINDINGS.md),
+[TEST_RESULTS.md](../../arena-output/flowwow-review3-independent-20261101/TEST_RESULTS.md),
+[ASUS/live gate](../../arena-output/flowwow-review3-independent-20261101/REAL_BROWSER_GATE.md).
+
+**Live browser / Flowwow / Windows 10 / PowerShell 5.1: NOT_PERFORMED.**
+Description/composition expansion и обход всех gallery frames: **NOT_PROVEN**.
+Не считать офлайн PASS успешным живым пилотом или разрешением импорта.
+
+Исправленный CLI допускает crawl **только** с `--pilot-manifest`, pinned local `--baseline`,
+отдельным коротким external `--output`, `--max-products 3 --max-categories 1`.
+Точные SKU заданы кодом, не выбираются manifest; третий — metadata only без медиа.
+`pilot-manifest.example.json` — пример строгого manifest. `run_pilot.ps1` сохраняет ненулевой
+код incomplete/error; legacy full/trial wrappers также делегируют только strict pilot.
+Результат приёмки: `review/pilot-acceptance.json` (`PASS/PARTIAL/BLOCKED` для трёх URL).
+Текущий DOM-only extractor не производит полных UI evidence и не должен завершать такой пилот
+с exit 0: **код 5 означает незавершённую/неуспешную приёмку**, а не успех.
+
+Ниже сохранён контекст первоначальной интеграции; его раздел «НЕ реализовано» описывает
+**начальное**, а не исправленное состояние. Streaming transport и acceptance gate теперь есть;
+полный gallery/section UI adapter без настоящего браузера не выдуман. Private-source equality
+остаётся NOT_VERIFIED (GitHub API 403); полные upstream CI logs недоступны, сохранены job metadata.
+
 ## Происхождение
 - Исправленные исходники Arena Review2: public `tophqru/aromatny-flowwow-public-audit`, commit `2c6c79251be07355d5d6b864a1e48b73ec6a8cb6`, `arena-output/flowwow-parser-review2-independent-20261101/source/flowwow_review2/`. Все неизменённые файлы в этом Review3 использовали те же Git blob SHA, без пересборки/подмены.
 - `pilot_targets.py` и `tests/test_pilot_targets.py` из private `tophqru/flower-shop` PR #9, SHA `74dcb841dd5bb8555a8aa4817870a8c1cf8db65a`. В новой версии перенесено 16 ранее проверенных сценариев.
