@@ -1,0 +1,18 @@
+# Arena AI — Round3: independent integrated 101-test parser audit + new failures
+
+## Repositories and exact source
+Review PR for **`audit/flowwow-review3-asus-pilot-20261101`** in public `tophqru/aromatny-flowwow-public-audit`, directory `tools/flowwow-parser-review3-integrated/flowwow_review3/`. Original Arena corrected 85-test source: public PR #3 @ `2c6c79251be07355d5d6b864a1e48b73ec6a8cb6`. Strict guard source: private `tophqru/flower-shop` PR #9 @ `74dcb841dd5bb8555a8aa4817870a8c1cf8db65a`. This Review3 integration is new and should not be assumed correct.
+
+## Mandatory, independent examination
+1. Read and execute code from exact Review3 commit. Verify unchanged files retain Arena's original blob SHA, and `pilot_targets.py`/test are exactly from private pilot. Run `compileall`, all **101 tests**; inspect CI logs, do not trust counts in README. If CI not running, explain precisely and execute independently. Document actual Python, browser/OS presence, zero live claims.
+2. Verify strict three URL allowlist **before** launching browser and before a wrong database is reused: duplicate/unknown URL; wrong seller; changed Git baseline bytes; moving branch/cached discovery; stale or corrupted SQLite; concurrent process; unsafe output paths; UTF8/Unicode; Windows path length; partial crashes. Add fresh adversarial tests (>=20 meaningful new scenarios if real bugs justify) and fail-before/pass-after evidence.
+3. Inspect ALL product UI gaps: clicking `Показать ещё`/read more on description and composition, waiting for delayed SPA content, thumbnails/fullscreen gallery one by one, unknown count, scroll nested container, multiple show-more widgets, popups/new tabs, seller canonical ownership after click/return. Do not invent selectors: if no live Flowwow, mark DOM click capabilities `NOT_PROVEN`, propose fail-closed code with mock tests, and precise real-browser gate for Codex.
+4. Security: HTML export XSS, open redirect, SSRF including redirect chain and DNS, 18MiB image body memory buffer, compressed/image decompression bombs, filesystem symlink traversal, Git SHA1 proof semantics, sale flags, ownership, manifest mutation after preflight, SQLite integrity, missing/mixed baseline fields, access blocks.
+5. Distinguish test `Crawl ended` from acceptance `all 3 target cards verified`. Design a machine-readable `PASS/PARTIAL/BLOCKED` three-target report, with an explicit success gate for seller and all mandatory observed fields/photo evidence. Do not falsely certify gallery complete.
+6. ASUS environment: local Windows 10 i3 8GB RAM, Codex Desktop orchestrates, Compaq access via Tailscale. One persistent headed Chromium/Edge tab; low RAM, disabled browser launch, screen-locked/remote session, Windows PowerShell 5.1, crash/restart. No Windows runtime available? report `NOT_PERFORMED`.
+7. Deliver actual corrected code (new branch/PR or patch ZIP), reproducible tests/logs/manifest, source SHA and owner-safe delivery. Do NOT modify existing 66 SKU/435 JPEG or main/prod; no merge, no overbroad scraping, no CAPTCHA/403 bypass or mass concurrent requests.
+8. Do not repeat N01–N15 or R1–R17 as **new**. Assess regressions and list *new* findings with exact file and line, scenario, severity, fix, executed test result. State blockers candidly.
+
+## Expected output
+- Report `ARENA_ROUND3_FINDINGS.md`, `TEST_RESULTS.md`, actual code/test diff, 101+N executed logs, new patch, SHA256 and a **Draft PR** to this Review3 branch if allowed; otherwise published patch under a separate output folder and link via issue comment.
+- **No live Flowwow scan** unless authorized visible browser genuinely available, and no auto-merge.
