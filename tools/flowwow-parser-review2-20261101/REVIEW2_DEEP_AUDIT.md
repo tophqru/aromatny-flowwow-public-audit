@@ -2,7 +2,7 @@
 
 ## Контрольная точка
 
-Исходный Review1: 41 offline-тест PASS. В Review2 добавлены 2 модуля (`scroll_logic.py`, `category_logic.py`), 11 отдельных mock-тестов и улучшен `capture.py`. После изменений 52/52 offline unit tests PASS, `compileall` PASS. Испытание на реальном Flowwow / GUI Windows 10 / Edge: **NOT_PERFORMED**. Фотографии, cookies, токены, SQLite и приватный репозиторий в публичный пакет не входят. Расширение логики основано на анализе исходного кода и смоделированных сценариях, не на реальной DOM-структуре Flowwow.
+Исходный Review1: 41 offline-тест PASS. В Review2 добавлены 2 модуля (`scroll_logic.py`, `category_logic.py`), 12 отдельных mock-тестов и улучшен `capture.py`. После изменений 53/53 offline unit tests PASS, `compileall` PASS. Испытание на реальном Flowwow / GUI Windows 10 / Edge: **NOT_PERFORMED**. Фотографии, cookies, токены, SQLite и приватный репозиторий в публичный пакет не входят. Расширение логики основано на анализе исходного кода и смоделированных сценариях, не на реальной DOM-структуре Flowwow.
 
 ## R7 — HIGH: пролистывание магазина одним прыжком
 
@@ -54,3 +54,7 @@ Public snapshot и discovery загружаются по `BASE_BRANCH`, HEAD м�
 4. По каждому изменению — входные данные, воспроизводимый FAIL до правки, PASS после, точный лог и sha. Без доступа к Flowwow = `NOT_PERFORMED`.
 
 **Важно:** Flowwow-источник и публичные данные магазина не изменены. Никаких auto-merge, main, production, Seller prices, stock, orders, sale flags. Автоматическая публикация товаров запрещена.
+
+## R17 — HIGH: кнопка «Показать ещё» могла вести на другую витрину
+
+После клика `show more` теперь проверяется, что браузер остался на `https://flowwow.com/shop/lyubov-eto-699e0e4519/` (допускается внутренняя подпапка этой витрины), прежде чем читать новые ссылки. При уходе на чужого продавца останавливается дальнейший обход. Mock regression-тест на сценарий смены Shop URL добавлен; реальный Flowwow GUI: NOT_PERFORMED.

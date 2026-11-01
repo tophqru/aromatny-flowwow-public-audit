@@ -3,9 +3,9 @@
 **Публичный исходный код для Arena AI**, но **НЕ** production и **НЕ** каталог для продажи. Только read-only сбор с разрешённого браузера.
 
 - Ветка источника: `audit/chatgpt-description-recovery-20261031` (base SHA `864f6e222ea58cfed063f6594f896edb67ed8e7f`). Создан отдельный Draft PR; **main не менялся**.
-- Полный пакет: [flowwow_review2_source_code_only.tar.xz](flowwow_review2_source_code_only.tar.xz), 24 452 байта, SHA256 `52131f123d8cf345025c6808418675667cc5132da1953600d6c79b3ef6d54a5d`.
+- Полный пакет: [flowwow_review2_source_code_only.tar.xz](flowwow_review2_source_code_only.tar.xz), 24 576 байт, SHA256 `8a1df3c26ec7fdeb732ffdf3d2b1dd1360c6ec7859abc558fabe67c057d365a5`.
 - Содержимое: `capture.py`, `scroll_logic.py`, `category_logic.py`, `parsing.py`, `storage.py`, 3 PowerShell сценария, requirements и 4 набора тестов, SHA256SUMS.txt.
-- **Локальные проверки:** Python compileall PASS и **52/52 offline unittest PASS**, включая 11 mock-тестов прокрутки, раскрытия и категорий. **Windows PowerShell, live Flowwow, реальные галереи, GUI WebQA — NOT_PERFORMED.**
+- **Локальные проверки:** Python compileall PASS и **53/53 offline unittest PASS**, включая 12 mock-тестов прокрутки, раскрытия и категорий. **Windows PowerShell, live Flowwow, реальные галереи, GUI WebQA — NOT_PERFORMED.**
 - Дефекты, исправления, ограничения: [REVIEW2_DEEP_AUDIT.md](REVIEW2_DEEP_AUDIT.md).
 - Полное новое ТЗ Arena: [ARENA_REVIEW2_ASSIGNMENT.md](ARENA_REVIEW2_ASSIGNMENT.md).
 
