@@ -1,0 +1,54 @@
+name: Flowwow Review3 offline regression
+on:
+  push:
+    branches:
+      - audit/flowwow-review3-asus-pilot-20261101
+    paths:
+      - 'tools/flowwow-parser-review3-integrated/**'
+      - '.github/workflows/flowwow-review3-tests.yml'
+  pull_request:
+    paths:
+      - 'tools/flowwow-parser-review3-integrated/**'
+      - '.github/workflows/flowwow-review3-tests.yml'
+permissions:
+  contents: read
+jobs:
+  offline-parser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: tools/flowwow-parser-review3-integrated/flowwow_review3
+        shell: bash
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Python 3.11
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - name: Install isolated dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Syntax compilation
+        run: python -m compileall -q .
+      - name: Run all offline regressions, require at least 101
+        run: |
+          set -o pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee offline-test-results.log
+          python -c 'import pathlib,re; t=pathlib.Path("offline-test-results.log").read_text(); m=re.findall("Ran ([0-9]+) tests",t); assert m and int(m[-1])>=101, "Insufficient test count"; assert "OK" in t.splitlines(), "No OK summary"; print("PASS",m[-1],"offline tests")'
+      - name: No-dependencies diagnostic
+        run: |
+          python -S capture.py doctor > doctor-without-deps.json
+          python -c 'import json; x=json.load(open("doctor-without-deps.json",encoding="utf-8")); assert x["dependencies"]=="MISSING"'
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: flowwow-review3-offline-qa
+          path: |
+            tools/flowwow-parser-review3-integrated/flowwow_review3/offline-test-results.log
+            tools/flowwow-parser-review3-integrated/flowwow_review3/doctor-without-deps.json
+          if-no-files-found: warn
+          retention-days: 14
