@@ -1,0 +1,17 @@
+{
+  "python": "3.11.2",
+  "os": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "ram_note": "For 12 GB RAM, keep one headed browser and one tab; no parallel workers.",
+  "baseline_source": "PUBLIC tophqru/aromatny-flowwow-public-audit @ audit/chatgpt-description-recovery-20261031",
+  "output": "/home/user/aromatny-flowwow-public-audit/arena-output/flowwow-parser-review2-independent-20261101/source/flowwow_review2/output",
+  "dependencies": "MISSING",
+  "missing_dependency": "ModuleNotFoundError: No module named 'PIL'",
+  "action": "BLOCKED: run setup_windows.ps1 or pip install -r requirements.txt before crawl/export",
+  "playwright": "MISSING_RUN_SETUP_WINDOWS_PS1",
+  "supported_browsers": [
+    "chromium",
+    "msedge",
+    "chrome"
+  ],
+  "session_profile": "Separate profile under user's LOCALAPPDATA, NOT saved to output ZIP/GitHub"
+}

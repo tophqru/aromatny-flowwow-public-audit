@@ -1,0 +1,18 @@
+{
+  "python": "3.11.2",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "packages": {
+    "playwright": "1.64.1",
+    "beautifulsoup4": "4.15.0",
+    "Pillow": "12.3.0"
+  },
+  "binaries": {
+    "pwsh": null,
+    "powershell": null,
+    "chromium": null,
+    "chromium-browser": null,
+    "google-chrome": null
+  },
+  "live_browser": "NOT_AVAILABLE",
+  "flowwow_network_access": "NOT_ATTEMPTED"
+}

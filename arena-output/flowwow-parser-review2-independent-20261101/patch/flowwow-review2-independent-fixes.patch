@@ -1,0 +1,815 @@
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/.gitignore b/flowwow_review2/.gitignore
+--- a/flowwow_review2/.gitignore	1970-01-01 00:00:00.000000000 +0000
++++ b/flowwow_review2/.gitignore	2026-11-01 04:53:11.624445449 +0000
+@@ -0,0 +1,4 @@
++__pycache__/
++*.pyc
++.venv/
++output/
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/capture.py b/flowwow_review2/capture.py
+--- a/flowwow_review2/capture.py	2026-11-01 04:32:21.788000800 +0000
++++ b/flowwow_review2/capture.py	2026-11-01 04:55:00.550205523 +0000
+@@ -19,13 +19,18 @@
+ import urllib.request
+ from pathlib import Path
+ from urllib.parse import quote
+-from PIL import Image, UnidentifiedImageError
+-from parsing import (SHOP, canonical_product, canonical_shop, detect_challenge,
+-                     extract_sections, gallery_candidates, shop_item_links,
+-                     visible_seller_links, parse_composition, parse_dimensions)
+-from storage import Store, exclusive_run_lock, atomic_json, atomic_bytes, utc_now
+-from scroll_logic import expand_shop_conservatively
+-from category_logic import discover_category_labels
++_IMPORT_ERROR = None
++try:
++    from PIL import Image, UnidentifiedImageError
++    from parsing import (SHOP, canonical_product, canonical_shop, detect_challenge,
++                         extract_sections, gallery_candidates, shop_item_links,
++                         visible_seller_links, parse_composition, parse_dimensions,
++                         image_url_safe, same_shop_url)
++    from storage import Store, exclusive_run_lock, atomic_json, atomic_bytes, utc_now
++    from scroll_logic import expand_shop_conservatively
++    from category_logic import discover_category_labels
++except ImportError as exc:  # pragma: no cover - exercised by doctor without site-packages
++    _IMPORT_ERROR = exc
+ 
+ BASE_BRANCH="audit/chatgpt-description-recovery-20261031"
+ REPO="tophqru/aromatny-flowwow-public-audit"
+@@ -117,6 +122,9 @@
+         if not slug or slug in ids or not url or url!=f"https://flowwow.com/flowers/{slug}/":
+             raise RuntimeError("Baseline product slug/URL invalid or duplicate")
+         if p.get("seller_url")!=SHOP:raise RuntimeError("Unexpected seller URL in baseline")
++        for flag in ("owner_approved","may_order","may_show_publicly"):
++            if flag in p and p[flag] is not False:
++                raise RuntimeError("Baseline sale permission must remain false: "+slug+"."+flag)
+         ids.add(slug)
+     if "kompoziciya-v-shlyapnoy-k-4183" in ids:raise RuntimeError("Owner-excluded SKU appears in baseline")
+ 
+@@ -130,8 +138,12 @@
+             or result.get("gallery",{}).get("status")!="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS")
+ 
+ 
+-def needs_media_capture(result: dict, max_assets: int) -> bool:
+-    """Trial captures must not silently prevent the full run from getting media."""
++def needs_media_capture(result: dict, max_assets: int, out: Path | None = None) -> bool:
++    """Trial captures must not silently prevent the full run from getting media.
++
++    When an output directory is supplied, a recorded local file that was deleted
++    or corrupted after the trial is treated as missing so the full run recaptures it.
++    """
+     if result.get("seller", {}).get("status") != "EXACT_SELLER_CLICK_VERIFIED":
+         return False
+     gallery = result.get("gallery", {})
+@@ -140,9 +152,21 @@
+     expected = gallery.get("items", [])[:max_assets]
+     if not expected:
+         return False
+-    done = {r.get("source_url") for r in result.get("image_downloads", [])
+-            if r.get("status") in {"ALREADY_IN_PUBLIC_BASELINE", "ALREADY_IN_PUBLIC_BASELINE_SHA256",
+-                                   "ALREADY_CAPTURED", "NEW_ORIGINAL_FILE"}}
++    done = set()
++    for r in result.get("image_downloads", []):
++        if r.get("status") not in {"ALREADY_IN_PUBLIC_BASELINE", "ALREADY_IN_PUBLIC_BASELINE_SHA256",
++                                   "ALREADY_CAPTURED", "NEW_ORIGINAL_FILE"}:
++            continue
++        if out is not None and r.get("relative_path"):
++            try:
++                target = safe_new_media_path(out, r["relative_path"])
++            except LocalIntegrityError:
++                continue
++            if not target.is_file():
++                continue
++            if r.get("sha256") and sha_bytes(target.read_bytes()) != r["sha256"]:
++                continue
++        done.add(r.get("source_url"))
+     return any(url not in done for url in expected)
+ 
+ 
+@@ -276,11 +300,7 @@
+                 page.wait_for_timeout(1000)
+                 # Category controls may be unrelated links; do not classify products from
+                 # another seller or external page as part of this shop.
+-                from urllib.parse import urlsplit
+-                destination=urlsplit(page.url)
+-                expected=urlsplit(SHOP)
+-                if (destination.scheme!="https" or destination.hostname not in ("flowwow.com","www.flowwow.com")
+-                        or not destination.path.startswith(expected.path)):
++                if not same_shop_url(page.url):
+                     store.event("CATEGORY_NAVIGATION_OUTSIDE_SHOP",{"category":category,"observed_url":page.url[:250]})
+                     raise BrowserBlocked("Category control navigated outside the requested shop; stop")
+             except BrowserBlocked:
+@@ -314,15 +334,33 @@
+     if len(candidates)!=1 or len(unique)!=1:
+         return {"status":"UNVERIFIED","reason":"NO_UNAMBIGUOUS_VISIBLE_SELLER_LINK","observed_links":sorted(unique),"clicked":False}
+     locator,expected,text=candidates[0]
++    context=getattr(page,"context",None)
++    pages_before=list(context.pages) if context is not None else []
++    popup=None
+     try:
+         locator.click(timeout=7000)
+         page.wait_for_timeout(1000)
+-        final=canonical_shop(page.url)
+-        out={"status":"EXACT_SELLER_CLICK_VERIFIED" if final==SHOP and expected==SHOP else "DIFFERENT_OR_UNVERIFIED_SELLER",
+-             "expected_link":expected,"final_url":page.url,"seller_text":text,"clicked":True}
++        new_pages=[p for p in (context.pages if context is not None else []) if p not in pages_before]
++        if len(new_pages)>1:
++            out={"status":"UNVERIFIED","reason":"MULTIPLE_NEW_TABS_AFTER_SELLER_CLICK","clicked":True}
++        else:
++            if new_pages:
++                popup=new_pages[0]
++                try:popup.wait_for_load_state("domcontentloaded",timeout=5000)
++                except Exception:pass
++                observed_url=popup.url
++            else:
++                observed_url=page.url
++            final=canonical_shop(observed_url)
++            out={"status":"EXACT_SELLER_CLICK_VERIFIED" if final==SHOP and expected==SHOP else "DIFFERENT_OR_UNVERIFIED_SELLER",
++                 "expected_link":expected,"final_url":observed_url,"seller_text":text,"clicked":True,
++                 "opened_new_tab":bool(new_pages)}
+     except Exception as e:
+         out={"status":"UNVERIFIED","reason":"CLICK_FAILED:"+type(e).__name__,"clicked":False}
+     finally:
++        if popup is not None:
++            try:popup.close()
++            except Exception:pass
+         # Returning to known URL is safer than browser.back() after SPA navigation.
+         navigate(page,url_before)
+     return out
+@@ -333,6 +371,12 @@
+     by_hash={x["sha256"]:x for p in baseline["products"] for x in p.get("gallery",[])}
+     results=[]
+     for i,url in enumerate(source_urls[:args.max_gallery_assets],1):
++        safe_url=image_url_safe(url)
++        if safe_url is None:
++            results.append({"order":i,"source_url":str(url)[:250],"status":"UNVERIFIED_DOWNLOAD_ERROR",
++                            "error_type":"UNSAFE_IMAGE_URL","error_summary":"URL failed CDN/HTTPS allowlist; no network request made"})
++            continue
++        url=safe_url
+         if url in by_url:
+             results.append({"order":i,"source_url":url,"status":"ALREADY_IN_PUBLIC_BASELINE","original_path":by_url[url]["path"]});continue
+         existing=store.existing_asset(slug,url)
+@@ -458,7 +502,7 @@
+                             if old[0]=="CAPTURED":
+                                 previous = json.loads(old[1])
+                                 media_required = (args.download_new_media
+-                                                  and needs_media_capture(previous, args.max_gallery_assets))
++                                                  and needs_media_capture(previous, args.max_gallery_assets, out))
+                                 source_required = (args.recheck_unverified
+                                                    and needs_source_recheck(previous))
+                                 if not (media_required or source_required):
+@@ -524,12 +568,15 @@
+         rows=[]
+         for p in products:
+             slug=html.escape(p.get("slug", ""))
+-            url=html.escape(p.get("url", ""),quote=True)
++            raw_url=p.get("url", "")
++            safe_url=canonical_product(raw_url) or canonical_shop(raw_url)
++            url_cell=(f'<a href="{html.escape(safe_url,quote=True)}" rel="noreferrer">{slug}</a>'
++                      if safe_url else f'<span>{slug}</span>')
+             seller=html.escape(p.get("seller",{}).get("status","—"))
+             comp=html.escape(p.get("composition",{}).get("status","—"))
+             dim=html.escape(p.get("dimensions",{}).get("status","—"))
+             gallery=html.escape(p.get("gallery",{}).get("status","—"))
+-            rows.append(f'<tr><td><a href="{url}" rel="noreferrer">{slug}</a></td><td>{seller}</td><td>{comp}</td><td>{dim}</td><td>{gallery}</td></tr>')
++            rows.append(f'<tr><td>{url_cell}</td><td>{seller}</td><td>{comp}</td><td>{dim}</td><td>{gallery}</td></tr>')
+         page='''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Ароматный букет — локальный журнал</title><style>body{font:15px/1.5 system-ui;margin:28px auto;max-width:1200px;padding:0 15px;color:#223}table{border-collapse:collapse;width:100%}th,td{padding:10px;border-bottom:1px solid #ddd;text-align:left}thead{background:#eee}tr:nth-child(2n){background:#f7f7f9}a{color:#0652a5}</style><h1>Локальный журнал Flowwow</h1><p>Это <b>не опубликованный каталог</b>. Все поля и фотографии требуют подтверждения перед импортом. Исходные продажи не изменялись.</p><table><thead><tr><th>Товар</th><th>Продавец</th><th>Состав</th><th>Размеры</th><th>Фото</th></tr></thead><tbody>'''+''.join(rows)+'''</tbody></table></html>'''
+         atomic_bytes(review/"report.html",page.encode("utf-8"))
+         print(json.dumps(counts,ensure_ascii=False,indent=2));print("Report:",review/"report.html")
+@@ -541,6 +588,12 @@
+     import platform
+     report={"python":sys.version.split()[0],"os":platform.platform(),"ram_note":"For 12 GB RAM, keep one headed browser and one tab; no parallel workers.",
+             "baseline_source":f"PUBLIC {REPO} @ {BASE_BRANCH}","output":str(Path(args.output).resolve())}
++    if _IMPORT_ERROR is not None:
++        report["dependencies"]="MISSING"
++        report["missing_dependency"]=f"{type(_IMPORT_ERROR).__name__}: {_IMPORT_ERROR}"
++        report["action"]="BLOCKED: run setup_windows.ps1 or pip install -r requirements.txt before crawl/export"
++    else:
++        report["dependencies"]="AVAILABLE"
+     try:
+         import playwright
+         report["playwright"]="PYTHON_LIBRARY_AVAILABLE"
+@@ -574,6 +627,8 @@
+         parser.error("Invalid limits: pause_min>=3; max>=min; valid product/gallery/load limits required")
+     try:
+         if args.command=="doctor":return doctor(args)
++        if _IMPORT_ERROR is not None:
++            raise RuntimeError(f"Missing dependencies: {_IMPORT_ERROR}. Run setup_windows.ps1 or pip install -r requirements.txt")
+         if args.command=="export":return export(args)
+         return crawl(args)
+     except KeyboardInterrupt:
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/parsing.py b/flowwow_review2/parsing.py
+--- a/flowwow_review2/parsing.py	2026-11-01 04:15:22.000000000 +0000
++++ b/flowwow_review2/parsing.py	2026-11-01 04:55:50.447011773 +0000
+@@ -47,6 +47,20 @@
+     except (ValueError, TypeError): return None
+ 
+ 
++def same_shop_url(href: str, base: str = SHOP) -> bool:
++    """True only for the canonical shop root or a subpath, with/without trailing slash."""
++    try:
++        u=urlsplit(urljoin(base,href))
++        expected=urlsplit(SHOP)
++        if u.scheme!="https" or u.username or u.password or (u.hostname or "").lower() not in ("flowwow.com","www.flowwow.com") or u.port not in (None,443):
++            return False
++        path=u.path.rstrip("/")
++        root=expected.path.rstrip("/")
++        return path==root or path.startswith(root+"/")
++    except (ValueError,TypeError):
++        return False
++
++
+ def image_url_safe(value: str | None, base: str = "https://flowwow.com/") -> str | None:
+     if not value or value.startswith("data:") or value.startswith("blob:"): return None
+     try:
+@@ -156,7 +170,12 @@
+     if not raw: return {"status":"SOURCE_NOT_VISIBLE","width_cm":None,"height_cm":None,"raw":raw}
+     matches=SIZE_RE.findall(raw)
+     if len(matches)!=1:
+-        return {"status":"UNVERIFIED_PARSE","width_cm":None,"height_cm":None,"raw":raw}
++        widths=re.findall(r"\bширина\s*[:–-]?\s*(\d{1,3})\s*(?:см|cm)?\b",raw,re.I)
++        heights=re.findall(r"\bвысота\s*[:–-]?\s*(\d{1,3})\s*(?:см|cm)?\b",raw,re.I)
++        if len(matches)==0 and len(widths)==1 and len(heights)==1:
++            matches=[(widths[0],heights[0])]
++        else:
++            return {"status":"UNVERIFIED_PARSE","width_cm":None,"height_cm":None,"raw":raw}
+     w,h=map(int,matches[0])
+     if w<=0 or h<=0 or w>200 or h>300:
+         return {"status":"UNVERIFIED_PARSE","width_cm":None,"height_cm":None,"raw":raw}
+@@ -188,13 +207,14 @@
+         if getattr(node,"name",None)!="img": continue
+         # DOM srcset may include bigger originally displayed frames; never rewrite CDN paths.
+         candidates=[]
+-        srcset=node.get("srcset") or ""
+-        for fragment in srcset.split(","):
+-            if fragment.strip():
+-                raw=fragment.strip().split()[0]
+-                url=image_url_safe(raw,base)
+-                if url: candidates.append((url,fragment.strip()))
+-        for key in ("src","data-src"):
++        for srcset_key in ("srcset","data-srcset"):
++            srcset=node.get(srcset_key) or ""
++            for fragment in srcset.split(","):
++                if fragment.strip():
++                    raw=fragment.strip().split()[0]
++                    url=image_url_safe(raw,base)
++                    if url: candidates.append((url,fragment.strip()))
++        for key in ("src","data-src","data-original"):
+             url=image_url_safe(node.get(key),base)
+             if url: candidates.append((url,key))
+         # Choose highest stated width, if present; don't invent an original URL.
+@@ -208,7 +228,8 @@
+         url=max(candidates,key=rank)[0]
+         if url not in seen:
+             seen.add(url);urls.append(url)
+-    return {"status":"GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS" if urls else "GALLERY_NOT_IDENTIFIED", "items":urls[:60],"selector":selector,"candidate_count":len(urls)}
++    return {"status":"GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS" if urls else "GALLERY_NOT_IDENTIFIED",
++            "items":urls[:60],"selector":selector,"candidate_count":len(urls),"truncated":len(urls)>60}
+ 
+ 
+ def detect_challenge(title: str, text: str) -> bool:
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/scroll_logic.py b/flowwow_review2/scroll_logic.py
+--- a/flowwow_review2/scroll_logic.py	2026-11-01 04:32:21.787596700 +0000
++++ b/flowwow_review2/scroll_logic.py	2026-11-01 04:56:40.091813969 +0000
+@@ -6,8 +6,7 @@
+ from __future__ import annotations
+ 
+ import re
+-from parsing import canonical_product, shop_item_links, SHOP
+-from urllib.parse import urlsplit
++from parsing import canonical_product, shop_item_links, SHOP, same_shop_url
+ 
+ SHOW_MORE = re.compile(r"^(?:показать\s+(?:ещё|еще|больше)(?:\s+товар(?:ов|ы)?)?|загрузить\s+(?:ещё|еще)(?:\s+товар(?:ов|ы)?)?|show\s+more(?:\s+products)?|load\s+more(?:\s+products)?)$",re.I)
+ 
+@@ -38,7 +37,13 @@
+           const e=document.scrollingElement || document.documentElement;
+           const n=Math.max(240, Math.round(window.innerHeight*0.8));
+           window.scrollBy(0,n);
+-          return {y:window.scrollY, height:e.scrollHeight, viewport:window.innerHeight};
++          let nested=false;
++          const nodes=document.querySelectorAll('*');
++          for (let i=0;i<Math.min(nodes.length,2000);i++){
++            const el=nodes[i]; const s=getComputedStyle(el);
++            if (/(auto|scroll)/.test(s.overflowY) && el.scrollHeight>el.clientHeight+4){nested=true;break;}
++          }
++          return {y:window.scrollY, height:e.scrollHeight, viewport:window.innerHeight, nested};
+         }""")
+         steps+=1
+         page.wait_for_timeout(delay_ms)
+@@ -51,7 +56,7 @@
+     return {"links_added":len(found)-before,"scroll_steps":steps,
+             "observed_document_bottom":unchanged_at_bottom>=2,
+             "scroll_budget_hit":steps>=max_steps and unchanged_at_bottom<2,
+-            "possible_nested_scroll":bool(state and state['height']<=state['viewport']+4)}
++            "possible_nested_scroll":bool(state and state.get('nested', False))}
+ 
+ 
+ def visible_more_controls(page):
+@@ -86,12 +91,14 @@
+             reason='AMBIGUOUS_SHOW_MORE_CONTROLS';break
+         if len(controls)==1:
+             try:
++                context=getattr(page,"context",None)
++                pages_before=list(context.pages) if context is not None else []
+                 controls[0].click(timeout=7000)
+                 clicks+=1
+                 page.wait_for_timeout(1200)
+-                dest=urlsplit(page.url);expected=urlsplit(SHOP)
+-                if (dest.scheme!='https' or dest.hostname not in ('flowwow.com','www.flowwow.com')
+-                        or dest.port not in (None,443) or not dest.path.startswith(expected.path)):
++                if context is not None and any(p not in pages_before for p in context.pages):
++                    reason='MORE_CONTROL_OPENED_NEW_TAB';break
++                if not same_shop_url(page.url):
+                     reason='MORE_CONTROL_NAVIGATED_OUTSIDE_SHOP'
+                     break
+                 scan_links(page,store,category,found)
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/setup_windows.ps1 b/flowwow_review2/setup_windows.ps1
+--- a/flowwow_review2/setup_windows.ps1	2026-11-01 04:13:28.000000000 +0000
++++ b/flowwow_review2/setup_windows.ps1	2026-11-01 04:57:07.372254710 +0000
+@@ -19,7 +19,13 @@
+ if ($LASTEXITCODE -ne 0) { throw 'Dependency installation failed' }
+ Write-Host 'Installing isolated Playwright Chromium (browser binaries)...' -ForegroundColor Cyan
+ & $python -m playwright install chromium
+-if ($LASTEXITCODE -ne 0) { Write-Warning 'Bundled Chromium unavailable. If Microsoft Edge is installed, use .\run_trial.ps1 -Browser msedge.' }
++$browserReady = ($LASTEXITCODE -eq 0)
++if (-not $browserReady) { Write-Warning 'Bundled Chromium unavailable. If Microsoft Edge is installed, use .\run_trial.ps1 -Browser msedge.' }
+ & $python capture.py doctor
+ if ($LASTEXITCODE -ne 0) { throw 'Doctor check failed' }
+-Write-Host 'SETUP SUCCESS. Run .\run_trial.ps1 next.' -ForegroundColor Green
++if ($browserReady) {
++    Write-Host 'SETUP SUCCESS. Run .\run_trial.ps1 next.' -ForegroundColor Green
++} else {
++    Write-Host 'SETUP PARTIAL: dependencies installed, but no bundled Chromium. Use -Browser msedge only if Edge is already installed.' -ForegroundColor Yellow
++    exit 1
++}
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/storage.py b/flowwow_review2/storage.py
+--- a/flowwow_review2/storage.py	2026-11-01 04:13:28.000000000 +0000
++++ b/flowwow_review2/storage.py	2026-11-01 04:56:57.068088234 +0000
+@@ -19,6 +19,12 @@
+         with open(tmp,"wb") as f:
+             f.write(value); f.flush();os.fsync(f.fileno())
+         os.replace(tmp,path)
++        # Persist the directory entry on POSIX. Windows has no portable directory
++        # fsync; the file flush + atomic replacement is the available guarantee.
++        if os.name != "nt":
++            dir_fd=os.open(path.parent,os.O_RDONLY)
++            try:os.fsync(dir_fd)
++            finally:os.close(dir_fd)
+     finally:
+         tmp.unlink(missing_ok=True)
+ 
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/tests/test_arena_review2_independent.py b/flowwow_review2/tests/test_arena_review2_independent.py
+--- a/flowwow_review2/tests/test_arena_review2_independent.py	1970-01-01 00:00:00.000000000 +0000
++++ b/flowwow_review2/tests/test_arena_review2_independent.py	2026-11-01 05:04:41.707596014 +0000
+@@ -0,0 +1,433 @@
++"""ARENA independent REVIEW2 scenarios (offline only).
++
++These tests were written from the published REVIEW2 source, not copied from the
++author's test suite. They use fakes/mocks and subprocesses; none opens live Flowwow.
++Run with: python -m unittest discover -s tests -v
++"""
++from __future__ import annotations
++import os
++import subprocess
++import sys
++import tempfile
++import unittest
++from pathlib import Path
++from types import SimpleNamespace
++from unittest.mock import Mock, patch
++
++ROOT = Path(__file__).resolve().parents[1]
++sys.path.insert(0, str(ROOT))
++import capture
++import parsing
++import scroll_logic
++import category_logic
++import storage
++from storage import Store, atomic_bytes, exclusive_run_lock
++
++SHOP = parsing.SHOP
++PRODUCT = "https://flowwow.com/flowers/buket-example/"
++IMG = "https://content2.flowwow-images.com/data/flowers/1000x1000/a.jpg"
++
++
++class PopupPage:
++    def __init__(self, url, context):
++        self.url = url
++        self.context = context
++
++    def wait_for_load_state(self, *a, **k):
++        return None
++
++    def close(self):
++        if self in self.context.pages:
++            self.context.pages.remove(self)
++
++
++class SellerContext:
++    def __init__(self, page):
++        self.pages = [page]
++
++
++class SellerLocator:
++    def __init__(self, page, href, new_tab=True):
++        self.page = page
++        self.href = href
++        self.new_tab = new_tab
++
++    def is_visible(self):
++        return True
++
++    def get_attribute(self, name):
++        return self.href if name == "href" else None
++
++    def inner_text(self, timeout=None):
++        return "Перейти в магазин"
++
++    def click(self, timeout=None):
++        if self.new_tab:
++            self.page.context.pages.append(PopupPage(self.href, self.page.context))
++        else:
++            self.page.url = self.href
++
++
++class SellerLocatorSet:
++    def __init__(self, items):
++        self.items = items
++
++    def all(self):
++        return self.items
++
++
++class BodyLocator:
++    def count(self):
++        return 0
++
++
++class SellerPage:
++    def __init__(self, target=SHOP, new_tab=True):
++        self.url = PRODUCT
++        self.context = SellerContext(self)
++        self._seller = SellerLocator(self, target, new_tab)
++
++    def locator(self, selector):
++        if selector == "body":
++            return BodyLocator()
++        return SellerLocatorSet([self._seller])
++
++    def wait_for_timeout(self, ms):
++        return None
++
++    def goto(self, url, **kwargs):
++        self.url = url
++        return SimpleNamespace(status=200)
++
++    def title(self):
++        return "Flowwow"
++
++
++class MoreButton:
++    def __init__(self, page):
++        self.page = page
++
++    def is_visible(self):
++        return True
++
++    def is_enabled(self):
++        return True
++
++    def click(self, timeout=None):
++        self.page.context.pages.append(PopupPage(SHOP, self.page.context))
++
++
++class MainRoot:
++    def __init__(self, page):
++        self.page = page
++
++    def count(self):
++        return 1
++
++    @property
++    def first(self):
++        return self
++
++    def get_by_role(self, role, name=None):
++        items = [MoreButton(self.page)] if role == "button" else []
++        return SimpleNamespace(all=lambda: items)
++
++
++class MorePage:
++    def __init__(self, nested=False, short=False):
++        self.url = SHOP
++        self.context = SellerContext(self)
++        self.nested = nested
++        self.short = short
++
++    def locator(self, selector):
++        return MainRoot(self)
++
++    def evaluate(self, script):
++        height = 800 if self.short else 2400
++        return {"y": 0, "height": height, "viewport": 800, "nested": self.nested}
++
++    def content(self):
++        return "<main></main>"
++
++    def wait_for_timeout(self, ms):
++        return None
++
++
++class CLITests(unittest.TestCase):
++    def test_doctor_without_site_packages_reports_missing_not_traceback(self):
++        r = subprocess.run([sys.executable, "-S", str(ROOT / "capture.py"), "doctor"],
++                           cwd=ROOT, capture_output=True, text=True, timeout=60)
++        self.assertEqual(r.returncode, 0, r.stderr)
++        self.assertIn("MISSING", r.stdout)
++        self.assertNotIn("Traceback", r.stderr)
++
++    def test_crawl_without_dependencies_fails_friendly(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            r = subprocess.run([sys.executable, "-S", str(ROOT / "capture.py"), "crawl",
++                                "--offline-baseline", "--output", tmp],
++                               cwd=ROOT, capture_output=True, text=True, timeout=60)
++        self.assertEqual(r.returncode, 2, r.stderr)
++        self.assertIn("Missing dependencies", r.stderr)
++        self.assertNotIn("Traceback", r.stderr)
++
++    def test_review1_script_mode_runs_integration_tests(self):
++        r = subprocess.run([sys.executable, str(ROOT / "tests" / "test_review1.py"), "-v"],
++                           cwd=ROOT, capture_output=True, text=True, timeout=120)
++        self.assertEqual(r.returncode, 0, r.stderr)
++        self.assertIn("ResumeIntegrationTests", r.stdout + r.stderr)
++
++
++class SellerClickTests(unittest.TestCase):
++    def test_seller_link_new_tab_is_verified(self):
++        page = SellerPage(target=SHOP, new_tab=True)
++        result = capture.click_seller_link(page, PRODUCT)
++        self.assertEqual(result["status"], "EXACT_SELLER_CLICK_VERIFIED")
++        self.assertTrue(result.get("opened_new_tab"))
++        self.assertEqual(page.url, PRODUCT)
++
++    def test_seller_link_new_tab_other_seller_rejected(self):
++        page = SellerPage(target="https://flowwow.com/shop/other-shop/", new_tab=True)
++        result = capture.click_seller_link(page, PRODUCT)
++        self.assertEqual(result["status"], "DIFFERENT_OR_UNVERIFIED_SELLER")
++        self.assertEqual(page.url, PRODUCT)
++
++
++class ShopNavigationTests(unittest.TestCase):
++    def test_show_more_new_tab_stops_not_stable(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            store = Store(Path(tmp) / "p.sqlite3")
++            page = MorePage(short=True)
++            args = SimpleNamespace(max_load_cycles=3, max_scroll_steps=2,
++                                   pause_min=0, pause_max=0)
++            result = scroll_logic.expand_shop_conservatively(
++                page, args, store, "ALL", lambda a: None)
++            store.close()
++        self.assertEqual(result["stop_reason"], "MORE_CONTROL_OPENED_NEW_TAB")
++        self.assertFalse(result.get("complete", False))
++
++    def test_same_shop_url_accepts_trailing_slash_and_subpath_only(self):
++        self.assertTrue(parsing.same_shop_url(SHOP.rstrip("/")))
++        self.assertTrue(parsing.same_shop_url(SHOP))
++        self.assertTrue(parsing.same_shop_url(SHOP + "buket-example/"))
++        self.assertFalse(parsing.same_shop_url("https://evil.com/shop/lyubov-eto-699e0e4519/"))
++        self.assertFalse(parsing.same_shop_url("https://user:pass@flowwow.com/shop/lyubov-eto-699e0e4519/"))
++
++    def test_nested_scroll_flag_not_short_page(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            store = Store(Path(tmp) / "p.sqlite3")
++            found = set()
++            result = scroll_logic.sweep_incrementally(MorePage(short=True), store, "ALL", found, max_steps=2)
++            store.close()
++        self.assertFalse(result["possible_nested_scroll"])
++
++    def test_nested_scroll_flag_detects_container(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            store = Store(Path(tmp) / "p.sqlite3")
++            found = set()
++            result = scroll_logic.sweep_incrementally(MorePage(nested=True), store, "ALL", found, max_steps=2)
++            store.close()
++        self.assertTrue(result["possible_nested_scroll"])
++
++
++class SecurityTests(unittest.TestCase):
++    def test_export_report_rejects_javascript_url(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            out = Path(tmp)
++            store = Store(out / "progress.sqlite3")
++            store.record_page("javascript:alert(1)", "evil", "BASELINE_66", "CAPTURED",
++                              {"slug": "evil", "url": "javascript:alert(1)"})
++            store.close()
++            capture.export(SimpleNamespace(output=str(out)))
++            html = (out / "review" / "report.html").read_text(encoding="utf-8")
++        self.assertNotIn('href="javascript', html)
++        self.assertIn("<span>evil</span>", html)
++
++    def test_export_html_escapes_slug(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            out = Path(tmp)
++            store = Store(out / "progress.sqlite3")
++            store.record_page(PRODUCT, "<script>alert(1)</script>", "BASELINE_66", "CAPTURED",
++                              {"slug": "<script>alert(1)</script>", "url": PRODUCT})
++            store.close()
++            capture.export(SimpleNamespace(output=str(out)))
++            html = (out / "review" / "report.html").read_text(encoding="utf-8")
++        self.assertIn("&lt;script&gt;", html)
++        self.assertNotIn("<script>alert(1)</script>", html)
++
++    def test_download_assets_unsafe_url_no_network(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            out = Path(tmp)
++            store = Store(out / "p.sqlite3")
++            get = Mock()
++            context = SimpleNamespace(request=SimpleNamespace(get=get))
++            args = SimpleNamespace(max_gallery_assets=10, pause_min=0, pause_max=0)
++            results = capture.download_assets(context, store, args, "buket-example",
++                                              ["http://169.254.169.254/latest/meta-data/"],
++                                              {"products": []}, out)
++            store.close()
++        get.assert_not_called()
++        self.assertEqual(results[0]["error_type"], "UNSAFE_IMAGE_URL")
++
++    def test_image_redirect_not_followed(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            out = Path(tmp)
++            store = Store(out / "p.sqlite3")
++            resp = SimpleNamespace(status=301, ok=False, headers={}, body=Mock(return_value=b""))
++            get = Mock(return_value=resp)
++            context = SimpleNamespace(request=SimpleNamespace(get=get))
++            args = SimpleNamespace(max_gallery_assets=10, pause_min=0, pause_max=0)
++            results = capture.download_assets(context, store, args, "buket-example",
++                                              [IMG], {"products": []}, out)
++            store.close()
++            self.assertEqual(get.call_count, 1)
++            self.assertEqual(results[0]["status"], "UNVERIFIED_DOWNLOAD_ERROR")
++            self.assertFalse(list(out.glob("new-media/**/*")))
++
++    def test_baseline_rejects_sale_flags_true(self):
++        data = {"seller": SHOP, "products": [{"slug": "buket-example", "flowwow_url": PRODUCT,
++                                              "seller_url": SHOP, "may_order": True}]}
++        with self.assertRaises(RuntimeError):
++            capture.validate_baseline(data)
++
++    def test_baseline_excluded_sku_rejected(self):
++        data = {"seller": SHOP, "products": [{"slug": "kompoziciya-v-shlyapnoy-k-4183",
++                                              "flowwow_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-4183/",
++                                              "seller_url": SHOP}]}
++        with self.assertRaises(RuntimeError):
++            capture.validate_baseline(data)
++
++    def test_canonical_product_rejects_homograph_host(self):
++        self.assertIsNone(parsing.canonical_product("https://flowwow.com@evil.com/flowers/x/"))
++        self.assertIsNone(parsing.canonical_product("https://flowwоw.com/flowers/x/"))
++
++    def test_image_url_safe_rejects_private_and_data_urls(self):
++        self.assertIsNone(parsing.image_url_safe("http://127.0.0.1/a.jpg"))
++        self.assertIsNone(parsing.image_url_safe("data:image/jpeg;base64,AAAA"))
++        self.assertIsNone(parsing.image_url_safe("javascript:alert(1)"))
++
++
++class ParsingTests(unittest.TestCase):
++    def test_gallery_truncation_flag(self):
++        html = "<main>" + "".join(
++            f'<img src="https://content2.flowwow-images.com/{i}.jpg">' for i in range(61)) + "</main>"
++        result = parsing.gallery_candidates(html, PRODUCT, selector="img")
++        self.assertEqual(result["candidate_count"], 61)
++        self.assertEqual(len(result["items"]), 60)
++        self.assertTrue(result["truncated"])
++
++    def test_gallery_data_srcset_lazy(self):
++        html = ('<main><img src="https://content2.flowwow-images.com/placeholder.jpg" '
++                'data-srcset="https://content2.flowwow-images.com/1200x1200/original.jpg 1200w"></main>')
++        result = parsing.gallery_candidates(html, PRODUCT, selector="img")
++        self.assertIn("https://content2.flowwow-images.com/1200x1200/original.jpg", result["items"])
++
++    def test_gallery_status_never_complete(self):
++        html = '<main><img src="https://content2.flowwow-images.com/a.jpg"></main>'
++        result = parsing.gallery_candidates(html, PRODUCT, selector="img")
++        self.assertNotEqual(result["status"], "COMPLETE")
++        self.assertIn("UNVERIFIED", result["status"])
++
++    def test_dimensions_labelled_width_height(self):
++        result = parsing.parse_dimensions("Ширина: 35 см. Высота: 45 см.")
++        self.assertEqual(result["status"], "PARSED_NEEDS_SELLER_CONFIRMATION")
++        self.assertEqual((result["width_cm"], result["height_cm"]), (35, 45))
++
++    def test_dimensions_ambiguous_multiple_unverified(self):
++        result = parsing.parse_dimensions("35×45 см и 50×60 см")
++        self.assertEqual(result["status"], "UNVERIFIED_PARSE")
++
++    def test_composition_decimal_quantity_unverified(self):
++        result = parsing.parse_composition("Роза — 1.5 шт")
++        self.assertEqual(result["status"], "UNVERIFIED_PARSE")
++
++    def test_category_labels_ignore_show_more_and_external(self):
++        html = ('<main><button role="tab">Показать ещё</button>'
++                '<a role="tab" href="https://evil.com/shop/x/">Внешняя</a>'
++                '<button role="tab">Букеты</button></main>')
++        self.assertEqual(category_logic.discover_category_labels(html), ["Букеты"])
++
++
++class StorageResumeTests(unittest.TestCase):
++    def test_atomic_bytes_fsyncs_directory(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            path = Path(tmp) / "sub" / "file.bin"
++            with patch("storage.os.fsync", wraps=os.fsync) as fsync:
++                atomic_bytes(path, b"payload")
++            self.assertGreaterEqual(fsync.call_count, 2)
++            self.assertEqual(path.read_bytes(), b"payload")
++
++    def test_atomic_bytes_cyrillic_space_path(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            path = Path(tmp) / "каталог с пробелом" / "файл.bin"
++            atomic_bytes(path, "данные".encode("utf-8"))
++            self.assertEqual(path.read_bytes(), "данные".encode("utf-8"))
++
++    def test_sqlite_cyrillic_space_path(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            path = Path(tmp) / "база данных" / "p.sqlite3"
++            store = Store(path)
++            store.record_page(PRODUCT, "buket-example", "BASELINE_66", "CAPTURED", {"ok": True})
++            rows = store.page_rows()
++            store.close()
++        self.assertEqual(len(rows), 1)
++
++    def test_sqlite_wal_reopen_preserves_rows(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            path = Path(tmp) / "p.sqlite3"
++            store = Store(path)
++            store.record_page(PRODUCT, "buket-example", "BASELINE_66", "CAPTURED", {"ok": True})
++            store.close()
++            store2 = Store(path)
++            rows = store2.page_rows()
++            store2.close()
++        self.assertEqual(len(rows), 1)
++        self.assertEqual(rows[0][1], "buket-example")
++
++    def test_exclusive_lock_released_after_exception(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            lock = Path(tmp) / "run.lock"
++            with self.assertRaises(ValueError):
++                with exclusive_run_lock(lock):
++                    raise ValueError("boom")
++            with exclusive_run_lock(lock):
++                pass
++
++    def test_needs_media_capture_detects_missing_local_file(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            out = Path(tmp)
++            result = {"seller": {"status": "EXACT_SELLER_CLICK_VERIFIED"},
++                      "gallery": {"status": "GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS",
++                                  "items": [IMG]},
++                      "image_downloads": [{"source_url": IMG, "status": "NEW_ORIGINAL_FILE",
++                                           "relative_path": "new-media/buket-example/001-abc.jpg",
++                                           "sha256": "0" * 64}]}
++            self.assertTrue(capture.needs_media_capture(result, 10, out))
++
++    def test_needs_media_capture_accepts_present_local_file(self):
++        with tempfile.TemporaryDirectory() as tmp:
++            out = Path(tmp)
++            rel = "new-media/buket-example/001-abc.jpg"
++            target = out / rel
++            target.parent.mkdir(parents=True)
++            target.write_bytes(b"jpeg-bytes")
++            import hashlib
++            sha = hashlib.sha256(b"jpeg-bytes").hexdigest()
++            result = {"seller": {"status": "EXACT_SELLER_CLICK_VERIFIED"},
++                      "gallery": {"status": "GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS",
++                                  "items": [IMG]},
++                      "image_downloads": [{"source_url": IMG, "status": "NEW_ORIGINAL_FILE",
++                                           "relative_path": rel, "sha256": sha}]}
++            self.assertFalse(capture.needs_media_capture(result, 10, out))
++
++
++class WindowsScriptTests(unittest.TestCase):
++    def test_setup_windows_does_not_claim_success_without_browser(self):
++        content = (ROOT / "setup_windows.ps1").read_text(encoding="utf-8")
++        self.assertIn("$browserReady", content)
++        self.assertIn("if ($browserReady)", content)
++        self.assertIn("SETUP PARTIAL", content)
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff -ruN '--exclude=__pycache__' '--exclude=output' a/flowwow_review2/tests/test_review1.py b/flowwow_review2/tests/test_review1.py
+--- a/flowwow_review2/tests/test_review1.py	2026-11-01 04:16:42.000000000 +0000
++++ b/flowwow_review2/tests/test_review1.py	2026-11-01 04:57:19.388448901 +0000
+@@ -134,8 +134,6 @@
+             self.assertIn('$crawlExitCode = $LASTEXITCODE',content)
+             self.assertIn('if ($crawlExitCode -ne 0) { exit $crawlExitCode }',content)
+ 
+-if __name__=='__main__': unittest.main()
+-
+ # Integration-level regression: a trial capture is persisted, and the full-run
+ # control flow actually invokes the product handler again for missing media.
+ class ResumeIntegrationTests(unittest.TestCase):
+@@ -189,3 +187,6 @@
+                  patch('capture.record_product',return_value={}) as recorded:
+                 self.assertEqual(crawl(args),0)
+             recorded.assert_not_called()
++
++
++if __name__=='__main__': unittest.main()

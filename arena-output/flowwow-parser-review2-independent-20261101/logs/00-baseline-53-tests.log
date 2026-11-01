@@ -1,0 +1,61 @@
+test_absent_main_does_not_scrape_reviews (test_capture.DOMTests.test_absent_main_does_not_scrape_reviews) ... ok
+test_access_challenge_detection (test_capture.DOMTests.test_access_challenge_detection) ... ok
+test_ambiguous_heading_no_invention (test_capture.DOMTests.test_ambiguous_heading_no_invention) ... ok
+test_dimensions_ambiguous_and_invalid (test_capture.DOMTests.test_dimensions_ambiguous_and_invalid) ... ok
+test_gallery_multiple_roots_fails_closed (test_capture.DOMTests.test_gallery_multiple_roots_fails_closed) ... ok
+test_gallery_scoped_and_best_srcset (test_capture.DOMTests.test_gallery_scoped_and_best_srcset) ... ok
+test_high_resolution_img_src_beats_small_srcset (test_capture.DOMTests.test_high_resolution_img_src_beats_small_srcset) ... ok
+test_no_media_from_recommendations (test_capture.DOMTests.test_no_media_from_recommendations) ... ok
+test_product_links_no_duplicates (test_capture.DOMTests.test_product_links_no_duplicates) ... ok
+test_sections_scoped_to_main (test_capture.DOMTests.test_sections_scoped_to_main) ... ok
+test_seller_link_is_not_claimed_clicked (test_capture.DOMTests.test_seller_link_is_not_claimed_clicked) ... ok
+test_unparsed_component_cannot_be_declared_exact (test_capture.DOMTests.test_unparsed_component_cannot_be_declared_exact) ... ok
+test_atomic_and_resume (test_capture.StorageTests.test_atomic_and_resume) ... ok
+test_exclusive_os_lock (test_capture.StorageTests.test_exclusive_os_lock) ... ok
+test_canonical_shop (test_capture.URLTests.test_canonical_shop) ... ok
+test_image_urls_no_tokens (test_capture.URLTests.test_image_urls_no_tokens) ... ok
+test_product_allowlist_and_normalization (test_capture.URLTests.test_product_allowlist_and_normalization) ... ok
+test_atomic_replace_failure_leaves_old_file (test_capture.ValidationTests.test_atomic_replace_failure_leaves_old_file) ... ok
+test_bad_baseline_fails (test_capture.ValidationTests.test_bad_baseline_fails) ... ok
+test_blocked_image_stops_no_more_images (test_capture.ValidationTests.test_blocked_image_stops_no_more_images) ... ok
+test_existing_baseline_media_not_downloaded (test_capture.ValidationTests.test_existing_baseline_media_not_downloaded) ... ok
+test_network_block_stops_before_dom (test_capture.ValidationTests.test_network_block_stops_before_dom) ... ok
+test_new_jpeg_atomic_download (test_capture.ValidationTests.test_new_jpeg_atomic_download) ... ok
+test_priority_and_dedup (test_capture.ValidationTests.test_priority_and_dedup) ... ok
+test_recently_seen_success_not_rewritten_by_check (test_capture.ValidationTests.test_recently_seen_success_not_rewritten_by_check) ... ok
+test_recheck_requires_explicit_opt_in_for_incomplete_captures (test_capture.ValidationTests.test_recheck_requires_explicit_opt_in_for_incomplete_captures) ... ok
+test_dont_click_review_show_more (test_category_logic.CategoryTests.test_dont_click_review_show_more) ... ok
+test_header_categories_not_counted (test_category_logic.CategoryTests.test_header_categories_not_counted) ... ok
+test_nav_tabs (test_category_logic.CategoryTests.test_nav_tabs) ... ok
+test_reject_external_category (test_category_logic.CategoryTests.test_reject_external_category) ... ok
+test_completed_media_need_not_be_refetched (test_review1.NewSafetyTests.test_completed_media_need_not_be_refetched) ... ok
+test_correct_preexisting_media_not_downloaded_again (test_review1.NewSafetyTests.test_correct_preexisting_media_not_downloaded_again) ... ok
+test_corrupt_preexisting_media_halts_without_network (test_review1.NewSafetyTests.test_corrupt_preexisting_media_halts_without_network) ... ok
+test_export_detects_corrupt_new_media (test_review1.NewSafetyTests.test_export_detects_corrupt_new_media) ... ok
+test_failed_media_is_rechecked_during_full_run (test_review1.NewSafetyTests.test_failed_media_is_rechecked_during_full_run) ... ok
+test_good_media_is_verified (test_review1.NewSafetyTests.test_good_media_is_verified) ... ok
+test_media_recheck_respects_explicit_max_assets (test_review1.NewSafetyTests.test_media_recheck_respects_explicit_max_assets) ... ok
+test_path_traversal_database_asset_is_rejected (test_review1.NewSafetyTests.test_path_traversal_database_asset_is_rejected) ... ok
+test_powershell_propagates_nonzero_capture_status (test_review1.NewSafetyTests.test_powershell_propagates_nonzero_capture_status) ... ok
+test_recovery_link_cannot_redirect_to_other_product (test_review1.NewSafetyTests.test_recovery_link_cannot_redirect_to_other_product) ... ok
+test_trial_without_media_is_rechecked_during_full_run (test_review1.NewSafetyTests.test_trial_without_media_is_rechecked_during_full_run) ... ok
+test_unexpected_ports_are_rejected (test_review1.NewSafetyTests.test_unexpected_ports_are_rejected) ... ok
+test_unverified_seller_is_not_auto_downloaded (test_review1.NewSafetyTests.test_unverified_seller_is_not_auto_downloaded) ... ok
+test_crawl_revisits_trial_capture_for_media (test_review1.ResumeIntegrationTests.test_crawl_revisits_trial_capture_for_media) ... 1: BASELINE_66: https://flowwow.com/flowers/buket-example/
+ok
+test_dont_revisit_completed_capture (test_review1.ResumeIntegrationTests.test_dont_revisit_completed_capture) ... ok
+test_ambiguous_more_controls_fail_closed (test_scroll_logic.ScrollTests.test_ambiguous_more_controls_fail_closed) ... ok
+test_incremental_sweep_collects_intermediate_virtualized_items (test_scroll_logic.ScrollTests.test_incremental_sweep_collects_intermediate_virtualized_items) ... ok
+test_link_more_is_supported (test_scroll_logic.ScrollTests.test_link_more_is_supported) ... ok
+test_missing_main_does_not_click_header (test_scroll_logic.ScrollTests.test_missing_main_does_not_click_header) ... ok
+test_more_control_redirect_to_other_seller_stops_before_discovery (test_scroll_logic.ScrollTests.test_more_control_redirect_to_other_seller_stops_before_discovery) ... ok
+test_scroll_budget_hit_never_claims_complete (test_scroll_logic.ScrollTests.test_scroll_budget_hit_never_claims_complete) ... ok
+test_show_more_click_then_scroll_new_items (test_scroll_logic.ScrollTests.test_show_more_click_then_scroll_new_items) ... ok
+test_unrelated_button_not_clicked (test_scroll_logic.ScrollTests.test_unrelated_button_not_clicked) ... ok
+
+----------------------------------------------------------------------
+Ran 53 tests in 0.117s
+
+OK
+Finished batch: 1 products attempted; data in /tmp/tmpuaqt202i
+Finished batch: 0 products attempted; data in /tmp/tmpfdawc_sp

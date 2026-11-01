@@ -1,0 +1,228 @@
+test_crawl_without_dependencies_fails_friendly (test_arena_review2_independent.CLITests.test_crawl_without_dependencies_fails_friendly) ... FAIL
+test_doctor_without_site_packages_reports_missing_not_traceback (test_arena_review2_independent.CLITests.test_doctor_without_site_packages_reports_missing_not_traceback) ... FAIL
+test_review1_script_mode_runs_integration_tests (test_arena_review2_independent.CLITests.test_review1_script_mode_runs_integration_tests) ... FAIL
+test_category_labels_ignore_show_more_and_external (test_arena_review2_independent.ParsingTests.test_category_labels_ignore_show_more_and_external) ... ok
+test_composition_decimal_quantity_unverified (test_arena_review2_independent.ParsingTests.test_composition_decimal_quantity_unverified) ... ok
+test_dimensions_ambiguous_multiple_unverified (test_arena_review2_independent.ParsingTests.test_dimensions_ambiguous_multiple_unverified) ... ok
+test_dimensions_labelled_width_height (test_arena_review2_independent.ParsingTests.test_dimensions_labelled_width_height) ... FAIL
+test_gallery_data_srcset_lazy (test_arena_review2_independent.ParsingTests.test_gallery_data_srcset_lazy) ... FAIL
+test_gallery_status_never_complete (test_arena_review2_independent.ParsingTests.test_gallery_status_never_complete) ... ok
+test_gallery_truncation_flag (test_arena_review2_independent.ParsingTests.test_gallery_truncation_flag) ... ERROR
+test_baseline_excluded_sku_rejected (test_arena_review2_independent.SecurityTests.test_baseline_excluded_sku_rejected) ... ok
+test_baseline_rejects_sale_flags_true (test_arena_review2_independent.SecurityTests.test_baseline_rejects_sale_flags_true) ... FAIL
+test_canonical_product_rejects_homograph_host (test_arena_review2_independent.SecurityTests.test_canonical_product_rejects_homograph_host) ... ok
+test_download_assets_unsafe_url_no_network (test_arena_review2_independent.SecurityTests.test_download_assets_unsafe_url_no_network) ... FAIL
+test_export_html_escapes_slug (test_arena_review2_independent.SecurityTests.test_export_html_escapes_slug) ... ok
+test_export_report_rejects_javascript_url (test_arena_review2_independent.SecurityTests.test_export_report_rejects_javascript_url) ... FAIL
+test_image_redirect_not_followed (test_arena_review2_independent.SecurityTests.test_image_redirect_not_followed) ... ok
+test_image_url_safe_rejects_private_and_data_urls (test_arena_review2_independent.SecurityTests.test_image_url_safe_rejects_private_and_data_urls) ... ok
+test_seller_link_new_tab_is_verified (test_arena_review2_independent.SellerClickTests.test_seller_link_new_tab_is_verified) ... FAIL
+test_seller_link_new_tab_other_seller_rejected (test_arena_review2_independent.SellerClickTests.test_seller_link_new_tab_other_seller_rejected) ... ok
+test_nested_scroll_flag_detects_container (test_arena_review2_independent.ShopNavigationTests.test_nested_scroll_flag_detects_container) ... FAIL
+test_nested_scroll_flag_not_short_page (test_arena_review2_independent.ShopNavigationTests.test_nested_scroll_flag_not_short_page) ... FAIL
+test_same_shop_url_accepts_trailing_slash_and_subpath_only (test_arena_review2_independent.ShopNavigationTests.test_same_shop_url_accepts_trailing_slash_and_subpath_only) ... ERROR
+test_show_more_new_tab_stops_not_stable (test_arena_review2_independent.ShopNavigationTests.test_show_more_new_tab_stops_not_stable) ... FAIL
+test_atomic_bytes_cyrillic_space_path (test_arena_review2_independent.StorageResumeTests.test_atomic_bytes_cyrillic_space_path) ... ok
+test_atomic_bytes_fsyncs_directory (test_arena_review2_independent.StorageResumeTests.test_atomic_bytes_fsyncs_directory) ... FAIL
+test_exclusive_lock_released_after_exception (test_arena_review2_independent.StorageResumeTests.test_exclusive_lock_released_after_exception) ... ok
+test_needs_media_capture_accepts_present_local_file (test_arena_review2_independent.StorageResumeTests.test_needs_media_capture_accepts_present_local_file) ... ERROR
+test_needs_media_capture_detects_missing_local_file (test_arena_review2_independent.StorageResumeTests.test_needs_media_capture_detects_missing_local_file) ... ERROR
+test_sqlite_cyrillic_space_path (test_arena_review2_independent.StorageResumeTests.test_sqlite_cyrillic_space_path) ... ok
+test_sqlite_wal_reopen_preserves_rows (test_arena_review2_independent.StorageResumeTests.test_sqlite_wal_reopen_preserves_rows) ... ok
+test_setup_windows_does_not_claim_success_without_browser (test_arena_review2_independent.WindowsScriptTests.test_setup_windows_does_not_claim_success_without_browser) ... FAIL
+
+======================================================================
+ERROR: test_gallery_truncation_flag (test_arena_review2_independent.ParsingTests.test_gallery_truncation_flag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 317, in test_gallery_truncation_flag
+    self.assertTrue(result["truncated"])
+                    ~~~~~~^^^^^^^^^^^^^
+KeyError: 'truncated'
+
+======================================================================
+ERROR: test_same_shop_url_accepts_trailing_slash_and_subpath_only (test_arena_review2_independent.ShopNavigationTests.test_same_shop_url_accepts_trailing_slash_and_subpath_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 210, in test_same_shop_url_accepts_trailing_slash_and_subpath_only
+    self.assertTrue(parsing.same_shop_url(SHOP.rstrip("/")))
+                    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'parsing' has no attribute 'same_shop_url'
+
+======================================================================
+ERROR: test_needs_media_capture_accepts_present_local_file (test_arena_review2_independent.StorageResumeTests.test_needs_media_capture_accepts_present_local_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 421, in test_needs_media_capture_accepts_present_local_file
+    self.assertFalse(capture.needs_media_capture(result, 10, out))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: needs_media_capture() takes 2 positional arguments but 3 were given
+
+======================================================================
+ERROR: test_needs_media_capture_detects_missing_local_file (test_arena_review2_independent.StorageResumeTests.test_needs_media_capture_detects_missing_local_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 405, in test_needs_media_capture_detects_missing_local_file
+    self.assertTrue(capture.needs_media_capture(result, 10, out))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: needs_media_capture() takes 2 positional arguments but 3 were given
+
+======================================================================
+FAIL: test_crawl_without_dependencies_fails_friendly (test_arena_review2_independent.CLITests.test_crawl_without_dependencies_fails_friendly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 170, in test_crawl_without_dependencies_fails_friendly
+    self.assertEqual(r.returncode, 2, r.stderr)
+AssertionError: 1 != 2 : Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/capture.py", line 22, in <module>
+    from PIL import Image, UnidentifiedImageError
+ModuleNotFoundError: No module named 'PIL'
+
+
+======================================================================
+FAIL: test_doctor_without_site_packages_reports_missing_not_traceback (test_arena_review2_independent.CLITests.test_doctor_without_site_packages_reports_missing_not_traceback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 161, in test_doctor_without_site_packages_reports_missing_not_traceback
+    self.assertEqual(r.returncode, 0, r.stderr)
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/capture.py", line 22, in <module>
+    from PIL import Image, UnidentifiedImageError
+ModuleNotFoundError: No module named 'PIL'
+
+
+======================================================================
+FAIL: test_review1_script_mode_runs_integration_tests (test_arena_review2_independent.CLITests.test_review1_script_mode_runs_integration_tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 178, in test_review1_script_mode_runs_integration_tests
+    self.assertIn("ResumeIntegrationTests", r.stdout + r.stderr)
+AssertionError: 'ResumeIntegrationTests' not found in 'test_completed_media_need_not_be_refetched (__main__.NewSafetyTests.test_completed_media_need_not_be_refetched) ... ok\ntest_correct_preexisting_media_not_downloaded_again (__main__.NewSafetyTests.test_correct_preexisting_media_not_downloaded_again) ... ok\ntest_corrupt_preexisting_media_halts_without_network (__main__.NewSafetyTests.test_corrupt_preexisting_media_halts_without_network) ... ok\ntest_export_detects_corrupt_new_media (__main__.NewSafetyTests.test_export_detects_corrupt_new_media) ... ok\ntest_failed_media_is_rechecked_during_full_run (__main__.NewSafetyTests.test_failed_media_is_rechecked_during_full_run) ... ok\ntest_good_media_is_verified (__main__.NewSafetyTests.test_good_media_is_verified) ... ok\ntest_media_recheck_respects_explicit_max_assets (__main__.NewSafetyTests.test_media_recheck_respects_explicit_max_assets) ... ok\ntest_path_traversal_database_asset_is_rejected (__main__.NewSafetyTests.test_path_traversal_database_asset_is_rejected) ... ok\ntest_powershell_propagates_nonzero_capture_status (__main__.NewSafetyTests.test_powershell_propagates_nonzero_capture_status) ... ok\ntest_recovery_link_cannot_redirect_to_other_product (__main__.NewSafetyTests.test_recovery_link_cannot_redirect_to_other_product) ... ok\ntest_trial_without_media_is_rechecked_during_full_run (__main__.NewSafetyTests.test_trial_without_media_is_rechecked_during_full_run) ... ok\ntest_unexpected_ports_are_rejected (__main__.NewSafetyTests.test_unexpected_ports_are_rejected) ... ok\ntest_unverified_seller_is_not_auto_downloaded (__main__.NewSafetyTests.test_unverified_seller_is_not_auto_downloaded) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.036s\n\nOK\n'
+
+======================================================================
+FAIL: test_dimensions_labelled_width_height (test_arena_review2_independent.ParsingTests.test_dimensions_labelled_width_height)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 333, in test_dimensions_labelled_width_height
+    self.assertEqual(result["status"], "PARSED_NEEDS_SELLER_CONFIRMATION")
+AssertionError: 'UNVERIFIED_PARSE' != 'PARSED_NEEDS_SELLER_CONFIRMATION'
+- UNVERIFIED_PARSE
++ PARSED_NEEDS_SELLER_CONFIRMATION
+
+
+======================================================================
+FAIL: test_gallery_data_srcset_lazy (test_arena_review2_independent.ParsingTests.test_gallery_data_srcset_lazy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 323, in test_gallery_data_srcset_lazy
+    self.assertIn("https://content2.flowwow-images.com/1200x1200/original.jpg", result["items"])
+AssertionError: 'https://content2.flowwow-images.com/1200x1200/original.jpg' not found in ['https://content2.flowwow-images.com/placeholder.jpg']
+
+======================================================================
+FAIL: test_baseline_rejects_sale_flags_true (test_arena_review2_independent.SecurityTests.test_baseline_rejects_sale_flags_true)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 290, in test_baseline_rejects_sale_flags_true
+    with self.assertRaises(RuntimeError):
+AssertionError: RuntimeError not raised
+
+======================================================================
+FAIL: test_download_assets_unsafe_url_no_network (test_arena_review2_independent.SecurityTests.test_download_assets_unsafe_url_no_network)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 269, in test_download_assets_unsafe_url_no_network
+    get.assert_not_called()
+  File "/usr/lib/python3.11/unittest/mock.py", line 894, in assert_not_called
+    raise AssertionError(msg)
+AssertionError: Expected 'mock' to not have been called. Called 1 times.
+Calls: [call('http://169.254.169.254/latest/meta-data/', timeout=30000, max_redirects=0),
+ call().headers.get('content-length')].
+
+======================================================================
+FAIL: test_export_report_rejects_javascript_url (test_arena_review2_independent.SecurityTests.test_export_report_rejects_javascript_url)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 243, in test_export_report_rejects_javascript_url
+    self.assertNotIn('href="javascript', html)
+AssertionError: 'href="javascript' unexpectedly found in '<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Ароматный букет — локальный журнал</title><style>body{font:15px/1.5 system-ui;margin:28px auto;max-width:1200px;padding:0 15px;color:#223}table{border-collapse:collapse;width:100%}th,td{padding:10px;border-bottom:1px solid #ddd;text-align:left}thead{background:#eee}tr:nth-child(2n){background:#f7f7f9}a{color:#0652a5}</style><h1>Локальный журнал Flowwow</h1><p>Это <b>не опубликованный каталог</b>. Все поля и фотографии требуют подтверждения перед импортом. Исходные продажи не изменялись.</p><table><thead><tr><th>Товар</th><th>Продавец</th><th>Состав</th><th>Размеры</th><th>Фото</th></tr></thead><tbody><tr><td><a href="javascript:alert(1)" rel="noreferrer">evil</a></td><td>—</td><td>—</td><td>—</td><td>—</td></tr></tbody></table></html>'
+
+======================================================================
+FAIL: test_seller_link_new_tab_is_verified (test_arena_review2_independent.SellerClickTests.test_seller_link_new_tab_is_verified)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 185, in test_seller_link_new_tab_is_verified
+    self.assertEqual(result["status"], "EXACT_SELLER_CLICK_VERIFIED")
+AssertionError: 'DIFFERENT_OR_UNVERIFIED_SELLER' != 'EXACT_SELLER_CLICK_VERIFIED'
+- DIFFERENT_OR_UNVERIFIED_SELLER
++ EXACT_SELLER_CLICK_VERIFIED
+
+
+======================================================================
+FAIL: test_nested_scroll_flag_detects_container (test_arena_review2_independent.ShopNavigationTests.test_nested_scroll_flag_detects_container)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 230, in test_nested_scroll_flag_detects_container
+    self.assertTrue(result["possible_nested_scroll"])
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_nested_scroll_flag_not_short_page (test_arena_review2_independent.ShopNavigationTests.test_nested_scroll_flag_not_short_page)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 222, in test_nested_scroll_flag_not_short_page
+    self.assertFalse(result["possible_nested_scroll"])
+AssertionError: True is not false
+
+======================================================================
+FAIL: test_show_more_new_tab_stops_not_stable (test_arena_review2_independent.ShopNavigationTests.test_show_more_new_tab_stops_not_stable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 206, in test_show_more_new_tab_stops_not_stable
+    self.assertEqual(result["stop_reason"], "MORE_CONTROL_OPENED_NEW_TAB")
+AssertionError: 'MORE_CLICKED_WITHOUT_OBSERVABLE_GROWTH' != 'MORE_CONTROL_OPENED_NEW_TAB'
+- MORE_CLICKED_WITHOUT_OBSERVABLE_GROWTH
++ MORE_CONTROL_OPENED_NEW_TAB
+
+
+======================================================================
+FAIL: test_atomic_bytes_fsyncs_directory (test_arena_review2_independent.StorageResumeTests.test_atomic_bytes_fsyncs_directory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 357, in test_atomic_bytes_fsyncs_directory
+    self.assertGreaterEqual(fsync.call_count, 2)
+AssertionError: 1 not greater than or equal to 2
+
+======================================================================
+FAIL: test_setup_windows_does_not_claim_success_without_browser (test_arena_review2_independent.WindowsScriptTests.test_setup_windows_does_not_claim_success_without_browser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.arena-review2/src/flowwow_review2/tests/test_arena_review2_independent.py", line 427, in test_setup_windows_does_not_claim_success_without_browser
+    self.assertIn("$browserReady", content)
+AssertionError: '$browserReady' not found in '$ErrorActionPreference = \'Stop\'\nSet-Location -LiteralPath $PSScriptRoot\nWrite-Host \'Flowwow: creating isolated Python virtual environment...\' -ForegroundColor Cyan\nif (-not (Test-Path \'.venv\\Scripts\\python.exe\')) {\n    $py = Get-Command py -ErrorAction SilentlyContinue\n    if ($null -ne $py) {\n        & py -3 -m venv .venv\n    } elseif (Get-Command python -ErrorAction SilentlyContinue) {\n        & python -m venv .venv\n    } else {\n        throw \'Python 3.10+ missing. Install Python from python.org, then re-run.\'\n    }\n    if ($LASTEXITCODE -ne 0) { throw \'Failed to create .venv\' }\n}\n$python = Join-Path $PSScriptRoot \'.venv\\Scripts\\python.exe\'\n& $python -c \'import sys; assert sys.version_info >= (3, 10), "Python 3.10+ required"\'\nif ($LASTEXITCODE -ne 0) { throw \'Python 3.10+ required\' }\n& $python -m pip install --disable-pip-version-check -r requirements.txt\nif ($LASTEXITCODE -ne 0) { throw \'Dependency installation failed\' }\nWrite-Host \'Installing isolated Playwright Chromium (browser binaries)...\' -ForegroundColor Cyan\n& $python -m playwright install chromium\nif ($LASTEXITCODE -ne 0) { Write-Warning \'Bundled Chromium unavailable. If Microsoft Edge is installed, use .\\run_trial.ps1 -Browser msedge.\' }\n& $python capture.py doctor\nif ($LASTEXITCODE -ne 0) { throw \'Doctor check failed\' }\nWrite-Host \'SETUP SUCCESS. Run .\\run_trial.ps1 next.\' -ForegroundColor Green\n'
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.414s
+
+FAILED (failures=14, errors=4)
+{
+  "recorded_products": 1,
+  "browser_captured": 1,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpaih140kn/review/report.html
+{
+  "recorded_products": 1,
+  "browser_captured": 1,
+  "seller_click_verified": 0,
+  "new_image_files": 0,
+  "new_image_files_sha256_verified": 0,
+  "observed_discovery_links": 0,
+  "all_categories_proven_complete": false,
+  "automatically_approved_products": 0
+}
+Report: /tmp/tmpee0b1t5u/review/report.html
