@@ -1,5 +1,11 @@
 # Arena: focused offline repair proposal, no live browsing
 
+> HISTORICAL / NOT DISPATCHED. The owner chose to continue actual parsing on
+> their ASUS browser. The first SKU was subsequently CAPTURED with all six
+> frames after bounded slow-image waiting, viewport exposure and interval
+> polling were fixed locally. All three SKU now retain seller proof. This is
+> an optional review reference, not a request to start another audit or crawl.
+
 Repository: https://github.com/tophqru/aromatny-flowwow-public-audit
 Branch: codex/flowwow-v3-windows-20261101 (public Draft PR #7).
 Pinned starting parser: Arena PR #6 @ 018a39704c2cca54159e758216a6182683fdb98a.

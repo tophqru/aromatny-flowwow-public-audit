@@ -81,3 +81,41 @@ tests make zero requests and its positive JPEG test uses mocked transport.
 No real Phase-2 download was authorized or executed. The first-pilot third-SKU
 metadata-only guard remains unchanged. Maximum resolution beyond the actual
 displayed 1000x1000 sources remains unproven, as does full catalog completeness.
+
+## Latest local browser resolution and owner limits
+
+The first SKU was investigated only on the owner's confirmed RU Edge channel.
+Its seller popup was verified and saved. One-click-per-thumbnail diagnostics
+showed lazy images initially pending; after passive waiting all six decoded at
+1000x1000. The adapter now brings the page to front, scrolls the actual main
+carousel into view and polls DOM readiness at a 250ms interval instead of relying
+on animation frames. Waiting is bounded to 90s per image and 180s per gallery.
+Late failure preserves actual seller/section/frame evidence as PARTIAL, never
+as CAPTURED or complete. A test proves persisted partial evidence remains blocked.
+
+An addressed retry of the first SKU then succeeded. Latest SQLite: **3/3
+CAPTURED, 3/3 seller proof, six decoded displayed frames each (18 total)**;
+attempts 4/1/1. Successful second and third captures were not rerun by those
+three addressed retries. A separate third-SKU description-only visit expanded
+its product controls: only composition and dimensions property blocks exist;
+zero desktop description blocks. This is absence in the observed UI, not proof
+about every possible source. No new image files were downloaded.
+
+Acceptance now recognizes exactly the actually observed seller query
+?from=product while preserving the raw URL; other query values remain rejected.
+The machine output is still PARTIAL/exit 5 due to photo-file verification and
+third description, and was not manually changed.
+
+Owner limits: at most three task-owned tabs (Flowwow still one plus seller
+popup); at most three actual image requests in flight. image_queue.py enforces
+the latter without new workers/retries, and records peak counts. Nine local
+JPEG responses in a real headed Edge decoded successfully with peak inflight 2,
+limit 3, no real network requests; a burst regression exercises all three slots.
+This added limiter was verified on the local browser fixture; existing successful
+Flowwow captures are not falsely labelled a re-run under the newer limiter.
+
+Final code tests: **203/203 PASS**, 0 fail/error/skip, compileall exit 0.
+One intermediate suite was accidentally started while the diagnostic profile
+lock was held and failed correctly; it passed after that browser was closed.
+Cookie OK/Accept and resource/tab preferences were saved globally at the
+owner's explicit request. No fingerprint spoofing or protection bypass added.

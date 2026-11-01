@@ -545,14 +545,22 @@ def configure_pilot_navigation(context, allowed):
 
     This is not a DOM selector or access bypass. Subresources remain browser-managed.
     """
+    from image_queue import ImageQueue
+    images=ImageQueue(limit=3)
+    context.on('requestfinished',images.finished)
+    context.on('requestfailed',images.finished)
+    context.on('close',images.close)
     def guard(route):
         from flowwow_dom import navigation_allowed
         request=route.request
         if request.resource_type == "document" and not navigation_allowed(request.url,allowed,SHOP):
             route.abort("blockedbyclient")
+        elif request.resource_type=='image':
+            images.admit(route)
         else:
             route.continue_()
     context.route("**/*",guard)
+    return images
 
 
 def checked_output(value):
@@ -639,8 +647,9 @@ def crawl(args):
             locks.enter_context(exclusive_run_lock(browser_profile(out).parent/"profile.lock"))
             with load_playwright()() as p:
                 ctx=launch_context(p,args,out)
+                image_queue=None
                 try:
-                    if is_pilot: configure_pilot_navigation(ctx,store.allowed_urls)
+                    if is_pilot:image_queue=configure_pilot_navigation(ctx,store.allowed_urls)
                     # Persistent Chromium may already have an initial blank tab.
                     page=ctx.pages[0] if ctx.pages else ctx.new_page()
                     for extra in list(ctx.pages)[1:]:extra.close()
@@ -699,7 +708,11 @@ def crawl(args):
                         return 5
                     store.event("SESSION_FINISHED",{"products_attempted_this_run":seen,"all_seller_categories_proven_complete":False})
                     print(f"Finished batch: {seen} products attempted; data in {out}")
-                finally:ctx.close()
+                finally:
+                    if image_queue is not None:
+                        store.event('IMAGE_CONCURRENCY',image_queue.snapshot())
+                        image_queue.close()
+                    ctx.close()
         finally:store.close()
     return 0
 
