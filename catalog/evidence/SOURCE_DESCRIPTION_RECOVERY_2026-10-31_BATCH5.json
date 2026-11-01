@@ -1,0 +1,32 @@
+{
+  "description_recovery_batch": 5,
+  "date": "2026-10-31",
+  "source_page_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+  "description_verification": "Exact indexed product page contains complete paragraph identical to text already owned/stored in GitHub catalog.",
+  "description_status": "OBSERVED_SOURCE_TEXT",
+  "slug": "nabor-konfety-merci-c-buketom-",
+  "paraphrase_only": false,
+  "source_crawl": "last month",
+  "source_title": "Набор конфеты Merci c букетом пионов",
+  "historical_indexed_price_rub": 26600,
+  "current_sale_price_approved": false,
+  "source_comp_index": [
+    "Пион - 21 шт.",
+    "Эвкалипт - 7 шт.",
+    "Лента атласная - 2 шт.",
+    "Упаковка дизайнерская - 5 шт.",
+    "конфеты Merci - 1 шт."
+  ],
+  "source_dimensions_cm": {
+    "width": 45,
+    "height": 50
+  },
+  "source_verified_against_existing_structured_composition": true,
+  "other_indexed_pages_no_visible_description": [
+    "buket-peryshko",
+    "buket-astr-67892",
+    "avtorskiy-buket-67899",
+    "buket-hrizantem-mattiola-romas"
+  ],
+  "note": "No visible original description in search-indexed result is not proof that seller description is genuinely empty. Do not automatically count these as abandoned or fill them with generic text."
+}

@@ -1,0 +1,27 @@
+name: Flowwow public product HTML availability probe
+on:
+  push:
+    branches:
+      - audit/chatgpt-description-recovery-20261031
+    paths:
+      - .github/workflows/flowwow-public-source-probe.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-source-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check source accessibility without bypass
+        run: python3 scripts/probe_source_public_access.py
+      - name: Retain machine-readable access outcomes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flowwow-public-source-probe
+          path: flowwow-public-probe.json
+          if-no-files-found: warn
+          retention-days: 7

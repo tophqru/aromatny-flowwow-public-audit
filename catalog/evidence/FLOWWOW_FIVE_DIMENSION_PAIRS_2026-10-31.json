@@ -1,0 +1,59 @@
+{
+  "observed_at_date": "2026-10-31",
+  "source": "Exact indexed Flowwow product URLs, not authenticated Seller GUI",
+  "five_recovered_dimension_pairs": [
+    {
+      "slug": "kompoziciya-v-korzine-astra-po",
+      "product_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+      "width_cm": 35,
+      "height_cm": 33,
+      "source_ref": "turn712850search0"
+    },
+    {
+      "slug": "buketik-premium-v-korzine",
+      "product_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+      "width_cm": 71,
+      "height_cm": 47,
+      "source_ref": "turn368963search1"
+    },
+    {
+      "slug": "kompoziciya-v-korzine-rom-4151",
+      "product_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+      "width_cm": 40,
+      "height_cm": 37,
+      "source_ref": "turn676413search0"
+    },
+    {
+      "slug": "buketik-cvetov-v-korzine",
+      "product_url": "https://flowwow.com/flowers/buketik-cvetov-v-korzine/",
+      "width_cm": 45,
+      "height_cm": 45,
+      "source_ref": "turn368963search0"
+    },
+    {
+      "slug": "buket-iz-gortenzii-kustov-7019",
+      "product_url": "https://flowwow.com/flowers/buket-iz-gortenzii-kustov-7019/",
+      "width_cm": 31,
+      "height_cm": 47,
+      "source_ref": "turn372849search0"
+    }
+  ],
+  "new_state": {
+    "sku": 66,
+    "photos": 435,
+    "compositions": 59,
+    "source_descriptions": 36,
+    "confirmed_dimension_pairs": 54
+  },
+  "not_changed": [
+    "gallery",
+    "product image SHA256",
+    "prices",
+    "availability",
+    "may_show_publicly",
+    "may_order",
+    "existing composition",
+    "source description"
+  ],
+  "caveat": "Search indexed source snapshots may predate updates to current Seller; browser navigation and clicking Show more have not been achieved."
+}

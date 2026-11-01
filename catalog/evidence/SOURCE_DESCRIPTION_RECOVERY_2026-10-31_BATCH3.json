@@ -1,0 +1,267 @@
+{
+  "metadata": "Research batch 2026-10-31: exact-slug search-index evidence only. Never extrapolate descriptions from nearby search results or other stores.",
+  "owner_shop": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "source_baseline": "3c35d693a2b128580beaa5f754450a38d7276d4b",
+  "captured_original_descriptions": [
+    {
+      "slug": "avtorskiy-buket-mattiol-roza-g",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-mattiol-roza-g/",
+      "source_text_ru": "«Букет, который превратит любой обычный день в особенный праздник». Уважаемые клиенты, все точные размеры указаны во вкладке ширина и высота.",
+      "words": 20,
+      "method": "FLOWWOW_INDEXED_EXACT_PRODUCT_PATH",
+      "completeness": "full_displayed_single_text",
+      "seller_display": "Ароматный букет"
+    }
+  ],
+  "partial_description_fragments_not_counted_as_complete": [
+    {
+      "slug": "nabor-konfety-merci-c-buketom-",
+      "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+      "excerpt_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства.",
+      "reason": "EXCERPT_ONLY_NOT_FULL_DESCRIPTION",
+      "seller_display": "Ароматный букет"
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+      "excerpt_ru": "Этот букет- словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создает атмосферу волшебства.",
+      "reason": "EXCERPT_ONLY_NOT_FULL_DESCRIPTION",
+      "seller_display": "Ароматный букет"
+    }
+  ],
+  "still_unverified_exact_compositions": [
+    {
+      "slug": "avtorskiy-buket-s-gortenz-3168",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/"
+    },
+    {
+      "slug": "avtorskiy-buket-roza-alst-8286",
+      "url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/"
+    },
+    {
+      "slug": "buket-gortenziy-23",
+      "url": "https://flowwow.com/flowers/buket-gortenziy-23/"
+    },
+    {
+      "slug": "buket-iz-kustovoy-pionovi-3287",
+      "url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/"
+    },
+    {
+      "slug": "buket-gortenzii-roza-pionovidn",
+      "url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/"
+    },
+    {
+      "slug": "buket-iz-roz-kustovoy-pio-6913",
+      "url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/"
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-tebya-r",
+      "url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/"
+    }
+  ],
+  "still_missing_exact_descriptions": [
+    {
+      "slug": "avtorskiy-buket-s-gortenz-3168",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-roza-alst-8286",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-alst-8286/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-gortenziy-23",
+      "source_url": "https://flowwow.com/flowers/buket-gortenziy-23/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-iz-kustovoy-pionovi-3287",
+      "source_url": "https://flowwow.com/flowers/buket-iz-kustovoy-pionovi-3287/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-gortenzii-roza-pionovidn",
+      "source_url": "https://flowwow.com/flowers/buket-gortenzii-roza-pionovidn/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-iz-roz-kustovoy-pio-6913",
+      "source_url": "https://flowwow.com/flowers/buket-iz-roz-kustovoy-pio-6913/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buketik-dlya-tebya-r",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-dlya-tebya-r/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-nevesty-3482",
+      "source_url": "https://flowwow.com/flowers/buket-nevesty-3482/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-premium-v-korzine-",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-premium-v-korzine-/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-korzine-astra-po",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-astra-po/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buketik-premium-v-korzine",
+      "source_url": "https://flowwow.com/flowers/buketik-premium-v-korzine/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "cve-7264",
+      "source_url": "https://flowwow.com/flowers/cve-7264/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-astr-osennih",
+      "source_url": "https://flowwow.com/flowers/buket-astr-osennih/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-v-korzine-exclusive",
+      "source_url": "https://flowwow.com/flowers/buket-v-korzine-exclusive/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-korzine-rom-4151",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-korzine-rom-4151/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-aromatniy-pion-evkalipt-",
+      "source_url": "https://flowwow.com/flowers/buket-aromatniy-pion-evkalipt-/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "nabor-konfety-merci-c-buketom-",
+      "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7428",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7428/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-6842",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-6842/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-7637",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-7637/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-shlyapnoy-k-8804",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-shlyapnoy-k-8804/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-roza-pionovidnaya-",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-roza-pionovidnaya-/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-hrizantem-mattiola-romas",
+      "source_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-9444",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-9444/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-sezon-6869",
+      "source_url": "https://flowwow.com/flowers/buket-sezon-6869/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-astr-67892",
+      "source_url": "https://flowwow.com/flowers/buket-astr-67892/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-24579",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-vozdushnoe-bez",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-vozdushnoe-bez/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buketik-roza-go-1029",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-roza-go-1029/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-siciliya-6909",
+      "source_url": "https://flowwow.com/flowers/buket-siciliya-6909/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buketik-francuz-9106",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buketik-francuz-9106/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-7186",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-7186/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-pion-gort-6904",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-pion-gort-6904/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-gortenzii-3341",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-gortenzii-3341/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-roza-mattiola-",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-roza-mattiola-/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "avtorskiy-buket-67899",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-67899/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "buket-peryshko",
+      "source_url": "https://flowwow.com/flowers/buket-peryshko/",
+      "description_status": "NOT_CAPTURED"
+    },
+    {
+      "slug": "kompoziciya-v-sumochke-s--9069",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-v-sumochke-s--9069/",
+      "description_status": "NOT_CAPTURED"
+    }
+  ],
+  "metrics": {
+    "before_original": 26,
+    "now_original": 27,
+    "missing_original": 39,
+    "exact_compositions": 59,
+    "missing_compositions": 7
+  },
+  "limitations": "Flowwow direct page opens returned Cache miss/Internal Error on affected slugs; search did not establish exact 7 missing compositions; no fabricated ingredient quantity or description. Some results belonged to other sellers and were discarded."
+}

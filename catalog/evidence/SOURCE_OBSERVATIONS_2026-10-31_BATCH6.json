@@ -1,0 +1,102 @@
+{
+  "title": "Index-only seller-specific public source evidence; never treat as live owner-approved stock",
+  "observed_on": "2026-10-31",
+  "shop": "https://flowwow.com/shop/lyubov-eto-699e0e4519/",
+  "all_exact_urls_checked": true,
+  "products": [
+    {
+      "slug": "nabor-konfety-merci-c-buketom-",
+      "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+      "indexed_price_rub": 26600,
+      "indexed_description_presence": "FULL_VISIBLE_SOURCE_TEXT_VERIFIED_AND_SAVED",
+      "note": "This exact page's full description has been recovered from already-owned GitHub text.",
+      "existing_price_observed_rub": 26600,
+      "existing_availability": "temporarily_unavailable"
+    },
+    {
+      "slug": "buket-astr-67892",
+      "source_url": "https://flowwow.com/flowers/buket-astr-67892/",
+      "indexed_price_rub": 6000,
+      "description_in_index": "NOT_VISIBLE_AFTER_DIMENSIONS_AND_BEFORE_REVIEW_SECTION",
+      "note": "No description observed on this indexed rendering; cannot assert that original Seller field is blank.",
+      "existing_price_observed_rub": 5929,
+      "existing_availability": "temporarily_unavailable"
+    },
+    {
+      "slug": "buket-peryshko",
+      "source_url": "https://flowwow.com/flowers/buket-peryshko/",
+      "indexed_price_rub": 6036,
+      "description_in_index": "NOT_VISIBLE_AFTER_DIMENSIONS_AND_BEFORE_REVIEW_SECTION",
+      "note": "No description observed on this indexed rendering; cannot assert that original Seller field is blank.",
+      "existing_price_observed_rub": 6727,
+      "existing_availability": "available_observed"
+    },
+    {
+      "slug": "avtorskiy-buket-67899",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-67899/",
+      "indexed_price_rub": 6300,
+      "description_in_index": "NOT_VISIBLE_AFTER_DIMENSIONS_AND_BEFORE_REVIEW_SECTION",
+      "note": "No description observed on this indexed rendering; cannot assert that original Seller field is blank.",
+      "existing_price_observed_rub": null,
+      "existing_availability": "sold_out"
+    },
+    {
+      "slug": "buket-hrizantem-mattiola-romas",
+      "source_url": "https://flowwow.com/flowers/buket-hrizantem-mattiola-romas/",
+      "indexed_price_rub": 7500,
+      "description_in_index": "NOT_VISIBLE_AFTER_DIMENSIONS_AND_BEFORE_REVIEW_SECTION",
+      "note": "Title mentions Matthiola but indexed composition lists rose, chamomile, chrysanthemum, ribbon, packaging without Matthiola. Do not fill from title.",
+      "existing_price_observed_rub": 7499,
+      "existing_availability": "UNKNOWN_NOT_REVERIFIED"
+    },
+    {
+      "slug": "avtorskiy-buket-24579",
+      "source_url": "https://flowwow.com/flowers/avtorskiy-buket-24579/",
+      "indexed_price_rub": 8100,
+      "indexed_status": "READY_TO_DELIVER_ON_INDEXED_VIEW",
+      "source_dimensions_cm": {
+        "width": 31,
+        "height": 50
+      },
+      "note": "Old snapshot sold_out, 7600 RUB; indexed view shows ready-made and 8100 RUB. Price/status can depend on date and location; do not overwrite sales authorization.",
+      "existing_price_observed_rub": 7600,
+      "existing_availability": "sold_out"
+    },
+    {
+      "slug": "kompoziciya-aromatnyh-ogromnyh",
+      "source_url": "https://flowwow.com/flowers/kompoziciya-aromatnyh-ogromnyh/",
+      "indexed_price_rub": 37992,
+      "indexed_composition_difference": {
+        "component": "Пион",
+        "source_quantity": 23,
+        "unit": "шт",
+        "recorded_github_quantity": 35
+      },
+      "note": "Flowwow exact page shows 23, original GitHub composition shows 35. Do not overwrite until authorized seller resolves which recipe/period.",
+      "existing_price_observed_rub": null,
+      "existing_availability": "temporarily_unavailable"
+    }
+  ],
+  "source_reasoning": {
+    "source_category": "public Flowwow search-indexed exact product URL",
+    "limits": "Search index crawling relative times are not reliable real-time stock checks. Direct web page access and GitHub public HTTP previously 403."
+  },
+  "count_summary": {
+    "total": 66,
+    "original_description_complete": 35,
+    "original_description_missing": 31,
+    "structured_composition_complete": 59,
+    "missing_composition": 7,
+    "dimension_complete": 48,
+    "missing_dimensions": 18
+  },
+  "need_owner_verification": [
+    "23 or 35 pions in flower basket composition",
+    "whether missing source descriptions in indexed page are truly blank in Seller",
+    "historical price and availability differences for sku avtorskiy-buket-24579"
+  ],
+  "approvals": {
+    "may_order": false,
+    "may_show_publicly": false
+  }
+}

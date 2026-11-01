@@ -37,8 +37,8 @@
     "width": 45,
     "height": 50
   },
-  "description_raw_ru": null,
-  "description_status": "NOT_CAPTURED",
+  "description_raw_ru": "Этот букет — словно признание без слов: нежные лепестки шепчут о трепетных чувствах, а тонкий аромат создаёт атмосферу волшебства. Сочные оттенки и изящные линии складываются в композицию, которая подарит мгновение счастья и напомнит о самых тёплых моментах",
+  "description_status": "OBSERVED_SOURCE_TEXT",
   "retail_status": "ADMIN_ONLY_PENDING_OWNER_APPROVAL",
   "seller_evidence": "PREVIOUSLY_VERIFIED_IN_PRIVATE_CATALOG",
   "gallery": [
@@ -116,5 +116,14 @@
     "raw_description_ru": null,
     "raw_description_status": "NOT_YET_CAPTURED"
   },
-  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31"
+  "composition_source": "FLOWWOW_PUBLIC_PAGE_2026-10-31",
+  "description_provenance": {
+    "source_url": "https://flowwow.com/flowers/nabor-konfety-merci-c-buketom-/",
+    "observed_on": "2026-10-31",
+    "method": "INDEXED_FLOWWOW_EXACT_PRODUCT_URL_MATCHES_PREEXISTING_OWNER_GITHUB_TEXT",
+    "verified_product_slug": "nabor-konfety-merci-c-buketom-",
+    "crawled": "last month",
+    "historical": true,
+    "notes": "Text already stored verbatim in owner's repository for another SKU; exact shop product page confirms this same paragraph. Does not verify price/stock."
+  }
 }
