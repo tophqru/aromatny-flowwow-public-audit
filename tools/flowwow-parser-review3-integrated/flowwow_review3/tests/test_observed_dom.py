@@ -29,6 +29,36 @@ FIXTURE='''<div class="product-detail"><h1>Allowed product</h1>
 </div><aside><h3>Состав</h3><p>Wrong product - 99 шт.</p></aside>'''
 
 class ObservedDOMTests(unittest.TestCase):
+    def test_default_identity_still_rejects_nonflower_product(self):
+        from flowwow_dom import observe_ui
+        url='https://flowwow.com/decoration/example-product/'
+        page=SimpleNamespace(url=url,title=lambda:'Product',content=lambda:FIXTURE)
+        with patch('flowwow_dom.wait_layout_ready') as ready:
+            with self.assertRaisesRegex(RuntimeError,'EXACT_SKU_CHANGED'):
+                observe_ui(page,url,Path('.'),RuntimeError)
+        ready.assert_not_called()
+
+    def test_explicit_identity_requires_the_exact_declared_url(self):
+        from flowwow_dom import observe_ui
+        url='https://flowwow.com/decoration/example-product/'
+        identity=lambda candidate:candidate if candidate==url else None
+        page=SimpleNamespace(url=url,title=lambda:'Product',content=lambda:FIXTURE)
+        with patch('flowwow_dom.wait_layout_ready',side_effect=RuntimeError('READY_SENTINEL')):
+            with self.assertRaisesRegex(RuntimeError,'READY_SENTINEL'):
+                observe_ui(page,url,Path('.'),RuntimeError,identity=identity)
+        page.url='https://flowwow.com/decoration/other-product/'
+        with patch('flowwow_dom.wait_layout_ready') as ready:
+            with self.assertRaisesRegex(RuntimeError,'EXACT_SKU_CHANGED'):
+                observe_ui(page,url,Path('.'),RuntimeError,identity=identity)
+        ready.assert_not_called()
+
+    def test_record_default_identity_keeps_strict_flower_scope(self):
+        url='https://flowwow.com/decoration/example-product/'
+        page=SimpleNamespace(url=url);store=Mock()
+        with patch('capture.navigate',return_value={}),patch('capture.click_seller_link') as seller:
+            with self.assertRaises(capture.BrowserBlocked):
+                capture.record_product(page,Mock(),store,Mock(),{},url,'TEST',Path('.'))
+        seller.assert_not_called();store.record_page.assert_not_called()
     def test_absent_description_distinct_from_ambiguous_description(self):
         soup=BeautifulSoup(FIXTURE,'html.parser')
         soup.select_one('.product-properties-general-desktop').decompose()

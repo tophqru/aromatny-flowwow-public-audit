@@ -475,10 +475,11 @@ def download_assets(context,store:Store,args,slug:str,source_urls:list[str],base
     return results
 
 
-def record_product(page,context,store:Store,args,baseline:dict,url:str,category:str,out:Path)->dict:
+def record_product(page,context,store:Store,args,baseline:dict,url:str,category:str,out:Path,identity=None)->dict:
+    if identity is None:identity=canonical_product
     slug=url.rstrip("/").split("/")[-1]
     nav=navigate(page,url)
-    if canonical_product(page.url)!=url:
+    if identity(page.url)!=url:
         raise BrowserBlocked("Product URL redirected outside expected exact SKU; stop, do not mix product data")
     page.wait_for_timeout(700)
     dom=page.content()
@@ -490,7 +491,7 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     links=visible_seller_links(dom,page.url)
     seller=click_seller_link(page,url)
     # Seller click/return may redirect to a *different* product. Never mix galleries or names.
-    if canonical_product(page.url) != url:
+    if identity(page.url) != url:
         raise BrowserBlocked("PRODUCT_URL_CHANGED_AFTER_SELLER_CLICK_OR_RETURN")
     if seller.get("status") != "EXACT_SELLER_CLICK_VERIFIED":
         rejected={"url":url,"slug":slug,"seller":seller,"owner_approved":False,
@@ -507,7 +508,7 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     observed_gallery=None
     if observed_layout:
         try:
-            sections,observed_gallery,observed_ui=observe_ui(page,url,out,BrowserBlocked)
+            sections,observed_gallery,observed_ui=observe_ui(page,url,out,BrowserBlocked,identity=identity)
         except GalleryObservationError as exc:
             partial={'url':url,'slug':slug,'seller':seller,'page':nav,'source_method':'ACTUAL_VISIBLE_BROWSER_DOM',
                      'owner_approved':False,'may_order':False,'may_show_publicly':False,'publication_status':'NOT_APPROVED',

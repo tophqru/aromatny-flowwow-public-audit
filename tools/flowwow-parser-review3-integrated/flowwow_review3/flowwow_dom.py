@@ -68,9 +68,9 @@ def wait_layout_ready(page):
     page.bring_to_front()
     page.wait_for_selector(MAIN+'.swiper-initialized',state='visible',timeout=60000)
 
-def observe_ui(page,url,out,blocked):
+def observe_ui(page,url,out,blocked,identity=canonical_product):
     def guard():
-        if canonical_product(page.url)!=url:raise blocked('OBSERVED_ADAPTER_EXACT_SKU_CHANGED')
+        if identity(page.url)!=url:raise blocked('OBSERVED_ADAPTER_EXACT_SKU_CHANGED')
         if detect_challenge(page.title(),'',page.content()):raise blocked('OBSERVED_ADAPTER_SOURCE_CHALLENGE')
     guard()
     wait_layout_ready(page)
