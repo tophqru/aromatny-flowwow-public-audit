@@ -8,6 +8,8 @@ import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from flowwow_dom import layout_present, observed_sections, navigation_allowed
 from parsing import SHOP, parse_composition, parse_dimensions
+from unittest.mock import patch
+from capture import click_seller_link
 
 FIXTURE='''<div class="product-detail"><h1>Allowed product</h1>
 <div class="right-content"><div class="properties">
@@ -52,5 +54,21 @@ class ObservedDOMTests(unittest.TestCase):
         self.assertTrue(navigation_allowed(target,{target},SHOP))
         self.assertFalse(navigation_allowed(target+'?extra=1',{target},SHOP))
         self.assertFalse(navigation_allowed('https://flowwow.com/flowers/other/',{target},SHOP))
+
+    def test_delayed_popup_waits_without_second_click(self):
+        from test_arena_review2_independent import SellerPage, PopupPage, PRODUCT
+        page=SellerPage()
+        count=[]
+        def click(timeout=None):count.append('click')
+        page._seller.click=click
+        waits=[]
+        def wait(ms):
+            waits.append(ms)
+            if len(waits)==8:page.context.pages.append(PopupPage(SHOP,page.context))
+        page.wait_for_timeout=wait
+        with patch('capture.navigate',return_value={}):result=click_seller_link(page,PRODUCT)
+        self.assertEqual(result['status'],'EXACT_SELLER_CLICK_VERIFIED')
+        self.assertEqual(count,['click'])
+        self.assertEqual(len(waits),8)
 
 if __name__=='__main__':unittest.main()

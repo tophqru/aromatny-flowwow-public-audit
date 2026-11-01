@@ -24,6 +24,7 @@ def observed_sections(html):
     result={k:absent('OBSERVED_PRODUCT_ROOT_NOT_UNIQUE') for k in ('composition','dimensions','description')}
     if len(roots)!=1 or len(roots[0].select('h1'))!=1:return result
     root=roots[0]
+    result['description']=absent('MISSING_OR_AMBIGUOUS_DESKTOP_DESCRIPTION')
     for field,label,selector in [('composition','Состав','.pre-line'),('dimensions','Размер','.size-text')]:
         blocks=[b for b in root.select('.right-content > .properties > .property-item')
                 if b.select_one('h3.property-name') and b.select_one('h3.property-name').get_text(' ',strip=True)==label]

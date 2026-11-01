@@ -376,14 +376,19 @@ def click_seller_link(page,url_before:str)->dict:
     popup=None
     try:
         locator.click(timeout=7000)
-        page.wait_for_timeout(1000)
-        new_pages=[p for p in (context.pages if context is not None else []) if p not in pages_before]
+        # A real first seller click can open its popup after more than 1s.
+        # Observe one click for up to 10s; never click again to force it.
+        new_pages=[]
+        for _ in range(40):
+            page.wait_for_timeout(250)
+            new_pages=[p for p in (context.pages if context is not None else []) if p not in pages_before]
+            if new_pages or canonical_shop(page.url) is not None:break
         if len(new_pages)>1:
             out={"status":"UNVERIFIED","reason":"MULTIPLE_NEW_TABS_AFTER_SELLER_CLICK","clicked":True}
         else:
             if new_pages:
                 popup=new_pages[0]
-                try:popup.wait_for_load_state("domcontentloaded",timeout=5000)
+                try:popup.wait_for_load_state("domcontentloaded",timeout=15000)
                 except Exception:pass
                 observed_url=popup.url
             else:
