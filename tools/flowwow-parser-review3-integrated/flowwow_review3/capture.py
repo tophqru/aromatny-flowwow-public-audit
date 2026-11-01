@@ -292,7 +292,7 @@ def navigate(page,url:str):
     status=response.status if response else None
     title=page.title()
     txt=page.locator("body").inner_text(timeout=12000)[:1600] if page.locator("body").count() else ""
-    if status in (401,403,429) or detect_challenge(title,txt):
+    if status in (401,403,429) or detect_challenge(title,txt,page.content()):
         raise BrowserBlocked(f"Flowwow access restriction: status={status}; stop without retries")
     if status in (404,410):
         raise ProductUnavailable(f"HTTP_{status}_PUBLIC_PAGE_NOT_PROOF_OF_DRAFT")
@@ -356,7 +356,7 @@ def collect_shop(page,store:Store,args,snapshot:dict)->list[dict]:
 def click_seller_link(page,url_before:str)->dict:
     """Seller confirmed only after actually clicking one unambiguous visible shop link."""
     candidates=[]
-    for item in page.locator("main a[href*='/shop/'], article a[href*='/shop/']").all():
+    for item in page.locator("main a[href*='/shop/'], article a[href*='/shop/'], .product-detail .product-about-shop a.shop-link").all():
         try:
             if not item.is_visible():continue
             raw=item.get_attribute("href") or ""
@@ -376,14 +376,19 @@ def click_seller_link(page,url_before:str)->dict:
     popup=None
     try:
         locator.click(timeout=7000)
-        page.wait_for_timeout(1000)
-        new_pages=[p for p in (context.pages if context is not None else []) if p not in pages_before]
+        # A real first seller click can open its popup after more than 1s.
+        # Observe one click for up to 10s; never click again to force it.
+        new_pages=[]
+        for _ in range(40):
+            page.wait_for_timeout(250)
+            new_pages=[p for p in (context.pages if context is not None else []) if p not in pages_before]
+            if new_pages or canonical_shop(page.url) is not None:break
         if len(new_pages)>1:
             out={"status":"UNVERIFIED","reason":"MULTIPLE_NEW_TABS_AFTER_SELLER_CLICK","clicked":True}
         else:
             if new_pages:
                 popup=new_pages[0]
-                try:popup.wait_for_load_state("domcontentloaded",timeout=5000)
+                try:popup.wait_for_load_state("domcontentloaded",timeout=15000)
                 except Exception:pass
                 observed_url=popup.url
             else:
@@ -399,8 +404,10 @@ def click_seller_link(page,url_before:str)->dict:
             if opened not in pages_before:
                 try:opened.close()
                 except Exception:pass
-        # Returning to known URL is safer than browser.back() after SPA navigation.
-        navigate(page,url_before)
+        # A popup leaves the product document intact. Reloading that unchanged
+        # page discards its live image requests and needlessly repeats traffic.
+        # Restore the exact known URL only after an actual same-tab navigation.
+        if page.url != url_before:navigate(page,url_before)
     return out
 
 
@@ -468,18 +475,23 @@ def download_assets(context,store:Store,args,slug:str,source_urls:list[str],base
     return results
 
 
-def record_product(page,context,store:Store,args,baseline:dict,url:str,category:str,out:Path)->dict:
+def record_product(page,context,store:Store,args,baseline:dict,url:str,category:str,out:Path,identity=None)->dict:
+    if identity is None:identity=canonical_product
     slug=url.rstrip("/").split("/")[-1]
     nav=navigate(page,url)
-    if canonical_product(page.url)!=url:
+    if identity(page.url)!=url:
         raise BrowserBlocked("Product URL redirected outside expected exact SKU; stop, do not mix product data")
     page.wait_for_timeout(700)
     dom=page.content()
+    from flowwow_dom import layout_present, wait_layout_ready, observe_ui, GalleryObservationError
+    observed_layout=layout_present(dom)
+    if observed_layout:
+        wait_layout_ready(page)
     sections=extract_sections(dom)
     links=visible_seller_links(dom,page.url)
     seller=click_seller_link(page,url)
     # Seller click/return may redirect to a *different* product. Never mix galleries or names.
-    if canonical_product(page.url) != url:
+    if identity(page.url) != url:
         raise BrowserBlocked("PRODUCT_URL_CHANGED_AFTER_SELLER_CLICK_OR_RETURN")
     if seller.get("status") != "EXACT_SELLER_CLICK_VERIFIED":
         rejected={"url":url,"slug":slug,"seller":seller,"owner_approved":False,
@@ -488,12 +500,26 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
         store.record_page(url,slug,category,"SELLER_UNVERIFIED",rejected)
         store.event("PRODUCT_SELLER_UNVERIFIED",{"url":url})
         return rejected
+    store.event('PRODUCT_SELLER_PROVEN',{'url':url,'seller':seller})
     # Seller click may navigate/re-render, so capture DOM a second time if it did.
     if seller.get("clicked"):
         dom=page.content();sections=extract_sections(dom)
+    observed_ui=None
+    observed_gallery=None
+    if observed_layout:
+        try:
+            sections,observed_gallery,observed_ui=observe_ui(page,url,out,BrowserBlocked,identity=identity)
+        except GalleryObservationError as exc:
+            partial={'url':url,'slug':slug,'seller':seller,'page':nav,'source_method':'ACTUAL_VISIBLE_BROWSER_DOM',
+                     'owner_approved':False,'may_order':False,'may_show_publicly':False,'publication_status':'NOT_APPROVED',
+                     'partial_capture':True,'reason':str(exc),**exc.partial}
+            store.record_page(url,slug,category,'PARTIAL',partial,str(exc))
+            store.event('PRODUCT_PARTIAL',{'slug':slug,'reason':str(exc)})
+            return partial
     composition=parse_composition(sections["composition"]["text"])
-    dimensions=parse_dimensions(sections["dimensions"]["text"])
+    dimensions=parse_dimensions(sections["dimensions"].get('parser_text',sections["dimensions"]["text"]))
     gallery=gallery_candidates(dom,page.url,args.gallery_selector)
+    if observed_gallery is not None:gallery=observed_gallery
     if page.locator("h1").count()==0:
         raise ProductUnavailable("NO_PRODUCT_H1_VISIBLE_NOT_PROOF_OF_ABANDONMENT")
     result={"slug":slug,"url":url,"category_source":category,"observed_at_utc":utc_now(),
@@ -506,6 +532,7 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     result["ui_evidence"]={"sections_expanded":False,"description_clicks":"NOT_PROVEN",
         "composition_clicks":"NOT_PROVEN","gallery_frame_clicks":"NOT_PROVEN",
         "delayed_spa_ready":"NOT_PROVEN","reason":"No live validated DOM action contract; candidate extraction only"}
+    if observed_ui is not None:result['ui_evidence']=observed_ui
     if (getattr(store,"allowed_urls",None) is not None and slug == EXACT_SLUGS[2]):
         result["media_policy"]="METADATA_ONLY_NO_DOWNLOAD"
     elif args.download_new_media and seller.get("status")=="EXACT_SELLER_CLICK_VERIFIED" and gallery["status"]=="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS":
@@ -521,13 +548,26 @@ def configure_pilot_navigation(context, allowed):
 
     This is not a DOM selector or access bypass. Subresources remain browser-managed.
     """
+    from image_queue import ImageQueue
+    images=ImageQueue(limit=3)
+    context.on('requestfinished',images.finished)
+    context.on('requestfailed',images.finished)
+    context.on('close',images.close)
+    def watch_page(page):
+        page.on('close',lambda *_:images.cancel_page(page))
+    for page in context.pages:watch_page(page)
+    context.on('page',watch_page)
     def guard(route):
+        from flowwow_dom import navigation_allowed
         request=route.request
-        if request.resource_type == "document" and request.url not in allowed | {SHOP}:
+        if request.resource_type == "document" and not navigation_allowed(request.url,allowed,SHOP):
             route.abort("blockedbyclient")
+        elif request.resource_type=='image':
+            images.admit(route)
         else:
             route.continue_()
     context.route("**/*",guard)
+    return images
 
 
 def checked_output(value):
@@ -614,8 +654,9 @@ def crawl(args):
             locks.enter_context(exclusive_run_lock(browser_profile(out).parent/"profile.lock"))
             with load_playwright()() as p:
                 ctx=launch_context(p,args,out)
+                image_queue=None
                 try:
-                    if is_pilot: configure_pilot_navigation(ctx,store.allowed_urls)
+                    if is_pilot:image_queue=configure_pilot_navigation(ctx,store.allowed_urls)
                     # Persistent Chromium may already have an initial blank tab.
                     page=ctx.pages[0] if ctx.pages else ctx.new_page()
                     for extra in list(ctx.pages)[1:]:extra.close()
@@ -674,7 +715,11 @@ def crawl(args):
                         return 5
                     store.event("SESSION_FINISHED",{"products_attempted_this_run":seen,"all_seller_categories_proven_complete":False})
                     print(f"Finished batch: {seen} products attempted; data in {out}")
-                finally:ctx.close()
+                finally:
+                    if image_queue is not None:
+                        store.event('IMAGE_CONCURRENCY',image_queue.snapshot())
+                        image_queue.close()
+                    ctx.close()
         finally:store.close()
     return 0
 

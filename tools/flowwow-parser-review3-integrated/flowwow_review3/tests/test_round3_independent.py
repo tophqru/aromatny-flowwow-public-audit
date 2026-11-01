@@ -186,7 +186,7 @@ class Round3IntegrationTests(unittest.TestCase):
             baseline=str(self.baseline),offline_baseline=False,retry_failed=False,max_products=3,
             max_categories=1,browser='chromium',skip_shop=True,download_new_media=False,
             max_gallery_assets=30,recheck_unverified=False,pause_min=0,pause_max=0)
-        self.ctx=SimpleNamespace(pages=[object()],close=Mock(),route=Mock())
+        self.ctx=SimpleNamespace(pages=[SimpleNamespace(on=Mock())],close=Mock(),route=Mock(),on=Mock())
     def tearDown(self):self.tmp.cleanup()
     def run_fake(self, callback=None, **kw):
         manager=Mock();manager.__enter__=Mock(return_value=object());manager.__exit__=Mock(return_value=False)
@@ -306,7 +306,7 @@ class Round3IntegrationTests(unittest.TestCase):
         self.assertEqual('PREVIOUS_RUN_DID_NOT_FINISH',self.report()['reason'])
 
     def test_document_redirect_blocked_before_request(self):
-        ctx=Mock();capture.configure_pilot_navigation(ctx,{t['url'] for t in m()['exact_trial']})
+        ctx=Mock(pages=[]);capture.configure_pilot_navigation(ctx,{t['url'] for t in m()['exact_trial']})
         guard=ctx.route.call_args.args[1]
         for url in ['http://127.0.0.1/','https://evil.example/','https://flowwow.com/flowers/foreign/',pilot_targets.SHOP+'?redirect=https://evil.example/']:
             route=Mock();route.request.resource_type='document';route.request.url=url;guard(route)
@@ -350,7 +350,11 @@ with exclusive_run_lock(root/'capture.lock'):
  print('READY',flush=True)
  sys.stdin.read()
 """
-            proc=subprocess.Popen([sys.executable,'-c',code,str(Path(capture.__file__).parent),folder],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+            # Windows venv python.exe can be a launcher: killing only it may
+            # leave the actual interpreter holding the OS lock. Storage needs
+            # only stdlib, so target the interpreter process directly here.
+            executable=getattr(sys, '_base_executable', sys.executable) if os.name=='nt' else sys.executable
+            proc=subprocess.Popen([executable,'-c',code,str(Path(capture.__file__).parent),folder],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
             try:
                 self.assertEqual('READY',proc.stdout.readline().strip())
                 with self.assertRaises(RuntimeError):

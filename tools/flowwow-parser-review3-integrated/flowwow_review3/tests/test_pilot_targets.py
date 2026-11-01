@@ -102,7 +102,7 @@ class TestPilot(unittest.TestCase):
             with patch('capture.load_source',return_value=(base,[],{'mode':'MOCK','sha256':hashlib.sha256(raw).hexdigest()})), \
                  patch('capture.PINNED_PUBLIC_BLOB',m['baseline_public']['git_blob_sha']), \
                  patch('capture.load_playwright',return_value=lambda:FakePlaywright()), \
-                 patch('capture.launch_context',return_value=SimpleNamespace(pages=[object()],close=Mock(),route=Mock())), \
+                 patch('capture.launch_context',return_value=SimpleNamespace(pages=[SimpleNamespace(on=Mock())],close=Mock(),route=Mock(),on=Mock())), \
                  patch('capture.gentle_wait',return_value=None), \
                  patch('capture.record_product',side_effect=record):
                 self.assertEqual(5,capture.crawl(args))  # batch is not three verified cards

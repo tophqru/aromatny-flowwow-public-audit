@@ -102,6 +102,9 @@ class SellerPage:
     def title(self):
         return "Flowwow"
 
+    def content(self):
+        return "<main></main>"
+
 
 class MoreButton:
     def __init__(self, page):
@@ -179,6 +182,23 @@ class CLITests(unittest.TestCase):
 
 
 class SellerClickTests(unittest.TestCase):
+    def test_popup_verification_does_not_reload_unchanged_product(self):
+        page=SellerPage(target=SHOP,new_tab=True)
+        with patch('capture.navigate') as navigate:
+            result=capture.click_seller_link(page,PRODUCT)
+        self.assertEqual(result['status'],'EXACT_SELLER_CLICK_VERIFIED')
+        navigate.assert_not_called()
+        self.assertEqual(page.url,PRODUCT)
+
+    def test_same_tab_seller_click_restores_exact_product(self):
+        page=SellerPage(target=SHOP,new_tab=False)
+        def restore(p,url):p.url=url;return {}
+        with patch('capture.navigate',side_effect=restore) as navigate:
+            result=capture.click_seller_link(page,PRODUCT)
+        self.assertEqual(result['status'],'EXACT_SELLER_CLICK_VERIFIED')
+        navigate.assert_called_once_with(page,PRODUCT)
+        self.assertEqual(page.url,PRODUCT)
+
     def test_seller_link_new_tab_is_verified(self):
         page = SellerPage(target=SHOP, new_tab=True)
         result = capture.click_seller_link(page, PRODUCT)
@@ -354,9 +374,23 @@ class StorageResumeTests(unittest.TestCase):
     def test_atomic_bytes_fsyncs_directory(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "sub" / "file.bin"
-            with patch("storage.os.fsync", wraps=os.fsync) as fsync:
+            operations = []
+            real_fsync, real_replace = os.fsync, os.replace
+            def sync_file(fd):
+                operations.append("fsync")
+                return real_fsync(fd)
+            def replace_file(source, destination):
+                self.assertEqual(operations, ["fsync"])
+                operations.append("replace")
+                return real_replace(source, destination)
+            with patch("storage.os.fsync", side_effect=sync_file) as fsync, \
+                    patch("storage.os.replace", side_effect=replace_file):
                 atomic_bytes(path, b"payload")
-            self.assertGreaterEqual(fsync.call_count, 2)
+            # Windows cannot fsync directory handles via os.open; production
+            # deliberately syncs only the file there. POSIX syncs both.
+            self.assertEqual(fsync.call_count, 1 if os.name == "nt" else 2)
+            self.assertEqual(operations, ["fsync", "replace"] if os.name == "nt"
+                             else ["fsync", "replace", "fsync"])
             self.assertEqual(path.read_bytes(), b"payload")
 
     def test_atomic_bytes_cyrillic_space_path(self):
