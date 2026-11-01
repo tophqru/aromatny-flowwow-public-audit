@@ -11,15 +11,15 @@ class SlowMediaBudgets(unittest.TestCase):
 
     def test_invalid_budgets_never_open_network(self):
         with patch.object(media,'open_response') as opening:
-            for options in [dict(socket_timeout=0),dict(socket_timeout=61),dict(total_timeout=181),dict(socket_timeout=True),dict(socket_timeout=60,total_timeout=45)]:
+            for options in [dict(socket_timeout=0),dict(socket_timeout=121),dict(total_timeout=361),dict(socket_timeout=True),dict(socket_timeout=60,total_timeout=45)]:
                 with self.assertRaises(ValueError):media.fetch_image('https://content.flowwow-images.com/a.jpg',1024,**options)
             opening.assert_not_called()
 
     def test_extended_budget_allows_slow_body_and_closes_resources(self):
         conn=Mock();response=self.response()
-        with patch.object(media,'open_response',return_value=(conn,response)) as opening, patch.object(media.time,'monotonic',side_effect=[0,50,100]):
-            self.assertEqual(media.fetch_image('https://content.flowwow-images.com/a.jpg',1024,socket_timeout=60,total_timeout=180),b'x'*64)
-        opening.assert_called_once_with('https://content.flowwow-images.com/a.jpg',socket_timeout=60)
+        with patch.object(media,'open_response',return_value=(conn,response)) as opening, patch.object(media.time,'monotonic',side_effect=[0,100,200]):
+            self.assertEqual(media.fetch_image('https://content.flowwow-images.com/a.jpg',1024,socket_timeout=90,total_timeout=300),b'x'*64)
+        opening.assert_called_once_with('https://content.flowwow-images.com/a.jpg',socket_timeout=90)
         response.close.assert_called_once();conn.close.assert_called_once()
 
     def test_default_total_budget_still_rejects_slow_body(self):

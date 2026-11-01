@@ -48,8 +48,8 @@ def open_response(url, socket_timeout=15):
 def fetch_image(url, max_bytes, *, socket_timeout=15, total_timeout=45):
     # Explicit bounded budgets for slow connections; conservative CLI defaults
     # and all source/DNS/TLS/status/byte checks remain identical.
-    if (type(socket_timeout) is not int or not 1 <= socket_timeout <= 60 or
-            type(total_timeout) is not int or not socket_timeout <= total_timeout <= 180):
+    if (type(socket_timeout) is not int or not 1 <= socket_timeout <= 120 or
+            type(total_timeout) is not int or not socket_timeout <= total_timeout <= 360):
         raise ValueError('INVALID_IMAGE_TIME_BUDGET')
     started = time.monotonic()
     conn, response = open_response(url, socket_timeout=socket_timeout)
