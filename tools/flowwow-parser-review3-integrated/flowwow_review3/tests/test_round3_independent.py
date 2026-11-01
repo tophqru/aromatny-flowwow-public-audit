@@ -306,7 +306,7 @@ class Round3IntegrationTests(unittest.TestCase):
         self.assertEqual('PREVIOUS_RUN_DID_NOT_FINISH',self.report()['reason'])
 
     def test_document_redirect_blocked_before_request(self):
-        ctx=Mock();capture.configure_pilot_navigation(ctx,{t['url'] for t in m()['exact_trial']})
+        ctx=Mock(pages=[]);capture.configure_pilot_navigation(ctx,{t['url'] for t in m()['exact_trial']})
         guard=ctx.route.call_args.args[1]
         for url in ['http://127.0.0.1/','https://evil.example/','https://flowwow.com/flowers/foreign/',pilot_targets.SHOP+'?redirect=https://evil.example/']:
             route=Mock();route.request.resource_type='document';route.request.url=url;guard(route)
