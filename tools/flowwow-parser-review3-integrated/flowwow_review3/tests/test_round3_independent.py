@@ -186,7 +186,7 @@ class Round3IntegrationTests(unittest.TestCase):
             baseline=str(self.baseline),offline_baseline=False,retry_failed=False,max_products=3,
             max_categories=1,browser='chromium',skip_shop=True,download_new_media=False,
             max_gallery_assets=30,recheck_unverified=False,pause_min=0,pause_max=0)
-        self.ctx=SimpleNamespace(pages=[object()],close=Mock(),route=Mock(),on=Mock())
+        self.ctx=SimpleNamespace(pages=[SimpleNamespace(on=Mock())],close=Mock(),route=Mock(),on=Mock())
     def tearDown(self):self.tmp.cleanup()
     def run_fake(self, callback=None, **kw):
         manager=Mock();manager.__enter__=Mock(return_value=object());manager.__exit__=Mock(return_value=False)

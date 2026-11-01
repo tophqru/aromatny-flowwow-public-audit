@@ -42,6 +42,21 @@ class ImageQueueTests(unittest.TestCase):
         self.assertEqual(queue.snapshot()['inflight'],0)
         self.assertEqual(queue.snapshot()['started'],3)
         for r in routes[3:]:r.continue_.assert_not_called()
+    def test_closed_page_releases_requests_without_requestfailed_event(self):
+        closed=SimpleNamespace(is_closed=lambda:True);live=SimpleNamespace(is_closed=lambda:False)
+        queue=ImageQueue(limit=1)
+        first=route();pending=route();next_live=route()
+        for r,owner in [(first,closed),(pending,closed),(next_live,live)]:
+            # Owner was live when admitted; the close event arrives afterwards.
+            queue.admit(r);queue.owners[r.request]=owner
+        queue.cancel_page(closed)
+        pending.continue_.assert_not_called();next_live.continue_.assert_called_once()
+        self.assertEqual(queue.active,{next_live.request})
+        self.assertEqual(queue.cancelled_active,1);self.assertEqual(queue.cancelled_queued,1)
+    def test_live_page_cannot_release_active_requests(self):
+        queue=ImageQueue();r=route();queue.admit(r)
+        with self.assertRaises(ValueError):queue.cancel_page(SimpleNamespace(is_closed=lambda:False))
+        self.assertEqual(queue.active,{r.request})
     def test_failed_dispatch_releases_slot_without_retry(self):
         queue=ImageQueue();bad=route();bad.continue_.side_effect=RuntimeError('closed')
         queue.admit(bad)

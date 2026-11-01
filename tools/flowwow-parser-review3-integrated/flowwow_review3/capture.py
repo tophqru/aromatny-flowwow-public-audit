@@ -550,6 +550,10 @@ def configure_pilot_navigation(context, allowed):
     context.on('requestfinished',images.finished)
     context.on('requestfailed',images.finished)
     context.on('close',images.close)
+    def watch_page(page):
+        page.on('close',lambda *_:images.cancel_page(page))
+    for page in context.pages:watch_page(page)
+    context.on('page',watch_page)
     def guard(route):
         from flowwow_dom import navigation_allowed
         request=route.request
