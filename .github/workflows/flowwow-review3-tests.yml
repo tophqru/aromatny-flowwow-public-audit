@@ -1,4 +1,4 @@
-name: Flowwow Review3 isolated parser regression (offline only)
+name: Flowwow Review3 offline regression
 on:
   push:
     branches:
@@ -33,33 +33,11 @@ jobs:
         run: python -m pip install --disable-pip-version-check -r requirements.txt
       - name: Syntax compilation
         run: python -m compileall -q .
-      - name: Run 101+ offline regressions (including Arena 32 and pilot guard 16)
+      - name: Run all offline regressions, require at least 101
         run: |
           set -o pipefail
           python -m unittest discover -s tests -v 2>&1 | tee offline-test-results.log
-          python - <<'PY'
-          import pathlib, re
-          log = pathlib.Path('offline-test-results.log').read_text(encoding='utf-8')
-          counts = re.findall(r'Ran ([0-9]+) tests', log)
-          assert counts, 'No unittest summary in log'
-          assert int(counts[-1]) >= 101, f'Expected >=101 actual tests, got {counts[-1]}'
-          assert re.search(r'^OK      - name: No-dependencies diagnostic
-        run: |
-          python -S capture.py doctor > doctor-without-deps.json
-          python -c 'import json; x=json.load(open("doctor-without-deps.json",encoding="utf-8")); assert x["dependencies"]=="MISSING"'
-      - name: Upload logs
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: flowwow-review3-offline-qa
-          path: |
-            tools/flowwow-parser-review3-integrated/flowwow_review3/offline-test-results.log
-            tools/flowwow-parser-review3-integrated/flowwow_review3/doctor-without-deps.json
-          if-no-files-found: warn
-          retention-days: 14
-, log, re.MULTILINE), 'Missing unittest OK status'
-          print(f'PASS: {counts[-1]} actual offline tests')
-          PY
+          python -c 'import pathlib,re; t=pathlib.Path("offline-test-results.log").read_text(); m=re.findall("Ran ([0-9]+) tests",t); assert m and int(m[-1])>=101, "Insufficient test count"; assert "OK" in t.splitlines(), "No OK summary"; print("PASS",m[-1],"offline tests")'
       - name: No-dependencies diagnostic
         run: |
           python -S capture.py doctor > doctor-without-deps.json
