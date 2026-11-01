@@ -111,6 +111,15 @@ def verify_pilot_db(store, targets: list[tuple[str, str]], manifest_sha: str) ->
     rows = store.db.execute("SELECT url FROM pages").fetchall()
     if any(row[0] not in authorized for row in rows):
         raise PilotGuardError("Output DB contains an unrelated SKU: use a new output directory")
+    # A previous non-pilot run can leave unrelated discovery/media behind even
+    # if the pages table is empty. Export includes both tables: fail closed.
+    foreign_discovery = store.db.execute("SELECT url FROM discovery").fetchall()
+    if any(url not in authorized for (url,) in foreign_discovery):
+        raise PilotGuardError("Output DB contains discovery from an unrelated SKU")
+    allowed_slugs = {url.rstrip("/").split("/")[-1] for url in authorized}
+    foreign_assets = store.db.execute("SELECT slug FROM assets").fetchall()
+    if any(slug not in allowed_slugs for (slug,) in foreign_assets):
+        raise PilotGuardError("Output DB contains media from an unrelated SKU")
     guards = store.db.execute("SELECT detail_json FROM events WHERE kind='PILOT_ALLOWLIST_PIN'").fetchall()
     if any(json.loads(row[0]).get("manifest_sha256") != manifest_sha for row in guards):
         raise PilotGuardError("Output DB belongs to a different pilot manifest")
