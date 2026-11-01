@@ -356,7 +356,7 @@ def collect_shop(page,store:Store,args,snapshot:dict)->list[dict]:
 def click_seller_link(page,url_before:str)->dict:
     """Seller confirmed only after actually clicking one unambiguous visible shop link."""
     candidates=[]
-    for item in page.locator("main a[href*='/shop/'], article a[href*='/shop/']").all():
+    for item in page.locator("main a[href*='/shop/'], article a[href*='/shop/'], .product-detail .product-about-shop a.shop-link").all():
         try:
             if not item.is_visible():continue
             raw=item.get_attribute("href") or ""
@@ -475,6 +475,10 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
         raise BrowserBlocked("Product URL redirected outside expected exact SKU; stop, do not mix product data")
     page.wait_for_timeout(700)
     dom=page.content()
+    from flowwow_dom import layout_present, wait_layout_ready, observe_ui
+    observed_layout=layout_present(dom)
+    if observed_layout:
+        wait_layout_ready(page)
     sections=extract_sections(dom)
     links=visible_seller_links(dom,page.url)
     seller=click_seller_link(page,url)
@@ -491,9 +495,14 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     # Seller click may navigate/re-render, so capture DOM a second time if it did.
     if seller.get("clicked"):
         dom=page.content();sections=extract_sections(dom)
+    observed_ui=None
+    observed_gallery=None
+    if observed_layout:
+        sections,observed_gallery,observed_ui=observe_ui(page,url,out,BrowserBlocked)
     composition=parse_composition(sections["composition"]["text"])
-    dimensions=parse_dimensions(sections["dimensions"]["text"])
+    dimensions=parse_dimensions(sections["dimensions"].get('parser_text',sections["dimensions"]["text"]))
     gallery=gallery_candidates(dom,page.url,args.gallery_selector)
+    if observed_gallery is not None:gallery=observed_gallery
     if page.locator("h1").count()==0:
         raise ProductUnavailable("NO_PRODUCT_H1_VISIBLE_NOT_PROOF_OF_ABANDONMENT")
     result={"slug":slug,"url":url,"category_source":category,"observed_at_utc":utc_now(),
@@ -506,6 +515,7 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
     result["ui_evidence"]={"sections_expanded":False,"description_clicks":"NOT_PROVEN",
         "composition_clicks":"NOT_PROVEN","gallery_frame_clicks":"NOT_PROVEN",
         "delayed_spa_ready":"NOT_PROVEN","reason":"No live validated DOM action contract; candidate extraction only"}
+    if observed_ui is not None:result['ui_evidence']=observed_ui
     if (getattr(store,"allowed_urls",None) is not None and slug == EXACT_SLUGS[2]):
         result["media_policy"]="METADATA_ONLY_NO_DOWNLOAD"
     elif args.download_new_media and seller.get("status")=="EXACT_SELLER_CLICK_VERIFIED" and gallery["status"]=="GALLERY_CANDIDATES_UNVERIFIED_COMPLETENESS":
@@ -522,8 +532,9 @@ def configure_pilot_navigation(context, allowed):
     This is not a DOM selector or access bypass. Subresources remain browser-managed.
     """
     def guard(route):
+        from flowwow_dom import navigation_allowed
         request=route.request
-        if request.resource_type == "document" and request.url not in allowed | {SHOP}:
+        if request.resource_type == "document" and not navigation_allowed(request.url,allowed,SHOP):
             route.abort("blockedbyclient")
         else:
             route.continue_()
