@@ -102,6 +102,9 @@ class SellerPage:
     def title(self):
         return "Flowwow"
 
+    def content(self):
+        return "<main></main>"
+
 
 class MoreButton:
     def __init__(self, page):
@@ -354,9 +357,23 @@ class StorageResumeTests(unittest.TestCase):
     def test_atomic_bytes_fsyncs_directory(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "sub" / "file.bin"
-            with patch("storage.os.fsync", wraps=os.fsync) as fsync:
+            operations = []
+            real_fsync, real_replace = os.fsync, os.replace
+            def sync_file(fd):
+                operations.append("fsync")
+                return real_fsync(fd)
+            def replace_file(source, destination):
+                self.assertEqual(operations, ["fsync"])
+                operations.append("replace")
+                return real_replace(source, destination)
+            with patch("storage.os.fsync", side_effect=sync_file) as fsync, \
+                    patch("storage.os.replace", side_effect=replace_file):
                 atomic_bytes(path, b"payload")
-            self.assertGreaterEqual(fsync.call_count, 2)
+            # Windows cannot fsync directory handles via os.open; production
+            # deliberately syncs only the file there. POSIX syncs both.
+            self.assertEqual(fsync.call_count, 1 if os.name == "nt" else 2)
+            self.assertEqual(operations, ["fsync", "replace"] if os.name == "nt"
+                             else ["fsync", "replace", "fsync"])
             self.assertEqual(path.read_bytes(), b"payload")
 
     def test_atomic_bytes_cyrillic_space_path(self):

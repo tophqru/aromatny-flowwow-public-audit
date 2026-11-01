@@ -239,6 +239,20 @@ def gallery_candidates(html: str, base: str, selector: str | None = None) -> dic
             "items":urls[:60],"selector":selector,"candidate_count":len(urls),"truncated":len(urls)>60}
 
 
-def detect_challenge(title: str, text: str) -> bool:
+def detect_challenge(title: str, text: str, html: str = "") -> bool:
     lower=(title+"\n"+text[:1500]).lower()
-    return any(w in lower for w in BLOCKED_HINTS)
+    if any(w in lower for w in BLOCKED_HINTS):
+        return True
+    # Observed HTTP-200 Servicepipe interstitial has empty title/body text.
+    # Inspect structural markers; never execute or retain challenge data.
+    if html:
+        soup = BeautifulSoup(html, "html.parser")
+        loader = soup.find("js-challenge-loader") or soup.find(id="id_captcha_frame_div")
+        if loader is not None:
+            for script in soup.find_all("script", src=True):
+                try:
+                    if urlsplit(script["src"]).hostname == "servicepipe.tech":
+                        return True
+                except ValueError:
+                    continue
+    return False

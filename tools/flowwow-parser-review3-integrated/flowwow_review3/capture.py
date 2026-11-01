@@ -292,7 +292,7 @@ def navigate(page,url:str):
     status=response.status if response else None
     title=page.title()
     txt=page.locator("body").inner_text(timeout=12000)[:1600] if page.locator("body").count() else ""
-    if status in (401,403,429) or detect_challenge(title,txt):
+    if status in (401,403,429) or detect_challenge(title,txt,page.content()):
         raise BrowserBlocked(f"Flowwow access restriction: status={status}; stop without retries")
     if status in (404,410):
         raise ProductUnavailable(f"HTTP_{status}_PUBLIC_PAGE_NOT_PROOF_OF_DRAFT")

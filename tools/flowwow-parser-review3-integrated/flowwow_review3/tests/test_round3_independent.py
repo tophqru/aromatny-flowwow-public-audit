@@ -350,7 +350,11 @@ with exclusive_run_lock(root/'capture.lock'):
  print('READY',flush=True)
  sys.stdin.read()
 """
-            proc=subprocess.Popen([sys.executable,'-c',code,str(Path(capture.__file__).parent),folder],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
+            # Windows venv python.exe can be a launcher: killing only it may
+            # leave the actual interpreter holding the OS lock. Storage needs
+            # only stdlib, so target the interpreter process directly here.
+            executable=getattr(sys, '_base_executable', sys.executable) if os.name=='nt' else sys.executable
+            proc=subprocess.Popen([executable,'-c',code,str(Path(capture.__file__).parent),folder],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True)
             try:
                 self.assertEqual('READY',proc.stdout.readline().strip())
                 with self.assertRaises(RuntimeError):
