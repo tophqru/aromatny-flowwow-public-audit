@@ -182,6 +182,23 @@ class CLITests(unittest.TestCase):
 
 
 class SellerClickTests(unittest.TestCase):
+    def test_popup_verification_does_not_reload_unchanged_product(self):
+        page=SellerPage(target=SHOP,new_tab=True)
+        with patch('capture.navigate') as navigate:
+            result=capture.click_seller_link(page,PRODUCT)
+        self.assertEqual(result['status'],'EXACT_SELLER_CLICK_VERIFIED')
+        navigate.assert_not_called()
+        self.assertEqual(page.url,PRODUCT)
+
+    def test_same_tab_seller_click_restores_exact_product(self):
+        page=SellerPage(target=SHOP,new_tab=False)
+        def restore(p,url):p.url=url;return {}
+        with patch('capture.navigate',side_effect=restore) as navigate:
+            result=capture.click_seller_link(page,PRODUCT)
+        self.assertEqual(result['status'],'EXACT_SELLER_CLICK_VERIFIED')
+        navigate.assert_called_once_with(page,PRODUCT)
+        self.assertEqual(page.url,PRODUCT)
+
     def test_seller_link_new_tab_is_verified(self):
         page = SellerPage(target=SHOP, new_tab=True)
         result = capture.click_seller_link(page, PRODUCT)

@@ -404,8 +404,10 @@ def click_seller_link(page,url_before:str)->dict:
             if opened not in pages_before:
                 try:opened.close()
                 except Exception:pass
-        # Returning to known URL is safer than browser.back() after SPA navigation.
-        navigate(page,url_before)
+        # A popup leaves the product document intact. Reloading that unchanged
+        # page discards its live image requests and needlessly repeats traffic.
+        # Restore the exact known URL only after an actual same-tab navigation.
+        if page.url != url_before:navigate(page,url_before)
     return out
 
 
