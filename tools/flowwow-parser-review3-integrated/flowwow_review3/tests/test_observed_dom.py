@@ -4,12 +4,18 @@ No raw DOM, customer names, cookies, signed URLs or application state.
 """
 import sys
 from pathlib import Path
+import tempfile
+from types import SimpleNamespace
+from unittest.mock import Mock
 import unittest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from flowwow_dom import layout_present, observed_sections, navigation_allowed
 from parsing import SHOP, parse_composition, parse_dimensions
 from unittest.mock import patch
 from capture import click_seller_link
+from flowwow_dom import frame_wait_budget, GalleryObservationError
+import capture
+from storage import Store
 
 FIXTURE='''<div class="product-detail"><h1>Allowed product</h1>
 <div class="right-content"><div class="properties">
@@ -21,6 +27,30 @@ FIXTURE='''<div class="product-detail"><h1>Allowed product</h1>
 </div><aside><h3>Состав</h3><p>Wrong product - 99 шт.</p></aside>'''
 
 class ObservedDOMTests(unittest.TestCase):
+    def test_slow_frame_wait_has_per_frame_and_total_bounds(self):
+        self.assertEqual(frame_wait_budget(10,10),90000)
+        self.assertEqual(frame_wait_budget(10,160),30000)
+        with self.assertRaises(TimeoutError):frame_wait_budget(10,190)
+
+    def test_partial_gallery_failure_retains_seller_without_captured_status(self):
+        partial={'gallery':{'status':'PARTIAL_GALLERY_OBSERVATION','observed_total':6,
+                            'frames':[{'index':0,'source_url':'https://content2.flowwow-images.com/a.jpg'}]},
+                 'source_sections':observed_sections(FIXTURE),'ui_evidence':{'sections_expanded':True}}
+        url='https://flowwow.com/flowers/avtorskiy-buket-s-gortenz-3168/'
+        page=SimpleNamespace(url=url,content=lambda:FIXTURE,wait_for_timeout=Mock())
+        seller={'status':'EXACT_SELLER_CLICK_VERIFIED','clicked':True,'final_url':SHOP}
+        with tempfile.TemporaryDirectory() as folder:
+            out=Path(folder);store=Store(out/'test.db')
+            try:
+                with patch('capture.navigate',return_value={'final_url':url}),patch('capture.click_seller_link',return_value=seller), \
+                     patch('flowwow_dom.wait_layout_ready'),patch('flowwow_dom.observe_ui',side_effect=GalleryObservationError('IMAGE_DECODE_WAIT_FAILED_INDEX_1',partial)):
+                    result=capture.record_product(page,Mock(),store,SimpleNamespace(),{'products':[]},url,'BASELINE_GAPS',out)
+                self.assertEqual(store.page_rows()[0][3],'PARTIAL')
+                self.assertEqual(result['seller'],seller)
+                self.assertEqual(len(result['gallery']['frames']),1)
+                self.assertFalse(result['may_order'])
+                self.assertEqual(capture.pilot_acceptance(store,out)['status'],'BLOCKED')
+            finally:store.close()
     def test_real_layout_without_main_supported(self):
         self.assertTrue(layout_present(FIXTURE))
         data=observed_sections(FIXTURE)

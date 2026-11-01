@@ -480,7 +480,7 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
         raise BrowserBlocked("Product URL redirected outside expected exact SKU; stop, do not mix product data")
     page.wait_for_timeout(700)
     dom=page.content()
-    from flowwow_dom import layout_present, wait_layout_ready, observe_ui
+    from flowwow_dom import layout_present, wait_layout_ready, observe_ui, GalleryObservationError
     observed_layout=layout_present(dom)
     if observed_layout:
         wait_layout_ready(page)
@@ -497,13 +497,22 @@ def record_product(page,context,store:Store,args,baseline:dict,url:str,category:
         store.record_page(url,slug,category,"SELLER_UNVERIFIED",rejected)
         store.event("PRODUCT_SELLER_UNVERIFIED",{"url":url})
         return rejected
+    store.event('PRODUCT_SELLER_PROVEN',{'url':url,'seller':seller})
     # Seller click may navigate/re-render, so capture DOM a second time if it did.
     if seller.get("clicked"):
         dom=page.content();sections=extract_sections(dom)
     observed_ui=None
     observed_gallery=None
     if observed_layout:
-        sections,observed_gallery,observed_ui=observe_ui(page,url,out,BrowserBlocked)
+        try:
+            sections,observed_gallery,observed_ui=observe_ui(page,url,out,BrowserBlocked)
+        except GalleryObservationError as exc:
+            partial={'url':url,'slug':slug,'seller':seller,'page':nav,'source_method':'ACTUAL_VISIBLE_BROWSER_DOM',
+                     'owner_approved':False,'may_order':False,'may_show_publicly':False,'publication_status':'NOT_APPROVED',
+                     'partial_capture':True,'reason':str(exc),**exc.partial}
+            store.record_page(url,slug,category,'PARTIAL',partial,str(exc))
+            store.event('PRODUCT_PARTIAL',{'slug':slug,'reason':str(exc)})
+            return partial
     composition=parse_composition(sections["composition"]["text"])
     dimensions=parse_dimensions(sections["dimensions"].get('parser_text',sections["dimensions"]["text"]))
     gallery=gallery_candidates(dom,page.url,args.gallery_selector)

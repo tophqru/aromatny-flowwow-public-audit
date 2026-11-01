@@ -4,13 +4,25 @@ No hidden APIs, application-state objects or invented CDN URLs are used.
 """
 from pathlib import Path
 import re
+import time
 from bs4 import BeautifulSoup
 from parsing import canonical_product, detect_challenge, image_url_safe
+from storage import atomic_json
 
 ROOT = '.product-detail'
 MAIN = ROOT + ' .product-detail-slider [id^=mainslider_]'
 THUMBS = ROOT + ' .product-detail-slider [id^=thumbslider_]'
 ACTIVE = MAIN + ' .swiper-slide-active:not(.swiper-slide-duplicate) img'
+
+class GalleryObservationError(RuntimeError):
+    def __init__(self, reason, partial):
+        super().__init__(reason)
+        self.partial=partial
+
+def frame_wait_budget(started, now):
+    remaining=180000-int((now-started)*1000)
+    if remaining<=0:raise TimeoutError('GALLERY_TOTAL_WAIT_BUDGET_EXHAUSTED')
+    return min(90000,remaining)
 
 def layout_present(html):
     soup=BeautifulSoup(html,'html.parser')
@@ -76,17 +88,27 @@ def observe_ui(page,url,out,blocked):
     if not indices or len(indices)>30 or len(set(indices))!=len(indices) or set(indices)!={str(i) for i in range(len(indices))}:
         raise blocked('OBSERVED_ADAPTER_THUMBNAIL_INDEX_AMBIGUOUS')
     frames=[]
+    started=time.monotonic()
     evidence=Path(out)/'local-evidence'/url.rstrip('/').split('/')[-1]
     evidence.mkdir(parents=True,exist_ok=True)
+    progress={'source_sections':sections,'gallery':{'status':'PARTIAL_GALLERY_OBSERVATION','observed_total':len(indices),'frames':frames,'visited_original_urls':[],'truncated':False},
+              'ui_evidence':{'sections_expanded':not remaining,'expansion_click_count':len(clicks),'gallery_frame_clicks':0}}
+    atomic_json(evidence/'partial-observation.json',progress)
     for index in range(len(indices)):
         thumb=thumbs.locator(f'img.thumb[data-index-slide="{index}"]')
         if thumb.count()!=1:raise blocked('OBSERVED_ADAPTER_THUMBNAIL_NOT_UNIQUE')
         thumb.click(timeout=7000)
-        page.wait_for_function('''({selector,index})=>{
-          const img=document.querySelector(selector);
-          return img && img.closest('.swiper-slide').getAttribute('data-swiper-slide-index')===String(index)
-            && img.complete && img.naturalWidth>=480 && img.naturalHeight>=480;
-        }''',arg={'selector':ACTIVE,'index':index},timeout=25000)
+        try:
+            page.wait_for_function('''({selector,index})=>{
+              const img=document.querySelector(selector);
+              return img && img.closest('.swiper-slide').getAttribute('data-swiper-slide-index')===String(index)
+                && img.complete && img.naturalWidth>=480 && img.naturalHeight>=480;
+            }''',arg={'selector':ACTIVE,'index':index},timeout=frame_wait_budget(started,time.monotonic()))
+        except Exception as exc:
+            guard()
+            progress['failure']={'stage':'IMAGE_DECODE_WAIT','index':index,'error_type':type(exc).__name__}
+            atomic_json(evidence/'partial-observation.json',progress)
+            raise GalleryObservationError('IMAGE_DECODE_WAIT_FAILED_INDEX_'+str(index),progress) from exc
         guard()
         active=page.locator(ACTIVE)
         if active.count()!=1:raise blocked('OBSERVED_ADAPTER_ACTIVE_FRAME_AMBIGUOUS')
@@ -94,6 +116,9 @@ def observe_ui(page,url,out,blocked):
         safe=image_url_safe(data['url'])
         if not safe:raise blocked('OBSERVED_ADAPTER_UNSAFE_IMAGE_SOURCE')
         frames.append({'index':index,'source_url':safe,'current_src':safe,'width':data['width'],'height':data['height'],'thumbnail_clicked':True})
+        progress['gallery']['visited_original_urls']=[f['source_url'] for f in frames]
+        progress['ui_evidence']['gallery_frame_clicks']=len(frames)
+        atomic_json(evidence/'partial-observation.json',progress)
         if index in (0,len(indices)-1):page.screenshot(path=str(evidence/f'gallery-{index}.png'))
     urls=[f['source_url'] for f in frames]
     complete=len(urls)==len(set(urls))==len(indices)
